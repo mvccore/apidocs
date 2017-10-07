@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Namespace MvcCore | MvcCore</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-MvcCore.html">
+						MvcCore<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.html">
+						Ext<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.html">
+						Auth<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.Virtual.html">
+						Virtual					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.html">
+						Debug<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.Tracy.html">
+						Tracy					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.html">
+						Form<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Validators.html">
+						Validators					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Request.html">
+						Request					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.html">
+						Router<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.Lang.html">
+						Lang					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.View.html">
+						View<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.View.Helpers.html">
+						Helpers					</a>
+
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-MvcCore.Config.html">Config</a></li>
+				<li><a href="class-MvcCore.Controller.html">Controller</a></li>
+				<li><a href="class-MvcCore.Debug.html">Debug</a></li>
+				<li><a href="class-MvcCore.Model.html">Model</a></li>
+				<li><a href="class-MvcCore.Request.html">Request</a></li>
+				<li><a href="class-MvcCore.Response.html">Response</a></li>
+				<li><a href="class-MvcCore.Route.html">Route</a></li>
+				<li><a href="class-MvcCore.Router.html">Router</a></li>
+				<li><a href="class-MvcCore.Session.html">Session</a></li>
+				<li><a href="class-MvcCore.Tool.html">Tool</a></li>
+				<li><a href="class-MvcCore.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Namespace</span>			</li>
+			<li>
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="namespace">
+	<h1>Namespace MvcCore</h1>
+
+	<table class="summary" id="namespaces">
+	<caption>Namespaces summary</caption>
+	<tr>
+		<td class="name"><a href="namespace-MvcCore.Ext.html">MvcCore\Ext</a></td>
+	</tr>
+	</table>
+
+
+<table class="summary" id="classes">
+<caption>Classes summary</caption>
+<tr>
+	<td class="name"><a href="class-MvcCore.Config.html">Config</a></td>
+	<td><p>Core configuration:
+- config files reading:
+  - reading config.ini file by relative path
+  - parsing and typing ini data into stdClass/array by key types
+  - typing ini values into integers, floats, booleans or strings
+- environment management:
+  - simple environment name detection by comparing server and client ip
+  - environment name detection by config records about computer name or ip</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.Controller.html">Controller</a></td>
+	<td><p>Application controller:
+- template methods:
+ (necessary to call parent at method begin)
+  - Init()
+    - called after controller is created
+    - session start
+    - all internal variables initialized except view
+  - PreDispatch()
+    - called after Init, before every controller action
+    - view initialization
+- internal actions:
+ - AssetAction()
+   - handling internal MvcCore http request
+     to get assets from packed package
+- url proxy method, reading request param proxy method
+- view rendering or no-rendering management
+- http responses and redirects management
+- basic error responses rendering
+- request termination (to write and close session)</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.Debug.html">Debug</a></td>
+	<td><p>Core debug tools
+- printing any value by var_dump(); in fixed
+  bar at browser window right bottom border
+- timing printing
+- debuging shortcut functions initialization
+- exceptions hdd logging or printing in development mode</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.Model.html">Model</a></td>
+	<td><p>Core model
+- reading 'db' section from system config.ini
+- database PDO connecting by config settings and index
+- instance loaded variables initializing
+- instance initialized values reading
+- virtual calls/sets and gets handling</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.Request.html">Request</a></td>
+	<td><p>Core request:
+- linear request url parsing from $_SERVER into local properties describing url sections
+- params reading from $_GET/$_POST or direct input (in JSON or in query string)
+- params cleaning by developer rules</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.Response.html">Response</a></td>
+	<td><p>Core response:
+- http response wrapper carrying response headers and response body
+- sending response at application terminate process by Send(); method
+- completing MvcCore performance custom header at response sending</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.Route.html">Route</a></td>
+	<td><p>Core route:
+- describing request input, url output, controller/action target and default params
+- required properties to set:
+  - Pattern - classic preg_match() pattern including border '#' characters, containing char groups
+  - Reverse - url form with {%param} replacements where to insert param values from url method
+  - Controller - controller to create and dispatch or view directory name, pascal case
+  - Action - controller action to execute or view name to render, pascal case
+  - Name - 'Controller:Action' or any custom route name how to create url in application by Url() method
+  - Params - default params to set before controller/action dispatching if no params in request</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.Router.html">Router</a></td>
+	<td><p>Core router:
+- main store for all routes
+- application request routing process before request dispatching in core
+- currently matched route store
+- application url completing
+  - by configured routes into mod_rewrite form
+  - or into query string form, containing controller and action params
+- params query string building - primitive param value or array value representation possible</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.Session.html">Session</a></td>
+	<td><p>Core session:
+- session safe starting
+- session writing and closing
+  - by registered shutdown function
+  - \MvcCore\Session::Close() - how to register the handler
+  - close handler called registered by \MvcCore::Terminate();
+- session namespaces management
+  - variables expiration by seconds
+  - variables expiration by request hoops</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.Tool.html">Tool</a></td>
+	<td><p>Core tools:
+- translating cases (with folders support):
+  - dashed-case to PascalCase
+  - PascalCase to dashed-case
+  - unserscore_case to PascalCase
+  - PascalCase to unserscore_case
+- JSON safe encode/decode</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-MvcCore.View.html">View</a></td>
+	<td><p>Core view:
+- static doctype storage
+- static storage for dir names with view scripts
+- possible to use for any controller/subcontroller/control/\MvcCore\Ext\Form
+- view prerender preparing and rendering
+- direct code evaluation
+- view helpers management
+  - creating by predefined class names bases
+  - instance storing and calling
+- views sub scripts relative path solving
+- Url() proxy method, AssetUrl() proxy method
+- magic calls:
+  - __call() - helpers handling
+  - __set() - to set anything in controller to get it back in view
+  - __get() - to get anything in view previously completed in controller
+- no special view language implemented... why to use such stupid things...</p></td>
+</tr>
+</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		MvcCore API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?ac4bab53e052fd361ae64719981d41ad3594b567"></script>
+<script src="elementlist.js?1279d2edac1ed9dcd0da070856bdad6901f52a88"></script>
+</body>
+</html>

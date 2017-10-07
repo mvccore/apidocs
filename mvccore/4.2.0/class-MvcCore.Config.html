@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class MvcCore\Config | MvcCore</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-MvcCore.html">
+						MvcCore<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.html">
+						Ext<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.html">
+						Auth<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.Virtual.html">
+						Virtual					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.html">
+						Debug<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.Tracy.html">
+						Tracy					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.html">
+						Form<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Validators.html">
+						Validators					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Request.html">
+						Request					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.html">
+						Router<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.Lang.html">
+						Lang					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.View.html">
+						View<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.View.Helpers.html">
+						Helpers					</a>
+
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-MvcCore.Config.html">Config</a></li>
+				<li><a href="class-MvcCore.Controller.html">Controller</a></li>
+				<li><a href="class-MvcCore.Debug.html">Debug</a></li>
+				<li><a href="class-MvcCore.Model.html">Model</a></li>
+				<li><a href="class-MvcCore.Request.html">Request</a></li>
+				<li><a href="class-MvcCore.Response.html">Response</a></li>
+				<li><a href="class-MvcCore.Route.html">Route</a></li>
+				<li><a href="class-MvcCore.Router.html">Router</a></li>
+				<li><a href="class-MvcCore.Session.html">Session</a></li>
+				<li><a href="class-MvcCore.Tool.html">Tool</a></li>
+				<li><a href="class-MvcCore.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-MvcCore.html" title="Summary of MvcCore"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Config</h1>
+
+
+	<div class="description">
+	<p>Core configuration:
+- config files reading: - reading config.ini file by relative path - parsing and typing ini data into stdClass/array by key types - typing ini values into integers, floats, booleans or strings
+- environment management: - simple environment name detection by comparing server and client ip - environment name detection by config records about computer name or ip</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-MvcCore.html">MvcCore</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-MvcCore.Config.html#18-358" title="Go to source code">mvccore/src/MvcCore/Config.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="StaticInit" id="_StaticInit">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_StaticInit">#</a>
+		<code><a href="source-class-MvcCore.Config.html#77-91" title="Go to source code">StaticInit</a>( )</code>
+
+		<div class="description short">
+			<p>Static initialization - called when file is loaded into memory</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Static initialization - called when file is loaded into memory</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="IsDevelopment" id="_IsDevelopment">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsDevelopment">#</a>
+		<code><a href="source-class-MvcCore.Config.html#93-99" title="Go to source code">IsDevelopment</a>( )</code>
+
+		<div class="description short">
+			<p>Return true if environment is 'development'</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return true if environment is 'development'</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="IsBeta" id="_IsBeta">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsBeta">#</a>
+		<code><a href="source-class-MvcCore.Config.html#101-107" title="Go to source code">IsBeta</a>( )</code>
+
+		<div class="description short">
+			<p>Return true if environment is 'beta'</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return true if environment is 'beta'</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="IsAlpha" id="_IsAlpha">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsAlpha">#</a>
+		<code><a href="source-class-MvcCore.Config.html#109-115" title="Go to source code">IsAlpha</a>( )</code>
+
+		<div class="description short">
+			<p>Return true if environment is 'alpha'</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return true if environment is 'alpha'</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="IsProduction" id="_IsProduction">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsProduction">#</a>
+		<code><a href="source-class-MvcCore.Config.html#117-123" title="Go to source code">IsProduction</a>( )</code>
+
+		<div class="description short">
+			<p>Return true if environment is 'production'</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return true if environment is 'production'</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetEnvironment" id="_GetEnvironment">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetEnvironment">#</a>
+		<code><a href="source-class-MvcCore.Config.html#125-131" title="Go to source code">GetEnvironment</a>( )</code>
+
+		<div class="description short">
+			<p>Get environment name as string, defined by constants: \MvcCore\Config::ENVIRONMENT_<environment></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get environment name as string, defined by constants: \MvcCore\Config::ENVIRONMENT_<environment></p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetEnvironment" id="_SetEnvironment">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetEnvironment">#</a>
+		<code><a href="source-class-MvcCore.Config.html#133-139" title="Go to source code">SetEnvironment</a>( <span> <var>$environment</var> = self::ENVIRONMENT_PRODUCTION</span> )</code>
+
+		<div class="description short">
+			<p>Set environment name as string, defined by constants: \MvcCore\Config::ENVIRONMENT_<environment></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set environment name as string, defined by constants: \MvcCore\Config::ENVIRONMENT_<environment></p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSystem" id="_GetSystem">
+
+		<td class="attributes"><code>
+			 public static
+
+			stdClass|array|boolean
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSystem">#</a>
+		<code><a href="source-class-MvcCore.Config.html#141-154" title="Go to source code">GetSystem</a>( )</code>
+
+		<div class="description short">
+			<p>Get system config ini file as stdClasses and arrays, palced in /App/config.ini</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get system config ini file as stdClasses and arrays, palced in /App/config.ini</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					stdClass|array|boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getServerIp" id="_getServerIp">
+
+		<td class="attributes"><code>
+			 protected static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getServerIp">#</a>
+		<code><a href="source-class-MvcCore.Config.html#156-162" title="Go to source code">getServerIp</a>( )</code>
+
+		<div class="description short">
+			<p>Get server IP from $_SERVER</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get server IP from $_SERVER</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClientIp" id="_getClientIp">
+
+		<td class="attributes"><code>
+			 protected static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClientIp">#</a>
+		<code><a href="source-class-MvcCore.Config.html#164-170" title="Go to source code">getClientIp</a>( )</code>
+
+		<div class="description short">
+			<p>Get client IP from $_SERVER</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get client IP from $_SERVER</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Load" id="_Load">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|boolean
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Load">#</a>
+		<code><a href="source-class-MvcCore.Config.html#172-194" title="Go to source code">Load</a>( <span>string <var>$configPath</var> = <span class="php-quote">''</span></span>, <span>string <var>$environment</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>Load ini file and return system configuration
+- load only sections for current environment name
+- retype all raw string values into array, float, int or boolean
+- where is possible - retype whole values level into stdClass, if there are no numeric keys</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Load ini file and return system configuration
+- load only sections for current environment name
+- retype all raw string values into array, float, int or boolean
+- where is possible - retype whole values level into stdClass, if there are no numeric keys</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$configPath</var></dt>
+					<dd>$filename</dd>
+					<dt><var>$environment</var>,…</dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array|boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepareIniDataToParse" id="_prepareIniDataToParse">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepareIniDataToParse">#</a>
+		<code><a href="source-class-MvcCore.Config.html#196-219" title="Go to source code">prepareIniDataToParse</a>( <span>array <var>&amp; $rawIniData</var></span>, <span>string <var>$environment</var></span> )</code>
+
+		<div class="description short">
+			<p>Aline all raw ini data to single level array,
+filtered for only current environment data items.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Aline all raw ini data to single level array,
+filtered for only current environment data items.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rawIniData</var></dt>
+					<dd></dd>
+					<dt><var>$environment</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="detectEnvironmentBySystemConfig" id="_detectEnvironmentBySystemConfig">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_detectEnvironmentBySystemConfig">#</a>
+		<code><a href="source-class-MvcCore.Config.html#221-245" title="Go to source code">detectEnvironmentBySystemConfig</a>( <span>array <var>&amp; $rawIni</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Detect environment name to load proper config sections</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Detect environment name to load proper config sections</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rawIni</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="processIniData" id="_processIniData">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_processIniData">#</a>
+		<code><a href="source-class-MvcCore.Config.html#247-294" title="Go to source code">processIniData</a>( <span>array <var>&amp; $iniData</var></span> )</code>
+
+		<div class="description short">
+			<p>Process single level array with dotted keys into tree structure
+and complete object type switches about tree records to set final stdClasses or arrays</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Process single level array with dotted keys into tree structure
+and complete object type switches about tree records to set final stdClasses or arrays</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$iniData</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isKeyNumeric" id="_isKeyNumeric">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isKeyNumeric">#</a>
+		<code><a href="source-class-MvcCore.Config.html#296-304" title="Go to source code">isKeyNumeric</a>( <span>string <var>$rawKey</var></span> )</code>
+
+		<div class="description short">
+			<p>Return if $rawKey is numeric</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return if $rawKey is numeric</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rawKey</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTypedValue" id="_getTypedValue">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array|float|integer|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTypedValue">#</a>
+		<code><a href="source-class-MvcCore.Config.html#306-325" title="Go to source code">getTypedValue</a>( <span>string|array <var>$rawValue</var></span> )</code>
+
+		<div class="description short">
+			<p>Retype raw ini value into array wth retyped it's own values or to float, int or string</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retype raw ini value into array wth retyped it's own values or to float, int or string</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rawValue</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array|float|integer|string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTypedValueFloatIpOrInt" id="_getTypedValueFloatIpOrInt">
+
+		<td class="attributes"><code>
+			 protected 
+
+			float|string|integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTypedValueFloatIpOrInt">#</a>
+		<code><a href="source-class-MvcCore.Config.html#327-343" title="Go to source code">getTypedValueFloatIpOrInt</a>( <span>string <var>$rawValue</var></span> )</code>
+
+		<div class="description short">
+			<p>Retype raw ini value into float ip or int</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retype raw ini value into float ip or int</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rawValue</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					float|string|integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTypedValueBoolOrString" id="_getTypedValueBoolOrString">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTypedValueBoolOrString">#</a>
+		<code><a href="source-class-MvcCore.Config.html#345-357" title="Go to source code">getTypedValueBoolOrString</a>( <span>string <var>$rawValue</var></span> )</code>
+
+		<div class="description short">
+			<p>Retype raw ini value into bool or string</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retype raw ini value into bool or string</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rawValue</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean|string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="ENVIRONMENT_DEVELOPMENT" id="ENVIRONMENT_DEVELOPMENT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-MvcCore.Config.html#30" title="Go to source code"><b>ENVIRONMENT_DEVELOPMENT</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ENVIRONMENT_DEVELOPMENT" class="anchor">#</a>
+				<code><span class="php-quote">'development'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ENVIRONMENT_BETA" id="ENVIRONMENT_BETA">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-MvcCore.Config.html#31" title="Go to source code"><b>ENVIRONMENT_BETA</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ENVIRONMENT_BETA" class="anchor">#</a>
+				<code><span class="php-quote">'beta'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ENVIRONMENT_ALPHA" id="ENVIRONMENT_ALPHA">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-MvcCore.Config.html#32" title="Go to source code"><b>ENVIRONMENT_ALPHA</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ENVIRONMENT_ALPHA" class="anchor">#</a>
+				<code><span class="php-quote">'alpha'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ENVIRONMENT_PRODUCTION" id="ENVIRONMENT_PRODUCTION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-MvcCore.Config.html#33" title="Go to source code"><b>ENVIRONMENT_PRODUCTION</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ENVIRONMENT_PRODUCTION" class="anchor">#</a>
+				<code><span class="php-quote">'production'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="SystemConfigPath" id="$SystemConfigPath">
+		<td class="attributes"><code>
+			public static 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Config.html#35-39" title="Go to source code"><var>$SystemConfigPath</var></a>
+
+			<div class="description short">
+				<p>System config relative path from app root</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>System config relative path from app root</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$SystemConfigPath" class="anchor">#</a>
+				<code><span class="php-quote">'/%appPath%/config.ini'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="environment" id="$environment">
+		<td class="attributes"><code>
+			protected static 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Config.html#41-45" title="Go to source code"><var>$environment</var></a>
+
+			<div class="description short">
+				<p>Environment name - development, beta, alpha, production</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Environment name - development, beta, alpha, production</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$environment" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="systemConfig" id="$systemConfig">
+		<td class="attributes"><code>
+			protected static 
+			stdClass|array|boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Config.html#47-51" title="Go to source code"><var>$systemConfig</var></a>
+
+			<div class="description short">
+				<p>System config object placed in /App/config.ini</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>System config object placed in /App/config.ini</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$systemConfig" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="booleanValues" id="$booleanValues">
+		<td class="attributes"><code>
+			protected static 
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Config.html#53-57" title="Go to source code"><var>$booleanValues</var></a>
+
+			<div class="description short">
+				<p>Ini file values to convert into booleans</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Ini file values to convert into booleans</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$booleanValues" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(<span class="php-quote">'yes'</span> =&gt; <span class="php-keyword1">TRUE</span>, <span class="php-quote">'no'</span> =&gt; <span class="php-keyword1">FALSE</span>, <span class="php-quote">'true'</span> =&gt; <span class="php-keyword1">TRUE</span>, <span class="php-quote">'false'</span> =&gt; <span class="php-keyword1">FALSE</span>,)</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="result" id="$result">
+		<td class="attributes"><code>
+			protected  
+			array|stdClass
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Config.html#59-64" title="Go to source code"><var>$result</var></a>
+
+			<div class="description short">
+				<p>Temporary variable used when ini file is parsed and loaded
+to store complete result to return</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Temporary variable used when ini file is parsed and loaded
+to store complete result to return</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$result" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="objectTypes" id="$objectTypes">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Config.html#66-75" title="Go to source code"><var>$objectTypes</var></a>
+
+			<div class="description short">
+				<p>Temporary variable used when ini file is parsed and loaded,
+to store information about final retyping. Keys are addresses
+into result level to by retyped or not, values are arrays.
+First index in values is boolean to define if result level will
+be retyped into stdClass or not, second index in values is reference
+link to object retyped at the end or not.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Temporary variable used when ini file is parsed and loaded,
+to store information about final retyping. Keys are addresses
+into result level to by retyped or not, values are arrays.
+First index in values is boolean to define if result level will
+be retyped into stdClass or not, second index in values is reference
+link to object retyped at the end or not.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$objectTypes" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		MvcCore API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
