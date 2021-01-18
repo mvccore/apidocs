@@ -1,7 +1,7 @@
 # MvcCore Documentation
 
 ## Base Repositories
-<table class="repos">
+<table width="100%">
 	<thead>
 		<tr>
 			<th align="left">Name</th>
