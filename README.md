@@ -11,7 +11,7 @@
 	<tbody>					
 		<tr>
 			<td><a href="https://github.com/mvccore/mvccore">mvccore/mvccore</a></td>
-			<td>MvcCore is PHP MVC framework to develop and pack projects (partialy or completely) into super fast single file apps and tools.</td>
+			<td>MvcCore is PHP MVC framework to develop and pack projects (partialy or completely) <br />into super fast single file apps and tools.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/packager">mvccore/packager</a></td>
@@ -25,7 +25,7 @@
 </table>
 
 ## Extension Repositories - Auth
-<table class="repos">
+<table width="100%">
 	<thead>
 		<tr>
 			<th align="left">Name</th>
