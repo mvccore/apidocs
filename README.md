@@ -394,7 +394,10 @@
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper-writebyjs">mvccore/ext-view-helper-writebyjs</a></td>
-			<td>Prevent sensitive content against spam bots and convert content into JS `<script>document.write(String.fromCharCode(...));`</script>.</td>
+			<td>
+				Prevent sensitive content against spam bots and convert <br />
+				content into JS `<script>document.write(String.fromCharCode(...));</script>`.
+			</td>
 		</tr>			
 	</tbody>
 </table>
