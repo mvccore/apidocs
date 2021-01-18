@@ -354,7 +354,7 @@
 	<tbody>	
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper">mvccore/ext-view-helper</a></td>
-			<td>Abstract class code and interface support code to create more sofisticated view helpers with better setup and protected properties.</td>
+			<td>Abstract class code and interface support code to create more <br />sofisticated view helpers with better setup and protected properties.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper-all">mvccore/ext-view-helper-all</a></td>
@@ -362,27 +362,27 @@
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper-assets">mvccore/ext-view-helper-assets</a></td>
-			<td>To group, render, minify and cache javascript and css files, to prepare all application assets for final application packing.</td>
+			<td>To group, render, minify and cache javascript and css files, <br />to prepare all application assets for final application packing.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper-dataurl">mvccore/ext-view-helper-dataurl</a></td>
-			<td>Get any file content by given relative or absolute path in data url format: `data:image/png;base64,iVBOR..`.</td>
+			<td>Get any file content by given relative or absolute path <br />in data url format: `data:image/png;base64,iVBOR..`.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper-formatdate">mvccore/ext-view-helper-formatdate</a></td>
-			<td>Format given date or time by `Intl` extension or by `strftime()` as fallback.</td>
+			<td>Format given date or time by `Intl` extension or <br />by `strftime()` as fallback.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper-formatmoney">mvccore/ext-view-helper-formatmoney</a></td>
-			<td>Format money by `Intl` extension or by locale formating conventions or by explicit or default arguments.</td>
+			<td>Format money by `Intl` extension or by locale formating <br />conventions or by explicit or default arguments.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper-formatnumber">mvccore/ext-view-helper-formatnumber</a></td>
-			<td>Format number by `Intl` extension or by locale formating conventions or by explicit or default arguments.</td>
+			<td>Format number by `Intl` extension or by locale formating <br />conventions or by explicit or default arguments.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper-internationalized">mvccore/ext-view-helper-internationalized</a></td>
-			<td>Abstract class to process date, number or money formating by `Intl` extension or by locale formating conventions.</td>
+			<td>Abstract class to process date, number or money formating <br />by `Intl` extension or by locale formating conventions.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper-linebreaks">mvccore/ext-view-helper-linebreaks</a></td>
