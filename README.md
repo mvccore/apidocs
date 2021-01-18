@@ -45,7 +45,7 @@
 </table>
 
 ## Extension Repositories - Cache
-<table class="repos">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
@@ -65,7 +65,7 @@
 </table>
 
 ## Extension Repositories - Configuration
-<table class="repos">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
@@ -85,7 +85,7 @@
 </table>
 
 ## Extension Repositories - Model
-<table class="repos">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
@@ -117,7 +117,7 @@
 </table>
 
 ## Extension Repositories - Debug
-<table class="repos">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
@@ -139,25 +139,37 @@
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-tracy-auth">mvccore/ext-debug-tracy-auth</a></td>
-			<td>Render and add into tracy debug panel currently authenticated user from \MvcCore\Ext\Auth service singleton instance, printed by \Tracy\Dumper::toHtml(\MvcCore\Ext\Auth::GetInstance()->GetUser());.</td>
+			<td>
+				Render and add into tracy debug panel currently authenticated user from `\MvcCore\Ext\Auth` service <br />
+				singleton instance, printed by `\Tracy\Dumper::toHtml(\MvcCore\Ext\Auth::GetInstance()->GetUser());`.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-tracy-mvccore">mvccore/ext-debug-tracy-mvccore</a></td>
-			<td>Render and add into tracy debug panel current MvcCore application instance, printed by \Tracy\Dumper::toHtml(\MvcCore\Application::GetInstance()); to display main application objects used to render current page response. Rendered objects inside MvcCore app: \MvcCore\Request, \MvcCore\Response, \MvcCore\Router, \MvcCore\Controller, all preroute, predispatch and postdispatch configured handlers and many other internal application values.</td>
+			<td>
+				Render and add into tracy debug panel current MvcCore application instance, <br />
+				printed by `\Tracy\Dumper::toHtml(\MvcCore\Application::GetInstance());` to display <br />
+				main application objects used to render current page response. Rendered objects <br />
+				inside MvcCore app: `\MvcCore\Request`, `\MvcCore\Response`, `\MvcCore\Router`, <br />
+				`\MvcCore\Controller`, all preroute, predispatch and postdispatch configured 
+				<br />handlers and many other internal application values.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-tracy-routing">mvccore/ext-debug-tracy-routing</a></td>
-			<td>Render and add into tracy debug panel all configured routes in current MvcCore application router and to display currently matched route.</td>
+			<td>
+				Render and add into tracy debug panel all configured routes in current MvcCore application router <br />
+				and to display currently matched route.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-tracy-session">mvccore/ext-debug-tracy-session</a></td>
-			<td>Render and add into tracy debug panel $_SESSION content and \MvcCore\Session namespaces content.</td>
+			<td>Render and add into tracy debug panel `$_SESSION` content and `\MvcCore\Session` namespaces content.</td>
 		</tr>					
 	</tbody>
 </table>
 
 ## Extension Repositories - Form
-<table class="repos">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
@@ -209,7 +221,7 @@
 </table>
 
 ## Extension Repositories - Router
-<table class="repos">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
@@ -253,7 +265,7 @@
 </table>
 
 ## Extension Repositories - Tool
-<table class="repos">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
@@ -281,7 +293,7 @@
 </table>
 
 ## Extension Repositories - View
-<table class="repos">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
