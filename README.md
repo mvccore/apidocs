@@ -140,8 +140,9 @@
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-tracy-auth">mvccore/ext-debug-tracy-auth</a></td>
 			<td>
-				Render and add into tracy debug panel currently authenticated user from `\MvcCore\Ext\Auth` service <br />
-				singleton instance, printed by `\Tracy\Dumper::toHtml(\MvcCore\Ext\Auth::GetInstance()->GetUser());`.
+				Render and add into tracy debug panel currently authenticated user from <br />
+				`\MvcCore\Ext\Auth` service singleton instance, printed by <br />
+				`\Tracy\Dumper::toHtml(\MvcCore\Ext\Auth::GetInstance()->GetUser());`.
 			</td>
 		</tr>					
 		<tr>
@@ -157,13 +158,16 @@
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-tracy-routing">mvccore/ext-debug-tracy-routing</a></td>
 			<td>
-				Render and add into tracy debug panel all configured routes in current MvcCore application router <br />
-				and to display currently matched route.
+				Render and add into tracy debug panel all configured routes in current MvcCore <br />
+				application router and to display currently matched route.
 			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-tracy-session">mvccore/ext-debug-tracy-session</a></td>
-			<td>Render and add into tracy debug panel `$_SESSION` content and `\MvcCore\Session` namespaces content.</td>
+			<td>
+				Render and add into tracy debug panel `$_SESSION` content <br />
+				and `\MvcCore\Session` namespaces content.
+			</td>
 		</tr>					
 	</tbody>
 </table>
