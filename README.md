@@ -247,61 +247,69 @@
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-extended">mvccore/ext-router-extended</a></td>
 			<td>
-				Trait with additional properties, setters and getters required by extended router <br />
-				implementations - localized router and media site version router.
+				Trait with additional properties, setters and getters required by <br />
+				extended router implementations - localized router and media site <br />
+				version router.
 			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-localization">mvccore/ext-router-localization</a></td>
 			<td>
-				Extension to manage website localizations (language or language and locale). <br />
-				For any HTTP method, multi or single language (or lang. with locale) patterns and reverses, <br />
-				URL addresses like `/en/path` or `/en-US/path`, very configurable.
+				Extension to manage website localizations (language or language <br />
+				and locale). For any HTTP method, multi or single language (or lang. <br />
+				with locale) patterns and reverses, URL addresses like `/en/path` <br />
+				or `/en-US/path`, very configurable.
 			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-media">mvccore/ext-router-media</a></td>
 			<td>
-				Extension to manage website media versions (full/tablet/mobile) for different templates/CSS/JS <br />
-				files rendering, optionally contained in URL address in the beginning.
+				Extension to manage website media versions (full/tablet/mobile) <br />
+				for different templates/CSS/JS files rendering, optionally <br />
+				contained in URL address in the beginning.
 			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-media-localization">mvccore/ext-router-media-localization</a></td>
 			<td>
-				Extension to manage website media versions (full/tablet/mobile) for different templates/CSS/JS <br />
-				files rendering and to manage website localizations (language or language and locale), <br />
+				Extension to manage website media versions (full/tablet/mobile) <br />
+				for different templates/CSS/JS files rendering and to manage <br />
+				website localizations (language or language and locale), <br />
 				optionaly contained in url address in the beinning.
 			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-module">mvccore/ext-router-module</a></td>
 			<td>
-				Extension to manage multiple websites in a single project, defined by domain routes, targeted <br />
-				by module property in URL completing.
+				Extension to manage multiple websites in a single project, <br />
+				defined by domain routes, targeted by module property in URL completing.
 			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-module-localization">mvccore/ext-router-module-localization</a></td>
 			<td>
-				Extension to manage multiple websites in a single project and to manage website localizations <br />
-				(language or language and locale), optionaly contained in a domain or in URL address in the beginning.
+				Extension to manage multiple websites in a single project and <br />
+				to manage website localizations (language or language and locale), <br />
+				optionaly contained in a domain or in URL address in the beginning.
 			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-module-media">mvccore/ext-router-module-media</a></td>
 			<td>
-				Extension to manage multiple websites in a single project and to manage website media versions <br />
-				(full/tablet/mobile) for different templates/CSS/JS files rendering, optionally contained in <br />
+				Extension to manage multiple websites in a single project and <br />
+				to manage website media versions (full/tablet/mobile) for different <br />
+				templates/CSS/JS files rendering, optionally contained in <br />
 				a domain or in URL address in the beginning.
 			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-module-media-localization">mvccore/ext-router-module-media-localization</a></td>
 			<td>
-				Extension to manage multiple websites in a single project, to manage website media versions <br />
-				(full/tablet/mobile) for different templates/CSS/JS files rendering and to manage website localizations <br />
-				(language or language and locale), optionally contained in URL address in the beginning.
+				Extension to manage multiple websites in a single project, <br />
+				to manage website media versions (full/tablet/mobile) for different <br />
+				templates/CSS/JS files rendering and to manage website localizations <br />
+				(language or language and locale), optionally contained in URL address <br />
+				in the beginning.
 			</td>
 		</tr>					
 	</tbody>
@@ -318,19 +326,19 @@
 	<tbody>	
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-tool-image">mvccore/ext-tool-image</a></td>
-			<td>Object oriented image processing tool supporting many popular web images operations.</td>
+			<td>Object oriented image processing tool supporting many popular web <br />images operations.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-tool-locale">mvccore/ext-tool-locale</a></td>
-			<td>Properly set and get system locale settings by PHP ` setlocale();` across any system platform.</td>
+			<td>Properly set and get system locale settings by PHP ` setlocale();` <br />across any system platform.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-tool-locale-floatparser">mvccore/ext-tool-locale-floatparser</a></td>
-			<td>Parse float by automatic floating point detection or parse float value by `Intl` extension.</td>
+			<td>Parse float by automatic floating point detection or parse float <br />value by `Intl` extension.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-tool-mimetype-extension">mvccore/ext-tool-mimetype-extension</a></td>
-			<td>Extension to get file mimetype(s) strings array from file extension string or to get file extension(s) strings array from file mimetype string.</td>
+			<td>Extension to get file mimetype(s) strings array from file extension <br />string or to get file extension(s) strings array from file mimetype string.</td>
 		</tr>	
 	</tbody>
 </table>
