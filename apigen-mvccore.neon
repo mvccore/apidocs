@@ -12,7 +12,7 @@ source:
     - sources/mvccore/vendor/mvccore/
 
 # Target dir for documentation.
-destination: docs/mvccore/5.0.0/
+destination: mvccore/5.0.0/
 
 # Access levels of included method and properties. (default: ["public","protected"]) (multiple values allowed)
 accessLevels:           

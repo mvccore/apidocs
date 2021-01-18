@@ -17,7 +17,7 @@
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-@rmdir /Q /S "%current_dir%\docs\packager\2.3.0"
-@mkdir "%current_dir%\docs\packager\2.3.0"
+@rmdir /Q /S "%current_dir%\packager\2.3.0"
+@mkdir "%current_dir%\packager\2.3.0"
 
 @C:/works/tools/wamp/bin/php/php7.1.33/php.exe -d memory_limit=4G "%current_dir%/vendor/apigen/apigen/bin/apigen" generate --config "%current_dir%/apigen-packager.neon"

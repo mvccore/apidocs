@@ -12,7 +12,7 @@ source:
     - sources/packager/vendor/mvccore/packager/
 
 # Target dir for documentation.
-destination: docs/packager/2.3.0/
+destination: packager/2.3.0/
 
 # Access levels of included method and properties. (default: ["public","protected"]) (multiple values allowed)
 accessLevels:           
