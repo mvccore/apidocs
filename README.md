@@ -135,7 +135,10 @@
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-tracy-all">mvccore/ext-debug-tracy-all</a></td>
-			<td>Adapter class for Nette Framework `tracy/tracy` library with all implemented debug panels for MvcCore.</td>
+			<td>
+				Adapter class for Nette Framework `tracy/tracy` library with all implemented <br />
+				debug panels for MvcCore.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-tracy-auth">mvccore/ext-debug-tracy-auth</a></td>
@@ -183,11 +186,19 @@
 	<tbody>	
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-form">mvccore/ext-form</a></td>
-			<td>Form extension with base classes to create and render web forms with HTML5 controls, to handle and validate submited user data, to manage forms sessions for default values, to manage user input errors and to extend and develop custom fields and field groups.</td>
+			<td>
+				Form extension with base classes to create and render web forms with HTML5 controls, <br />
+				to handle and validate submited user data, to manage forms sessions for default values, <br />
+				to manage user input errors and to extend and develop custom fields and field groups.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-form-all">mvccore/ext-form-all</a></td>
-			<td>Form extension with with all form packages to create and render web forms with HTML5 controls, to handle and validate submited user data, to manage forms sessions for default values, to manage user input errors and to extend and develop custom fields and field groups.</td>
+			<td>
+				Form extension with with all form packages to create and render web forms with HTML5 controls, <br />
+				to handle and validate submited user data, to manage forms sessions for default values, <br />
+				to manage user input errors and to extend and develop custom fields and field groups.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-form-field-button">mvccore/ext-form-field-button</a></td>
@@ -211,15 +222,15 @@
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-form-field-text">mvccore/ext-form-field-text</a></td>
-			<td>Form field types - input:text, input:email, input:password, input:search, input:tel, input:url and textarea.</td>
+			<td>Form field types - input:text, input:email, input:password, input:search, input:tel, <br />input:url and textarea.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-form-js">mvccore/ext-form-js</a></td>
-			<td>Create custom handling javascripts for any build-in or custom control in PHP forms library MvcCore Form extension.</td>
+			<td>Create custom handling javascripts for any build-in or custom control in PHP forms library <br />MvcCore Form extension.</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-form-validator-special">mvccore/ext-form-validator-special</a></td>
-			<td>Form special text and numeric validators - company ID (EU), company VAT ID (EU), credit card, hexadecimal number, IBAN bank account number, IP address and ZIP code.</td>
+			<td>Form special text and numeric validators - company ID (EU), company VAT ID (EU), credit card, <br />hexadecimal number, IBAN bank account number, IP address and ZIP code.</td>
 		</tr>			
 	</tbody>
 </table>
