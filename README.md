@@ -1,7 +1,7 @@
 # MvcCore Documentation
 
 ## Base Repositories
-<table width="100%">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
@@ -25,7 +25,7 @@
 </table>
 
 ## Extension Repositories - Auth
-<table width="100%">
+<table>
 	<thead>
 		<tr>
 			<th align="left">Name</th>
