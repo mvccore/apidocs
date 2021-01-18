@@ -39,7 +39,12 @@
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-auth-basic">mvccore/ext-auth-basic</a></td>
-			<td>Simple authentication extension, only to signin/signout user. <br />Extension can use credentials defined in system `config.ini` or in database. <br />Possibility to extend user, signin/signout forms, submit controller and extension class itself.</td>
+			<td>
+				Simple authentication extension, only to signin/signout user. <br />
+				Extension can use credentials defined in system `config.ini` <br />
+				or in database. Possibility to extend user, signin/signout forms, <br />
+				submit controller and extension class itself.
+			</td>
 		</tr>
 	</tbody>
 </table>
