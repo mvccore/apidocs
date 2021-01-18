@@ -82,7 +82,7 @@
 	<tbody>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-config-cached"><nobr>mvccore/ext-config-cached</nobr></a></td>
-			<td><nobr>Config - Cached</nobr></td>
+			<td>Config - Cached</td>
 			<td>extension to use cached configuration files across multiple environments.</td>
 		</tr>					
 		<tr>
