@@ -1,0 +1,16 @@
+{
+    "name": "mvccore/docs",
+    "description": "Project to generate API documentation for MvcCore framework and all it's extensions.",
+    "type": "project",
+    "require": {
+        "apigen/apigen": "^4.1.2"
+    },
+    "license": "BSD 3",
+    "authors": [
+        {
+            "name": "Tom Flídr",
+            "email": "tomflidr@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

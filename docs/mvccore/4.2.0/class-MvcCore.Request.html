@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class MvcCore\Request | MvcCore</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-MvcCore.html">
+						MvcCore<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.html">
+						Ext<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.html">
+						Auth<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.Virtual.html">
+						Virtual					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.html">
+						Debug<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.Tracy.html">
+						Tracy					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.html">
+						Form<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Validators.html">
+						Validators					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Request.html">
+						Request					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.html">
+						Router<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.Lang.html">
+						Lang					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.View.html">
+						View<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.View.Helpers.html">
+						Helpers					</a>
+
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-MvcCore.Config.html">Config</a></li>
+				<li><a href="class-MvcCore.Controller.html">Controller</a></li>
+				<li><a href="class-MvcCore.Debug.html">Debug</a></li>
+				<li><a href="class-MvcCore.Model.html">Model</a></li>
+				<li class="active"><a href="class-MvcCore.Request.html">Request</a></li>
+				<li><a href="class-MvcCore.Response.html">Response</a></li>
+				<li><a href="class-MvcCore.Route.html">Route</a></li>
+				<li><a href="class-MvcCore.Router.html">Router</a></li>
+				<li><a href="class-MvcCore.Session.html">Session</a></li>
+				<li><a href="class-MvcCore.Tool.html">Tool</a></li>
+				<li><a href="class-MvcCore.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-MvcCore.html" title="Summary of MvcCore"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Request</h1>
+
+
+	<div class="description">
+	<p>Core request:
+- linear request url parsing from $_SERVER into local properties describing url sections
+- params reading from $_GET/$_POST or direct input (in JSON or in query string)
+- params cleaning by developer rules</p>
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-MvcCore.Ext.Request.ApacheDpi.html">MvcCore\Ext\Request\ApacheDpi</a>, 
+			<a href="class-MvcCore.Ext.Request.Cli.html">MvcCore\Ext\Request\Cli</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-MvcCore.html">MvcCore</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-MvcCore.Request.html#19-505" title="Go to source code">mvccore/src/MvcCore/Request.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="GetInstance" id="_GetInstance">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-MvcCore.Request.html">MvcCore\Request</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetInstance">#</a>
+		<code><a href="source-class-MvcCore.Request.html#219-231" title="Go to source code">GetInstance</a>( <span>array <var>&amp; $server</var></span>, <span>array <var>&amp; $get</var></span>, <span>array <var>&amp; $post</var></span> )</code>
+
+		<div class="description short">
+			<p>Get everytime new instance of http request,
+global variables should be changed and injected here
+to get different request object from currently called real request.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get everytime new instance of http request,
+global variables should be changed and injected here
+to get different request object from currently called real request.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$server</var></dt>
+					<dd></dd>
+					<dt><var>$get</var></dt>
+					<dd></dd>
+					<dt><var>$post</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Request.html">MvcCore\Request</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-MvcCore.Request.html#233-259" title="Go to source code">__construct</a>( <span>array <var>&amp; $server</var></span>, <span>array <var>&amp; $get</var></span>, <span>array <var>&amp; $post</var></span> )</code>
+
+		<div class="description short">
+			<p>Get everytime new instance of http request,
+global variables should be changed and injected here
+to get different request object from currently called real request.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get everytime new instance of http request,
+global variables should be changed and injected here
+to get different request object from currently called real request.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$server</var></dt>
+					<dd></dd>
+					<dt><var>$get</var></dt>
+					<dd></dd>
+					<dt><var>$post</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed|<code><a href="class-MvcCore.Request.html">MvcCore\Request</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-MvcCore.Request.html#261-284" title="Go to source code">__call</a>( <span>string <var>$rawName</var></span>, <span>array <var>$arguments</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Sets any custom property ('PropertyName') by $request->SetPropertyName('value'),
+which is not necessary to define previously or gets previously defined
+property ('PropertyName') by $request->GetPropertyName(); Throws exception
+if no property defined by get call or if virtual call begins with anything
+different from 'set' or 'get'.
+This method returns custom value for get and $request instance for set.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets any custom property ('PropertyName') by $request->SetPropertyName('value'),
+which is not necessary to define previously or gets previously defined
+property ('PropertyName') by $request->GetPropertyName(); Throws exception
+if no property defined by get call or if virtual call begins with anything
+different from 'set' or 'get'.
+This method returns custom value for get and $request instance for set.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rawName</var></dt>
+					<dd></dd>
+					<dt><var>$arguments</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed|<code><a href="class-MvcCore.Request.html">MvcCore\Request</a></code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-MvcCore.Request.html#286-293" title="Go to source code">__get</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Universal getter, if property not defined, NULL is returned.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Universal getter, if property not defined, NULL is returned.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__set" id="___set">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___set">#</a>
+		<code><a href="source-class-MvcCore.Request.html#295-303" title="Go to source code">__set</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Universal setter, if property not defined, it's automaticly declarated.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Universal setter, if property not defined, it's automaticly declarated.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetParam" id="_SetParam">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Request.html">MvcCore\Request</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetParam">#</a>
+		<code><a href="source-class-MvcCore.Request.html#305-314" title="Go to source code">SetParam</a>( <span>string <var>$name</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>string <var>$value</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			<p>Set directly raw param value without any change</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set directly raw param value without any change</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Request.html">MvcCore\Request</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetParam" id="_GetParam">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetParam">#</a>
+		<code><a href="source-class-MvcCore.Request.html#316-337" title="Go to source code">GetParam</a>( <span>string <var>$name</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>string <var>$pregReplaceAllowedChars</var> = <span class="php-quote">&quot;a-zA-Z0-9_/\-\.\@&quot;</span></span> )</code>
+
+		<div class="description short">
+			<p>Get param value, filtered for characters defined as second argument to use them in preg_replace().</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get param value, filtered for characters defined as second argument to use them in preg_replace().</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$pregReplaceAllowedChars</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="IsAppRequest" id="_IsAppRequest">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsAppRequest">#</a>
+		<code><a href="source-class-MvcCore.Request.html#339-356" title="Go to source code">IsAppRequest</a>( )</code>
+
+		<div class="description short">
+			<p>Return boolean flag if request target
+is anything different than 'Controller:Asset'</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return boolean flag if request target
+is anything different than 'Controller:Asset'</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initScriptName" id="_initScriptName">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initScriptName">#</a>
+		<code><a href="source-class-MvcCore.Request.html#358-365" title="Go to source code">initScriptName</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize index.php script name.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize index.php script name.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initAppRoot" id="_initAppRoot">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initAppRoot">#</a>
+		<code><a href="source-class-MvcCore.Request.html#367-381" title="Go to source code">initAppRoot</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize application root directory.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize application root directory.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initMethod" id="_initMethod">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initMethod">#</a>
+		<code><a href="source-class-MvcCore.Request.html#383-389" title="Go to source code">initMethod</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize http method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize http method.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initBasePath" id="_initBasePath">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initBasePath">#</a>
+		<code><a href="source-class-MvcCore.Request.html#391-402" title="Go to source code">initBasePath</a>( )</code>
+
+		<div class="description short">
+			<p>Complete base application path like: /localhost/my/development/direcotry/www</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Complete base application path like: /localhost/my/development/direcotry/www</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initProtocol" id="_initProtocol">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initProtocol">#</a>
+		<code><a href="source-class-MvcCore.Request.html#404-413" title="Go to source code">initProtocol</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize http protocol.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize http protocol.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initParsedUrlSegments" id="_initParsedUrlSegments">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initParsedUrlSegments">#</a>
+		<code><a href="source-class-MvcCore.Request.html#415-431" title="Go to source code">initParsedUrlSegments</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize url segments parsed by parse_url() php method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize url segments parsed by parse_url() php method.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initHttpParams" id="_initHttpParams">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initHttpParams">#</a>
+		<code><a href="source-class-MvcCore.Request.html#433-449" title="Go to source code">initHttpParams</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize params from global $_GET and (global $_POST or direct 'php://input').</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize params from global $_GET and (global $_POST or direct 'php://input').</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initPath" id="_initPath">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initPath">#</a>
+		<code><a href="source-class-MvcCore.Request.html#471-480" title="Go to source code">initPath</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize request path.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize request path.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initReferer" id="_initReferer">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initReferer">#</a>
+		<code><a href="source-class-MvcCore.Request.html#482-492" title="Go to source code">initReferer</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize referer safely if any.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize referer safely if any.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initUrlCompositions" id="_initUrlCompositions">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initUrlCompositions">#</a>
+		<code><a href="source-class-MvcCore.Request.html#494-504" title="Go to source code">initUrlCompositions</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize url compositions.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize url compositions.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="PROTOCOL_HTTP" id="PROTOCOL_HTTP">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-MvcCore.Request.html#27" title="Go to source code"><b>PROTOCOL_HTTP</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#PROTOCOL_HTTP" class="anchor">#</a>
+				<code><span class="php-quote">'http:'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="PROTOCOL_HTTPS" id="PROTOCOL_HTTPS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-MvcCore.Request.html#28" title="Go to source code"><b>PROTOCOL_HTTPS</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#PROTOCOL_HTTPS" class="anchor">#</a>
+				<code><span class="php-quote">'https:'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="METHOD_GET" id="METHOD_GET">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-MvcCore.Request.html#30" title="Go to source code"><b>METHOD_GET</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#METHOD_GET" class="anchor">#</a>
+				<code><span class="php-quote">'GET'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="METHOD_POST" id="METHOD_POST">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-MvcCore.Request.html#31" title="Go to source code"><b>METHOD_POST</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#METHOD_POST" class="anchor">#</a>
+				<code><span class="php-quote">'POST'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="Lang" id="$Lang">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#33-39" title="Go to source code"><var>$Lang</var></a>
+
+			<div class="description short">
+				<p>Language international code, lowercase, not used by default.
+To use this variable - install \MvcCore\Router extension \MvcCoreExt\Router\Lang
+Example: 'en'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Language international code, lowercase, not used by default.
+To use this variable - install \MvcCore\Router extension \MvcCoreExt\Router\Lang
+Example: 'en'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Lang" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Locale" id="$Locale">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#41-47" title="Go to source code"><var>$Locale</var></a>
+
+			<div class="description short">
+				<p>Country/locale code, uppercase, not used by default.
+To use this variable - install \MvcCore\Router extension \MvcCoreExt\Router\Locale
+Example: 'US'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Country/locale code, uppercase, not used by default.
+To use this variable - install \MvcCore\Router extension \MvcCoreExt\Router\Locale
+Example: 'US'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Locale" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Protocol" id="$Protocol">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#49-54" title="Go to source code"><var>$Protocol</var></a>
+
+			<div class="description short">
+				<p>Http protocol: 'http:' | 'https:'
+Example: 'http:'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Http protocol: 'http:' | 'https:'
+Example: 'http:'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Protocol" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ServerName" id="$ServerName">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#56-61" title="Go to source code"><var>$ServerName</var></a>
+
+			<div class="description short">
+				<p>Application server name - domain without any port.
+Example: 'localhost'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Application server name - domain without any port.
+Example: 'localhost'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$ServerName" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Host" id="$Host">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#63-68" title="Go to source code"><var>$Host</var></a>
+
+			<div class="description short">
+				<p>Application host with port if there is any.
+Example: 'localhost:88'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Application host with port if there is any.
+Example: 'localhost:88'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Host" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Port" id="$Port">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#70-75" title="Go to source code"><var>$Port</var></a>
+
+			<div class="description short">
+				<p>Http port parsed by parse_url().
+Example: '88'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Http port parsed by parse_url().
+Example: '88'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Port" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Path" id="$Path">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#77-82" title="Go to source code"><var>$Path</var></a>
+
+			<div class="description short">
+				<p>Requested path in from application root (if mod_rewrite enabled), never with query string.
+Example: '/products/page/2'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Requested path in from application root (if mod_rewrite enabled), never with query string.
+Example: '/products/page/2'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Path" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Query" id="$Query">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#84-89" title="Go to source code"><var>$Query</var></a>
+
+			<div class="description short">
+				<p>Uri query string without question mark.
+Example: 'param-1=value-1&amp;param-2=value-2&amp;param-3[]=value-3-a&amp;param-3[]=value-3-b'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Uri query string without question mark.
+Example: 'param-1=value-1&amp;param-2=value-2&amp;param-3[]=value-3-a&amp;param-3[]=value-3-b'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Query" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Fragment" id="$Fragment">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#91-96" title="Go to source code"><var>$Fragment</var></a>
+
+			<div class="description short">
+				<p>Uri fragment parsed by parse_url()
+Example: '#any-sublink-path'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Uri fragment parsed by parse_url()
+Example: '#any-sublink-path'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Fragment" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ScriptName" id="$ScriptName">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#98-103" title="Go to source code"><var>$ScriptName</var></a>
+
+			<div class="description short">
+				<p>Php requested script name path from application root.
+Example: '/index.php'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Php requested script name path from application root.
+Example: '/index.php'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$ScriptName" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="AppRoot" id="$AppRoot">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#105-109" title="Go to source code"><var>$AppRoot</var></a>
+
+			<div class="description short">
+				<p>Application root path in hard drive: C:/www/my/development/direcotry/www</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Application root path in hard drive: C:/www/my/development/direcotry/www</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$AppRoot" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="BasePath" id="$BasePath">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#111-118" title="Go to source code"><var>$BasePath</var></a>
+
+			<div class="description short">
+				<p>Base app directory path after domain, if application is placed in domain subdirectory
+Example:
+ full url: 'http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&amp;query=string'
+ base path: '/my/development/direcotry/www'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Base app directory path after domain, if application is placed in domain subdirectory
+Example: full url: 'http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&amp;query=string' base path: '/my/development/direcotry/www'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$BasePath" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="RequestPath" id="$RequestPath">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#120-125" title="Go to source code"><var>$RequestPath</var></a>
+
+			<div class="description short">
+				<p>Request path after domain with possible query string
+Example: '/requested/path/after/app/root?with=possible&amp;query=string'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Request path after domain with possible query string
+Example: '/requested/path/after/app/root?with=possible&amp;query=string'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$RequestPath" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DomainUrl" id="$DomainUrl">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#127-132" title="Go to source code"><var>$DomainUrl</var></a>
+
+			<div class="description short">
+				<p>Url to requested domain and possible port.
+Example: 'http://domain:88'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Url to requested domain and possible port.
+Example: 'http://domain:88'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$DomainUrl" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="BaseUrl" id="$BaseUrl">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#134-139" title="Go to source code"><var>$BaseUrl</var></a>
+
+			<div class="description short">
+				<p>Base url to application root.
+Example: 'http://domain:88/my/development/direcotry/www'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Base url to application root.
+Example: 'http://domain:88/my/development/direcotry/www'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$BaseUrl" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="RequestUrl" id="$RequestUrl">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#141-146" title="Go to source code"><var>$RequestUrl</var></a>
+
+			<div class="description short">
+				<p>Request url including scheme, domain, port, path, without any query string
+Example: ''http://localhost:88/my/development/direcotry/www/requested/path/after/domain'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Request url including scheme, domain, port, path, without any query string
+Example: ''http://localhost:88/my/development/direcotry/www/requested/path/after/domain'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$RequestUrl" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="FullUrl" id="$FullUrl">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#148-153" title="Go to source code"><var>$FullUrl</var></a>
+
+			<div class="description short">
+				<p>Request url including scheme, domain, port, path and with query string
+Example: 'http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&amp;query=string'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Request url including scheme, domain, port, path and with query string
+Example: 'http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&amp;query=string'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$FullUrl" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Method" id="$Method">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#155-160" title="Go to source code"><var>$Method</var></a>
+
+			<div class="description short">
+				<p>Http method (uppercase) - GET, POST, PUT, HEAD...
+Example: 'GET'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Http method (uppercase) - GET, POST, PUT, HEAD...
+Example: 'GET'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Method" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Referer" id="$Referer">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#162-168" title="Go to source code"><var>$Referer</var></a>
+
+			<div class="description short">
+				<p>Referer url if any, safely readed by:
+filter_var($_SERVER['HTTP_REFERER'], FILTER_SANITIZE_URL);
+Example: 'GET'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Referer url if any, safely readed by:
+filter_var($_SERVER['HTTP_REFERER'], FILTER_SANITIZE_URL);
+Example: 'GET'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Referer" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Params" id="$Params">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#170-177" title="Go to source code"><var>$Params</var></a>
+
+			<div class="description short">
+				<p>Request params array, with keys defined in route or by query string,
+always with controller and action keys completed by router.
+Example: array('controller' => 'default', 'action' => 'default', 'user' => "' OR 1=1;-- with raw danger value!");
+To get safe param value - use: $request->GetParam('user', 'a-zA-Z0-9');</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Request params array, with keys defined in route or by query string,
+always with controller and action keys completed by router.
+Example: array('controller' => 'default', 'action' => 'default', 'user' => "' OR 1=1;-- with raw danger value!");
+To get safe param value - use: $request->GetParam('user', 'a-zA-Z0-9');</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Params" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="MediaSiteKey" id="$MediaSiteKey">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#179-185" title="Go to source code"><var>$MediaSiteKey</var></a>
+
+			<div class="description short">
+				<p>Media site key - 'full' | 'tablet' | 'mobile'
+To use this variable - install \MvcCore\Router extension \MvcCoreExt\Router\Media
+Example: 'full'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Media site key - 'full' | 'tablet' | 'mobile'
+To use this variable - install \MvcCore\Router extension \MvcCoreExt\Router\Media
+Example: 'full'</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$MediaSiteKey" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="serverGlobals" id="$serverGlobals">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#187-191" title="Go to source code"><var>$serverGlobals</var></a>
+
+			<div class="description short">
+				<p>Content of $_SERVER global variable</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Content of $_SERVER global variable</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$serverGlobals" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="getGlobals" id="$getGlobals">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#193-197" title="Go to source code"><var>$getGlobals</var></a>
+
+			<div class="description short">
+				<p>Content of $_GET global variable</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Content of $_GET global variable</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$getGlobals" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="postGlobals" id="$postGlobals">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#199-203" title="Go to source code"><var>$postGlobals</var></a>
+
+			<div class="description short">
+				<p>Content of $_POST global variable</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Content of $_POST global variable</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$postGlobals" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="indexScriptName" id="$indexScriptName">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#205-209" title="Go to source code"><var>$indexScriptName</var></a>
+
+			<div class="description short">
+				<p>Requested script name</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Requested script name</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$indexScriptName" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="appRequest" id="$appRequest">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Request.html#211-217" title="Go to source code"><var>$appRequest</var></a>
+
+			<div class="description short">
+				<p>Request flag if request targets internal package asset or not,
+- 0 - request is Controller:Asset call for internal package asset
+- 1 - request is classic application request</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Request flag if request targets internal package asset or not,
+- 0 - request is Controller:Asset call for internal package asset
+- 1 - request is classic application request</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$appRequest" class="anchor">#</a>
+				<code>-<span class="php-num">1</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		MvcCore API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

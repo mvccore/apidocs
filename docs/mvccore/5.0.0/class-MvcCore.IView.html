@@ -1,0 +1,2980 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Interface MvcCore\IView | MvcCore API Documentation</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-187607113-1"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-MvcCore.Application.html">MvcCore\Application</a></li>
+				<li><a href="class-MvcCore.Config.html">MvcCore\Config</a></li>
+				<li><a href="class-MvcCore.Controller.html">MvcCore\Controller</a></li>
+				<li><a href="class-MvcCore.Controller.AutoInit.html">MvcCore\Controller\AutoInit</a></li>
+				<li><a href="class-MvcCore.Debug.html">MvcCore\Debug</a></li>
+				<li><a href="class-MvcCore.Environment.html">MvcCore\Environment</a></li>
+				<li><a href="class-MvcCore.Ext.Auth.html">MvcCore\Ext\Auth</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Controller.html">MvcCore\Ext\Auths\Basics\Controller</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Role.html">MvcCore\Ext\Auths\Basics\Role</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.SignInForm.html">MvcCore\Ext\Auths\Basics\SignInForm</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.SignOutForm.html">MvcCore\Ext\Auths\Basics\SignOutForm</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.html">MvcCore\Ext\Auths\Basics\User</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Users.Database.html">MvcCore\Ext\Auths\Basics\Users\Database</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Users.SystemConfig.html">MvcCore\Ext\Auths\Basics\Users\SystemConfig</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.User.html" class="invalid">MvcCore\Ext\Auths\User</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Users.Database.html" class="invalid">MvcCore\Ext\Auths\Users\Database</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Users.SystemConfig.html" class="invalid">MvcCore\Ext\Auths\Users\SystemConfig</a></li>
+				<li><a href="class-MvcCore.Ext.Cache.html">MvcCore\Ext\Cache</a></li>
+				<li><a href="class-MvcCore.Ext.Caches.Redis.html">MvcCore\Ext\Caches\Redis</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Cached.html">MvcCore\Ext\Configs\Cached</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yaml.html">MvcCore\Ext\Configs\Yaml</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracy.html">MvcCore\Ext\Debugs\Tracy</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.AuthPanel.html">MvcCore\Ext\Debugs\Tracys\AuthPanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.IncludePanel.html">MvcCore\Ext\Debugs\Tracys\IncludePanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.MvcCorePanel.html">MvcCore\Ext\Debugs\Tracys\MvcCorePanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.RoutingPanel.html">MvcCore\Ext\Debugs\Tracys\RoutingPanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.SessionPanel.html">MvcCore\Ext\Debugs\Tracys\SessionPanel</a></li>
+				<li><a href="class-MvcCore.Ext.Form.html">MvcCore\Ext\Form</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.html">MvcCore\Ext\Forms\Field</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Button.html">MvcCore\Ext\Forms\Fields\Button</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ButtonInput.html">MvcCore\Ext\Forms\Fields\ButtonInput</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Checkbox.html">MvcCore\Ext\Forms\Fields\Checkbox</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.CheckboxGroup.html">MvcCore\Ext\Forms\Fields\CheckboxGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Color.html">MvcCore\Ext\Forms\Fields\Color</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.CountrySelect.html">MvcCore\Ext\Forms\Fields\CountrySelect</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.DataList.html">MvcCore\Ext\Forms\Fields\DataList</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Date.html">MvcCore\Ext\Forms\Fields\Date</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.DateTime.html">MvcCore\Ext\Forms\Fields\DateTime</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Email.html">MvcCore\Ext\Forms\Fields\Email</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.File.html">MvcCore\Ext\Forms\Fields\File</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Hidden.html">MvcCore\Ext\Forms\Fields\Hidden</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Image.html">MvcCore\Ext\Forms\Fields\Image</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html">MvcCore\Ext\Forms\Fields\LocalizationSelect</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Month.html">MvcCore\Ext\Forms\Fields\Month</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Number.html">MvcCore\Ext\Forms\Fields\Number</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Password.html">MvcCore\Ext\Forms\Fields\Password</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.RadioGroup.html">MvcCore\Ext\Forms\Fields\RadioGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Range.html">MvcCore\Ext\Forms\Fields\Range</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ResetButton.html">MvcCore\Ext\Forms\Fields\ResetButton</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ResetInput.html">MvcCore\Ext\Forms\Fields\ResetInput</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Search.html">MvcCore\Ext\Forms\Fields\Search</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Select.html">MvcCore\Ext\Forms\Fields\Select</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.SubmitButton.html">MvcCore\Ext\Forms\Fields\SubmitButton</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.SubmitInput.html">MvcCore\Ext\Forms\Fields\SubmitInput</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Tel.html">MvcCore\Ext\Forms\Fields\Tel</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Text.html">MvcCore\Ext\Forms\Fields\Text</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Textarea.html">MvcCore\Ext\Forms\Fields\Textarea</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Time.html">MvcCore\Ext\Forms\Fields\Time</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Url.html">MvcCore\Ext\Forms\Fields\Url</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Week.html">MvcCore\Ext\Forms\Fields\Week</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.FieldsGroup.html">MvcCore\Ext\Forms\FieldsGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validator.html">MvcCore\Ext\Forms\Validator</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Color.html">MvcCore\Ext\Forms\Validators\Color</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.CompanyIdEu.html">MvcCore\Ext\Forms\Validators\CompanyIdEu</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.CompanyVatIdEu.html">MvcCore\Ext\Forms\Validators\CompanyVatIdEu</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.CreditCard.html">MvcCore\Ext\Forms\Validators\CreditCard</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Date.html">MvcCore\Ext\Forms\Validators\Date</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.DateTime.html">MvcCore\Ext\Forms\Validators\DateTime</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Email.html">MvcCore\Ext\Forms\Validators\Email</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.html">MvcCore\Ext\Forms\Validators\Files</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.GzArchive.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\GzArchive</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.PngImage.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\PngImage</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.RarArchive.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\RarArchive</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.ZipArchive.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\ZipArchive</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.FloatNumber.html">MvcCore\Ext\Forms\Validators\FloatNumber</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Hex.html">MvcCore\Ext\Forms\Validators\Hex</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Iban.html">MvcCore\Ext\Forms\Validators\Iban</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.IntNumber.html">MvcCore\Ext\Forms\Validators\IntNumber</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Ip.html">MvcCore\Ext\Forms\Validators\Ip</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.MinMaxLength.html">MvcCore\Ext\Forms\Validators\MinMaxLength</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.MinMaxOptions.html">MvcCore\Ext\Forms\Validators\MinMaxOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Month.html">MvcCore\Ext\Forms\Validators\Month</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Number.html">MvcCore\Ext\Forms\Validators\Number</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Password.html">MvcCore\Ext\Forms\Validators\Password</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Pattern.html">MvcCore\Ext\Forms\Validators\Pattern</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Range.html">MvcCore\Ext\Forms\Validators\Range</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.SafeString.html">MvcCore\Ext\Forms\Validators\SafeString</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Tel.html">MvcCore\Ext\Forms\Validators\Tel</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Time.html">MvcCore\Ext\Forms\Validators\Time</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Url.html">MvcCore\Ext\Forms\Validators\Url</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.ValueInOptions.html">MvcCore\Ext\Forms\Validators\ValueInOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Week.html">MvcCore\Ext\Forms\Validators\Week</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.ZipCode.html">MvcCore\Ext\Forms\Validators\ZipCode</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.View.html">MvcCore\Ext\Forms\View</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Column.html">MvcCore\Ext\Models\Db\Attrs\Column</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Connection.html">MvcCore\Ext\Models\Db\Attrs\Connection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Format.html">MvcCore\Ext\Models\Db\Attrs\Format</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.KeyPrimary.html">MvcCore\Ext\Models\Db\Attrs\KeyPrimary</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.KeyUnique.html">MvcCore\Ext\Models\Db\Attrs\KeyUnique</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Table.html">MvcCore\Ext\Models\Db\Attrs\Table</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Connection.html">MvcCore\Ext\Models\Db\Connection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySql.html">MvcCore\Ext\Models\Db\Models\MySql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSql.html">MvcCore\Ext\Models\Db\Models\PgSql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.Resource.html">MvcCore\Ext\Models\Db\Models\Resource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SQLite.html">MvcCore\Ext\Models\Db\Models\SQLite</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrv.html">MvcCore\Ext\Models\Db\Models\SqlSrv</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.MySql.html">MvcCore\Ext\Models\Db\Providers\Connections\MySql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.PgSql.html">MvcCore\Ext\Models\Db\Providers\Connections\PgSql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.SQLite.html">MvcCore\Ext\Models\Db\Providers\Connections\SQLite</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.SqlSrv.html">MvcCore\Ext\Models\Db\Providers\Connections\SqlSrv</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resource.html">MvcCore\Ext\Models\Db\Providers\Resource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.MySql.html">MvcCore\Ext\Models\Db\Providers\Resources\MySql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.PgSql.html">MvcCore\Ext\Models\Db\Providers\Resources\PgSql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.SQLite.html">MvcCore\Ext\Models\Db\Providers\Resources\SQLite</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.SqlSrv.html">MvcCore\Ext\Models\Db\Providers\Resources\SqlSrv</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Reader.html">MvcCore\Ext\Models\Db\Reader</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Execution.html">MvcCore\Ext\Models\Db\Readers\Execution</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Multiple.html">MvcCore\Ext\Models\Db\Readers\Multiple</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Single.html">MvcCore\Ext\Models\Db\Readers\Single</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Stream.html">MvcCore\Ext\Models\Db\Readers\Stream</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Streams.Iterator.html">MvcCore\Ext\Models\Db\Readers\Streams\Iterator</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Statement.html">MvcCore\Ext\Models\Db\Statement</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Model.html">MvcCore\Ext\Models\Model</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.html">MvcCore\Ext\Routers\Localization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.html">MvcCore\Ext\Routers\Localizations\Route</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.html">MvcCore\Ext\Routers\Media</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.html">MvcCore\Ext\Routers\MediaAndLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.html">MvcCore\Ext\Routers\Module</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.html">MvcCore\Ext\Routers\ModuleLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMedia.html">MvcCore\Ext\Routers\ModuleMedia</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMediaAndLocalization.html">MvcCore\Ext\Routers\ModuleMediaAndLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.html">MvcCore\Ext\Routers\Modules\Route</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Image.html">MvcCore\Ext\Tools\Image</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gd.html">MvcCore\Ext\Tools\Images\Gd</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gds.ApplyMask.html">MvcCore\Ext\Tools\Images\Gds\ApplyMask</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gds.RoundCorners.html">MvcCore\Ext\Tools\Images\Gds\RoundCorners</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gds.UnsharpMask.html">MvcCore\Ext\Tools\Images\Gds\UnsharpMask</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Imagick.html">MvcCore\Ext\Tools\Images\Imagick</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Locale.html">MvcCore\Ext\Tools\Locale</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Locales.FloatParser.html">MvcCore\Ext\Tools\Locales\FloatParser</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.MimeTypesExtensions.html">MvcCore\Ext\Tools\MimeTypesExtensions</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.AbstractHelper.html">MvcCore\Ext\Views\Helpers\AbstractHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.Assets.html">MvcCore\Ext\Views\Helpers\Assets</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.CssHelper.html">MvcCore\Ext\Views\Helpers\CssHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.DataUrlHelper.html">MvcCore\Ext\Views\Helpers\DataUrlHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.FormatDateHelper.html">MvcCore\Ext\Views\Helpers\FormatDateHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.FormatMoneyHelper.html">MvcCore\Ext\Views\Helpers\FormatMoneyHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.FormatNumberHelper.html">MvcCore\Ext\Views\Helpers\FormatNumberHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.InternationalizedHelper.html">MvcCore\Ext\Views\Helpers\InternationalizedHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.JsHelper.html">MvcCore\Ext\Views\Helpers\JsHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.LineBreaksHelper.html">MvcCore\Ext\Views\Helpers\LineBreaksHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.TruncateHelper.html">MvcCore\Ext\Views\Helpers\TruncateHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.WriteByJsHelper.html">MvcCore\Ext\Views\Helpers\WriteByJsHelper</a></li>
+				<li><a href="class-MvcCore.Model.html">MvcCore\Model</a></li>
+				<li><a href="class-MvcCore.Request.html">MvcCore\Request</a></li>
+				<li><a href="class-MvcCore.Response.html">MvcCore\Response</a></li>
+				<li><a href="class-MvcCore.Route.html">MvcCore\Route</a></li>
+				<li><a href="class-MvcCore.Router.html">MvcCore\Router</a></li>
+				<li><a href="class-MvcCore.Session.html">MvcCore\Session</a></li>
+				<li><a href="class-MvcCore.Tool.html">MvcCore\Tool</a></li>
+				<li><a href="class-MvcCore.View.html">MvcCore\View</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-MvcCore.Application.IConstants.html">MvcCore\Application\IConstants</a></li>
+				<li><a href="class-MvcCore.Controller.IConstants.html">MvcCore\Controller\IConstants</a></li>
+				<li><a href="class-MvcCore.Debug.IConstants.html">MvcCore\Debug\IConstants</a></li>
+				<li><a href="class-MvcCore.Environment.IConstants.html">MvcCore\Environment\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IController.html">MvcCore\Ext\Auths\Basics\IController</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IDatabaseUser.html">MvcCore\Ext\Auths\Basics\IDatabaseUser</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IForm.html">MvcCore\Ext\Auths\Basics\IForm</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IRole.html">MvcCore\Ext\Auths\Basics\IRole</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IUser.html">MvcCore\Ext\Auths\Basics\IUser</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.IBasic.html">MvcCore\Ext\Auths\IBasic</a></li>
+				<li><a href="class-MvcCore.Ext.Form.IConstants.html">MvcCore\Ext\Form\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IAlwaysValidate.html">MvcCore\Ext\Forms\Fields\IAlwaysValidate</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IChecked.html">MvcCore\Ext\Forms\Fields\IChecked</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IDataList.html">MvcCore\Ext\Forms\Fields\IDataList</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IFile.html">MvcCore\Ext\Forms\Fields\IFile</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IFormat.html">MvcCore\Ext\Forms\Fields\IFormat</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ILabel.html">MvcCore\Ext\Forms\Fields\ILabel</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxLength.html">MvcCore\Ext\Forms\Fields\IMinMaxLength</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html">MvcCore\Ext\Forms\Fields\IMinMaxOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxStepDates.html">MvcCore\Ext\Forms\Fields\IMinMaxStepDates</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxStepNumbers.html">MvcCore\Ext\Forms\Fields\IMinMaxStepNumbers</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMultiple.html">MvcCore\Ext\Forms\Fields\IMultiple</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IOptions.html">MvcCore\Ext\Forms\Fields\IOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IPattern.html">MvcCore\Ext\Forms\Fields\IPattern</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ISubmit.html">MvcCore\Ext\Forms\Fields\ISubmit</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html">MvcCore\Ext\Forms\Fields\IVisibleField</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IError.html">MvcCore\Ext\Forms\IError</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IField.html">MvcCore\Ext\Forms\IField</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IFieldsGroup.html">MvcCore\Ext\Forms\IFieldsGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IValidator.html">MvcCore\Ext\Forms\IValidator</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IView.html">MvcCore\Ext\Forms\IView</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.IBombScanner.html">MvcCore\Ext\Forms\Validators\Files\Validations\IBombScanner</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.IFiles.html">MvcCore\Ext\Forms\Validators\IFiles</a></li>
+				<li><a href="class-MvcCore.Ext.ICache.html">MvcCore\Ext\ICache</a></li>
+				<li><a href="class-MvcCore.Ext.IForm.html">MvcCore\Ext\IForm</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IConnection.html">MvcCore\Ext\Models\Db\IConnection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IModel.html">MvcCore\Ext\Models\Db\IModel</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IReader.html">MvcCore\Ext\Models\Db\IReader</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IStatement.html">MvcCore\Ext\Models\Db\IStatement</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.IConstants.html">MvcCore\Ext\Models\Db\Model\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySqls.IConstants.html">MvcCore\Ext\Models\Db\Models\MySqls\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSqls.IConstants.html">MvcCore\Ext\Models\Db\Models\PgSqls\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrvs.IConstants.html">MvcCore\Ext\Models\Db\Models\SqlSrvs\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.IExecution.html">MvcCore\Ext\Models\Db\Readers\IExecution</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.IMultiple.html">MvcCore\Ext\Models\Db\Readers\IMultiple</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.ISingle.html">MvcCore\Ext\Models\Db\Readers\ISingle</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.IStream.html">MvcCore\Ext\Models\Db\Readers\IStream</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Streams.IIterator.html">MvcCore\Ext\Models\Db\Readers\Streams\IIterator</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.IExtended.html">MvcCore\Ext\Routers\IExtended</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ILocalization.html">MvcCore\Ext\Routers\ILocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.IMedia.html">MvcCore\Ext\Routers\IMedia</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.IModule.html">MvcCore\Ext\Routers\IModule</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.IRoute.html">MvcCore\Ext\Routers\Modules\IRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IAdapter.html">MvcCore\Ext\Tools\Images\IAdapter</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IComposite.html">MvcCore\Ext\Tools\Images\IComposite</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IFormat.html">MvcCore\Ext\Tools\Images\IFormat</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IImage.html">MvcCore\Ext\Tools\Images\IImage</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Imagicks.IComposite.html">MvcCore\Ext\Tools\Images\Imagicks\IComposite</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IOrientation.html">MvcCore\Ext\Tools\Images\IOrientation</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.IHelper.html">MvcCore\Ext\Views\Helpers\IHelper</a></li>
+				<li><a href="class-MvcCore.IApplication.html">MvcCore\IApplication</a></li>
+				<li><a href="class-MvcCore.IConfig.html">MvcCore\IConfig</a></li>
+				<li><a href="class-MvcCore.IController.html">MvcCore\IController</a></li>
+				<li><a href="class-MvcCore.IDebug.html">MvcCore\IDebug</a></li>
+				<li><a href="class-MvcCore.IEnvironment.html">MvcCore\IEnvironment</a></li>
+				<li><a href="class-MvcCore.IModel.html">MvcCore\IModel</a></li>
+				<li><a href="class-MvcCore.IRequest.html">MvcCore\IRequest</a></li>
+				<li><a href="class-MvcCore.IResponse.html">MvcCore\IResponse</a></li>
+				<li><a href="class-MvcCore.IRoute.html">MvcCore\IRoute</a></li>
+				<li><a href="class-MvcCore.IRouter.html">MvcCore\IRouter</a></li>
+				<li><a href="class-MvcCore.ISession.html">MvcCore\ISession</a></li>
+				<li><a href="class-MvcCore.ITool.html">MvcCore\ITool</a></li>
+				<li class="active"><a href="class-MvcCore.IView.html">MvcCore\IView</a></li>
+				<li><a href="class-MvcCore.Model.IConstants.html">MvcCore\Model\IConstants</a></li>
+				<li><a href="class-MvcCore.Request.IConstants.html">MvcCore\Request\IConstants</a></li>
+				<li><a href="class-MvcCore.Response.IConstants.html">MvcCore\Response\IConstants</a></li>
+				<li><a href="class-MvcCore.Route.IConstants.html">MvcCore\Route\IConstants</a></li>
+				<li><a href="class-MvcCore.Router.IConstants.html">MvcCore\Router\IConstants</a></li>
+				<li><a href="class-MvcCore.Session.IConstants.html">MvcCore\Session\IConstants</a></li>
+				<li><a href="class-MvcCore.View.IConstants.html">MvcCore\View\IConstants</a></li>
+			</ul>
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-MvcCore.Application.Dispatching.html">MvcCore\Application\Dispatching</a></li>
+				<li><a href="class-MvcCore.Application.GettersSetters.html">MvcCore\Application\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Application.Helpers.html">MvcCore\Application\Helpers</a></li>
+				<li><a href="class-MvcCore.Application.Props.html">MvcCore\Application\Props</a></li>
+				<li><a href="class-MvcCore.Config.Environment.html">MvcCore\Config\Environment</a></li>
+				<li><a href="class-MvcCore.Config.IniDump.html">MvcCore\Config\IniDump</a></li>
+				<li><a href="class-MvcCore.Config.IniProps.html">MvcCore\Config\IniProps</a></li>
+				<li><a href="class-MvcCore.Config.IniRead.html">MvcCore\Config\IniRead</a></li>
+				<li><a href="class-MvcCore.Config.MagicMethods.html">MvcCore\Config\MagicMethods</a></li>
+				<li><a href="class-MvcCore.Config.PropsGettersSetters.html">MvcCore\Config\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Config.ReadWrite.html">MvcCore\Config\ReadWrite</a></li>
+				<li><a href="class-MvcCore.Controller.Dispatching.html">MvcCore\Controller\Dispatching</a></li>
+				<li><a href="class-MvcCore.Controller.GettersSetters.html">MvcCore\Controller\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Controller.Props.html">MvcCore\Controller\Props</a></li>
+				<li><a href="class-MvcCore.Controller.Rendering.html">MvcCore\Controller\Rendering</a></li>
+				<li><a href="class-MvcCore.Debug.Handlers.html">MvcCore\Debug\Handlers</a></li>
+				<li><a href="class-MvcCore.Debug.Initializations.html">MvcCore\Debug\Initializations</a></li>
+				<li><a href="class-MvcCore.Debug.Props.html">MvcCore\Debug\Props</a></li>
+				<li><a href="class-MvcCore.Environment.Detection.html">MvcCore\Environment\Detection</a></li>
+				<li><a href="class-MvcCore.Environment.Instancing.html">MvcCore\Environment\Instancing</a></li>
+				<li><a href="class-MvcCore.Environment.PropsGettersSetters.html">MvcCore\Environment\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basic.Handling.html">MvcCore\Ext\Auths\Basic\Handling</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html">MvcCore\Ext\Auths\Basic\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Controller.Base.html">MvcCore\Ext\Auths\Basics\Controller\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Form.Base.html">MvcCore\Ext\Auths\Basics\Form\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Form.SignIn.html">MvcCore\Ext\Auths\Basics\Form\SignIn</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Form.SignOut.html">MvcCore\Ext\Auths\Basics\Form\SignOut</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Role.Base.html">MvcCore\Ext\Auths\Basics\Role\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Role.Features.html">MvcCore\Ext\Auths\Basics\Role\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Auth.html">MvcCore\Ext\Auths\Basics\User\Auth</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Base.html">MvcCore\Ext\Auths\Basics\User\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Features.html">MvcCore\Ext\Auths\Basics\User\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Roles.html">MvcCore\Ext\Auths\Basics\User\Roles</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.UserAndRole.Base.html">MvcCore\Ext\Auths\Basics\UserAndRole\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.UserAndRole.Permissions.html">MvcCore\Ext\Auths\Basics\UserAndRole\Permissions</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yamls.YamlDump.html">MvcCore\Ext\Configs\Yamls\YamlDump</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yamls.YamlProps.html">MvcCore\Ext\Configs\Yamls\YamlProps</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yamls.YamlRead.html">MvcCore\Ext\Configs\Yamls\YamlRead</a></li>
+				<li><a href="class-MvcCore.Ext.Form.AddMethods.html">MvcCore\Ext\Form\AddMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Assets.html">MvcCore\Ext\Form\Assets</a></li>
+				<li><a href="class-MvcCore.Ext.Form.ConfigProps.html">MvcCore\Ext\Form\ConfigProps</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Csrf.html">MvcCore\Ext\Form\Csrf</a></li>
+				<li><a href="class-MvcCore.Ext.Form.FieldMethods.html">MvcCore\Ext\Form\FieldMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.GetMethods.html">MvcCore\Ext\Form\GetMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.InternalProps.html">MvcCore\Ext\Form\InternalProps</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Rendering.html">MvcCore\Ext\Form\Rendering</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Session.html">MvcCore\Ext\Form\Session</a></li>
+				<li><a href="class-MvcCore.Ext.Form.SetMethods.html">MvcCore\Ext\Form\SetMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Submitting.html">MvcCore\Ext\Form\Submitting</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Getters.html">MvcCore\Ext\Forms\Field\Getters</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.html">MvcCore\Ext\Forms\Field\Props</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.AccessKey.html">MvcCore\Ext\Forms\Field\Props\AccessKey</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.AutoComplete.html">MvcCore\Ext\Forms\Field\Props\AutoComplete</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.AutoFocus.html">MvcCore\Ext\Forms\Field\Props\AutoFocus</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Checked.html">MvcCore\Ext\Forms\Field\Props\Checked</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.DataList.html">MvcCore\Ext\Forms\Field\Props\DataList</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Disabled.html">MvcCore\Ext\Forms\Field\Props\Disabled</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Files.html">MvcCore\Ext\Forms\Field\Props\Files</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Format.html">MvcCore\Ext\Forms\Field\Props\Format</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.FormAttrs.html">MvcCore\Ext\Forms\Field\Props\FormAttrs</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.GroupLabelAttrs.html">MvcCore\Ext\Forms\Field\Props\GroupLabelAttrs</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.GroupLabelCssClasses.html">MvcCore\Ext\Forms\Field\Props\GroupLabelCssClasses</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.InputMode.html">MvcCore\Ext\Forms\Field\Props\InputMode</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Label.html">MvcCore\Ext\Forms\Field\Props\Label</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxLength.html">MvcCore\Ext\Forms\Field\Props\MinMaxLength</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html">MvcCore\Ext\Forms\Field\Props\MinMaxOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxStepDates.html">MvcCore\Ext\Forms\Field\Props\MinMaxStepDates</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxStepNumbers.html">MvcCore\Ext\Forms\Field\Props\MinMaxStepNumbers</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Multiple.html">MvcCore\Ext\Forms\Field\Props\Multiple</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html">MvcCore\Ext\Forms\Field\Props\NullOptionText</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Options.html">MvcCore\Ext\Forms\Field\Props\Options</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Pattern.html">MvcCore\Ext\Forms\Field\Props\Pattern</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.PlaceHolder.html">MvcCore\Ext\Forms\Field\Props\PlaceHolder</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.ReadOnly.html">MvcCore\Ext\Forms\Field\Props\ReadOnly</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Required.html">MvcCore\Ext\Forms\Field\Props\Required</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.RowsColsWrap.html">MvcCore\Ext\Forms\Field\Props\RowsColsWrap</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Size.html">MvcCore\Ext\Forms\Field\Props\Size</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.SpellCheck.html">MvcCore\Ext\Forms\Field\Props\SpellCheck</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Submit.html">MvcCore\Ext\Forms\Field\Props\Submit</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.TabIndex.html">MvcCore\Ext\Forms\Field\Props\TabIndex</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.VisibleField.html">MvcCore\Ext\Forms\Field\Props\VisibleField</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.WidthHeight.html">MvcCore\Ext\Forms\Field\Props\WidthHeight</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Wrapper.html">MvcCore\Ext\Forms\Field\Props\Wrapper</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Rendering.html">MvcCore\Ext\Forms\Field\Rendering</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Setters.html">MvcCore\Ext\Forms\Field\Setters</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.CheckRequirements.html">MvcCore\Ext\Forms\Validators\Files\CheckRequirements</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.CompleteFiles.html">MvcCore\Ext\Forms\Validators\Files\CompleteFiles</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.ReadAccept.html">MvcCore\Ext\Forms\Validators\Files\ReadAccept</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.Bomb.html">MvcCore\Ext\Forms\Validators\Files\Validations\Bomb</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.FileAndSize.html">MvcCore\Ext\Forms\Validators\Files\Validations\FileAndSize</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.MimeTypeAndExtension.html">MvcCore\Ext\Forms\Validators\Files\Validations\MimeTypeAndExtension</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.NameAndExtension.html">MvcCore\Ext\Forms\Validators\Files\Validations\NameAndExtension</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Connection.html">MvcCore\Ext\Models\Db\Model\Connection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.DataMethods.html">MvcCore\Ext\Models\Db\Model\DataMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Features.html">MvcCore\Ext\Models\Db\Model\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Manipulation.html">MvcCore\Ext\Models\Db\Model\Manipulation</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.MetaData.html">MvcCore\Ext\Models\Db\Model\MetaData</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Parsers.html">MvcCore\Ext\Models\Db\Model\Parsers</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Props.html">MvcCore\Ext\Models\Db\Model\Props</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.ProviderResource.html">MvcCore\Ext\Models\Db\Model\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySqls.Features.html">MvcCore\Ext\Models\Db\Models\MySqls\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySqls.ProviderResource.html">MvcCore\Ext\Models\Db\Models\MySqls\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSqls.Features.html">MvcCore\Ext\Models\Db\Models\PgSqls\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSqls.ProviderResource.html">MvcCore\Ext\Models\Db\Models\PgSqls\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.Resources.Features.html">MvcCore\Ext\Models\Db\Models\Resources\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SQLites.Features.html">MvcCore\Ext\Models\Db\Models\SQLites\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SQLites.ProviderResource.html">MvcCore\Ext\Models\Db\Models\SQLites\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrvs.Features.html">MvcCore\Ext\Models\Db\Models\SqlSrvs\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrvs.ProviderResource.html">MvcCore\Ext\Models\Db\Models\SqlSrvs\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.Manipulation.html">MvcCore\Ext\Models\Db\Providers\Resources\Manipulation</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.PgSqls.Manipulation.html">MvcCore\Ext\Models\Db\Providers\Resources\PgSqls\Manipulation</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extended.html">MvcCore\Ext\Routers\Extended</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.Preparing.html">MvcCore\Ext\Routers\Extendeds\Preparing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.PropsGettersSetters.html">MvcCore\Ext\Routers\Extendeds\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.Redirect.html">MvcCore\Ext\Routers\Extendeds\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.RedirectHelpers.html">MvcCore\Ext\Routers\Extendeds\RedirectHelpers</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.Url.html">MvcCore\Ext\Routers\Extendeds\Url</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.Preparing.html">MvcCore\Ext\Routers\Localization\Preparing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.PreRouting.html">MvcCore\Ext\Routers\Localization\PreRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.PropsGettersSetters.html">MvcCore\Ext\Routers\Localization\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.RedirectSections.html">MvcCore\Ext\Routers\Localization\RedirectSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.RewriteRouting.html">MvcCore\Ext\Routers\Localization\RewriteRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.RewriteRoutingChecks.html">MvcCore\Ext\Routers\Localization\RewriteRoutingChecks</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.Routing.html">MvcCore\Ext\Routers\Localization\Routing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.UrlByRoute.html">MvcCore\Ext\Routers\Localization\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.UrlByRouteSections.html">MvcCore\Ext\Routers\Localization\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.UrlByRouteSectionsLocalization.html">MvcCore\Ext\Routers\Localization\UrlByRouteSectionsLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.Instancing.html">MvcCore\Ext\Routers\Localizations\Route\Instancing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.InternalInits.html">MvcCore\Ext\Routers\Localizations\Route\InternalInits</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.Matching.html">MvcCore\Ext\Routers\Localizations\Route\Matching</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.PropsGettersSetters.html">MvcCore\Ext\Routers\Localizations\Route\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.UrlBuilding.html">MvcCore\Ext\Routers\Localizations\Route\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.Preparing.html">MvcCore\Ext\Routers\Media\Preparing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.PreRouting.html">MvcCore\Ext\Routers\Media\PreRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.PropsGettersSetters.html">MvcCore\Ext\Routers\Media\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.RedirectSections.html">MvcCore\Ext\Routers\Media\RedirectSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.Routing.html">MvcCore\Ext\Routers\Media\Routing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.UrlByRoute.html">MvcCore\Ext\Routers\Media\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.UrlByRouteSections.html">MvcCore\Ext\Routers\Media\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.UrlByRouteSectionsMedia.html">MvcCore\Ext\Routers\Media\UrlByRouteSectionsMedia</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.RedirectSections.html">MvcCore\Ext\Routers\MediaAndLocalization\RedirectSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.Routing.html">MvcCore\Ext\Routers\MediaAndLocalization\Routing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.UrlByRoute.html">MvcCore\Ext\Routers\MediaAndLocalization\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.UrlByRouteSections.html">MvcCore\Ext\Routers\MediaAndLocalization\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.Canonical.html">MvcCore\Ext\Routers\Module\Canonical</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.DomainRouteSetUp.html">MvcCore\Ext\Routers\Module\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.DomainRouting.html">MvcCore\Ext\Routers\Module\DomainRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.PreAndPostRouting.html">MvcCore\Ext\Routers\Module\PreAndPostRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.Props.html">MvcCore\Ext\Routers\Module\Props</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.Redirect.html">MvcCore\Ext\Routers\Module\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.RewriteRoutingChecks.html">MvcCore\Ext\Routers\Module\RewriteRoutingChecks</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.RouteMethods.html">MvcCore\Ext\Routers\Module\RouteMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlByQuery.html">MvcCore\Ext\Routers\Module\UrlByQuery</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlByRoute.html">MvcCore\Ext\Routers\Module\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlByRouteSections.html">MvcCore\Ext\Routers\Module\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlDomain.html">MvcCore\Ext\Routers\Module\UrlDomain</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.DomainRouteSetUp.html">MvcCore\Ext\Routers\ModuleLocalization\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.Redirect.html">MvcCore\Ext\Routers\ModuleLocalization\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.RewriteRoutingChecks.html">MvcCore\Ext\Routers\ModuleLocalization\RewriteRoutingChecks</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.UrlByRoute.html">MvcCore\Ext\Routers\ModuleLocalization\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMedia.DomainRouteSetUp.html">MvcCore\Ext\Routers\ModuleMedia\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMedia.Redirect.html">MvcCore\Ext\Routers\ModuleMedia\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMediaAndLocalization.DomainRouteSetUp.html">MvcCore\Ext\Routers\ModuleMediaAndLocalization\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMediaAndLocalization.Redirect.html">MvcCore\Ext\Routers\ModuleMediaAndLocalization\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.Instancing.html">MvcCore\Ext\Routers\Modules\Route\Instancing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.Matching.html">MvcCore\Ext\Routers\Modules\Route\Matching</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.PropsGettersSetters.html">MvcCore\Ext\Routers\Modules\Route\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.UrlBuilding.html">MvcCore\Ext\Routers\Modules\Route\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Model.Comparers.html">MvcCore\Model\Comparers</a></li>
+				<li><a href="class-MvcCore.Model.Config.html">MvcCore\Model\Config</a></li>
+				<li><a href="class-MvcCore.Model.Connection.html">MvcCore\Model\Connection</a></li>
+				<li><a href="class-MvcCore.Model.Converters.html">MvcCore\Model\Converters</a></li>
+				<li><a href="class-MvcCore.Model.DataMethods.html">MvcCore\Model\DataMethods</a></li>
+				<li><a href="class-MvcCore.Model.MagicMethods.html">MvcCore\Model\MagicMethods</a></li>
+				<li><a href="class-MvcCore.Model.MetaData.html">MvcCore\Model\MetaData</a></li>
+				<li><a href="class-MvcCore.Model.Parsers.html">MvcCore\Model\Parsers</a></li>
+				<li><a href="class-MvcCore.Model.Props.html">MvcCore\Model\Props</a></li>
+				<li><a href="class-MvcCore.Model.Resource.html">MvcCore\Model\Resource</a></li>
+				<li><a href="class-MvcCore.Request.CollectionsMethods.html">MvcCore\Request\CollectionsMethods</a></li>
+				<li><a href="class-MvcCore.Request.GettersSetters.html">MvcCore\Request\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Request.Instancing.html">MvcCore\Request\Instancing</a></li>
+				<li><a href="class-MvcCore.Request.InternalInits.html">MvcCore\Request\InternalInits</a></li>
+				<li><a href="class-MvcCore.Request.Props.html">MvcCore\Request\Props</a></li>
+				<li><a href="class-MvcCore.Response.Content.html">MvcCore\Response\Content</a></li>
+				<li><a href="class-MvcCore.Response.Cookies.html">MvcCore\Response\Cookies</a></li>
+				<li><a href="class-MvcCore.Response.Headers.html">MvcCore\Response\Headers</a></li>
+				<li><a href="class-MvcCore.Response.Instancing.html">MvcCore\Response\Instancing</a></li>
+				<li><a href="class-MvcCore.Response.PropsGettersSetters.html">MvcCore\Response\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Route.GettersSetters.html">MvcCore\Route\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Route.Instancing.html">MvcCore\Route\Instancing</a></li>
+				<li><a href="class-MvcCore.Route.InternalInits.html">MvcCore\Route\InternalInits</a></li>
+				<li><a href="class-MvcCore.Route.Matching.html">MvcCore\Route\Matching</a></li>
+				<li><a href="class-MvcCore.Route.Props.html">MvcCore\Route\Props</a></li>
+				<li><a href="class-MvcCore.Route.UrlBuilding.html">MvcCore\Route\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Router.Canonical.html">MvcCore\Router\Canonical</a></li>
+				<li><a href="class-MvcCore.Router.GettersSetters.html">MvcCore\Router\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Router.Instancing.html">MvcCore\Router\Instancing</a></li>
+				<li><a href="class-MvcCore.Router.Props.html">MvcCore\Router\Props</a></li>
+				<li><a href="class-MvcCore.Router.Redirecting.html">MvcCore\Router\Redirecting</a></li>
+				<li><a href="class-MvcCore.Router.RewriteRouting.html">MvcCore\Router\RewriteRouting</a></li>
+				<li><a href="class-MvcCore.Router.RouteMethods.html">MvcCore\Router\RouteMethods</a></li>
+				<li><a href="class-MvcCore.Router.Routing.html">MvcCore\Router\Routing</a></li>
+				<li><a href="class-MvcCore.Router.UrlBuilding.html">MvcCore\Router\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Router.UrlByQuery.html">MvcCore\Router\UrlByQuery</a></li>
+				<li><a href="class-MvcCore.Router.UrlByRoutes.html">MvcCore\Router\UrlByRoutes</a></li>
+				<li><a href="class-MvcCore.Session.Closing.html">MvcCore\Session\Closing</a></li>
+				<li><a href="class-MvcCore.Session.MagicMethods.html">MvcCore\Session\MagicMethods</a></li>
+				<li><a href="class-MvcCore.Session.MetaData.html">MvcCore\Session\MetaData</a></li>
+				<li><a href="class-MvcCore.Session.NamespaceMethods.html">MvcCore\Session\NamespaceMethods</a></li>
+				<li><a href="class-MvcCore.Session.Props.html">MvcCore\Session\Props</a></li>
+				<li><a href="class-MvcCore.Session.Starting.html">MvcCore\Session\Starting</a></li>
+				<li><a href="class-MvcCore.Tool.Helpers.html">MvcCore\Tool\Helpers</a></li>
+				<li><a href="class-MvcCore.Tool.Json.html">MvcCore\Tool\Json</a></li>
+				<li><a href="class-MvcCore.Tool.Reflection.html">MvcCore\Tool\Reflection</a></li>
+				<li><a href="class-MvcCore.Tool.StringConversions.html">MvcCore\Tool\StringConversions</a></li>
+				<li><a href="class-MvcCore.View.DirectoryMethods.html">MvcCore\View\DirectoryMethods</a></li>
+				<li><a href="class-MvcCore.View.Escaping.html">MvcCore\View\Escaping</a></li>
+				<li><a href="class-MvcCore.View.GettersSetters.html">MvcCore\View\GettersSetters</a></li>
+				<li><a href="class-MvcCore.View.LocalMethods.html">MvcCore\View\LocalMethods</a></li>
+				<li><a href="class-MvcCore.View.MagicMethods.html">MvcCore\View\MagicMethods</a></li>
+				<li><a href="class-MvcCore.View.Props.html">MvcCore\View\Props</a></li>
+				<li><a href="class-MvcCore.View.Rendering.html">MvcCore\View\Rendering</a></li>
+				<li><a href="class-MvcCore.View.UrlHelpers.html">MvcCore\View\UrlHelpers</a></li>
+				<li><a href="class-MvcCore.View.ViewHelpers.html">MvcCore\View\ViewHelpers</a></li>
+			</ul>
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-MvcCore.Ext.Models.Db.Exception.html">MvcCore\Ext\Models\Db\Exception</a></li>
+				<li><a href="class-Throwable.html">Throwable</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-MvcCore.Ext.Models.Db.FuncHelpers.Columns.html">MvcCore\Ext\Models\Db\FuncHelpers\Columns</a></li>
+				<li><a href="function-MvcCore.Ext.Models.Db.FuncHelpers.Table.html">MvcCore\Ext\Models\Db\FuncHelpers\Table</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="-API-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IView</h1>
+
+
+	<div class="description">
+	<p>Core view:
+- Static storage for - commonly used document type - common views extension - common directories names containing view scripts - common views helpers namespaces
+- It's possible to use this class for any controller, sub controller or form.
+- View pre render preparing and rendering.
+- View helpers management on demand: - Creating by predefined class namespaces. - global static helpers instances storage and repeatable calling.
+- Views sub scripts relative path solving in: <code>&lt;?php $this-&gt;RenderScript('./any-subdirectory/script-to-render.php'); ?&gt;</code>
+- <code>Url()</code> - proxy method from <code>\MvcCore\Router</code> targeting to configured router.
+- <code>AssetUrl()</code> - proxy method from <code>\MvcCore\Controller</code>.
+- Magic calls: - __call() - To handler any view helper, if no helper found - exception thrown. - __set() - To set anything from controller to get it back in view. - __get() - To get anything in view previously initialized from controller.
+- Optional direct code evaluation.
+- No special view language implemented, use <code>short_open_tags</code> (<code>&lt;?=...?&gt;</code>) allowed by default.</p>
+
+<p>MvcCore view properties and helpers:</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>MvcCore\IView</span></b>			
+			 implements 
+				<a href="class-MvcCore.View.IConstants.html"><span>MvcCore\View\IConstants</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-MvcCore.View.html">MvcCore\View</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-MvcCore.Ext.Forms.View.html">MvcCore\Ext\Forms\View</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> MvcCore<br>
+		
+
+			<b>Located at</b> <a href="source-class-MvcCore.IView.html#16-482" title="Go to source code">mvccore/src/MvcCore/IView.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="CreateInstance" id="_CreateInstance">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_CreateInstance">#</a>
+		<code><a href="source-class-MvcCore.IView.html#53-61" title="Go to source code">CreateInstance</a>( )</code>
+
+		<div class="description short">
+			<p>Return always new instance of statically called class, no singleton.
+Always called from <code>\MvcCore\Controller::PreDispatch()</code> and
+<code>\MvcCore\Controller::Render()</code> to create layout view.
+This is place where to customize any view creation process,
+before it's created by MvcCore framework to fill and render it.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return always new instance of statically called class, no singleton.
+Always called from <code>\MvcCore\Controller::PreDispatch()</code> and
+<code>\MvcCore\Controller::Render()</code> to create layout view.
+This is place where to customize any view creation process,
+before it's created by MvcCore framework to fill and render it.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetExtension" id="_GetExtension">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetExtension">#</a>
+		<code><a href="source-class-MvcCore.IView.html#63-68" title="Go to source code">GetExtension</a>( )</code>
+
+		<div class="description short">
+			<p>Get view scripts files extension with leading dot char.
+Default value: <code>".phtml"</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get view scripts files extension with leading dot char.
+Default value: <code>".phtml"</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetExtension" id="_SetExtension">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetExtension">#</a>
+		<code><a href="source-class-MvcCore.IView.html#70-76" title="Go to source code">SetExtension</a>( <span>string <var>$extension</var> = <span class="php-quote">'.phtml'</span></span> )</code>
+
+		<div class="description short">
+			<p>Set view scripts files extension.
+given value could be with or without leading dot char.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set view scripts files extension.
+given value could be with or without leading dot char.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$extension</var></dt>
+					<dd>An extension with or without leading dot char.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetDoctype" id="_GetDoctype">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetDoctype">#</a>
+		<code><a href="source-class-MvcCore.IView.html#78-91" title="Go to source code">GetDoctype</a>( )</code>
+
+		<div class="description short">
+			<p>Get output document type (to automatically and optionally send proper
+HTTP header <code>Content-Type</code>, if there is no <code>Content-Type</code> HTTP
+header in response object yet).
+This value could be used also for any other custom purposes.
+Possible values:
+- <code>HTML4</code> - <code>\MvcCore\IView::DOCTYPE_HTML4</code>
+- <code>XHTML</code> - <code>\MvcCore\IView::DOCTYPE_XHTML</code>
+- <code>HTML5</code> - <code>\MvcCore\IView::DOCTYPE_HTML5</code>
+- <code>XML</code>   - <code>\MvcCore\IView::DOCTYPE_XML</code>
+Default value: <code>HTML5</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get output document type (to automatically and optionally send proper
+HTTP header <code>Content-Type</code>, if there is no <code>Content-Type</code> HTTP
+header in response object yet).
+This value could be used also for any other custom purposes.
+Possible values:
+- <code>HTML4</code> - <code>\MvcCore\IView::DOCTYPE_HTML4</code>
+- <code>XHTML</code> - <code>\MvcCore\IView::DOCTYPE_XHTML</code>
+- <code>HTML5</code> - <code>\MvcCore\IView::DOCTYPE_HTML5</code>
+- <code>XML</code>   - <code>\MvcCore\IView::DOCTYPE_XML</code>
+Default value: <code>HTML5</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetDoctype" id="_SetDoctype">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetDoctype">#</a>
+		<code><a href="source-class-MvcCore.IView.html#93-107" title="Go to source code">SetDoctype</a>( <span>string <var>$doctype</var> = \MvcCore\IView::DOCTYPE_HTML5</span> )</code>
+
+		<div class="description short">
+			<p>Set output document type (to automatically and optionally send proper
+HTTP header <code>Content-Type</code>, if there is no <code>Content-Type</code> HTTP
+header in response object yet).
+This value could be used also for any other custom purposes.
+Possible values:
+- <code>HTML4</code> - <code>\MvcCore\IView::DOCTYPE_HTML4</code>
+- <code>XHTML</code> - <code>\MvcCore\IView::DOCTYPE_XHTML</code>
+- <code>HTML5</code> - <code>\MvcCore\IView::DOCTYPE_HTML5</code>
+- <code>XML</code>   - <code>\MvcCore\IView::DOCTYPE_XML</code>
+Default value: <code>HTML5</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set output document type (to automatically and optionally send proper
+HTTP header <code>Content-Type</code>, if there is no <code>Content-Type</code> HTTP
+header in response object yet).
+This value could be used also for any other custom purposes.
+Possible values:
+- <code>HTML4</code> - <code>\MvcCore\IView::DOCTYPE_HTML4</code>
+- <code>XHTML</code> - <code>\MvcCore\IView::DOCTYPE_XHTML</code>
+- <code>HTML5</code> - <code>\MvcCore\IView::DOCTYPE_HTML5</code>
+- <code>XML</code>   - <code>\MvcCore\IView::DOCTYPE_XML</code>
+Default value: <code>HTML5</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$doctype</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetLayoutsDir" id="_GetLayoutsDir">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetLayoutsDir">#</a>
+		<code><a href="source-class-MvcCore.IView.html#109-116" title="Go to source code">GetLayoutsDir</a>( )</code>
+
+		<div class="description short">
+			<p>Get layout templates directory placed by default
+inside <code>"/App/Views"</code> directory. Default value
+is <code>"Layouts"</code>, so layouts app path
+is <code>"/App/Views/Layouts"</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get layout templates directory placed by default
+inside <code>"/App/Views"</code> directory. Default value
+is <code>"Layouts"</code>, so layouts app path
+is <code>"/App/Views/Layouts"</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetLayoutsDir" id="_SetLayoutsDir">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetLayoutsDir">#</a>
+		<code><a href="source-class-MvcCore.IView.html#118-126" title="Go to source code">SetLayoutsDir</a>( <span>string <var>$layoutsDir</var> = <span class="php-quote">'Layouts'</span></span> )</code>
+
+		<div class="description short">
+			<p>Set layout templates directory placed by default
+inside <code>"/App/Views"</code> directory. Default value
+is <code>"Layouts"</code>, so layouts app path
+is <code>"/App/Views/Layouts"</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set layout templates directory placed by default
+inside <code>"/App/Views"</code> directory. Default value
+is <code>"Layouts"</code>, so layouts app path
+is <code>"/App/Views/Layouts"</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$layoutsDir</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetScriptsDir" id="_GetScriptsDir">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetScriptsDir">#</a>
+		<code><a href="source-class-MvcCore.IView.html#128-135" title="Go to source code">GetScriptsDir</a>( )</code>
+
+		<div class="description short">
+			<p>Get controller/action templates directory
+placed by default inside <code>"/App/Views"</code> directory.
+Default value is <code>"Scripts"</code>, so scripts app path
+is <code>"/App/Views/Scripts"</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get controller/action templates directory
+placed by default inside <code>"/App/Views"</code> directory.
+Default value is <code>"Scripts"</code>, so scripts app path
+is <code>"/App/Views/Scripts"</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetScriptsDir" id="_SetScriptsDir">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetScriptsDir">#</a>
+		<code><a href="source-class-MvcCore.IView.html#137-145" title="Go to source code">SetScriptsDir</a>( <span>string <var>$scriptsDir</var> = <span class="php-quote">'Scripts'</span></span> )</code>
+
+		<div class="description short">
+			<p>Get controller/action templates directory
+placed by default inside <code>"/App/Views"</code> directory.
+Default value is <code>"Scripts"</code>, so scripts app path
+is <code>"/App/Views/Scripts"</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get controller/action templates directory
+placed by default inside <code>"/App/Views"</code> directory.
+Default value is <code>"Scripts"</code>, so scripts app path
+is <code>"/App/Views/Scripts"</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$scriptsDir</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetHelpersDir" id="_GetHelpersDir">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetHelpersDir">#</a>
+		<code><a href="source-class-MvcCore.IView.html#147-154" title="Go to source code">GetHelpersDir</a>( )</code>
+
+		<div class="description short">
+			<p>Get views helpers directory placed by default
+inside <code>"/App/Views"</code> directory.
+Default value is <code>"Helpers"</code>, so scripts app path
+is <code>"/App/Views/Helpers"</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get views helpers directory placed by default
+inside <code>"/App/Views"</code> directory.
+Default value is <code>"Helpers"</code>, so scripts app path
+is <code>"/App/Views/Helpers"</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetHelpersDir" id="_SetHelpersDir">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetHelpersDir">#</a>
+		<code><a href="source-class-MvcCore.IView.html#156-164" title="Go to source code">SetHelpersDir</a>( <span>string <var>$helpersDir</var> = <span class="php-quote">'Helpers'</span></span> )</code>
+
+		<div class="description short">
+			<p>Set views helpers directory placed by default
+inside <code>"/App/Views"</code> directory.
+Default value is <code>"Helpers"</code>, so scripts app path
+is <code>"/App/Views/Helpers"</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set views helpers directory placed by default
+inside <code>"/App/Views"</code> directory.
+Default value is <code>"Helpers"</code>, so scripts app path
+is <code>"/App/Views/Helpers"</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$helpersDir</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddHelpersNamespaces" id="_AddHelpersNamespaces">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddHelpersNamespaces">#</a>
+		<code><a href="source-class-MvcCore.IView.html#166-172" title="Go to source code">AddHelpersNamespaces</a>( <span>string <var>$helperNamespaces</var></span> )</code>
+
+		<div class="description short">
+			<p>Add view helpers classes namespace(s),
+Example: <code>\MvcCore\View::AddHelpersNamespaces('Any\Other\ViewHelpers\Place', '...');</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add view helpers classes namespace(s),
+Example: <code>\MvcCore\View::AddHelpersNamespaces('Any\Other\ViewHelpers\Place', '...');</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$helperNamespaces</var></dt>
+					<dd>View helper classes namespace(s).</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetHelpersNamespaces" id="_SetHelpersNamespaces">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetHelpersNamespaces">#</a>
+		<code><a href="source-class-MvcCore.IView.html#174-181" title="Go to source code">SetHelpersNamespaces</a>( <span>string <var>$helperNamespaces</var></span> )</code>
+
+		<div class="description short">
+			<p>Set view helpers classes namespace(s). This method replace all previously configured namespaces.
+If you want only to add namespace, use <code>\MvcCore\View::AddHelpersNamespaces();</code> instead.
+Example: <code>\MvcCore\View::SetHelpersClassNamespaces('Any\Other\ViewHelpers\Place', '...');</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set view helpers classes namespace(s). This method replace all previously configured namespaces.
+If you want only to add namespace, use <code>\MvcCore\View::AddHelpersNamespaces();</code> instead.
+Example: <code>\MvcCore\View::SetHelpersClassNamespaces('Any\Other\ViewHelpers\Place', '...');</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$helperNamespaces</var></dt>
+					<dd>View helper classes namespace(s).</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetViewScriptFullPath" id="_GetViewScriptFullPath">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetViewScriptFullPath">#</a>
+		<code><a href="source-class-MvcCore.IView.html#183-190" title="Go to source code">GetViewScriptFullPath</a>( <span>string <var>$typePath</var> = <span class="php-quote">''</span></span>, <span>string <var>$corectedRelativePath</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Get view script full path by internal application configuration,
+by <code>$typePath</code> param and by <code>$corectedRelativePath</code> param.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get view script full path by internal application configuration,
+by <code>$typePath</code> param and by <code>$corectedRelativePath</code> param.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typePath</var></dt>
+					<dd>Usually <code>"Layouts"</code> or <code>"Scripts"</code>.</dd>
+					<dt><var>$corectedRelativePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetController" id="_SetController">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetController">#</a>
+		<code><a href="source-class-MvcCore.IView.html#192-200" title="Go to source code">SetController</a>( <span><code><a href="class-MvcCore.IController.html">MvcCore\IController</a></code> <var>$controller</var></span> )</code>
+
+		<div class="description short">
+			<p>This is INTERNAL method, do not use it in templates.
+Method is always called in the most parent controller
+<code>\MvcCore\Controller:PreDispatch()</code> moment when view instance is created.
+Method sets controller instance into view.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This is INTERNAL method, do not use it in templates.
+Method is always called in the most parent controller
+<code>\MvcCore\Controller:PreDispatch()</code> moment when view instance is created.
+Method sets controller instance into view.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$controller</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetController" id="_GetController">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Controller.html">MvcCore\Controller</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetController">#</a>
+		<code><a href="source-class-MvcCore.IView.html#202-206" title="Go to source code">GetController</a>( )</code>
+
+		<div class="description short">
+			<p>Get controller instance.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get controller instance.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Controller.html">MvcCore\Controller</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetUpRender" id="_SetUpRender">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetUpRender">#</a>
+		<code><a href="source-class-MvcCore.IView.html#208-216" title="Go to source code">SetUpRender</a>( <span>integer <var>$renderMode</var> = \MvcCore\IView::RENDER_WITH_OB_FROM_ACTION_TO_LAYOUT</span>, <span>string <var>$controllerOrActionNameDashed</var> = <span class="php-keyword1">NULL</span></span>, <span>string <var>$actionNameDashed</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Set up view rendering arguments  to render layout and action view in both modes properly.
+Set up view instance helpers before rendering.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set up view rendering arguments  to render layout and action view in both modes properly.
+Set up view instance helpers before rendering.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$renderMode</var></dt>
+					<dd></dd>
+					<dt><var>$controllerOrActionNameDashed</var></dt>
+					<dd></dd>
+					<dt><var>$actionNameDashed</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetUpStore" id="_SetUpStore">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetUpStore">#</a>
+		<code><a href="source-class-MvcCore.IView.html#218-228" title="Go to source code">SetUpStore</a>( <span><code><a href="class-MvcCore.IView.html">MvcCore\IView</a></code> <var>$view</var></span>, <span>boolean <var>$overwriteExistingKeys</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			<p>This is INTERNAL method, do not use it in templates.
+Method is always called in the most parent controller
+<code>\MvcCore\Controller:Render()</code> moment when view is rendered.
+Set up all from given view object variables store into current store,
+if there is any already existing key - overwrite it.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This is INTERNAL method, do not use it in templates.
+Method is always called in the most parent controller
+<code>\MvcCore\Controller:Render()</code> moment when view is rendered.
+Set up all from given view object variables store into current store,
+if there is any already existing key - overwrite it.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd></dd>
+					<dt><var>$overwriteExistingKeys</var></dt>
+					<dd>If any property name already exist in view store, overwrite it by given value by default.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetContent" id="_GetContent">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetContent">#</a>
+		<code><a href="source-class-MvcCore.IView.html#230-237" title="Go to source code">GetContent</a>( )</code>
+
+		<div class="description short">
+			<p>Return rendered action template content as string reference.
+You need to use this method always somewhere in layout template to
+render rendered action result content.
+If render mode is continuous, this method renders action view.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return rendered action template content as string reference.
+You need to use this method always somewhere in layout template to
+render rendered action result content.
+If render mode is continuous, this method renders action view.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetCurrentViewFullPath" id="_GetCurrentViewFullPath">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetCurrentViewFullPath">#</a>
+		<code><a href="source-class-MvcCore.IView.html#239-244" title="Go to source code">GetCurrentViewFullPath</a>( )</code>
+
+		<div class="description short">
+			<p>Get currently rendered view file full path.
+If this method is called outside of rendering process, <code>NULL</code> is returned.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get currently rendered view file full path.
+If this method is called outside of rendering process, <code>NULL</code> is returned.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetCurrentViewDirectory" id="_GetCurrentViewDirectory">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetCurrentViewDirectory">#</a>
+		<code><a href="source-class-MvcCore.IView.html#246-251" title="Go to source code">GetCurrentViewDirectory</a>( )</code>
+
+		<div class="description short">
+			<p>Get currently rendered view file directory full path.
+If this method is called outside of rendering process, <code>NULL</code> is returned.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get currently rendered view file directory full path.
+If this method is called outside of rendering process, <code>NULL</code> is returned.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetParentViewFullPath" id="_GetParentViewFullPath">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetParentViewFullPath">#</a>
+		<code><a href="source-class-MvcCore.IView.html#253-262" title="Go to source code">GetParentViewFullPath</a>( )</code>
+
+		<div class="description short">
+			<p>Get currently rendered parent view file full path.
+Parent view file could be any view file, where is called <code>$this-&gt;RenderScript(...);</code>
+method to render sub-view file (actual view file) or it could be any view file
+from parent controller or if current controller has no parent controller,
+it could be layout view script full path.
+If this method is called outside of rendering process, <code>NULL</code> is returned.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get currently rendered parent view file full path.
+Parent view file could be any view file, where is called <code>$this-&gt;RenderScript(...);</code>
+method to render sub-view file (actual view file) or it could be any view file
+from parent controller or if current controller has no parent controller,
+it could be layout view script full path.
+If this method is called outside of rendering process, <code>NULL</code> is returned.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetParentViewDirectory" id="_GetParentViewDirectory">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetParentViewDirectory">#</a>
+		<code><a href="source-class-MvcCore.IView.html#264-273" title="Go to source code">GetParentViewDirectory</a>( )</code>
+
+		<div class="description short">
+			<p>Get currently rendered parent view file directory full path.
+Parent view file could be any view file, where is called <code>$this-&gt;RenderScript(...);</code>
+method to render sub-view file (actual view file) or it could be any view file
+from parent controller or if current controller has no parent controller,
+it could be layout view script full path.
+If this method is called outside of rendering process, <code>NULL</code> is returned.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get currently rendered parent view file directory full path.
+Parent view file could be any view file, where is called <code>$this-&gt;RenderScript(...);</code>
+method to render sub-view file (actual view file) or it could be any view file
+from parent controller or if current controller has no parent controller,
+it could be layout view script full path.
+If this method is called outside of rendering process, <code>NULL</code> is returned.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="RenderScript" id="_RenderScript">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_RenderScript">#</a>
+		<code><a href="source-class-MvcCore.IView.html#275-281" title="Go to source code">RenderScript</a>( <span>string <var>$relativePath</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Render action template script or any include script and return it's result as reference.
+Do not use this method in layout sub-templates, use method <code>RenderLayout()</code> instead.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Render action template script or any include script and return it's result as reference.
+Do not use this method in layout sub-templates, use method <code>RenderLayout()</code> instead.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relativePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="RenderLayout" id="_RenderLayout">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_RenderLayout">#</a>
+		<code><a href="source-class-MvcCore.IView.html#283-289" title="Go to source code">RenderLayout</a>( <span>string <var>$relativePath</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Render layout template script or any include script and return it's result as reference.
+Do not use this method in action sub-templates, use method <code>RenderScript()</code> instead.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Render layout template script or any include script and return it's result as reference.
+Do not use this method in action sub-templates, use method <code>RenderScript()</code> instead.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relativePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="RenderLayoutAndContent" id="_RenderLayoutAndContent">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_RenderLayoutAndContent">#</a>
+		<code><a href="source-class-MvcCore.IView.html#291-300" title="Go to source code">RenderLayoutAndContent</a>( <span>string <var>$relativePath</var> = <span class="php-quote">''</span></span>, <span>string <var>&amp; $content</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>This method is INTERNAL, always called from <code>\MvcCore\Controller::Render();</code>.
+Do not use this method in templates!
+Method renders whole configured layout template and return it's result
+as string reference with inner rendered action template content.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This method is INTERNAL, always called from <code>\MvcCore\Controller::Render();</code>.
+Do not use this method in templates!
+Method renders whole configured layout template and return it's result
+as string reference with inner rendered action template content.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relativePath</var></dt>
+					<dd>$relativePatht.</dd>
+					<dt><var>$content</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Render" id="_Render">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Render">#</a>
+		<code><a href="source-class-MvcCore.IView.html#302-310" title="Go to source code">Render</a>( <span>string <var>$typePath</var> = <span class="php-quote">''</span></span>, <span>string <var>$relativePath</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Render controller template and all necessary layout
+templates and return rendered result as string reference.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Render controller template and all necessary layout
+templates and return rendered result as string reference.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typePath</var></dt>
+					<dd>By default: <code>"Layouts" | "Scripts"</code>. It could be <code>"Forms" | "Forms/Fields"</code> etc...</dd>
+					<dt><var>$relativePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException<br>Template not found in path: <code>$viewScriptFullPath</code>.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Evaluate" id="_Evaluate">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Evaluate">#</a>
+		<code><a href="source-class-MvcCore.IView.html#312-320" title="Go to source code">Evaluate</a>( <span>string <var>$content</var></span> )</code>
+
+		<div class="description short">
+			<p>Evaluate given template code as PHP code by <code>eval()</code> in current view
+context, any <code>$this</code> keyword will be used as current view context.
+Returned result is content from output buffer as string reference.
+Evaluated code is wrapped into <code>try/catch</code> automatically.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Evaluate given template code as PHP code by <code>eval()</code> in current view
+context, any <code>$this</code> keyword will be used as current view context.
+Returned result is content from output buffer as string reference.
+Evaluated code is wrapped into <code>try/catch</code> automatically.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Url" id="_Url">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Url">#</a>
+		<code><a href="source-class-MvcCore.IView.html#322-340" title="Go to source code">Url</a>( <span>string <var>$controllerActionOrRouteName</var> = <span class="php-quote">'Index:Index'</span></span>, <span>array <var>$params</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Generates url:
+- By <code>"Controller:Action"</code> name and params array
+  (for routes configuration when routes array has keys with <code>"Controller:Action"</code> strings
+  and routes has not controller name and action name defined inside).
+- By route name and params array
+ (route name is key in routes configuration array, should be any string
+ but routes must have information about controller name and action name inside).
+Result address (url string) should have two forms:
+- Nice rewritten URL by routes configuration
+  (for apps with URL rewrite support (Apache <code>.htaccess</code> or IIS URL rewrite module)
+  and when first param is key in routes configuration array).
+- For all other cases is URL form like: <code>"index.php?controller=ctrlName&amp;amp;action=actionName"</code>
+ (when first param is not founded in routes configuration array).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generates url:
+- By <code>"Controller:Action"</code> name and params array (for routes configuration when routes array has keys with <code>"Controller:Action"</code> strings and routes has not controller name and action name defined inside).
+- By route name and params array (route name is key in routes configuration array, should be any string but routes must have information about controller name and action name inside).
+Result address (url string) should have two forms:
+- Nice rewritten URL by routes configuration (for apps with URL rewrite support (Apache <code>.htaccess</code> or IIS URL rewrite module) and when first param is key in routes configuration array).
+- For all other cases is URL form like: <code>"index.php?controller=ctrlName&amp;amp;action=actionName"</code> (when first param is not founded in routes configuration array).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$controllerActionOrRouteName</var></dt>
+					<dd>Should be <code>"Controller:Action"</code> combination or just any route name as custom specific string.</dd>
+					<dt><var>$params</var></dt>
+					<dd>Optional, array with params, key is param name, value is param value.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AssetUrl" id="_AssetUrl">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AssetUrl">#</a>
+		<code><a href="source-class-MvcCore.IView.html#342-349" title="Go to source code">AssetUrl</a>( <span>string <var>$path</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Return asset path or single file mode URL for small assets
+handled by internal controller action <code>"Controller:Asset"</code>.
+Example: <code>echo $this-&gt;AssetUrl('/static/img/favicon.ico');</code></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return asset path or single file mode URL for small assets
+handled by internal controller action <code>"Controller:Asset"</code>.
+Example: <code>echo $this-&gt;AssetUrl('/static/img/favicon.ico');</code></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Escape" id="_Escape">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Escape">#</a>
+		<code><a href="source-class-MvcCore.IView.html#351-359" title="Go to source code">Escape</a>( <span>string <var>$str</var></span>, <span>boolean <var>$encoding</var> = <span class="php-quote">'UTF-8'</span></span>, <span>string <var>$encoding</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>Escape string for use inside HTML/XHTML/HTML5
+node as text content.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Escape string for use inside HTML/XHTML/HTML5
+node as text content.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+					<dt><var>$encoding</var></dt>
+					<dd>$double</dd>
+					<dt><var>$encoding</var>,…</dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeHtml" id="_EscapeHtml">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeHtml">#</a>
+		<code><a href="source-class-MvcCore.IView.html#361-369" title="Go to source code">EscapeHtml</a>( <span>string <var>$str</var></span>, <span>boolean <var>$encoding</var> = <span class="php-quote">'UTF-8'</span></span>, <span>string <var>$encoding</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>Escape string for use inside HTML/XHTML/HTML5
+node between <code>&lt;</code> and <code>&gt;</code> for attributes definitions.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Escape string for use inside HTML/XHTML/HTML5
+node between <code>&lt;</code> and <code>&gt;</code> for attributes definitions.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+					<dt><var>$encoding</var></dt>
+					<dd>$double</dd>
+					<dt><var>$encoding</var>,…</dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeAttr" id="_EscapeAttr">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeAttr">#</a>
+		<code><a href="source-class-MvcCore.IView.html#371-378" title="Go to source code">EscapeAttr</a>( <span>string <var>$str</var></span>, <span>boolean <var>$double</var> = <span class="php-keyword1">TRUE</span></span>, <span>string <var>$encoding</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+
+		<div class="description short">
+			<p>Escape string for use inside HTML/XHTML/HTML5 attribute.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Escape string for use inside HTML/XHTML/HTML5 attribute.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+					<dt><var>$double</var></dt>
+					<dd></dd>
+					<dt><var>$encoding</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeXml" id="_EscapeXml">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeXml">#</a>
+		<code><a href="source-class-MvcCore.IView.html#380-389" title="Go to source code">EscapeXml</a>( <span>string <var>$str</var></span>, <span>string <var>$encoding</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+
+		<div class="description short">
+			<p>Escape string for use inside XML template.
+XML 1.0:    \x09 \x0A \x0D and C1 allowed directly, C0 forbidden
+XML 1.1:    \x00 forbidden directly and as a character reference,
+        \x09 \x0A \x0D \x85 allowed directly, C0, C1 and \x7F allowed as character references</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Escape string for use inside XML template.
+XML 1.0:    \x09 \x0A \x0D and C1 allowed directly, C0 forbidden
+XML 1.1:    \x00 forbidden directly and as a character reference, \x09 \x0A \x0D \x85 allowed directly, C0, C1 and \x7F allowed as character references</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+					<dt><var>$encoding</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeJs" id="_EscapeJs">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeJs">#</a>
+		<code><a href="source-class-MvcCore.IView.html#391-398" title="Go to source code">EscapeJs</a>( <span>string <var>$str</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span>, <span>integer <var>$depth</var> = <span class="php-num">512</span></span> )</code>
+
+		<div class="description short">
+			<p>Escape string for use inside JS context, including trailing double quotes.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Escape string for use inside JS context, including trailing double quotes.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+					<dt><var>$flags</var></dt>
+					<dd></dd>
+					<dt><var>$depth</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeCss" id="_EscapeCss">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeCss">#</a>
+		<code><a href="source-class-MvcCore.IView.html#400-406" title="Go to source code">EscapeCss</a>( <span>string <var>$str</var></span> )</code>
+
+		<div class="description short">
+			<p>Escape string for use inside CSS context.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Escape string for use inside CSS context.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						http://www.w3.org/TR/2006/WD-CSS21-20060411/syndata.html#q6<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeICal" id="_EscapeICal">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeICal">#</a>
+		<code><a href="source-class-MvcCore.IView.html#408-414" title="Go to source code">EscapeICal</a>( <span>string <var>$str</var></span> )</code>
+
+		<div class="description short">
+			<p>Escape string for use inside iCal template.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Escape string for use inside iCal template.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						https://www.ietf.org/rfc/rfc5545.txt<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetHelper" id="_GetHelper">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetHelper">#</a>
+		<code><a href="source-class-MvcCore.IView.html#416-426" title="Go to source code">GetHelper</a>( <span>string <var>$helperNameCamelCase</var></span>, <span>boolean <var>$asClosure</var> = <span class="php-keyword1">FALSE</span></span> )</code>
+
+		<div class="description short">
+			<p>Try to get view helper.
+If view helper doesn't exist in global helpers store - create new helper instance.
+If helper already exists in global helpers store - do not create it again - use instance from the store.
+Example: <code>echo $this-&gt;GetHelper('facebook')-&gt;RenderSomeSpecialWidgetMethod();</code></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Try to get view helper.
+If view helper doesn't exist in global helpers store - create new helper instance.
+If helper already exists in global helpers store - do not create it again - use instance from the store.
+Example: <code>echo $this-&gt;GetHelper('facebook')-&gt;RenderSomeSpecialWidgetMethod();</code></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$helperNameCamelCase</var></dt>
+					<dd>View helper method name in camel case.</dd>
+					<dt><var>$asClosure</var></dt>
+					<dd>Get View helper prepared as closure function, <code>FALSE</code> by default.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>View helper instance, always as <code>\MvcCore\Ext\Views\Helpers\AbstractHelper|\MvcCore\Ext\Views\Helpers\IHelper</code> instance.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException<br>If view doesn't exist in configured namespaces.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetHelper" id="_SetHelper">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetHelper">#</a>
+		<code><a href="source-class-MvcCore.IView.html#428-436" title="Go to source code">SetHelper</a>( <span>string <var>$helperNameCamelCase</var></span>, <span>mixed <var>$instance</var></span>, <span>boolean <var>$forAllTemplates</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			<p>Set view helper for current template or for all templates globally by default.
+If view helper already exist in global helpers store - it's overwritten.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set view helper for current template or for all templates globally by default.
+If view helper already exist in global helpers store - it's overwritten.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$helperNameCamelCase</var></dt>
+					<dd>View helper method name in camel case.</dd>
+					<dt><var>$instance</var></dt>
+					<dd>View helper instance, always as <code>\MvcCore\Ext\Views\Helpers\AbstractHelper|\MvcCore\Ext\Views\Helpers\IHelper</code> instance or <code>\Closure</code>.</dd>
+					<dt><var>$forAllTemplates</var></dt>
+					<dd>register this helper instance for all rendered views in the future.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.View.html">MvcCore\View</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__set" id="___set">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___set">#</a>
+		<code><a href="source-class-MvcCore.IView.html#438-444" title="Go to source code">__set</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Set any value into view context internal store.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set any value into view context internal store.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-MvcCore.IView.html#446-453" title="Go to source code">__get</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Get any value by given name existing in local store. If there is no value
+in local store by given name, try to get result value into store by
+controller reflection class from controller instance property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get any value by given name existing in local store. If there is no value
+in local store by given name, try to get result value into store by
+controller reflection class from controller instance property.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__isset" id="___isset">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___isset">#</a>
+		<code><a href="source-class-MvcCore.IView.html#455-461" title="Go to source code">__isset</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Get <code>TRUE</code> if any value by given name exists in
+local view store or in local controller instance.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get <code>TRUE</code> if any value by given name exists in
+local view store or in local controller instance.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__unset" id="___unset">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___unset">#</a>
+		<code><a href="source-class-MvcCore.IView.html#463-468" title="Go to source code">__unset</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Unset any value from view context internal store.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Unset any value from view context internal store.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-MvcCore.IView.html#470-481" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>mixed <var>$arguments</var></span> )</code>
+
+		<div class="description short">
+			<p>Try to call view helper.
+If view helper doesn't exist in global helpers store - create new helper instance.
+If helper already exists in global helpers store - do not create it again - use instance from the store.
+Then call it's public method named in the same way as helper and return result
+as it is, without any conversion. So then there could be called any other helper method if whole helper instance is returned.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Try to call view helper.
+If view helper doesn't exist in global helpers store - create new helper instance.
+If helper already exists in global helpers store - do not create it again - use instance from the store.
+Then call it's public method named in the same way as helper and return result
+as it is, without any conversion. So then there could be called any other helper method if whole helper instance is returned.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd>View helper method name in pascal case.</dd>
+					<dt><var>$arguments</var></dt>
+					<dd>View helper method arguments.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|mixed<br>View helper string result or any other view helper result type or view helper instance, always as <code>\MvcCore\Ext\Views\Helpers\AbstractHelper|\MvcCore\Ext\Views\Helpers\IHelper</code> instance.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException<br>If view doesn't exist in configured namespaces.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary methods" id="magicMethods">
+	<caption>Magic methods summary</caption>
+	<tr data-order="Css" id="m_Css">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Views.Helpers.CssHelper.html">MvcCore\Ext\Views\Helpers\CssHelper</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#m_Css">#</a>
+		<code><a href="source-class-MvcCore.IView.html#41" title="Go to source code">Css</a>( <span>string <var>$groupName</var> = self::GROUP_NAME_DEFAULT</span> )</code>
+
+		<div class="description short">
+			<p>Get css helper instance by group name. To use this method, you need to install extension <code>mvccore/ext-view-helper-assets</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get css helper instance by group name. To use this method, you need to install extension <code>mvccore/ext-view-helper-assets</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$groupName</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Views.Helpers.CssHelper.html">MvcCore\Ext\Views\Helpers\CssHelper</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Js" id="m_Js">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Views.Helpers.JsHelper.html">MvcCore\Ext\Views\Helpers\JsHelper</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#m_Js">#</a>
+		<code><a href="source-class-MvcCore.IView.html#42" title="Go to source code">Js</a>( <span>string <var>$groupName</var> = self::GROUP_NAME_DEFAULT</span> )</code>
+
+		<div class="description short">
+			<p>Get js helper instance by group name. To use this method, you need to install extension <code>mvccore/ext-view-helper-assets</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get js helper instance by group name. To use this method, you need to install extension <code>mvccore/ext-view-helper-assets</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$groupName</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Views.Helpers.JsHelper.html">MvcCore\Ext\Views\Helpers\JsHelper</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="FormatDate" id="m_FormatDate">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#m_FormatDate">#</a>
+		<code><a href="source-class-MvcCore.IView.html#43" title="Go to source code">FormatDate</a>( <span>DateTime|IntlCalendar|integer <var>$dateTimeOrTimestamp</var> = <span class="php-keyword1">NULL</span></span>, <span>integer|string <var>$dateTypeOrFormatMask</var> = <span class="php-keyword1">NULL</span></span>, <span>integer <var>$timeType</var> = <span class="php-keyword1">NULL</span></span>, <span>string|IntlTimeZone|DateTimeZone <var>$timeZone</var> = <span class="php-keyword1">NULL</span></span>, <span>integer <var>$calendar</var> = <span class="php-keyword1">NULL</span>) Format given <span class="php-keyword2">date</span> <span class="php-keyword2">time</span> by `Intl` extension <span class="php-keyword1">or</span> by `<span class="php-keyword2">strftime</span>(</span> )</code>
+
+		<div class="description short">
+			<p><code>as fallback. To use this method, you need to install extension</code>mvccore/ext-view-helper-formatdatetime`.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p><code>as fallback. To use this method, you need to install extension</code>mvccore/ext-view-helper-formatdatetime`.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dateTimeOrTimestamp</var></dt>
+					<dd></dd>
+					<dt><var>$dateTypeOrFormatMask</var></dt>
+					<dd></dd>
+					<dt><var>$timeType</var></dt>
+					<dd></dd>
+					<dt><var>$timeZone</var></dt>
+					<dd></dd>
+					<dt><var>$calendar</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="FormatNumber" id="m_FormatNumber">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#m_FormatNumber">#</a>
+		<code><a href="source-class-MvcCore.IView.html#44" title="Go to source code">FormatNumber</a>( <span>float|integer <var>$number</var> = <span class="php-num">0.0</span></span>, <span>integer <var>$decimals</var></span>, <span>string <var>$dec_point</var> = <span class="php-keyword1">NULL</span></span>, <span>string <var>$thousands_sep</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>To use this method, you need to install extension <code>mvccore/ext-view-helper-formatnumber</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>To use this method, you need to install extension <code>mvccore/ext-view-helper-formatnumber</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$number</var></dt>
+					<dd></dd>
+					<dt><var>$decimals</var></dt>
+					<dd></dd>
+					<dt><var>$dec_point</var></dt>
+					<dd></dd>
+					<dt><var>$thousands_sep</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="FormatMoney" id="m_FormatMoney">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#m_FormatMoney">#</a>
+		<code><a href="source-class-MvcCore.IView.html#45" title="Go to source code">FormatMoney</a>( <span>integer <var>$decimals</var></span>, <span>string <var>$dec_point</var> = <span class="php-keyword1">NULL</span></span>, <span>string <var>$thousands_sep</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>To use this method, you need to install extension <code>mvccore/ext-view-helper-formatmoney</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>To use this method, you need to install extension <code>mvccore/ext-view-helper-formatmoney</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$decimals</var></dt>
+					<dd>$dec_point</dd>
+					<dt><var>$dec_point</var></dt>
+					<dd>$thousands_sep</dd>
+					<dt><var>$thousands_sep</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="LineBreaks" id="m_LineBreaks">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#m_LineBreaks">#</a>
+		<code><a href="source-class-MvcCore.IView.html#46" title="Go to source code">LineBreaks</a>( <span>string <var>$text</var></span>, <span>string <var>$lang</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Prevent breaking line inside numbers, after week words, shortcuts, numbers and units and much more, very configurable. To use this method, you need to install extension <code>mvccore/ext-view-helper-linebreaks</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Prevent breaking line inside numbers, after week words, shortcuts, numbers and units and much more, very configurable. To use this method, you need to install extension <code>mvccore/ext-view-helper-linebreaks</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd></dd>
+					<dt><var>$lang</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DataUrl" id="m_DataUrl">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#m_DataUrl">#</a>
+		<code><a href="source-class-MvcCore.IView.html#47" title="Go to source code">DataUrl</a>( <span>string <var>$relativeOrAbsolutePath</var></span> )</code>
+
+		<div class="description short">
+			<p>Return any file content by given relative or absolute path in data URL like <code>data:image/png;base64,iVBOR..</code>. Path could be relative from currently rendered view, relative from application root or absolute path to file. To use this method, you need to install extension <code>mvccore/ext-view-helper-dataurl</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return any file content by given relative or absolute path in data URL like <code>data:image/png;base64,iVBOR..</code>. Path could be relative from currently rendered view, relative from application root or absolute path to file. To use this method, you need to install extension <code>mvccore/ext-view-helper-dataurl</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relativeOrAbsolutePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="WriteByJS" id="m_WriteByJS">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#m_WriteByJS">#</a>
+		<code><a href="source-class-MvcCore.IView.html#48" title="Go to source code">WriteByJS</a>( )</code>
+
+		<div class="description short">
+			<p>;</script><code>. To use this method, you need to install extension</code>mvccore/ext-view-helper-writebyjs`.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>;</script><code>. To use this method, you need to install extension</code>mvccore/ext-view-helper-writebyjs`.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Truncate" id="m_Truncate">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#m_Truncate">#</a>
+		<code><a href="source-class-MvcCore.IView.html#49" title="Go to source code">Truncate</a>( <span>string <var>$text</var></span>, <span>integer <var>$maxChars</var> = <span class="php-num">200</span></span>, <span>boolean <var>$isHtml</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Truncate plain text or text with html tags by given max. characters number and add three dots at the end. To use this method, you need to install extension <code>mvccore/ext-view-helper-truncate</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Truncate plain text or text with html tags by given max. characters number and add three dots at the end. To use this method, you need to install extension <code>mvccore/ext-view-helper-truncate</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd></dd>
+					<dt><var>$maxChars</var></dt>
+					<dd></dd>
+					<dt><var>$isHtml</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-MvcCore.View.IConstants.html#constants">MvcCore\View\IConstants</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.View.IConstants.html#DOCTYPE_HTML4"><b>DOCTYPE_HTML4</b></a>, 
+			<a href="class-MvcCore.View.IConstants.html#DOCTYPE_HTML5"><b>DOCTYPE_HTML5</b></a>, 
+			<a href="class-MvcCore.View.IConstants.html#DOCTYPE_XHTML"><b>DOCTYPE_XHTML</b></a>, 
+			<a href="class-MvcCore.View.IConstants.html#DOCTYPE_XML"><b>DOCTYPE_XML</b></a>, 
+			<a href="class-MvcCore.View.IConstants.html#HELPERS_INTERFACE_CLASS_NAME"><b>HELPERS_INTERFACE_CLASS_NAME</b></a>, 
+			<a href="class-MvcCore.View.IConstants.html#RENDER_WITHOUT_OB_CONTINUOUSLY"><b>RENDER_WITHOUT_OB_CONTINUOUSLY</b></a>, 
+			<a href="class-MvcCore.View.IConstants.html#RENDER_WITH_OB_FROM_ACTION_TO_LAYOUT"><b>RENDER_WITH_OB_FROM_ACTION_TO_LAYOUT</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary properties" id="magicProperties">
+	<caption>Magic properties summary</caption>
+	<tr data-order="controller" id="m$controller">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-MvcCore.Controller.html">MvcCore\Controller</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.IView.html#40" title="Go to source code"><var>$controller</var></a>
+
+			<div class="description short">
+				<p>Currently dispatched controller instance.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		MvcCore API Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?2ab812383cb4b212c43712f7c21ac059c51885eb"></script>
+<script src="elementlist.js?50c78828258582bde9515f2669013c1b567efe79"></script>
+</body>
+</html>

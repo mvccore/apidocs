@@ -1,0 +1,35 @@
+Usage:
+  generate [options]
+
+Options:
+  -s, --source=SOURCE                        Dirs or files documentation is generated for. (multiple values allowed)
+  -d, --destination=DESTINATION              Target dir for documentation.
+      --access-levels=ACCESS-LEVELS          Access levels of included method and properties. [default: ["public","protected"]] (multiple values allowed)
+      --annotation-groups=ANNOTATION-GROUPS  Generate page with elements with specific annotation.
+      --base-url=BASE-URL                    Base url used for sitemap (useful for public doc).
+      --config=CONFIG                        Custom path to apigen.neon config file. [default: "C:\works\home\mvccore\php\packages\mvccore\docs/apigen.neon"]
+      --google-cse-id=GOOGLE-CSE-ID          Custom google search engine id (for search box).
+      --google-analytics=GOOGLE-ANALYTICS    Google Analytics tracking code.
+      --debug                                Turn on debug mode.
+      --deprecated                           Generate documentation for elements marked as @deprecated
+      --download                             Add link to ZIP archive of documentation.
+      --extensions=EXTENSIONS                Scanned file extensions. [default: ["php"]] (multiple values allowed)
+      --exclude=EXCLUDE                      Directories and files matching this mask will not be parsed (e.g. */tests/*). (multiple values allowed)
+      --groups=GROUPS                        The way elements are grouped in menu. [default: "auto"]
+      --charset=CHARSET                      Charset of scanned files. (multiple values allowed)
+      --main=MAIN                            Elements with this name prefix will be first in tree.
+      --internal                             Include elements marked as @internal.
+      --php                                  Generate documentation for PHP internal classes.
+      --skip-doc-path=SKIP-DOC-PATH          Files matching this mask will be included in class tree, but will not create a link to their documentation. (multiple values allowed)
+      --no-source-code                       Do not generate highlighted source code for elements.
+      --template-theme=TEMPLATE-THEME        ApiGen template theme name. [default: "default"]
+      --template-config=TEMPLATE-CONFIG      Your own template config, has higher priority templateTheme.
+      --title=TITLE                          Title of generated documentation.
+      --todo                                 Generate documentation for elements marked as @todo.
+      --tree                                 Generate tree view of classes, interfaces, traits and exceptions.
+  -h, --help                                 Display this help message.
+  -q, --quiet                                Do not output any message.
+  -V, --version                              Display this application version.
+
+Help:
+  Generate API documentation

@@ -1,0 +1,3179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Trait MvcCore\Ext\Auths\Basic\PropsGettersSetters | MvcCore API Documentation</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-187607113-1"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-MvcCore.Application.html">MvcCore\Application</a></li>
+				<li><a href="class-MvcCore.Config.html">MvcCore\Config</a></li>
+				<li><a href="class-MvcCore.Controller.html">MvcCore\Controller</a></li>
+				<li><a href="class-MvcCore.Controller.AutoInit.html">MvcCore\Controller\AutoInit</a></li>
+				<li><a href="class-MvcCore.Debug.html">MvcCore\Debug</a></li>
+				<li><a href="class-MvcCore.Environment.html">MvcCore\Environment</a></li>
+				<li><a href="class-MvcCore.Ext.Auth.html">MvcCore\Ext\Auth</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Controller.html">MvcCore\Ext\Auths\Basics\Controller</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Role.html">MvcCore\Ext\Auths\Basics\Role</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.SignInForm.html">MvcCore\Ext\Auths\Basics\SignInForm</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.SignOutForm.html">MvcCore\Ext\Auths\Basics\SignOutForm</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.html">MvcCore\Ext\Auths\Basics\User</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Users.Database.html">MvcCore\Ext\Auths\Basics\Users\Database</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Users.SystemConfig.html">MvcCore\Ext\Auths\Basics\Users\SystemConfig</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.User.html" class="invalid">MvcCore\Ext\Auths\User</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Users.Database.html" class="invalid">MvcCore\Ext\Auths\Users\Database</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Users.SystemConfig.html" class="invalid">MvcCore\Ext\Auths\Users\SystemConfig</a></li>
+				<li><a href="class-MvcCore.Ext.Cache.html">MvcCore\Ext\Cache</a></li>
+				<li><a href="class-MvcCore.Ext.Caches.Redis.html">MvcCore\Ext\Caches\Redis</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Cached.html">MvcCore\Ext\Configs\Cached</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yaml.html">MvcCore\Ext\Configs\Yaml</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracy.html">MvcCore\Ext\Debugs\Tracy</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.AuthPanel.html">MvcCore\Ext\Debugs\Tracys\AuthPanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.IncludePanel.html">MvcCore\Ext\Debugs\Tracys\IncludePanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.MvcCorePanel.html">MvcCore\Ext\Debugs\Tracys\MvcCorePanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.RoutingPanel.html">MvcCore\Ext\Debugs\Tracys\RoutingPanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.SessionPanel.html">MvcCore\Ext\Debugs\Tracys\SessionPanel</a></li>
+				<li><a href="class-MvcCore.Ext.Form.html">MvcCore\Ext\Form</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.html">MvcCore\Ext\Forms\Field</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Button.html">MvcCore\Ext\Forms\Fields\Button</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ButtonInput.html">MvcCore\Ext\Forms\Fields\ButtonInput</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Checkbox.html">MvcCore\Ext\Forms\Fields\Checkbox</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.CheckboxGroup.html">MvcCore\Ext\Forms\Fields\CheckboxGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Color.html">MvcCore\Ext\Forms\Fields\Color</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.CountrySelect.html">MvcCore\Ext\Forms\Fields\CountrySelect</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.DataList.html">MvcCore\Ext\Forms\Fields\DataList</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Date.html">MvcCore\Ext\Forms\Fields\Date</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.DateTime.html">MvcCore\Ext\Forms\Fields\DateTime</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Email.html">MvcCore\Ext\Forms\Fields\Email</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.File.html">MvcCore\Ext\Forms\Fields\File</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Hidden.html">MvcCore\Ext\Forms\Fields\Hidden</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Image.html">MvcCore\Ext\Forms\Fields\Image</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html">MvcCore\Ext\Forms\Fields\LocalizationSelect</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Month.html">MvcCore\Ext\Forms\Fields\Month</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Number.html">MvcCore\Ext\Forms\Fields\Number</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Password.html">MvcCore\Ext\Forms\Fields\Password</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.RadioGroup.html">MvcCore\Ext\Forms\Fields\RadioGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Range.html">MvcCore\Ext\Forms\Fields\Range</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ResetButton.html">MvcCore\Ext\Forms\Fields\ResetButton</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ResetInput.html">MvcCore\Ext\Forms\Fields\ResetInput</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Search.html">MvcCore\Ext\Forms\Fields\Search</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Select.html">MvcCore\Ext\Forms\Fields\Select</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.SubmitButton.html">MvcCore\Ext\Forms\Fields\SubmitButton</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.SubmitInput.html">MvcCore\Ext\Forms\Fields\SubmitInput</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Tel.html">MvcCore\Ext\Forms\Fields\Tel</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Text.html">MvcCore\Ext\Forms\Fields\Text</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Textarea.html">MvcCore\Ext\Forms\Fields\Textarea</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Time.html">MvcCore\Ext\Forms\Fields\Time</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Url.html">MvcCore\Ext\Forms\Fields\Url</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Week.html">MvcCore\Ext\Forms\Fields\Week</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.FieldsGroup.html">MvcCore\Ext\Forms\FieldsGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validator.html">MvcCore\Ext\Forms\Validator</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Color.html">MvcCore\Ext\Forms\Validators\Color</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.CompanyIdEu.html">MvcCore\Ext\Forms\Validators\CompanyIdEu</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.CompanyVatIdEu.html">MvcCore\Ext\Forms\Validators\CompanyVatIdEu</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.CreditCard.html">MvcCore\Ext\Forms\Validators\CreditCard</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Date.html">MvcCore\Ext\Forms\Validators\Date</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.DateTime.html">MvcCore\Ext\Forms\Validators\DateTime</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Email.html">MvcCore\Ext\Forms\Validators\Email</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.html">MvcCore\Ext\Forms\Validators\Files</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.GzArchive.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\GzArchive</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.PngImage.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\PngImage</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.RarArchive.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\RarArchive</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.ZipArchive.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\ZipArchive</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.FloatNumber.html">MvcCore\Ext\Forms\Validators\FloatNumber</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Hex.html">MvcCore\Ext\Forms\Validators\Hex</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Iban.html">MvcCore\Ext\Forms\Validators\Iban</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.IntNumber.html">MvcCore\Ext\Forms\Validators\IntNumber</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Ip.html">MvcCore\Ext\Forms\Validators\Ip</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.MinMaxLength.html">MvcCore\Ext\Forms\Validators\MinMaxLength</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.MinMaxOptions.html">MvcCore\Ext\Forms\Validators\MinMaxOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Month.html">MvcCore\Ext\Forms\Validators\Month</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Number.html">MvcCore\Ext\Forms\Validators\Number</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Password.html">MvcCore\Ext\Forms\Validators\Password</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Pattern.html">MvcCore\Ext\Forms\Validators\Pattern</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Range.html">MvcCore\Ext\Forms\Validators\Range</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.SafeString.html">MvcCore\Ext\Forms\Validators\SafeString</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Tel.html">MvcCore\Ext\Forms\Validators\Tel</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Time.html">MvcCore\Ext\Forms\Validators\Time</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Url.html">MvcCore\Ext\Forms\Validators\Url</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.ValueInOptions.html">MvcCore\Ext\Forms\Validators\ValueInOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Week.html">MvcCore\Ext\Forms\Validators\Week</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.ZipCode.html">MvcCore\Ext\Forms\Validators\ZipCode</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.View.html">MvcCore\Ext\Forms\View</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Column.html">MvcCore\Ext\Models\Db\Attrs\Column</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Connection.html">MvcCore\Ext\Models\Db\Attrs\Connection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Format.html">MvcCore\Ext\Models\Db\Attrs\Format</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.KeyPrimary.html">MvcCore\Ext\Models\Db\Attrs\KeyPrimary</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.KeyUnique.html">MvcCore\Ext\Models\Db\Attrs\KeyUnique</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Table.html">MvcCore\Ext\Models\Db\Attrs\Table</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Connection.html">MvcCore\Ext\Models\Db\Connection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySql.html">MvcCore\Ext\Models\Db\Models\MySql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSql.html">MvcCore\Ext\Models\Db\Models\PgSql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.Resource.html">MvcCore\Ext\Models\Db\Models\Resource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SQLite.html">MvcCore\Ext\Models\Db\Models\SQLite</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrv.html">MvcCore\Ext\Models\Db\Models\SqlSrv</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.MySql.html">MvcCore\Ext\Models\Db\Providers\Connections\MySql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.PgSql.html">MvcCore\Ext\Models\Db\Providers\Connections\PgSql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.SQLite.html">MvcCore\Ext\Models\Db\Providers\Connections\SQLite</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.SqlSrv.html">MvcCore\Ext\Models\Db\Providers\Connections\SqlSrv</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resource.html">MvcCore\Ext\Models\Db\Providers\Resource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.MySql.html">MvcCore\Ext\Models\Db\Providers\Resources\MySql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.PgSql.html">MvcCore\Ext\Models\Db\Providers\Resources\PgSql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.SQLite.html">MvcCore\Ext\Models\Db\Providers\Resources\SQLite</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.SqlSrv.html">MvcCore\Ext\Models\Db\Providers\Resources\SqlSrv</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Reader.html">MvcCore\Ext\Models\Db\Reader</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Execution.html">MvcCore\Ext\Models\Db\Readers\Execution</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Multiple.html">MvcCore\Ext\Models\Db\Readers\Multiple</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Single.html">MvcCore\Ext\Models\Db\Readers\Single</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Stream.html">MvcCore\Ext\Models\Db\Readers\Stream</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Streams.Iterator.html">MvcCore\Ext\Models\Db\Readers\Streams\Iterator</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Statement.html">MvcCore\Ext\Models\Db\Statement</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Model.html">MvcCore\Ext\Models\Model</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.html">MvcCore\Ext\Routers\Localization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.html">MvcCore\Ext\Routers\Localizations\Route</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.html">MvcCore\Ext\Routers\Media</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.html">MvcCore\Ext\Routers\MediaAndLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.html">MvcCore\Ext\Routers\Module</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.html">MvcCore\Ext\Routers\ModuleLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMedia.html">MvcCore\Ext\Routers\ModuleMedia</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMediaAndLocalization.html">MvcCore\Ext\Routers\ModuleMediaAndLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.html">MvcCore\Ext\Routers\Modules\Route</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Image.html">MvcCore\Ext\Tools\Image</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gd.html">MvcCore\Ext\Tools\Images\Gd</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gds.ApplyMask.html">MvcCore\Ext\Tools\Images\Gds\ApplyMask</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gds.RoundCorners.html">MvcCore\Ext\Tools\Images\Gds\RoundCorners</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gds.UnsharpMask.html">MvcCore\Ext\Tools\Images\Gds\UnsharpMask</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Imagick.html">MvcCore\Ext\Tools\Images\Imagick</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Locale.html">MvcCore\Ext\Tools\Locale</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Locales.FloatParser.html">MvcCore\Ext\Tools\Locales\FloatParser</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.MimeTypesExtensions.html">MvcCore\Ext\Tools\MimeTypesExtensions</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.AbstractHelper.html">MvcCore\Ext\Views\Helpers\AbstractHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.Assets.html">MvcCore\Ext\Views\Helpers\Assets</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.CssHelper.html">MvcCore\Ext\Views\Helpers\CssHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.DataUrlHelper.html">MvcCore\Ext\Views\Helpers\DataUrlHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.FormatDateHelper.html">MvcCore\Ext\Views\Helpers\FormatDateHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.FormatMoneyHelper.html">MvcCore\Ext\Views\Helpers\FormatMoneyHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.FormatNumberHelper.html">MvcCore\Ext\Views\Helpers\FormatNumberHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.InternationalizedHelper.html">MvcCore\Ext\Views\Helpers\InternationalizedHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.JsHelper.html">MvcCore\Ext\Views\Helpers\JsHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.LineBreaksHelper.html">MvcCore\Ext\Views\Helpers\LineBreaksHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.TruncateHelper.html">MvcCore\Ext\Views\Helpers\TruncateHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.WriteByJsHelper.html">MvcCore\Ext\Views\Helpers\WriteByJsHelper</a></li>
+				<li><a href="class-MvcCore.Model.html">MvcCore\Model</a></li>
+				<li><a href="class-MvcCore.Request.html">MvcCore\Request</a></li>
+				<li><a href="class-MvcCore.Response.html">MvcCore\Response</a></li>
+				<li><a href="class-MvcCore.Route.html">MvcCore\Route</a></li>
+				<li><a href="class-MvcCore.Router.html">MvcCore\Router</a></li>
+				<li><a href="class-MvcCore.Session.html">MvcCore\Session</a></li>
+				<li><a href="class-MvcCore.Tool.html">MvcCore\Tool</a></li>
+				<li><a href="class-MvcCore.View.html">MvcCore\View</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-MvcCore.Application.IConstants.html">MvcCore\Application\IConstants</a></li>
+				<li><a href="class-MvcCore.Controller.IConstants.html">MvcCore\Controller\IConstants</a></li>
+				<li><a href="class-MvcCore.Debug.IConstants.html">MvcCore\Debug\IConstants</a></li>
+				<li><a href="class-MvcCore.Environment.IConstants.html">MvcCore\Environment\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IController.html">MvcCore\Ext\Auths\Basics\IController</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IDatabaseUser.html">MvcCore\Ext\Auths\Basics\IDatabaseUser</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IForm.html">MvcCore\Ext\Auths\Basics\IForm</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IRole.html">MvcCore\Ext\Auths\Basics\IRole</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IUser.html">MvcCore\Ext\Auths\Basics\IUser</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.IBasic.html">MvcCore\Ext\Auths\IBasic</a></li>
+				<li><a href="class-MvcCore.Ext.Form.IConstants.html">MvcCore\Ext\Form\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IAlwaysValidate.html">MvcCore\Ext\Forms\Fields\IAlwaysValidate</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IChecked.html">MvcCore\Ext\Forms\Fields\IChecked</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IDataList.html">MvcCore\Ext\Forms\Fields\IDataList</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IFile.html">MvcCore\Ext\Forms\Fields\IFile</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IFormat.html">MvcCore\Ext\Forms\Fields\IFormat</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ILabel.html">MvcCore\Ext\Forms\Fields\ILabel</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxLength.html">MvcCore\Ext\Forms\Fields\IMinMaxLength</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html">MvcCore\Ext\Forms\Fields\IMinMaxOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxStepDates.html">MvcCore\Ext\Forms\Fields\IMinMaxStepDates</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxStepNumbers.html">MvcCore\Ext\Forms\Fields\IMinMaxStepNumbers</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMultiple.html">MvcCore\Ext\Forms\Fields\IMultiple</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IOptions.html">MvcCore\Ext\Forms\Fields\IOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IPattern.html">MvcCore\Ext\Forms\Fields\IPattern</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ISubmit.html">MvcCore\Ext\Forms\Fields\ISubmit</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html">MvcCore\Ext\Forms\Fields\IVisibleField</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IError.html">MvcCore\Ext\Forms\IError</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IField.html">MvcCore\Ext\Forms\IField</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IFieldsGroup.html">MvcCore\Ext\Forms\IFieldsGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IValidator.html">MvcCore\Ext\Forms\IValidator</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IView.html">MvcCore\Ext\Forms\IView</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.IBombScanner.html">MvcCore\Ext\Forms\Validators\Files\Validations\IBombScanner</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.IFiles.html">MvcCore\Ext\Forms\Validators\IFiles</a></li>
+				<li><a href="class-MvcCore.Ext.ICache.html">MvcCore\Ext\ICache</a></li>
+				<li><a href="class-MvcCore.Ext.IForm.html">MvcCore\Ext\IForm</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IConnection.html">MvcCore\Ext\Models\Db\IConnection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IModel.html">MvcCore\Ext\Models\Db\IModel</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IReader.html">MvcCore\Ext\Models\Db\IReader</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IStatement.html">MvcCore\Ext\Models\Db\IStatement</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.IConstants.html">MvcCore\Ext\Models\Db\Model\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySqls.IConstants.html">MvcCore\Ext\Models\Db\Models\MySqls\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSqls.IConstants.html">MvcCore\Ext\Models\Db\Models\PgSqls\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrvs.IConstants.html">MvcCore\Ext\Models\Db\Models\SqlSrvs\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.IExecution.html">MvcCore\Ext\Models\Db\Readers\IExecution</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.IMultiple.html">MvcCore\Ext\Models\Db\Readers\IMultiple</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.ISingle.html">MvcCore\Ext\Models\Db\Readers\ISingle</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.IStream.html">MvcCore\Ext\Models\Db\Readers\IStream</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Streams.IIterator.html">MvcCore\Ext\Models\Db\Readers\Streams\IIterator</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.IExtended.html">MvcCore\Ext\Routers\IExtended</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ILocalization.html">MvcCore\Ext\Routers\ILocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.IMedia.html">MvcCore\Ext\Routers\IMedia</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.IModule.html">MvcCore\Ext\Routers\IModule</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.IRoute.html">MvcCore\Ext\Routers\Modules\IRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IAdapter.html">MvcCore\Ext\Tools\Images\IAdapter</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IComposite.html">MvcCore\Ext\Tools\Images\IComposite</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IFormat.html">MvcCore\Ext\Tools\Images\IFormat</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IImage.html">MvcCore\Ext\Tools\Images\IImage</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Imagicks.IComposite.html">MvcCore\Ext\Tools\Images\Imagicks\IComposite</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IOrientation.html">MvcCore\Ext\Tools\Images\IOrientation</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.IHelper.html">MvcCore\Ext\Views\Helpers\IHelper</a></li>
+				<li><a href="class-MvcCore.IApplication.html">MvcCore\IApplication</a></li>
+				<li><a href="class-MvcCore.IConfig.html">MvcCore\IConfig</a></li>
+				<li><a href="class-MvcCore.IController.html">MvcCore\IController</a></li>
+				<li><a href="class-MvcCore.IDebug.html">MvcCore\IDebug</a></li>
+				<li><a href="class-MvcCore.IEnvironment.html">MvcCore\IEnvironment</a></li>
+				<li><a href="class-MvcCore.IModel.html">MvcCore\IModel</a></li>
+				<li><a href="class-MvcCore.IRequest.html">MvcCore\IRequest</a></li>
+				<li><a href="class-MvcCore.IResponse.html">MvcCore\IResponse</a></li>
+				<li><a href="class-MvcCore.IRoute.html">MvcCore\IRoute</a></li>
+				<li><a href="class-MvcCore.IRouter.html">MvcCore\IRouter</a></li>
+				<li><a href="class-MvcCore.ISession.html">MvcCore\ISession</a></li>
+				<li><a href="class-MvcCore.ITool.html">MvcCore\ITool</a></li>
+				<li><a href="class-MvcCore.IView.html">MvcCore\IView</a></li>
+				<li><a href="class-MvcCore.Model.IConstants.html">MvcCore\Model\IConstants</a></li>
+				<li><a href="class-MvcCore.Request.IConstants.html">MvcCore\Request\IConstants</a></li>
+				<li><a href="class-MvcCore.Response.IConstants.html">MvcCore\Response\IConstants</a></li>
+				<li><a href="class-MvcCore.Route.IConstants.html">MvcCore\Route\IConstants</a></li>
+				<li><a href="class-MvcCore.Router.IConstants.html">MvcCore\Router\IConstants</a></li>
+				<li><a href="class-MvcCore.Session.IConstants.html">MvcCore\Session\IConstants</a></li>
+				<li><a href="class-MvcCore.View.IConstants.html">MvcCore\View\IConstants</a></li>
+			</ul>
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-MvcCore.Application.Dispatching.html">MvcCore\Application\Dispatching</a></li>
+				<li><a href="class-MvcCore.Application.GettersSetters.html">MvcCore\Application\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Application.Helpers.html">MvcCore\Application\Helpers</a></li>
+				<li><a href="class-MvcCore.Application.Props.html">MvcCore\Application\Props</a></li>
+				<li><a href="class-MvcCore.Config.Environment.html">MvcCore\Config\Environment</a></li>
+				<li><a href="class-MvcCore.Config.IniDump.html">MvcCore\Config\IniDump</a></li>
+				<li><a href="class-MvcCore.Config.IniProps.html">MvcCore\Config\IniProps</a></li>
+				<li><a href="class-MvcCore.Config.IniRead.html">MvcCore\Config\IniRead</a></li>
+				<li><a href="class-MvcCore.Config.MagicMethods.html">MvcCore\Config\MagicMethods</a></li>
+				<li><a href="class-MvcCore.Config.PropsGettersSetters.html">MvcCore\Config\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Config.ReadWrite.html">MvcCore\Config\ReadWrite</a></li>
+				<li><a href="class-MvcCore.Controller.Dispatching.html">MvcCore\Controller\Dispatching</a></li>
+				<li><a href="class-MvcCore.Controller.GettersSetters.html">MvcCore\Controller\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Controller.Props.html">MvcCore\Controller\Props</a></li>
+				<li><a href="class-MvcCore.Controller.Rendering.html">MvcCore\Controller\Rendering</a></li>
+				<li><a href="class-MvcCore.Debug.Handlers.html">MvcCore\Debug\Handlers</a></li>
+				<li><a href="class-MvcCore.Debug.Initializations.html">MvcCore\Debug\Initializations</a></li>
+				<li><a href="class-MvcCore.Debug.Props.html">MvcCore\Debug\Props</a></li>
+				<li><a href="class-MvcCore.Environment.Detection.html">MvcCore\Environment\Detection</a></li>
+				<li><a href="class-MvcCore.Environment.Instancing.html">MvcCore\Environment\Instancing</a></li>
+				<li><a href="class-MvcCore.Environment.PropsGettersSetters.html">MvcCore\Environment\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basic.Handling.html">MvcCore\Ext\Auths\Basic\Handling</a></li>
+				<li class="active"><a href="class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html">MvcCore\Ext\Auths\Basic\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Controller.Base.html">MvcCore\Ext\Auths\Basics\Controller\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Form.Base.html">MvcCore\Ext\Auths\Basics\Form\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Form.SignIn.html">MvcCore\Ext\Auths\Basics\Form\SignIn</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Form.SignOut.html">MvcCore\Ext\Auths\Basics\Form\SignOut</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Role.Base.html">MvcCore\Ext\Auths\Basics\Role\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Role.Features.html">MvcCore\Ext\Auths\Basics\Role\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Auth.html">MvcCore\Ext\Auths\Basics\User\Auth</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Base.html">MvcCore\Ext\Auths\Basics\User\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Features.html">MvcCore\Ext\Auths\Basics\User\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Roles.html">MvcCore\Ext\Auths\Basics\User\Roles</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.UserAndRole.Base.html">MvcCore\Ext\Auths\Basics\UserAndRole\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.UserAndRole.Permissions.html">MvcCore\Ext\Auths\Basics\UserAndRole\Permissions</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yamls.YamlDump.html">MvcCore\Ext\Configs\Yamls\YamlDump</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yamls.YamlProps.html">MvcCore\Ext\Configs\Yamls\YamlProps</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yamls.YamlRead.html">MvcCore\Ext\Configs\Yamls\YamlRead</a></li>
+				<li><a href="class-MvcCore.Ext.Form.AddMethods.html">MvcCore\Ext\Form\AddMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Assets.html">MvcCore\Ext\Form\Assets</a></li>
+				<li><a href="class-MvcCore.Ext.Form.ConfigProps.html">MvcCore\Ext\Form\ConfigProps</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Csrf.html">MvcCore\Ext\Form\Csrf</a></li>
+				<li><a href="class-MvcCore.Ext.Form.FieldMethods.html">MvcCore\Ext\Form\FieldMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.GetMethods.html">MvcCore\Ext\Form\GetMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.InternalProps.html">MvcCore\Ext\Form\InternalProps</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Rendering.html">MvcCore\Ext\Form\Rendering</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Session.html">MvcCore\Ext\Form\Session</a></li>
+				<li><a href="class-MvcCore.Ext.Form.SetMethods.html">MvcCore\Ext\Form\SetMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Submitting.html">MvcCore\Ext\Form\Submitting</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Getters.html">MvcCore\Ext\Forms\Field\Getters</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.html">MvcCore\Ext\Forms\Field\Props</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.AccessKey.html">MvcCore\Ext\Forms\Field\Props\AccessKey</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.AutoComplete.html">MvcCore\Ext\Forms\Field\Props\AutoComplete</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.AutoFocus.html">MvcCore\Ext\Forms\Field\Props\AutoFocus</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Checked.html">MvcCore\Ext\Forms\Field\Props\Checked</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.DataList.html">MvcCore\Ext\Forms\Field\Props\DataList</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Disabled.html">MvcCore\Ext\Forms\Field\Props\Disabled</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Files.html">MvcCore\Ext\Forms\Field\Props\Files</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Format.html">MvcCore\Ext\Forms\Field\Props\Format</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.FormAttrs.html">MvcCore\Ext\Forms\Field\Props\FormAttrs</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.GroupLabelAttrs.html">MvcCore\Ext\Forms\Field\Props\GroupLabelAttrs</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.GroupLabelCssClasses.html">MvcCore\Ext\Forms\Field\Props\GroupLabelCssClasses</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.InputMode.html">MvcCore\Ext\Forms\Field\Props\InputMode</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Label.html">MvcCore\Ext\Forms\Field\Props\Label</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxLength.html">MvcCore\Ext\Forms\Field\Props\MinMaxLength</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html">MvcCore\Ext\Forms\Field\Props\MinMaxOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxStepDates.html">MvcCore\Ext\Forms\Field\Props\MinMaxStepDates</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxStepNumbers.html">MvcCore\Ext\Forms\Field\Props\MinMaxStepNumbers</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Multiple.html">MvcCore\Ext\Forms\Field\Props\Multiple</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html">MvcCore\Ext\Forms\Field\Props\NullOptionText</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Options.html">MvcCore\Ext\Forms\Field\Props\Options</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Pattern.html">MvcCore\Ext\Forms\Field\Props\Pattern</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.PlaceHolder.html">MvcCore\Ext\Forms\Field\Props\PlaceHolder</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.ReadOnly.html">MvcCore\Ext\Forms\Field\Props\ReadOnly</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Required.html">MvcCore\Ext\Forms\Field\Props\Required</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.RowsColsWrap.html">MvcCore\Ext\Forms\Field\Props\RowsColsWrap</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Size.html">MvcCore\Ext\Forms\Field\Props\Size</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.SpellCheck.html">MvcCore\Ext\Forms\Field\Props\SpellCheck</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Submit.html">MvcCore\Ext\Forms\Field\Props\Submit</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.TabIndex.html">MvcCore\Ext\Forms\Field\Props\TabIndex</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.VisibleField.html">MvcCore\Ext\Forms\Field\Props\VisibleField</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.WidthHeight.html">MvcCore\Ext\Forms\Field\Props\WidthHeight</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Wrapper.html">MvcCore\Ext\Forms\Field\Props\Wrapper</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Rendering.html">MvcCore\Ext\Forms\Field\Rendering</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Setters.html">MvcCore\Ext\Forms\Field\Setters</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.CheckRequirements.html">MvcCore\Ext\Forms\Validators\Files\CheckRequirements</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.CompleteFiles.html">MvcCore\Ext\Forms\Validators\Files\CompleteFiles</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.ReadAccept.html">MvcCore\Ext\Forms\Validators\Files\ReadAccept</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.Bomb.html">MvcCore\Ext\Forms\Validators\Files\Validations\Bomb</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.FileAndSize.html">MvcCore\Ext\Forms\Validators\Files\Validations\FileAndSize</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.MimeTypeAndExtension.html">MvcCore\Ext\Forms\Validators\Files\Validations\MimeTypeAndExtension</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.NameAndExtension.html">MvcCore\Ext\Forms\Validators\Files\Validations\NameAndExtension</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Connection.html">MvcCore\Ext\Models\Db\Model\Connection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.DataMethods.html">MvcCore\Ext\Models\Db\Model\DataMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Features.html">MvcCore\Ext\Models\Db\Model\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Manipulation.html">MvcCore\Ext\Models\Db\Model\Manipulation</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.MetaData.html">MvcCore\Ext\Models\Db\Model\MetaData</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Parsers.html">MvcCore\Ext\Models\Db\Model\Parsers</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Props.html">MvcCore\Ext\Models\Db\Model\Props</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.ProviderResource.html">MvcCore\Ext\Models\Db\Model\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySqls.Features.html">MvcCore\Ext\Models\Db\Models\MySqls\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySqls.ProviderResource.html">MvcCore\Ext\Models\Db\Models\MySqls\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSqls.Features.html">MvcCore\Ext\Models\Db\Models\PgSqls\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSqls.ProviderResource.html">MvcCore\Ext\Models\Db\Models\PgSqls\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.Resources.Features.html">MvcCore\Ext\Models\Db\Models\Resources\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SQLites.Features.html">MvcCore\Ext\Models\Db\Models\SQLites\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SQLites.ProviderResource.html">MvcCore\Ext\Models\Db\Models\SQLites\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrvs.Features.html">MvcCore\Ext\Models\Db\Models\SqlSrvs\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrvs.ProviderResource.html">MvcCore\Ext\Models\Db\Models\SqlSrvs\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.Manipulation.html">MvcCore\Ext\Models\Db\Providers\Resources\Manipulation</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.PgSqls.Manipulation.html">MvcCore\Ext\Models\Db\Providers\Resources\PgSqls\Manipulation</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extended.html">MvcCore\Ext\Routers\Extended</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.Preparing.html">MvcCore\Ext\Routers\Extendeds\Preparing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.PropsGettersSetters.html">MvcCore\Ext\Routers\Extendeds\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.Redirect.html">MvcCore\Ext\Routers\Extendeds\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.RedirectHelpers.html">MvcCore\Ext\Routers\Extendeds\RedirectHelpers</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.Url.html">MvcCore\Ext\Routers\Extendeds\Url</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.Preparing.html">MvcCore\Ext\Routers\Localization\Preparing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.PreRouting.html">MvcCore\Ext\Routers\Localization\PreRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.PropsGettersSetters.html">MvcCore\Ext\Routers\Localization\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.RedirectSections.html">MvcCore\Ext\Routers\Localization\RedirectSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.RewriteRouting.html">MvcCore\Ext\Routers\Localization\RewriteRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.RewriteRoutingChecks.html">MvcCore\Ext\Routers\Localization\RewriteRoutingChecks</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.Routing.html">MvcCore\Ext\Routers\Localization\Routing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.UrlByRoute.html">MvcCore\Ext\Routers\Localization\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.UrlByRouteSections.html">MvcCore\Ext\Routers\Localization\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.UrlByRouteSectionsLocalization.html">MvcCore\Ext\Routers\Localization\UrlByRouteSectionsLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.Instancing.html">MvcCore\Ext\Routers\Localizations\Route\Instancing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.InternalInits.html">MvcCore\Ext\Routers\Localizations\Route\InternalInits</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.Matching.html">MvcCore\Ext\Routers\Localizations\Route\Matching</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.PropsGettersSetters.html">MvcCore\Ext\Routers\Localizations\Route\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.UrlBuilding.html">MvcCore\Ext\Routers\Localizations\Route\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.Preparing.html">MvcCore\Ext\Routers\Media\Preparing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.PreRouting.html">MvcCore\Ext\Routers\Media\PreRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.PropsGettersSetters.html">MvcCore\Ext\Routers\Media\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.RedirectSections.html">MvcCore\Ext\Routers\Media\RedirectSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.Routing.html">MvcCore\Ext\Routers\Media\Routing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.UrlByRoute.html">MvcCore\Ext\Routers\Media\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.UrlByRouteSections.html">MvcCore\Ext\Routers\Media\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.UrlByRouteSectionsMedia.html">MvcCore\Ext\Routers\Media\UrlByRouteSectionsMedia</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.RedirectSections.html">MvcCore\Ext\Routers\MediaAndLocalization\RedirectSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.Routing.html">MvcCore\Ext\Routers\MediaAndLocalization\Routing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.UrlByRoute.html">MvcCore\Ext\Routers\MediaAndLocalization\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.UrlByRouteSections.html">MvcCore\Ext\Routers\MediaAndLocalization\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.Canonical.html">MvcCore\Ext\Routers\Module\Canonical</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.DomainRouteSetUp.html">MvcCore\Ext\Routers\Module\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.DomainRouting.html">MvcCore\Ext\Routers\Module\DomainRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.PreAndPostRouting.html">MvcCore\Ext\Routers\Module\PreAndPostRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.Props.html">MvcCore\Ext\Routers\Module\Props</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.Redirect.html">MvcCore\Ext\Routers\Module\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.RewriteRoutingChecks.html">MvcCore\Ext\Routers\Module\RewriteRoutingChecks</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.RouteMethods.html">MvcCore\Ext\Routers\Module\RouteMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlByQuery.html">MvcCore\Ext\Routers\Module\UrlByQuery</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlByRoute.html">MvcCore\Ext\Routers\Module\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlByRouteSections.html">MvcCore\Ext\Routers\Module\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlDomain.html">MvcCore\Ext\Routers\Module\UrlDomain</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.DomainRouteSetUp.html">MvcCore\Ext\Routers\ModuleLocalization\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.Redirect.html">MvcCore\Ext\Routers\ModuleLocalization\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.RewriteRoutingChecks.html">MvcCore\Ext\Routers\ModuleLocalization\RewriteRoutingChecks</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.UrlByRoute.html">MvcCore\Ext\Routers\ModuleLocalization\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMedia.DomainRouteSetUp.html">MvcCore\Ext\Routers\ModuleMedia\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMedia.Redirect.html">MvcCore\Ext\Routers\ModuleMedia\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMediaAndLocalization.DomainRouteSetUp.html">MvcCore\Ext\Routers\ModuleMediaAndLocalization\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMediaAndLocalization.Redirect.html">MvcCore\Ext\Routers\ModuleMediaAndLocalization\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.Instancing.html">MvcCore\Ext\Routers\Modules\Route\Instancing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.Matching.html">MvcCore\Ext\Routers\Modules\Route\Matching</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.PropsGettersSetters.html">MvcCore\Ext\Routers\Modules\Route\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.UrlBuilding.html">MvcCore\Ext\Routers\Modules\Route\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Model.Comparers.html">MvcCore\Model\Comparers</a></li>
+				<li><a href="class-MvcCore.Model.Config.html">MvcCore\Model\Config</a></li>
+				<li><a href="class-MvcCore.Model.Connection.html">MvcCore\Model\Connection</a></li>
+				<li><a href="class-MvcCore.Model.Converters.html">MvcCore\Model\Converters</a></li>
+				<li><a href="class-MvcCore.Model.DataMethods.html">MvcCore\Model\DataMethods</a></li>
+				<li><a href="class-MvcCore.Model.MagicMethods.html">MvcCore\Model\MagicMethods</a></li>
+				<li><a href="class-MvcCore.Model.MetaData.html">MvcCore\Model\MetaData</a></li>
+				<li><a href="class-MvcCore.Model.Parsers.html">MvcCore\Model\Parsers</a></li>
+				<li><a href="class-MvcCore.Model.Props.html">MvcCore\Model\Props</a></li>
+				<li><a href="class-MvcCore.Model.Resource.html">MvcCore\Model\Resource</a></li>
+				<li><a href="class-MvcCore.Request.CollectionsMethods.html">MvcCore\Request\CollectionsMethods</a></li>
+				<li><a href="class-MvcCore.Request.GettersSetters.html">MvcCore\Request\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Request.Instancing.html">MvcCore\Request\Instancing</a></li>
+				<li><a href="class-MvcCore.Request.InternalInits.html">MvcCore\Request\InternalInits</a></li>
+				<li><a href="class-MvcCore.Request.Props.html">MvcCore\Request\Props</a></li>
+				<li><a href="class-MvcCore.Response.Content.html">MvcCore\Response\Content</a></li>
+				<li><a href="class-MvcCore.Response.Cookies.html">MvcCore\Response\Cookies</a></li>
+				<li><a href="class-MvcCore.Response.Headers.html">MvcCore\Response\Headers</a></li>
+				<li><a href="class-MvcCore.Response.Instancing.html">MvcCore\Response\Instancing</a></li>
+				<li><a href="class-MvcCore.Response.PropsGettersSetters.html">MvcCore\Response\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Route.GettersSetters.html">MvcCore\Route\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Route.Instancing.html">MvcCore\Route\Instancing</a></li>
+				<li><a href="class-MvcCore.Route.InternalInits.html">MvcCore\Route\InternalInits</a></li>
+				<li><a href="class-MvcCore.Route.Matching.html">MvcCore\Route\Matching</a></li>
+				<li><a href="class-MvcCore.Route.Props.html">MvcCore\Route\Props</a></li>
+				<li><a href="class-MvcCore.Route.UrlBuilding.html">MvcCore\Route\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Router.Canonical.html">MvcCore\Router\Canonical</a></li>
+				<li><a href="class-MvcCore.Router.GettersSetters.html">MvcCore\Router\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Router.Instancing.html">MvcCore\Router\Instancing</a></li>
+				<li><a href="class-MvcCore.Router.Props.html">MvcCore\Router\Props</a></li>
+				<li><a href="class-MvcCore.Router.Redirecting.html">MvcCore\Router\Redirecting</a></li>
+				<li><a href="class-MvcCore.Router.RewriteRouting.html">MvcCore\Router\RewriteRouting</a></li>
+				<li><a href="class-MvcCore.Router.RouteMethods.html">MvcCore\Router\RouteMethods</a></li>
+				<li><a href="class-MvcCore.Router.Routing.html">MvcCore\Router\Routing</a></li>
+				<li><a href="class-MvcCore.Router.UrlBuilding.html">MvcCore\Router\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Router.UrlByQuery.html">MvcCore\Router\UrlByQuery</a></li>
+				<li><a href="class-MvcCore.Router.UrlByRoutes.html">MvcCore\Router\UrlByRoutes</a></li>
+				<li><a href="class-MvcCore.Session.Closing.html">MvcCore\Session\Closing</a></li>
+				<li><a href="class-MvcCore.Session.MagicMethods.html">MvcCore\Session\MagicMethods</a></li>
+				<li><a href="class-MvcCore.Session.MetaData.html">MvcCore\Session\MetaData</a></li>
+				<li><a href="class-MvcCore.Session.NamespaceMethods.html">MvcCore\Session\NamespaceMethods</a></li>
+				<li><a href="class-MvcCore.Session.Props.html">MvcCore\Session\Props</a></li>
+				<li><a href="class-MvcCore.Session.Starting.html">MvcCore\Session\Starting</a></li>
+				<li><a href="class-MvcCore.Tool.Helpers.html">MvcCore\Tool\Helpers</a></li>
+				<li><a href="class-MvcCore.Tool.Json.html">MvcCore\Tool\Json</a></li>
+				<li><a href="class-MvcCore.Tool.Reflection.html">MvcCore\Tool\Reflection</a></li>
+				<li><a href="class-MvcCore.Tool.StringConversions.html">MvcCore\Tool\StringConversions</a></li>
+				<li><a href="class-MvcCore.View.DirectoryMethods.html">MvcCore\View\DirectoryMethods</a></li>
+				<li><a href="class-MvcCore.View.Escaping.html">MvcCore\View\Escaping</a></li>
+				<li><a href="class-MvcCore.View.GettersSetters.html">MvcCore\View\GettersSetters</a></li>
+				<li><a href="class-MvcCore.View.LocalMethods.html">MvcCore\View\LocalMethods</a></li>
+				<li><a href="class-MvcCore.View.MagicMethods.html">MvcCore\View\MagicMethods</a></li>
+				<li><a href="class-MvcCore.View.Props.html">MvcCore\View\Props</a></li>
+				<li><a href="class-MvcCore.View.Rendering.html">MvcCore\View\Rendering</a></li>
+				<li><a href="class-MvcCore.View.UrlHelpers.html">MvcCore\View\UrlHelpers</a></li>
+				<li><a href="class-MvcCore.View.ViewHelpers.html">MvcCore\View\ViewHelpers</a></li>
+			</ul>
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-MvcCore.Ext.Models.Db.Exception.html">MvcCore\Ext\Models\Db\Exception</a></li>
+				<li><a href="class-Throwable.html">Throwable</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-MvcCore.Ext.Models.Db.FuncHelpers.Columns.html">MvcCore\Ext\Models\Db\FuncHelpers\Columns</a></li>
+				<li><a href="function-MvcCore.Ext.Models.Db.FuncHelpers.Table.html">MvcCore\Ext\Models\Db\FuncHelpers\Table</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="-API-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Trait PropsGettersSetters</h1>
+
+
+	<div class="description">
+	<p>Trait for <code>\MvcCore\Ext\Auths\Basic</code> class. Trait contains:
+- All static properties.
+- All instance configurable properties except <code>protected $autoInit</code> property from <code>\MvcCore\Model</code>.
+- All instance non-configurable properties for internal use.
+- Getters for non-configurable and configurable instance properties.
+- Setters for configurable properties with interface implementation checking for class name properties.
+- Setters for non-configurable instance properties.</p>
+	</div>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct Known Users</h4>
+			<a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a>
+	</div>
+
+	<div>
+		<h4>Indirect Known Users</h4>
+			<a href="class-MvcCore.Ext.Auth.html">MvcCore\Ext\Auth</a>
+	</div>
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> MvcCore\Ext\Auths\Basic<br>
+		
+
+			<b>Located at</b> <a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#16-937" title="Go to source code">ext-auth-basic/src/MvcCore/Ext/Auths/Basic/PropsGettersSetters.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="GetExpirationIdentity" id="_GetExpirationIdentity">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetExpirationIdentity">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#273-287" title="Go to source code">GetExpirationIdentity</a>( )</code>
+
+		<div class="description short">
+			<p>Get expiration time (in seconds) how long to remember the user name in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 1 month (30 days, 2592000 seconds).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get expiration time (in seconds) how long to remember the user name in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 1 month (30 days, 2592000 seconds).</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetExpirationAuthorization" id="_GetExpirationAuthorization">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetExpirationAuthorization">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#289-303" title="Go to source code">GetExpirationAuthorization</a>( )</code>
+
+		<div class="description short">
+			<p>Get expiration time (in seconds) how long to remember the authorization in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 10 minutes (600 seconds).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get expiration time (in seconds) how long to remember the authorization in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 10 minutes (600 seconds).</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetUserClass" id="_GetUserClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetUserClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#305-316" title="Go to source code">GetUserClass</a>( )</code>
+
+		<div class="description short">
+			<p>Get full class name to use for user instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IUser</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\User</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get full class name to use for user instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IUser</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\User</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetRoleClass" id="_GetRoleClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetRoleClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#318-329" title="Go to source code">GetRoleClass</a>( )</code>
+
+		<div class="description short">
+			<p>Get full class name to use for user role class.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IRole</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\Role</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get full class name to use for user role class.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IRole</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\Role</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetControllerClass" id="_GetControllerClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetControllerClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#331-343" title="Go to source code">GetControllerClass</a>( )</code>
+
+		<div class="description short">
+			<p>Get full class name to use for controller instance
+to submit authentication form(s). Class name has to implement interfaces:
+- <code>\MvcCore\Ext\Auths\Basics\IController</code>
+- <code>\MvcCore\IController</code>
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\Controller</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get full class name to use for controller instance
+to submit authentication form(s). Class name has to implement interfaces:
+- <code>\MvcCore\Ext\Auths\Basics\IController</code>
+- <code>\MvcCore\IController</code>
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\Controller</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSignInFormClass" id="_GetSignInFormClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSignInFormClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#345-356" title="Go to source code">GetSignInFormClass</a>( )</code>
+
+		<div class="description short">
+			<p>Get full class name to use for sign in form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\SignInForm</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get full class name to use for sign in form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\SignInForm</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSignOutFormClass" id="_GetSignOutFormClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSignOutFormClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#358-369" title="Go to source code">GetSignOutFormClass</a>( )</code>
+
+		<div class="description short">
+			<p>Full class name to use for sign out form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\SignOutForm</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Full class name to use for sign out form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\SignOutForm</code>.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSignedInUrl" id="_GetSignedInUrl">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSignedInUrl">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#371-381" title="Go to source code">GetSignedInUrl</a>( )</code>
+
+		<div class="description short">
+			<p>Get full URL to redirect user, after sign in
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in form rendered.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get full URL to redirect user, after sign in
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in form rendered.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSignedOutUrl" id="_GetSignedOutUrl">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSignedOutUrl">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#383-393" title="Go to source code">GetSignedOutUrl</a>( )</code>
+
+		<div class="description short">
+			<p>Get full URL to redirect user, after sign out
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign out form rendered.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get full URL to redirect user, after sign out
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign out form rendered.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSignErrorUrl" id="_GetSignErrorUrl">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSignErrorUrl">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#395-407" title="Go to source code">GetSignErrorUrl</a>( <span>string <var>$signErrorUrl</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>Get full URL to redirect user, after sign in POST
+request or sign out POST request was not successful,
+for example wrong credentials.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in/out form rendered.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get full URL to redirect user, after sign in POST
+request or sign out POST request was not successful,
+for example wrong credentials.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in/out form rendered.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signErrorUrl</var>,…</dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSignInRoute" id="_GetSignInRoute">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSignInRoute">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#409-417" title="Go to source code">GetSignInRoute</a>( )</code>
+
+		<div class="description short">
+			<p>Get route instance to submit sign in form into.
+Default configured route for sign in request is <code>/signin</code> by POST.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get route instance to submit sign in form into.
+Default configured route for sign in request is <code>/signin</code> by POST.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSignOutRoute" id="_GetSignOutRoute">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSignOutRoute">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#419-427" title="Go to source code">GetSignOutRoute</a>( )</code>
+
+		<div class="description short">
+			<p>Get route to submit sign out form into.
+Default configured route for sign in request is <code>/signout</code> by POST.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get route to submit sign out form into.
+Default configured route for sign in request is <code>/signout</code> by POST.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetPasswordHashSalt" id="_GetPasswordHashSalt">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetPasswordHashSalt">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#429-438" title="Go to source code">GetPasswordHashSalt</a>( )</code>
+
+		<div class="description short">
+			<p>Get configured salt for <code>passord_hash();</code> to generate password by <code>PASSWORD_BCRYPT</code>.
+<code>NULL</code> by default. This option is the only one option required
+to configure authentication module to use it properly.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get configured salt for <code>passord_hash();</code> to generate password by <code>PASSWORD_BCRYPT</code>.
+<code>NULL</code> by default. This option is the only one option required
+to configure authentication module to use it properly.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetInvalidCredentialsTimeout" id="_GetInvalidCredentialsTimeout">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetInvalidCredentialsTimeout">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#440-449" title="Go to source code">GetInvalidCredentialsTimeout</a>( )</code>
+
+		<div class="description short">
+			<p>Get timeout to <code>sleep();</code> PHP script before sending response to user,
+when user submitted invalid username or password.
+Default value is <code>3</code> (3 seconds).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get timeout to <code>sleep();</code> PHP script before sending response to user,
+when user submitted invalid username or password.
+Default value is <code>3</code> (3 seconds).</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetTranslator" id="_GetTranslator">
+
+		<td class="attributes"><code>
+			 public 
+
+			callable|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetTranslator">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#451-460" title="Go to source code">GetTranslator</a>( )</code>
+
+		<div class="description short">
+			<p>Get configured callable translator to set it into authentication form
+to translate form labels, placeholders, buttons or error messages.
+Default value is <code>NULL</code> (forms without translations).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get configured callable translator to set it into authentication form
+to translate form labels, placeholders, buttons or error messages.
+Default value is <code>NULL</code> (forms without translations).</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					callable|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetUser" id="_GetUser">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basics.User.html">MvcCore\Ext\Auths\Basics\User</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetUser">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#462-479" title="Go to source code">GetUser</a>( )</code>
+
+		<div class="description short">
+			<p>Get authenticated user model instance reference
+or <code>NULL</code> if user has no username record in session namespace.
+If user has not yet been initialized, load the user internally by
+<code>{$configuredUserClass}::SetUpUserBySession();</code> to try to load
+user by username record in session namespace.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get authenticated user model instance reference
+or <code>NULL</code> if user has no username record in session namespace.
+If user has not yet been initialized, load the user internally by
+<code>{$configuredUserClass}::SetUpUserBySession();</code> to try to load
+user by username record in session namespace.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basics.User.html">MvcCore\Ext\Auths\Basics\User</a></code>|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="IsAuthenticated" id="_IsAuthenticated">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IsAuthenticated">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#481-491" title="Go to source code">IsAuthenticated</a>( )</code>
+
+		<div class="description short">
+			<p>Return <code>TRUE</code> if user is authenticated/signed in,
+<code>TRUE</code> if user has any username record in session namespace.
+If user has not yet been initialized, load the user internally by
+<code>$auth-&gt;GetUser();</code> to try to load user by username record in session namespace.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return <code>TRUE</code> if user is authenticated/signed in,
+<code>TRUE</code> if user has any username record in session namespace.
+If user has not yet been initialized, load the user internally by
+<code>$auth-&gt;GetUser();</code> to try to load user by username record in session namespace.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetForm" id="_GetForm">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetForm">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#493-514" title="Go to source code">GetForm</a>( )</code>
+
+		<div class="description short">
+			<p>Return completed sign in or sign out form instance.
+Form instance completion is processed only once,
+any created form instance is stored in <code>$auth-&gt;form</code> property.
+This method is always called by you, your application
+to set form into you custom template to render it for user.
+If user is not authenticated, sign in form is returned and
+if user is authenticated, opposite sign out form is returned.
+This method is only alias to call two other methods:
+- <code>\MvcCore\Ext\Auths\Basic::GetInstance()-&gt;GetSignInForm();</code> for not authenticated users.
+- <code>\MvcCore\Ext\Auths\Basic::GetInstance()-&gt;GetSignOutForm();</code> for authenticated users.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return completed sign in or sign out form instance.
+Form instance completion is processed only once,
+any created form instance is stored in <code>$auth-&gt;form</code> property.
+This method is always called by you, your application
+to set form into you custom template to render it for user.
+If user is not authenticated, sign in form is returned and
+if user is authenticated, opposite sign out form is returned.
+This method is only alias to call two other methods:
+- <code>\MvcCore\Ext\Auths\Basic::GetInstance()-&gt;GetSignInForm();</code> for not authenticated users.
+- <code>\MvcCore\Ext\Auths\Basic::GetInstance()-&gt;GetSignOutForm();</code> for authenticated users.</p>
+
+
+
+
+
+				<h4>Var</h4>
+				<div class="list">
+						\MvcCore\Ext\Auths\Basics\SignInForm|\MvcCore\Ext\Auths\Basics\SignOutForm<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSignInForm" id="_GetSignInForm">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basics.SignInForm.html">MvcCore\Ext\Auths\Basics\SignInForm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSignInForm">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#516-542" title="Go to source code">GetSignInForm</a>( )</code>
+
+		<div class="description short">
+			<p>Return completed sign in form instance.
+Form instance completion is processed only once,
+created form instance is stored in <code>$auth-&gt;form</code> property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return completed sign in form instance.
+Form instance completion is processed only once,
+created form instance is stored in <code>$auth-&gt;form</code> property.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basics.SignInForm.html">MvcCore\Ext\Auths\Basics\SignInForm</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetSignOutForm" id="_GetSignOutForm">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basics.SignOutForm.html">MvcCore\Ext\Auths\Basics\SignOutForm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetSignOutForm">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#544-570" title="Go to source code">GetSignOutForm</a>( )</code>
+
+		<div class="description short">
+			<p>Return completed sign out form instance.
+Form instance completion is processed only once,
+created form instance is stored in <code>$auth-&gt;form</code> property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return completed sign out form instance.
+Form instance completion is processed only once,
+created form instance is stored in <code>$auth-&gt;form</code> property.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basics.SignOutForm.html">MvcCore\Ext\Auths\Basics\SignOutForm</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetConfiguration" id="_GetConfiguration">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetConfiguration">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#572-592" title="Go to source code">GetConfiguration</a>( )</code>
+
+		<div class="description short">
+			<p>Return <code>array</code> with all protected configuration properties.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return <code>array</code> with all protected configuration properties.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetExpirationIdentity" id="_SetExpirationIdentity">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetExpirationIdentity">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#599-615" title="Go to source code">SetExpirationIdentity</a>( <span>integer <var>$identityExpirationSeconds</var> = <span class="php-num">2592000</span></span> )</code>
+
+		<div class="description short">
+			<p>Set expiration time (in seconds) how long to remember the user name in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 1 month (30 days, 2592000 seconds).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set expiration time (in seconds) how long to remember the user name in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 1 month (30 days, 2592000 seconds).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$identityExpirationSeconds</var></dt>
+					<dd>$expirationIdentity</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetExpirationAuthorization" id="_SetExpirationAuthorization">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetExpirationAuthorization">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#617-632" title="Go to source code">SetExpirationAuthorization</a>( <span> <var>$authorizationExpirationSeconds</var> = <span class="php-num">600</span></span> )</code>
+
+		<div class="description short">
+			<p>Set expiration time (in seconds) how long to remember the authorization in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 10 minutes (600 seconds).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set expiration time (in seconds) how long to remember the authorization in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 10 minutes (600 seconds).</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetUserClass" id="_SetUserClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetUserClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#634-649" title="Go to source code">SetUserClass</a>( <span>string <var>$userClass</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set full class name to use for user instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IUser</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\User</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set full class name to use for user instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IUser</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\User</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$userClass</var></dt>
+					<dd>User full class name implementing <code>\MvcCore\Ext\Auths\Basics\IUser</code>.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetRoleClass" id="_SetRoleClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetRoleClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#651-666" title="Go to source code">SetRoleClass</a>( <span>string <var>$roleClass</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set full class name to use for user role class.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IRole</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\Role</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set full class name to use for user role class.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IRole</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\Role</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleClass</var></dt>
+					<dd>Role full class name implementing <code>\MvcCore\Ext\Auths\Basics\IRole</code>.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetControllerClass" id="_SetControllerClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetControllerClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#668-694" title="Go to source code">SetControllerClass</a>( <span>string <var>$controllerClass</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set full class name to use for controller instance
+to submit authentication form(s). Class name has to implement interfaces:
+- <code>\MvcCore\Ext\Auths\Basics\IController</code>
+- <code>\MvcCore\IController</code>
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\Controller</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set full class name to use for controller instance
+to submit authentication form(s). Class name has to implement interfaces:
+- <code>\MvcCore\Ext\Auths\Basics\IController</code>
+- <code>\MvcCore\IController</code>
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\Controller</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$controllerClass</var></dt>
+					<dd>Controller full class name implementing <code>\MvcCore\Ext\Auths\Basics\IController</code>.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetSignInFormClass" id="_SetSignInFormClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetSignInFormClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#696-711" title="Go to source code">SetSignInFormClass</a>( <span>string <var>$signInFormClass</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set full class name to use for sign in form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\SignInForm</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set full class name to use for sign in form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\SignInForm</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signInFormClass</var></dt>
+					<dd>Form full class name implementing <code>\MvcCore\Ext\Auths\Basics\IForm</code>.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetSignOutFormClass" id="_SetSignOutFormClass">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetSignOutFormClass">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#713-728" title="Go to source code">SetSignOutFormClass</a>( <span>string <var>$signOutFormClass</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set full class name to use for sign out form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\SignOutForm</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set full class name to use for sign out form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.
+Default value after authentication module init is
+configured to <code>\MvcCore\Ext\Auths\Basics\SignOutForm</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signOutFormClass</var></dt>
+					<dd>$signInFormClass Form full class name implementing <code>\MvcCore\Ext\Auths\Basics\IForm</code>.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetSignedInUrl" id="_SetSignedInUrl">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetSignedInUrl">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#730-742" title="Go to source code">SetSignedInUrl</a>( <span>string|null <var>$signedInUrl</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Set full URL to redirect user, after sign in
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in form rendered.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set full URL to redirect user, after sign in
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in form rendered.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signedInUrl</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetSignedOutUrl" id="_SetSignedOutUrl">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetSignedOutUrl">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#744-756" title="Go to source code">SetSignedOutUrl</a>( <span>string|null <var>$signedOutUrl</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Set full URL to redirect user, after sign out
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign out form rendered.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set full URL to redirect user, after sign out
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign out form rendered.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signedOutUrl</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetSignErrorUrl" id="_SetSignErrorUrl">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetSignErrorUrl">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#758-771" title="Go to source code">SetSignErrorUrl</a>( <span>string|null <var>$signErrorUrl</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Set full URL to redirect user, after sign in POST
+request or sign out POST request was not successful,
+for example wrong credentials.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in/out form rendered.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set full URL to redirect user, after sign in POST
+request or sign out POST request was not successful,
+for example wrong credentials.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in/out form rendered.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signErrorUrl</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetSignInRoute" id="_SetSignInRoute">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetSignInRoute">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#773-790" title="Go to source code">SetSignInRoute</a>( <span>string|array|<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code> <var>$signInRoute</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Set route instance to submit sign in form into.
+Default configured route for sign in request is <code>/signin</code> by POST.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set route instance to submit sign in form into.
+Default configured route for sign in request is <code>/signin</code> by POST.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signInRoute</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetSignOutRoute" id="_SetSignOutRoute">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetSignOutRoute">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#792-809" title="Go to source code">SetSignOutRoute</a>( <span>string|array|<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code> <var>$signOutRoute</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Set route to submit sign out form into.
+Default configured route for sign in request is <code>/signout</code> by POST.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set route to submit sign out form into.
+Default configured route for sign in request is <code>/signout</code> by POST.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signOutRoute</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetPasswordHashSalt" id="_SetPasswordHashSalt">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetPasswordHashSalt">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#811-822" title="Go to source code">SetPasswordHashSalt</a>( <span>string <var>$passwordHashSalt</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set configured salt for <code>passord_hash();</code> to generate password by <code>PASSWORD_BCRYPT</code>.
+<code>NULL</code> by default. This option is the only one option required
+to configure authentication module to use it properly.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set configured salt for <code>passord_hash();</code> to generate password by <code>PASSWORD_BCRYPT</code>.
+<code>NULL</code> by default. This option is the only one option required
+to configure authentication module to use it properly.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$passwordHashSalt</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetInvalidCredentialsTimeout" id="_SetInvalidCredentialsTimeout">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetInvalidCredentialsTimeout">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#824-835" title="Go to source code">SetInvalidCredentialsTimeout</a>( <span>integer <var>$seconds</var> = <span class="php-num">3</span></span> )</code>
+
+		<div class="description short">
+			<p>Set timeout to <code>sleep();</code> PHP script before sending response to user,
+when user submitted invalid username or password.
+Default value is <code>3</code> (3 seconds).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set timeout to <code>sleep();</code> PHP script before sending response to user,
+when user submitted invalid username or password.
+Default value is <code>3</code> (3 seconds).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$seconds</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetTranslator" id="_SetTranslator">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetTranslator">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#837-848" title="Go to source code">SetTranslator</a>( <span>callable <var>$translator</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Set callable translator to set it into authentication form
+to translate form labels, placeholders or buttons.
+Default value is <code>NULL</code> (forms without translations).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set callable translator to set it into authentication form
+to translate form labels, placeholders or buttons.
+Default value is <code>NULL</code> (forms without translations).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$translator</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetUser" id="_SetUser">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetUser">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#850-863" title="Go to source code">SetUser</a>( <span><code><a href="class-MvcCore.Ext.Auths.Basics.IUser.html">MvcCore\Ext\Auths\Basics\IUser</a></code> <var>$user</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Set user instance manually. If you use this method
+no authentication by <code>{$configuredUserClass}::SetUpUserBySession();</code>
+is used and authentication state is always positive.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set user instance manually. If you use this method
+no authentication by <code>{$configuredUserClass}::SetUpUserBySession();</code>
+is used and authentication state is always positive.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$user</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetForm" id="_SetForm">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetForm">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#865-875" title="Go to source code">SetForm</a>( <span><code><a href="class-MvcCore.Ext.Auths.Basics.IForm.html">MvcCore\Ext\Auths\Basics\IForm</a></code> <var>$form</var></span> )</code>
+
+		<div class="description short">
+			<p>Set sign in, sign out or any authentication form instance.
+Use this method only if you need sometimes to complete different form to render.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set sign in, sign out or any authentication form instance.
+Use this method only if you need sometimes to complete different form to render.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$form</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetConfiguration" id="_SetConfiguration">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetConfiguration">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#877-899" title="Go to source code">SetConfiguration</a>( <span>array <var>$configuration</var> = []</span>, <span>boolean <var>$throwExceptionIfPropertyIsMissing</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			<p>Set up authorization module configuration.
+Each array key has to be key by protected configuration property in this class.
+All properties are one by one configured by it's setter method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set up authorization module configuration.
+Each array key has to be key by protected configuration property in this class.
+All properties are one by one configured by it's setter method.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$configuration</var></dt>
+					<dd>Keys by protected properties names in camel case.</dd>
+					<dt><var>$throwExceptionIfPropertyIsMissing</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetTableStructureForDbUsers" id="_SetTableStructureForDbUsers">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetTableStructureForDbUsers">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#901-917" title="Go to source code">SetTableStructureForDbUsers</a>( <span>string|null <var>$tableName</var> = <span class="php-keyword1">NULL</span></span>, <span>string[]|null <var>$columnNames</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Optional alias method if you have user class configured
+to database user: <code>\MvcCore\Ext\Auths\Basics\Users\Database</code>.
+Alias for <code>\MvcCore\Ext\Auths\Basics\Users\Database::SetUsersTableStructure($tableName, $columnNames);</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Optional alias method if you have user class configured
+to database user: <code>\MvcCore\Ext\Auths\Basics\Users\Database</code>.
+Alias for <code>\MvcCore\Ext\Auths\Basics\Users\Database::SetUsersTableStructure($tableName, $columnNames);</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd>Database table name.</dd>
+					<dt><var>$columnNames</var></dt>
+					<dd>Keys are user class protected properties names in camel case, values are database columns names.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkClassImplementation" id="_checkClassImplementation">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkClassImplementation">#</a>
+		<code><a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#919-936" title="Go to source code">checkClassImplementation</a>( <span>string <var>$testClassName</var></span>, <span>string <var>$interfaceName</var></span>, <span>boolean <var>$checkStaticMethods</var> = <span class="php-keyword1">FALSE</span></span> )</code>
+
+		<div class="description short">
+			<p>Check if given class name implements given interface
+and optionally if test class implements static interface methods.
+If not, thrown an <code>\InvalidArgumentException</code> every time.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check if given class name implements given interface
+and optionally if test class implements static interface methods.
+If not, thrown an <code>\InvalidArgumentException</code> every time.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$testClassName</var></dt>
+					<dd>Full test class name.</dd>
+					<dt><var>$interfaceName</var></dt>
+					<dd>Full interface class name.</dd>
+					<dt><var>$checkStaticMethods</var></dt>
+					<dd><code>FALSE</code> by default.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="instance" id="$instance">
+		<td class="attributes"><code>
+			protected static 
+			<code><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></code>|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#31-35" title="Go to source code"><var>$instance</var></a>
+
+			<div class="description short">
+				<p>Singleton instance of authentication extension module.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Singleton instance of authentication extension module.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$instance" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="toolClass" id="$toolClass">
+		<td class="attributes"><code>
+			protected static 
+			string|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#37-42" title="Go to source code"><var>$toolClass</var></a>
+
+			<div class="description short">
+				<p>Shortcut for configured core tool class value
+from <code>\MvcCore\Application::GetInstance()-&gt;GetToolClass();</code>.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Shortcut for configured core tool class value
+from <code>\MvcCore\Application::GetInstance()-&gt;GetToolClass();</code>.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$toolClass" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="nonConfigurationProperties" id="$nonConfigurationProperties">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#44-53" title="Go to source code"><var>$nonConfigurationProperties</var></a>
+
+			<div class="description short">
+				<p>Properties names which are internal properties
+or internal instances for authentication module,
+which are not configuration properties, instance properties only.
+This array is used only in <code>\MvcCore\Ext\Auth::GetConfiguration();</code>.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Properties names which are internal properties
+or internal instances for authentication module,
+which are not configuration properties, instance properties only.
+This array is used only in <code>\MvcCore\Ext\Auth::GetConfiguration();</code>.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$nonConfigurationProperties" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">'userInitialized'</span>, <span class="php-quote">'application'</span>, <span class="php-quote">'user'</span>, <span class="php-quote">'form'</span>,
+]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="expirationIdentity" id="$expirationIdentity">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#60-71" title="Go to source code"><var>$expirationIdentity</var></a>
+
+			<div class="description short">
+				<p>Expiration time (in seconds) how long to remember the user name in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 1 month (30 days, 2592000 seconds).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Expiration time (in seconds) how long to remember the user name in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 1 month (30 days, 2592000 seconds).</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$expirationIdentity" class="anchor">#</a>
+				<code><span class="php-num">2592000</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="expirationAuthorization" id="$expirationAuthorization">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#73-84" title="Go to source code"><var>$expirationAuthorization</var></a>
+
+			<div class="description short">
+				<p>Expiration time (in seconds) how long to remember the authorization in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 10 minutes (600 seconds).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Expiration time (in seconds) how long to remember the authorization in session.
+You can use zero (<code>0</code>) to browser close moment, but some browsers can
+restore previous session after next browser application start. Or anybody
+else in your project could use session for storing any information
+for some longer time in your application and session cookie could then
+exists much longer then browser close moment only.
+So better is not to use a zero value.
+Default value is 10 minutes (600 seconds).</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$expirationAuthorization" class="anchor">#</a>
+				<code><span class="php-num">600</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="userClass" id="$userClass">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#86-92" title="Go to source code"><var>$userClass</var></a>
+
+			<div class="description short">
+				<p>Full class name to use for user instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IUser</code>.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Full class name to use for user instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IUser</code>.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$userClass" class="anchor">#</a>
+				<code><span class="php-quote">'MvcCore\\Ext\\Auths\\Basics\\User'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="roleClass" id="$roleClass">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#94-100" title="Go to source code"><var>$roleClass</var></a>
+
+			<div class="description short">
+				<p>Full class name to use for user role class.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IRole</code>.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Full class name to use for user role class.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IRole</code>.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$roleClass" class="anchor">#</a>
+				<code><span class="php-quote">'MvcCore\\Ext\\Auths\\Basics\\Role'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="controllerClass" id="$controllerClass">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#102-109" title="Go to source code"><var>$controllerClass</var></a>
+
+			<div class="description short">
+				<p>Full class name to use for controller instance
+to submit authentication form(s). Class name has to implement interfaces:
+- <code>\MvcCore\Ext\Auths\Basics\IController</code>
+- <code>\MvcCore\IController</code></p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Full class name to use for controller instance
+to submit authentication form(s). Class name has to implement interfaces:
+- <code>\MvcCore\Ext\Auths\Basics\IController</code>
+- <code>\MvcCore\IController</code></p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$controllerClass" class="anchor">#</a>
+				<code><span class="php-quote">'//MvcCore\\Ext\\Auths\\Basics\\Controller'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="signInFormClass" id="$signInFormClass">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#111-117" title="Go to source code"><var>$signInFormClass</var></a>
+
+			<div class="description short">
+				<p>Full class name to use for sign in form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Full class name to use for sign in form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$signInFormClass" class="anchor">#</a>
+				<code><span class="php-quote">'MvcCore\\Ext\\Auths\\Basics\\SignInForm'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="signOutFormClass" id="$signOutFormClass">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#119-125" title="Go to source code"><var>$signOutFormClass</var></a>
+
+			<div class="description short">
+				<p>Full class name to use for sign out form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Full class name to use for sign out form instance.
+Class name has to implement interface
+<code>\MvcCore\Ext\Auths\Basics\IForm</code>.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$signOutFormClass" class="anchor">#</a>
+				<code><span class="php-quote">'MvcCore\\Ext\\Auths\\Basics\\SignOutForm'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="signedInUrl" id="$signedInUrl">
+		<td class="attributes"><code>
+			protected  
+			string|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#127-134" title="Go to source code"><var>$signedInUrl</var></a>
+
+			<div class="description short">
+				<p>Full URL to redirect user, after sign in
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in form rendered.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Full URL to redirect user, after sign in
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in form rendered.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$signedInUrl" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="signedOutUrl" id="$signedOutUrl">
+		<td class="attributes"><code>
+			protected  
+			string|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#136-143" title="Go to source code"><var>$signedOutUrl</var></a>
+
+			<div class="description short">
+				<p>Full URL to redirect user, after sign out
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign out form rendered.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Full URL to redirect user, after sign out
+POST request was successful.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign out form rendered.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$signedOutUrl" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="signErrorUrl" id="$signErrorUrl">
+		<td class="attributes"><code>
+			protected  
+			string|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#145-153" title="Go to source code"><var>$signErrorUrl</var></a>
+
+			<div class="description short">
+				<p>Full URL to redirect user, after sign in POST
+request or sign out POST request was not successful,
+for example wrong credentials.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in/out form rendered.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Full URL to redirect user, after sign in POST
+request or sign out POST request was not successful,
+for example wrong credentials.
+If <code>NULL</code> (by default), user will be redirected
+to the same url, where was sign in/out form rendered.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$signErrorUrl" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="signInRoute" id="$signInRoute">
+		<td class="attributes"><code>
+			protected  
+			string|array|<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#155-168" title="Go to source code"><var>$signInRoute</var></a>
+
+			<div class="description short">
+				<p>Route to submit sign in form to.
+It could be defined only as a string (route pattern),
+or as route configuration array or as route instance.
+Default match/reverse pattern for route sign request is
+<code>/signin</code> by POST.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Route to submit sign in form to.
+It could be defined only as a string (route pattern),
+or as route configuration array or as route instance.
+Default match/reverse pattern for route sign request is
+<code>/signin</code> by POST.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$signInRoute" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">'name'</span>      =&gt; <span class="php-quote">'auth_signin'</span>,
+    <span class="php-quote">'match'</span>     =&gt; <span class="php-quote">'#^/signin/?$#'</span>,
+    <span class="php-quote">'reverse'</span>   =&gt; <span class="php-quote">'/signin'</span>,
+    <span class="php-quote">'method'</span>    =&gt; \MvcCore\IRequest::METHOD_POST
+]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="signOutRoute" id="$signOutRoute">
+		<td class="attributes"><code>
+			protected  
+			string|array|<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#170-183" title="Go to source code"><var>$signOutRoute</var></a>
+
+			<div class="description short">
+				<p>Route to submit sign out form into.
+It could be defined only as a string (route pattern),
+or as route configuration array or as route instance.
+Default match/reverse pattern for route sign request is
+<code>/signout</code> by POST.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Route to submit sign out form into.
+It could be defined only as a string (route pattern),
+or as route configuration array or as route instance.
+Default match/reverse pattern for route sign request is
+<code>/signout</code> by POST.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$signOutRoute" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">'name'</span>      =&gt; <span class="php-quote">'auth_signout'</span>,
+    <span class="php-quote">'match'</span>     =&gt; <span class="php-quote">'#^/signout/?$#'</span>,
+    <span class="php-quote">'reverse'</span>   =&gt; <span class="php-quote">'/signout'</span>,
+    <span class="php-quote">'method'</span>    =&gt; \MvcCore\IRequest::METHOD_POST
+]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="passwordHashSalt" id="$passwordHashSalt">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#185-191" title="Go to source code"><var>$passwordHashSalt</var></a>
+
+			<div class="description short">
+				<p>Salt for <code>passord_hash();</code> to generate password by <code>PASSWORD_BCRYPT</code>.
+<code>NULL</code> by default. This option is the only one option required
+to configure authentication module to use it properly.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Salt for <code>passord_hash();</code> to generate password by <code>PASSWORD_BCRYPT</code>.
+<code>NULL</code> by default. This option is the only one option required
+to configure authentication module to use it properly.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$passwordHashSalt" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="invalidCredentialsTimeout" id="$invalidCredentialsTimeout">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#193-199" title="Go to source code"><var>$invalidCredentialsTimeout</var></a>
+
+			<div class="description short">
+				<p>Timeout to <code>sleep();</code> PHP script before sending response to user,
+when user submitted invalid username or password.
+Default value is <code>3</code> (3 seconds).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Timeout to <code>sleep();</code> PHP script before sending response to user,
+when user submitted invalid username or password.
+Default value is <code>3</code> (3 seconds).</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$invalidCredentialsTimeout" class="anchor">#</a>
+				<code><span class="php-num">3</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="translator" id="$translator">
+		<td class="attributes"><code>
+			protected  
+			callable|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#201-207" title="Go to source code"><var>$translator</var></a>
+
+			<div class="description short">
+				<p>Callable translator to set it into authentication form
+to translate form labels, placeholders, buttons or error messages.
+Default value is <code>NULL</code> (forms without translations).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Callable translator to set it into authentication form
+to translate form labels, placeholders, buttons or error messages.
+Default value is <code>NULL</code> (forms without translations).</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$translator" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="preHandlersPriority" id="$preHandlersPriority">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#209-214" title="Go to source code"><var>$preHandlersPriority</var></a>
+
+			<div class="description short">
+				<p>Pre-route and pre-dispatch application callable handlers priority index.
+This property has no setter and getter. It's possible to configure only throw constructor.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Pre-route and pre-dispatch application callable handlers priority index.
+This property has no setter and getter. It's possible to configure only throw constructor.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$preHandlersPriority" class="anchor">#</a>
+				<code><span class="php-num">100</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="application" id="$application">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-MvcCore.Application.html">MvcCore\Application</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#221-227" title="Go to source code"><var>$application</var></a>
+
+			<div class="description short">
+				<p>MvcCore application instance reference from
+<code>\MvcCore\Application::GetInstance()</code>, because
+it's used many times in authentication class.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>MvcCore application instance reference from
+<code>\MvcCore\Application::GetInstance()</code>, because
+it's used many times in authentication class.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$application" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="user" id="$user">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-MvcCore.Ext.Auths.Basics.User.html">MvcCore\Ext\Auths\Basics\User</a></code>|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#229-233" title="Go to source code"><var>$user</var></a>
+
+			<div class="description short">
+				<p>User model instance or <code>NULL</code> if user has no username record in session namespace.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>User model instance or <code>NULL</code> if user has no username record in session namespace.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$user" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="form" id="$form">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-MvcCore.Ext.Auths.Basics.SignInForm.html">MvcCore\Ext\Auths\Basics\SignInForm</a></code>|<code><a href="class-MvcCore.Ext.Auths.Basics.SignOutForm.html">MvcCore\Ext\Auths\Basics\SignOutForm</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#235-242" title="Go to source code"><var>$form</var></a>
+
+			<div class="description short">
+				<p>Sign in form instance, sign out form instance or any
+other authentication form instance in extended classes.
+If user is authenticated by username record in session namespace,
+there is completed sign out form, if not authenticated, sign in form otherwise etc...</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sign in form instance, sign out form instance or any
+other authentication form instance in extended classes.
+If user is authenticated by username record in session namespace,
+there is completed sign out form, if not authenticated, sign in form otherwise etc...</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$form" class="anchor">#</a>
+				<code><span class="php-keyword1">NULL</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="userInitialized" id="$userInitialized">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#244-254" title="Go to source code"><var>$userInitialized</var></a>
+
+			<div class="description short">
+				<p>This is only internal semaphore to call
+<code>\MvcCore\Ext\Auths\Basics\User::SetUpUserBySession()</code>
+only once (if result is <code>NULL</code>) in request pre-dispatch state.
+<code>TRUE</code>if method <code>\MvcCore\Ext\Auth::GetInstance()-&gt;GetUser()</code>
+has been called already with any result and also <code>TRUE</code> if
+method <code>\MvcCore\Ext\Auth::GetInstance()-&gt;SetUser($user)</code> has been
+already called with any first argument <code>$user</code> value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>This is only internal semaphore to call
+<code>\MvcCore\Ext\Auths\Basics\User::SetUpUserBySession()</code>
+only once (if result is <code>NULL</code>) in request pre-dispatch state.
+<code>TRUE</code>if method <code>\MvcCore\Ext\Auth::GetInstance()-&gt;GetUser()</code>
+has been called already with any result and also <code>TRUE</code> if
+method <code>\MvcCore\Ext\Auth::GetInstance()-&gt;SetUser($user)</code> has been
+already called with any first argument <code>$user</code> value.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$userInitialized" class="anchor">#</a>
+				<code><span class="php-keyword1">FALSE</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="addRoutesForAnyRequestMethod" id="$addRoutesForAnyRequestMethod">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html#256-266" title="Go to source code"><var>$addRoutesForAnyRequestMethod</var></a>
+
+			<div class="description short">
+				<p>This is only internal semaphore to define when to add
+sign in or sign out route into router in pre route request state.
+If any configured route is for different http method than <code>POST</code>,
+than this property is set to <code>TRUE</code>. If both configured routes
+use only <code>POST</code> method, this property is automatically <code>FALSE</code> to
+not add routes for all requests, only for <code>POST</code> requests.
+Default value is <code>FALSE</code> because both default routes use <code>POST</code> methods.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>This is only internal semaphore to define when to add
+sign in or sign out route into router in pre route request state.
+If any configured route is for different http method than <code>POST</code>,
+than this property is set to <code>TRUE</code>. If both configured routes
+use only <code>POST</code> method, this property is automatically <code>FALSE</code> to
+not add routes for all requests, only for <code>POST</code> requests.
+Default value is <code>FALSE</code> because both default routes use <code>POST</code> methods.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$addRoutesForAnyRequestMethod" class="anchor">#</a>
+				<code><span class="php-keyword1">FALSE</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		MvcCore API Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?2ab812383cb4b212c43712f7c21ac059c51885eb"></script>
+<script src="elementlist.js?50c78828258582bde9515f2669013c1b567efe79"></script>
+</body>
+</html>

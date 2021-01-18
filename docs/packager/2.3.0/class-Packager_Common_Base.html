@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Packager_Common_Base | Packager API Documentation</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-187607113-1"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Packager_Common_Base.html">Packager_Common_Base</a></li>
+				<li><a href="class-Packager_Common_StaticCopies.html">Packager_Common_StaticCopies</a></li>
+				<li><a href="class-Packager_Phar.html">Packager_Phar</a></li>
+				<li><a href="class-Packager_Phar_ResultCompleter.html">Packager_Phar_ResultCompleter</a></li>
+				<li><a href="class-Packager_Php.html">Packager_Php</a></li>
+				<li><a href="class-Packager_Php_Base.html">Packager_Php_Base</a></li>
+				<li><a href="class-Packager_Php_Completer.html">Packager_Php_Completer</a></li>
+				<li><a href="class-Packager_Php_Scripts_Completer.html">Packager_Php_Scripts_Completer</a></li>
+				<li><a href="class-Packager_Php_Scripts_Dependencies.html">Packager_Php_Scripts_Dependencies</a></li>
+				<li><a href="class-Packager_Php_Scripts_Order.html">Packager_Php_Scripts_Order</a></li>
+				<li><a href="class-Packager_Php_Scripts_Replacer.html">Packager_Php_Scripts_Replacer</a></li>
+				<li><a href="class-Packager_Php_Wrapper.html" class="invalid">Packager_Php_Wrapper</a></li>
+				<li><a href="class-Packager_Php_Wrapper_DirectoryIterator.html" class="invalid">Packager_Php_Wrapper_DirectoryIterator</a></li>
+				<li><a href="class-Packager_Php_Wrapper_SplFileInfo.html" class="invalid">Packager_Php_Wrapper_SplFileInfo</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Packager_Php_Scripts_Throwable.html">Packager_Php_Scripts_Throwable</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="-API-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Packager_Common_Base</h1>
+
+
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Packager_Common_StaticCopies.html">Packager_Common_StaticCopies</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-Packager_Phar.html">Packager_Phar</a>, 
+			<a href="class-Packager_Phar_ResultCompleter.html">Packager_Phar_ResultCompleter</a>, 
+			<a href="class-Packager_Php.html">Packager_Php</a>, 
+			<a href="class-Packager_Php_Base.html">Packager_Php_Base</a>, 
+			<a href="class-Packager_Php_Completer.html">Packager_Php_Completer</a>, 
+			<a href="class-Packager_Php_Scripts_Completer.html">Packager_Php_Scripts_Completer</a>, 
+			<a href="class-Packager_Php_Scripts_Dependencies.html">Packager_Php_Scripts_Dependencies</a>, 
+			<a href="class-Packager_Php_Scripts_Order.html">Packager_Php_Scripts_Order</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> <a href="source-class-Packager_Common_Base.html#3-822" title="Go to source code">src/Packager/Common/Base.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#64-72" title="Go to source code">__construct</a>( <span> <var>$cfg</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Create" id="_Create">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Create">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#73-82" title="Go to source code">Create</a>( <span> <var>$cfg</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Get" id="_Get">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Get">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#83-90" title="Go to source code">Get</a>( <span> <var>$cfg</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetSourceDir" id="_SetSourceDir">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetSourceDir">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#91-99" title="Go to source code">SetSourceDir</a>( <span> <var>$fullOrRelativePath</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetReleaseDir" id="_SetReleaseDir">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetReleaseDir">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#100-103" title="Go to source code">SetReleaseDir</a>( <span> <var>$fullOrRelativePath</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetReleaseFileName" id="_SetReleaseFileName">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetReleaseFileName">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#104-107" title="Go to source code">SetReleaseFileName</a>( <span> <var>$releaseFileName</var> = <span class="php-quote">'/index.php'</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetExcludePatterns" id="_SetExcludePatterns">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetExcludePatterns">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#108-115" title="Go to source code">SetExcludePatterns</a>( <span> <var>$excludePatterns</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddExcludePatterns" id="_AddExcludePatterns">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddExcludePatterns">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#116-123" title="Go to source code">AddExcludePatterns</a>( <span> <var>$excludePatterns</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetIncludePatterns" id="_SetIncludePatterns">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetIncludePatterns">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#124-131" title="Go to source code">SetIncludePatterns</a>( <span> <var>$includePatterns</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddIncludePatterns" id="_AddIncludePatterns">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddIncludePatterns">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#132-139" title="Go to source code">AddIncludePatterns</a>( <span> <var>$includePatterns</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetPatternReplacements" id="_SetPatternReplacements">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetPatternReplacements">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#140-147" title="Go to source code">SetPatternReplacements</a>( <span> <var>$patternReplacements</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddPatternReplacements" id="_AddPatternReplacements">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddPatternReplacements">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#148-155" title="Go to source code">AddPatternReplacements</a>( <span> <var>$patternReplacements</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetStringReplacements" id="_SetStringReplacements">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetStringReplacements">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#156-163" title="Go to source code">SetStringReplacements</a>( <span> <var>$stringReplacements</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddStringReplacements" id="_AddStringReplacements">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddStringReplacements">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#164-171" title="Go to source code">AddStringReplacements</a>( <span> <var>$stringReplacements</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetMinifyTemplates" id="_SetMinifyTemplates">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetMinifyTemplates">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#172-175" title="Go to source code">SetMinifyTemplates</a>( <span> <var>$minifyTemplates</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetMinifyPhp" id="_SetMinifyPhp">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetMinifyPhp">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#176-179" title="Go to source code">SetMinifyPhp</a>( <span> <var>$minifyPhp</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetKeepPhpDocComments" id="_SetKeepPhpDocComments">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetKeepPhpDocComments">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#180-183" title="Go to source code">SetKeepPhpDocComments</a>( <span> <var>$keepPhpDocComments</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetIncludeFirst" id="_SetIncludeFirst">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetIncludeFirst">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#184-191" title="Go to source code">SetIncludeFirst</a>( <span> <var>$includeFirst</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddIncludeFirst" id="_AddIncludeFirst">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddIncludeFirst">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#192-211" title="Go to source code">AddIncludeFirst</a>( <span> <var>$includeFirst</var> = []</span>, <span> <var>$mode</var> = <span class="php-quote">'append'</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetIncludeLast" id="_SetIncludeLast">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetIncludeLast">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#212-219" title="Go to source code">SetIncludeLast</a>( <span> <var>$includeLast</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddIncludeLast" id="_AddIncludeLast">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddIncludeLast">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#220-239" title="Go to source code">AddIncludeLast</a>( <span> <var>$includeLast</var> = []</span>, <span> <var>$mode</var> = <span class="php-quote">'append'</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetPhpFileSystemMode" id="_SetPhpFileSystemMode">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetPhpFileSystemMode">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#240-243" title="Go to source code">SetPhpFileSystemMode</a>( <span> <var>$fsMode</var> = <span class="php-quote">'PHP_PRESERVE_HDD'</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetAutoloadingOrderDetection" id="_SetAutoloadingOrderDetection">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetAutoloadingOrderDetection">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#244-247" title="Go to source code">SetAutoloadingOrderDetection</a>( <span> <var>$enabled</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ReplacePhpFunctions" id="_ReplacePhpFunctions">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ReplacePhpFunctions">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#248-252" title="Go to source code">ReplacePhpFunctions</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="KeepPhpFunctions" id="_KeepPhpFunctions">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_KeepPhpFunctions">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#253-257" title="Go to source code">KeepPhpFunctions</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetStaticCopies" id="_SetStaticCopies">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetStaticCopies">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#258-261" title="Go to source code">SetStaticCopies</a>( <span> <var>$staticCopies</var> = [<span class="php-comment">/* '/from-dir' =&gt; '/to-dir', '/filename', '/dirname' */</span>]</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="MergeConfiguration" id="_MergeConfiguration">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_MergeConfiguration">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#262-283" title="Go to source code">MergeConfiguration</a>( <span> <var>$cfg</var> = []</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="PreRun" id="_PreRun">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_PreRun">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#284-291" title="Go to source code">PreRun</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="PrintFilesToPack" id="_PrintFilesToPack">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_PrintFilesToPack">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#297-314" title="Go to source code">PrintFilesToPack</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="decodeJson" id="_decodeJson">
+
+		<td class="attributes"><code>
+			 protected static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_decodeJson">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#317-333" title="Go to source code">decodeJson</a>( <span> <var>&amp; $cUrlContentStr</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ErrorHandler" id="_ErrorHandler">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ErrorHandler">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#334-370" title="Go to source code">ErrorHandler</a>( <span> <var>$severity</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$message</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$file</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$line</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$context</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExceptionHandler" id="_ExceptionHandler">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExceptionHandler">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#371-373" title="Go to source code">ExceptionHandler</a>( <span> <var>$exception</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$exit</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ShutdownHandler" id="_ShutdownHandler">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ShutdownHandler">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#374-378" title="Go to source code">ShutdownHandler</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="shrinkPhpCode" id="_shrinkPhpCode">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_shrinkPhpCode">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#380-418" title="Go to source code">shrinkPhpCode</a>( <span> <var>&amp; $code</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="shrinkPhpCodeReducePhpDocComment" id="_shrinkPhpCodeReducePhpDocComment">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_shrinkPhpCodeReducePhpDocComment">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#419-466" title="Go to source code">shrinkPhpCodeReducePhpDocComment</a>( <span> <var>$code</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="completeJobAndParams" id="_completeJobAndParams">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_completeJobAndParams">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#467-497" title="Go to source code">completeJobAndParams</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="executeJobAndGetResult" id="_executeJobAndGetResult">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_executeJobAndGetResult">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#498-542" title="Go to source code">executeJobAndGetResult</a>( <span> <var>$job</var> = <span class="php-quote">''</span></span>, <span> <var>$arguments</var> = []</span>, <span> <var>$resultType</var> = <span class="php-quote">'json'</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendJsonResultAndExit" id="_sendJsonResultAndExit">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendJsonResultAndExit">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#543-551" title="Go to source code">sendJsonResultAndExit</a>( <span> <var>$jsonData</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="completeAllFiles" id="_completeAllFiles">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_completeAllFiles">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#552-607" title="Go to source code">completeAllFiles</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="excludeFilesByCfg" id="_excludeFilesByCfg">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_excludeFilesByCfg">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#608-631" title="Go to source code">excludeFilesByCfg</a>( <span> <var>&amp; $allFiles</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="encodeFilesToUtf8" id="_encodeFilesToUtf8">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encodeFilesToUtf8">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#632-638" title="Go to source code">encodeFilesToUtf8</a>( <span> <var>&amp; $allFiles</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendResult" id="_sendResult">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendResult">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#639-672" title="Go to source code">sendResult</a>( <span> <var>$title</var></span>, <span> <var>$content</var></span>, <span> <var>$type</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_checkCommonConfiguration" id="__checkCommonConfiguration">
+
+		<td class="attributes"><code>
+			 private 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__checkCommonConfiguration">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#673-699" title="Go to source code">_checkCommonConfiguration</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_convertFilecontentToUtf8Automatically" id="__convertFilecontentToUtf8Automatically">
+
+		<td class="attributes"><code>
+			 private 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__convertFilecontentToUtf8Automatically">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#700-724" title="Go to source code">_convertFilecontentToUtf8Automatically</a>( <span> <var>&amp; $fileInfo</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_processGetRequest" id="__processGetRequest">
+
+		<td class="attributes"><code>
+			 private 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__processGetRequest">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#725-761" title="Go to source code">_processGetRequest</a>( <span> <var>$url</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_sendResultRenderErrorsContentItem" id="__sendResultRenderErrorsContentItem">
+
+		<td class="attributes"><code>
+			 private 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__sendResultRenderErrorsContentItem">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#762-785" title="Go to source code">_sendResultRenderErrorsContentItem</a>( <span> <var>$outputType</var></span>, <span> <var>$item</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_changeCurrentWorkingDirectoryToProjectRoot" id="__changeCurrentWorkingDirectoryToProjectRoot">
+
+		<td class="attributes"><code>
+			 private 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__changeCurrentWorkingDirectoryToProjectRoot">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#786-802" title="Go to source code">_changeCurrentWorkingDirectoryToProjectRoot</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_setUpStrictExceptionsMode" id="__setUpStrictExceptionsMode">
+
+		<td class="attributes"><code>
+			 private 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__setUpStrictExceptionsMode">#</a>
+		<code><a href="source-class-Packager_Common_Base.html#803-821" title="Go to source code">_setUpStrictExceptionsMode</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="cfg" id="$cfg">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#4" title="Go to source code"><var>$cfg</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$cfg" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="files" id="$files">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#5" title="Go to source code"><var>$files</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$files" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="cliScriptName" id="$cliScriptName">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#6" title="Go to source code"><var>$cliScriptName</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$cliScriptName" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="compilationType" id="$compilationType">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#7" title="Go to source code"><var>$compilationType</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$compilationType" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="exceptionsMessages" id="$exceptionsMessages">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#8" title="Go to source code"><var>$exceptionsMessages</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$exceptionsMessages" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="exceptionsTraces" id="$exceptionsTraces">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#9" title="Go to source code"><var>$exceptionsTraces</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$exceptionsTraces" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="includedFilesCountTillNow" id="$includedFilesCountTillNow">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#10" title="Go to source code"><var>$includedFilesCountTillNow</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$includedFilesCountTillNow" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="errorHandlerData" id="$errorHandlerData">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#11" title="Go to source code"><var>$errorHandlerData</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$errorHandlerData" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="errorResponse" id="$errorResponse">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#12" title="Go to source code"><var>$errorResponse</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$errorResponse" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="autoLoadedFiles" id="$autoLoadedFiles">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#13" title="Go to source code"><var>$autoLoadedFiles</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$autoLoadedFiles" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="templatesExtensions" id="$templatesExtensions">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#14" title="Go to source code"><var>$templatesExtensions</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$templatesExtensions" class="anchor">#</a>
+				<code>[<span class="php-quote">'phtml'</span>]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="fileTypesStoringTypes" id="$fileTypesStoringTypes">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#15-32" title="Go to source code"><var>$fileTypesStoringTypes</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$fileTypesStoringTypes" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">'gzip'</span>  =&gt; [
+        <span class="php-quote">'css'</span>, <span class="php-quote">'htc'</span>, <span class="php-quote">'js'</span>, <span class="php-quote">'txt'</span>, <span class="php-quote">'svg'</span>
+    ],
+    <span class="php-quote">'binary'</span>    =&gt; [
+        <span class="php-quote">'ico'</span>, <span class="php-quote">'gif'</span>, <span class="php-quote">'png'</span>, <span class="php-quote">'jpg'</span>, <span class="php-quote">'jpeg'</span>,
+        <span class="php-quote">'zip'</span>, <span class="php-quote">'ttf'</span>, <span class="php-quote">'eot'</span>, <span class="php-quote">'otf'</span>, <span class="php-quote">'woff'</span>, <span class="php-quote">'woff2'</span>,
+    ],
+    <span class="php-quote">'base64'</span>    =&gt; [
+        <span class="php-comment">// 'ini',</span>
+    ],
+    <span class="php-quote">'template'</span>  =&gt; [
+        <span class="php-quote">'phtml'</span>,
+    ],
+    <span class="php-quote">'text'</span>  =&gt; [
+        <span class="php-quote">'ini'</span>, <span class="php-quote">'htm'</span>, <span class="php-quote">'html'</span>, <span class="php-quote">'xml'</span>, <span class="php-quote">'xsd'</span>, <span class="php-quote">'csv'</span>,
+    ],
+]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="instance" id="$instance">
+		<td class="attributes"><code>
+			protected static 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#33" title="Go to source code"><var>$instance</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$instance" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="_cfgDefault" id="$_cfgDefault">
+		<td class="attributes"><code>
+			private static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#34-55" title="Go to source code"><var>$_cfgDefault</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_cfgDefault" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">'sourcesDir'</span>                =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'releaseDir'</span>                =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'releaseFileName'</span>           =&gt; <span class="php-quote">'/index.php'</span>,
+    <span class="php-quote">'staticCopies'</span>              =&gt; [],
+    <span class="php-quote">'excludePatterns'</span>           =&gt; [],
+    <span class="php-quote">'includePatterns'</span>           =&gt; [],
+    <span class="php-quote">'stringReplacements'</span>        =&gt; [],
+    <span class="php-quote">'patternReplacements'</span>       =&gt; [],
+    <span class="php-quote">'minifyTemplates'</span>           =&gt; <span class="php-num">0</span>,
+    <span class="php-quote">'minifyPhp'</span>                 =&gt; <span class="php-num">0</span>,
+    <span class="php-quote">'keepPhpDocComments'</span>        =&gt; [],
+    <span class="php-comment">// PHP compiling only:</span>
+    <span class="php-quote">'autoloadingOrderDetection'</span> =&gt; <span class="php-keyword1">TRUE</span>,
+    <span class="php-quote">'includeFirst'</span>              =&gt; [],
+    <span class="php-quote">'includeLast'</span>               =&gt; [],
+    <span class="php-quote">'phpFsMode'</span>                 =&gt; <span class="php-quote">'PHP_PRESERVE_HDD'</span>,
+    <span class="php-quote">'phpFunctionsToReplace'</span>     =&gt; [],
+    <span class="php-quote">'phpFunctionsToKeep'</span>        =&gt; [],
+    <span class="php-quote">'phpFunctionsToProcess'</span>     =&gt; [],
+    <span class="php-quote">'errorReportingLevel'</span>       =&gt; E_ALL,
+]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="_htmlStyles" id="$_htmlStyles">
+		<td class="attributes"><code>
+			private static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#56-59" title="Go to source code"><var>$_htmlStyles</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_htmlStyles" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">'success'</span>   =&gt; <span class="php-quote">'html,body{background:#005700;}'</span>,
+    <span class="php-quote">'error'</span>     =&gt; <span class="php-quote">'html,body{background:#cd1818;}.xdebug-error,.xdebug-error th,.xdebug-error td{color:#000;text-shadow:none !important;font-size:125%;}.xdebug-var-dump font[color*=cc0000]{background:#fff;text-shadow:none;}'</span>,
+]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="_responseTemplates" id="$_responseTemplates">
+		<td class="attributes"><code>
+			private static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Packager_Common_Base.html#60-63" title="Go to source code"><var>$_responseTemplates</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_responseTemplates" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">'text'</span>  =&gt; <span class="php-quote">&quot;\n======================= %title =======================\n\n\n%h1\n\n\n%content\n\n&quot;</span>,
+    <span class="php-quote">'html'</span>  =&gt; <span class="php-quote">'&lt;!DOCTYPE HTML&gt;&lt;html lang=&quot;en-US&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;title&gt;%title&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;html,body{margin:30px;font-size:14px;color:#fff;text-align:left;line-height:1.5em;font-weight:bold;font-family:&quot;consolas&quot;,courier new,monotype;text-shadow:1px 1px 0 rgba(0,0,0,.4);}h1{font-size:200%;line-height:1.5em;}h2{font-size:150%;line-height:1.5em;}%style&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;%h1&lt;/h1&gt;%content&lt;/body&gt;&lt;/html&gt;'</span>,
+]</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Packager API Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?2ab812383cb4b212c43712f7c21ac059c51885eb"></script>
+<script src="elementlist.js?05b428a928b8f3c221b40244e91155fe302e554c"></script>
+</body>
+</html>

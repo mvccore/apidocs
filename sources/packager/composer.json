@@ -1,0 +1,11 @@
+{
+	"repositories": [{
+		"type": "path",
+		"url": "../../../packager"
+	}],
+	"require": {
+		"php": ">=5.4.0",
+		"mvccore/packager": "dev-master"
+	},
+	"minimum-stability": "dev"
+}

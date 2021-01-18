@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Packager_Phar | Packager API Documentation</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-187607113-1"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Packager_Common_Base.html">Packager_Common_Base</a></li>
+				<li><a href="class-Packager_Common_StaticCopies.html">Packager_Common_StaticCopies</a></li>
+				<li class="active"><a href="class-Packager_Phar.html">Packager_Phar</a></li>
+				<li><a href="class-Packager_Phar_ResultCompleter.html">Packager_Phar_ResultCompleter</a></li>
+				<li><a href="class-Packager_Php.html">Packager_Php</a></li>
+				<li><a href="class-Packager_Php_Base.html">Packager_Php_Base</a></li>
+				<li><a href="class-Packager_Php_Completer.html">Packager_Php_Completer</a></li>
+				<li><a href="class-Packager_Php_Scripts_Completer.html">Packager_Php_Scripts_Completer</a></li>
+				<li><a href="class-Packager_Php_Scripts_Dependencies.html">Packager_Php_Scripts_Dependencies</a></li>
+				<li><a href="class-Packager_Php_Scripts_Order.html">Packager_Php_Scripts_Order</a></li>
+				<li><a href="class-Packager_Php_Scripts_Replacer.html">Packager_Php_Scripts_Replacer</a></li>
+				<li><a href="class-Packager_Php_Wrapper.html" class="invalid">Packager_Php_Wrapper</a></li>
+				<li><a href="class-Packager_Php_Wrapper_DirectoryIterator.html" class="invalid">Packager_Php_Wrapper_DirectoryIterator</a></li>
+				<li><a href="class-Packager_Php_Wrapper_SplFileInfo.html" class="invalid">Packager_Php_Wrapper_SplFileInfo</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Packager_Php_Scripts_Throwable.html">Packager_Php_Scripts_Throwable</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="-API-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Packager_Phar</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Packager_Common_Base.html"><span>Packager_Common_Base</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Packager_Common_StaticCopies.html"><span>Packager_Common_StaticCopies</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Packager_Phar_ResultCompleter.html"><span>Packager_Phar_ResultCompleter</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Packager_Phar</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> <a href="source-class-Packager_Phar.html#5-182" title="Go to source code">src/Packager/Phar.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="Create" id="_Create">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Create">#</a>
+		<code><a href="source-class-Packager_Phar.html#7-16" title="Go to source code">Create</a>( <span>array <var>$cfg</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Create singleton instance with configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create singleton instance with configuration</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cfg</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_Create">Packager_Common_Base::Create()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Get" id="_Get">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Get">#</a>
+		<code><a href="source-class-Packager_Phar.html#17-26" title="Go to source code">Get</a>( <span>array <var>$cfg</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Get instance and merge configuration or create singleton instance with configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get instance and merge configuration or create singleton instance with configuration</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cfg</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_Get">Packager_Common_Base::Get()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetSourceDir" id="_SetSourceDir">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetSourceDir">#</a>
+		<code><a href="source-class-Packager_Phar.html#27-36" title="Go to source code">SetSourceDir</a>( <span>string <var>$fullOrRelativePath</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set application sources directory</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set application sources directory</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fullOrRelativePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_SetSourceDir">Packager_Common_Base::SetSourceDir()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetReleaseDir" id="_SetReleaseDir">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetReleaseDir">#</a>
+		<code><a href="source-class-Packager_Phar.html#37-46" title="Go to source code">SetReleaseDir</a>( <span>string <var>$fullOrRelativePath</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set compilation result(s) directory, all files will be removed first.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set compilation result(s) directory, all files will be removed first.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fullOrRelativePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_SetReleaseDir">Packager_Common_Base::SetReleaseDir()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetReleaseFileName" id="_SetReleaseFileName">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetReleaseFileName">#</a>
+		<code><a href="source-class-Packager_Phar.html#47-56" title="Go to source code">SetReleaseFileName</a>( <span>string <var>$releaseFileName</var> = <span class="php-quote">'/index.php'</span></span> )</code>
+
+		<div class="description short">
+			<p>Set compilation result PHP script file name, '/index.php` by default.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set compilation result PHP script file name, '/index.php` by default.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$releaseFileName</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_SetReleaseFileName">Packager_Common_Base::SetReleaseFileName()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetExcludePatterns" id="_SetExcludePatterns">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetExcludePatterns">#</a>
+		<code><a href="source-class-Packager_Phar.html#57-68" title="Go to source code">SetExcludePatterns</a>( <span>array|string <var>$excludePatterns</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Set preg_replace() patterns array or single string about
+which files or folders will be excluded from result file.
+Function replace all previous configuration records.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set preg_replace() patterns array or single string about
+which files or folders will be excluded from result file.
+Function replace all previous configuration records.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$excludePatterns</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_SetExcludePatterns">Packager_Common_Base::SetExcludePatterns()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddExcludePatterns" id="_AddExcludePatterns">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddExcludePatterns">#</a>
+		<code><a href="source-class-Packager_Phar.html#69-79" title="Go to source code">AddExcludePatterns</a>( <span>array|string <var>$excludePatterns</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Add preg_replace() patterns array or single string about
+which files or folders will be excluded from result file.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add preg_replace() patterns array or single string about
+which files or folders will be excluded from result file.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$excludePatterns</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_AddExcludePatterns">Packager_Common_Base::AddExcludePatterns()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetPatternReplacements" id="_SetPatternReplacements">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Php.html">Packager_Php</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetPatternReplacements">#</a>
+		<code><a href="source-class-Packager_Phar.html#80-92" title="Go to source code">SetPatternReplacements</a>( <span>array <var>$patternReplacements</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Set patterns/replacements array about what will be replaced
+in *.php and *.phtml files by preg_replace(pattern, replacement, source)
+before possible minification process.
+Function replace all previous configuration records.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set patterns/replacements array about what will be replaced
+in *.php and *.phtml files by preg_replace(pattern, replacement, source)
+before possible minification process.
+Function replace all previous configuration records.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$patternReplacements</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Php.html">Packager_Php</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_SetPatternReplacements">Packager_Common_Base::SetPatternReplacements()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddPatternReplacements" id="_AddPatternReplacements">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Php.html">Packager_Php</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddPatternReplacements">#</a>
+		<code><a href="source-class-Packager_Phar.html#93-104" title="Go to source code">AddPatternReplacements</a>( <span>array <var>$patternReplacements</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Add patterns/replacements array about what will be replaced
+in *.php and *.phtml files by preg_replace(pattern, replacement, source)
+before possible minification process.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add patterns/replacements array about what will be replaced
+in *.php and *.phtml files by preg_replace(pattern, replacement, source)
+before possible minification process.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$patternReplacements</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Php.html">Packager_Php</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_AddPatternReplacements">Packager_Common_Base::AddPatternReplacements()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetStringReplacements" id="_SetStringReplacements">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetStringReplacements">#</a>
+		<code><a href="source-class-Packager_Phar.html#105-116" title="Go to source code">SetStringReplacements</a>( <span>array <var>$stringReplacements</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Set str_replace() key/value array about
+what will be simply replaced in result file.
+Function replace all previous configuration records.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set str_replace() key/value array about
+what will be simply replaced in result file.
+Function replace all previous configuration records.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$stringReplacements</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_SetStringReplacements">Packager_Common_Base::SetStringReplacements()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="AddStringReplacements" id="_AddStringReplacements">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AddStringReplacements">#</a>
+		<code><a href="source-class-Packager_Phar.html#117-127" title="Go to source code">AddStringReplacements</a>( <span>array <var>$stringReplacements</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Add str_replace() key/value array about
+what will be simply replaced in result file.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add str_replace() key/value array about
+what will be simply replaced in result file.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$stringReplacements</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_AddStringReplacements">Packager_Common_Base::AddStringReplacements()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetMinifyTemplates" id="_SetMinifyTemplates">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetMinifyTemplates">#</a>
+		<code><a href="source-class-Packager_Phar.html#128-137" title="Go to source code">SetMinifyTemplates</a>( <span>string <var>$minifyTemplates</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			<p>Set boolean if *.phtml templates will be minimized before saving into result file</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set boolean if *.phtml templates will be minimized before saving into result file</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$minifyTemplates</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_SetMinifyTemplates">Packager_Common_Base::SetMinifyTemplates()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetMinifyPhp" id="_SetMinifyPhp">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetMinifyPhp">#</a>
+		<code><a href="source-class-Packager_Phar.html#138-147" title="Go to source code">SetMinifyPhp</a>( <span>string <var>$minifyPhp</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			<p>Set boolean if *.php scripts will be minimized before saving into result file</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set boolean if *.php scripts will be minimized before saving into result file</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$minifyPhp</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_SetMinifyPhp">Packager_Common_Base::SetMinifyPhp()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetStaticCopies" id="_SetStaticCopies">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Php.html">Packager_Php</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetStaticCopies">#</a>
+		<code><a href="source-class-Packager_Phar.html#148-159" title="Go to source code">SetStaticCopies</a>( <span>array <var>$staticCopies</var> = [<span class="php-comment">/* '/from-dir' =&gt; '/to-dir', '/filename', '/dirname' */</span>]</span> )</code>
+
+		<div class="description short">
+			<p>Set array with statically copied files or directories from <code>./development</code> to <code>./release</code> directory.
+If key is numeric, source and destination relative path are the same. If key is string, source
+relative path is defined by array key and destination relative path is defined by array value.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set array with statically copied files or directories from <code>./development</code> to <code>./release</code> directory.
+If key is numeric, source and destination relative path are the same. If key is string, source
+relative path is defined by array key and destination relative path is defined by array value.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$staticCopies</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Php.html">Packager_Php</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_SetStaticCopies">Packager_Common_Base::SetStaticCopies()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="MergeConfiguration" id="_MergeConfiguration">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_MergeConfiguration">#</a>
+		<code><a href="source-class-Packager_Phar.html#160-170" title="Go to source code">MergeConfiguration</a>( <span>array <var>$cfg</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Merge multilevel configuration array with previously initialized values.
+New values sent into this function will be used preferred.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Merge multilevel configuration array with previously initialized values.
+New values sent into this function will be used preferred.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cfg</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Packager_Common_Base.html#_MergeConfiguration">Packager_Common_Base::MergeConfiguration()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Run" id="_Run">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Run">#</a>
+		<code><a href="source-class-Packager_Phar.html#171-181" title="Go to source code">Run</a>( )</code>
+
+		<div class="description short">
+			<p>Run PHAR compilation process, print output to CLI or browser</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Run PHAR compilation process, print output to CLI or browser</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Packager_Phar.html">Packager_Phar</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Packager_Phar_ResultCompleter.html#methods">Packager_Phar_ResultCompleter</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Packager_Phar_ResultCompleter.html#_completingJob">completingJob()</a>, 
+			<a href="class-Packager_Phar_ResultCompleter.html#_mainJob">mainJob()</a>, 
+			<a href="class-Packager_Phar_ResultCompleter.html#_notify">notify()</a>, 
+			<a href="class-Packager_Phar_ResultCompleter.html#_renameJob">renameJob()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Packager_Common_StaticCopies.html#methods">Packager_Common_StaticCopies</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Packager_Common_StaticCopies.html#_cleanReleaseDir">cleanReleaseDir()</a>, 
+			<a href="class-Packager_Common_StaticCopies.html#_copyStaticFilesAndFolders">copyStaticFilesAndFolders()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Packager_Common_Base.html#methods">Packager_Common_Base</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Packager_Common_Base.html#_AddIncludeFirst">AddIncludeFirst()</a>, 
+			<a href="class-Packager_Common_Base.html#_AddIncludeLast">AddIncludeLast()</a>, 
+			<a href="class-Packager_Common_Base.html#_AddIncludePatterns">AddIncludePatterns()</a>, 
+			<a href="class-Packager_Common_Base.html#_ErrorHandler">ErrorHandler()</a>, 
+			<a href="class-Packager_Common_Base.html#_ExceptionHandler">ExceptionHandler()</a>, 
+			<a href="class-Packager_Common_Base.html#_KeepPhpFunctions">KeepPhpFunctions()</a>, 
+			<a href="class-Packager_Common_Base.html#_PreRun">PreRun()</a>, 
+			<a href="class-Packager_Common_Base.html#_PrintFilesToPack">PrintFilesToPack()</a>, 
+			<a href="class-Packager_Common_Base.html#_ReplacePhpFunctions">ReplacePhpFunctions()</a>, 
+			<a href="class-Packager_Common_Base.html#_SetAutoloadingOrderDetection">SetAutoloadingOrderDetection()</a>, 
+			<a href="class-Packager_Common_Base.html#_SetIncludeFirst">SetIncludeFirst()</a>, 
+			<a href="class-Packager_Common_Base.html#_SetIncludeLast">SetIncludeLast()</a>, 
+			<a href="class-Packager_Common_Base.html#_SetIncludePatterns">SetIncludePatterns()</a>, 
+			<a href="class-Packager_Common_Base.html#_SetKeepPhpDocComments">SetKeepPhpDocComments()</a>, 
+			<a href="class-Packager_Common_Base.html#_SetPhpFileSystemMode">SetPhpFileSystemMode()</a>, 
+			<a href="class-Packager_Common_Base.html#_ShutdownHandler">ShutdownHandler()</a>, 
+			<a href="class-Packager_Common_Base.html#___construct">__construct()</a>, 
+			<a href="class-Packager_Common_Base.html#_completeAllFiles">completeAllFiles()</a>, 
+			<a href="class-Packager_Common_Base.html#_completeJobAndParams">completeJobAndParams()</a>, 
+			<a href="class-Packager_Common_Base.html#_decodeJson">decodeJson()</a>, 
+			<a href="class-Packager_Common_Base.html#_encodeFilesToUtf8">encodeFilesToUtf8()</a>, 
+			<a href="class-Packager_Common_Base.html#_excludeFilesByCfg">excludeFilesByCfg()</a>, 
+			<a href="class-Packager_Common_Base.html#_executeJobAndGetResult">executeJobAndGetResult()</a>, 
+			<a href="class-Packager_Common_Base.html#_sendJsonResultAndExit">sendJsonResultAndExit()</a>, 
+			<a href="class-Packager_Common_Base.html#_sendResult">sendResult()</a>, 
+			<a href="class-Packager_Common_Base.html#_shrinkPhpCode">shrinkPhpCode()</a>, 
+			<a href="class-Packager_Common_Base.html#_shrinkPhpCodeReducePhpDocComment">shrinkPhpCodeReducePhpDocComment()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Packager_Common_StaticCopies.html#properties">Packager_Common_StaticCopies</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Packager_Common_StaticCopies.html#$staticallyCopiedFiles"><var>$staticallyCopiedFiles</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Packager_Common_Base.html#properties">Packager_Common_Base</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Packager_Common_Base.html#$autoLoadedFiles"><var>$autoLoadedFiles</var></a>, 
+			<a href="class-Packager_Common_Base.html#$cfg"><var>$cfg</var></a>, 
+			<a href="class-Packager_Common_Base.html#$cliScriptName"><var>$cliScriptName</var></a>, 
+			<a href="class-Packager_Common_Base.html#$compilationType"><var>$compilationType</var></a>, 
+			<a href="class-Packager_Common_Base.html#$errorHandlerData"><var>$errorHandlerData</var></a>, 
+			<a href="class-Packager_Common_Base.html#$errorResponse"><var>$errorResponse</var></a>, 
+			<a href="class-Packager_Common_Base.html#$exceptionsMessages"><var>$exceptionsMessages</var></a>, 
+			<a href="class-Packager_Common_Base.html#$exceptionsTraces"><var>$exceptionsTraces</var></a>, 
+			<a href="class-Packager_Common_Base.html#$fileTypesStoringTypes"><var>$fileTypesStoringTypes</var></a>, 
+			<a href="class-Packager_Common_Base.html#$files"><var>$files</var></a>, 
+			<a href="class-Packager_Common_Base.html#$includedFilesCountTillNow"><var>$includedFilesCountTillNow</var></a>, 
+			<a href="class-Packager_Common_Base.html#$instance"><var>$instance</var></a>, 
+			<a href="class-Packager_Common_Base.html#$templatesExtensions"><var>$templatesExtensions</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Packager API Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?2ab812383cb4b212c43712f7c21ac059c51885eb"></script>
+<script src="elementlist.js?05b428a928b8f3c221b40244e91155fe302e554c"></script>
+</body>
+</html>

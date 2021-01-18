@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class MvcCore\Route | MvcCore</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-MvcCore.html">
+						MvcCore<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.html">
+						Ext<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.html">
+						Auth<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.Virtual.html">
+						Virtual					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.html">
+						Debug<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.Tracy.html">
+						Tracy					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.html">
+						Form<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Validators.html">
+						Validators					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Request.html">
+						Request					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.html">
+						Router<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.Lang.html">
+						Lang					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.View.html">
+						View<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.View.Helpers.html">
+						Helpers					</a>
+
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-MvcCore.Config.html">Config</a></li>
+				<li><a href="class-MvcCore.Controller.html">Controller</a></li>
+				<li><a href="class-MvcCore.Debug.html">Debug</a></li>
+				<li><a href="class-MvcCore.Model.html">Model</a></li>
+				<li><a href="class-MvcCore.Request.html">Request</a></li>
+				<li><a href="class-MvcCore.Response.html">Response</a></li>
+				<li class="active"><a href="class-MvcCore.Route.html">Route</a></li>
+				<li><a href="class-MvcCore.Router.html">Router</a></li>
+				<li><a href="class-MvcCore.Session.html">Session</a></li>
+				<li><a href="class-MvcCore.Tool.html">Tool</a></li>
+				<li><a href="class-MvcCore.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-MvcCore.html" title="Summary of MvcCore"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Route</h1>
+
+
+	<div class="description">
+	<p>Core route:
+- describing request input, url output, controller/action target and default params
+- required properties to set: - Pattern - classic preg_match() pattern including border '#' characters, containing char groups - Reverse - url form with {%param} replacements where to insert param values from url method - Controller - controller to create and dispatch or view directory name, pascal case - Action - controller action to execute or view name to render, pascal case - Name - 'Controller:Action' or any custom route name how to create url in application by Url() method - Params - default params to set before controller/action dispatching if no params in request</p>
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-MvcCore.Ext.Router.Lang.Route.html">MvcCore\Ext\Router\Lang\Route</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-MvcCore.html">MvcCore</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-MvcCore.Route.html#16-169" title="Go to source code">mvccore/src/MvcCore/Route.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="GetInstance" id="_GetInstance">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetInstance">#</a>
+		<code><a href="source-class-MvcCore.Route.html#64-75" title="Go to source code">GetInstance</a>( <span>array|stdClass <var>$object</var></span> )</code>
+
+		<div class="description short">
+			<p>Get new instance by array or stdClass, if created, return it</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get new instance by array or stdClass, if created, return it</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$object</var></dt>
+					<dd>route configuration data</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-MvcCore.Route.html#78-109" title="Go to source code">__construct</a>( <span> <var>$nameOrConfig</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$controller</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$action</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$pattern</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$reverse</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Create new route</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create new route</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$nameOrConfig</var></dt>
+					<dd>required</dd>
+					<dt><var>$controller</var></dt>
+					<dd>optional</dd>
+					<dt><var>$action</var></dt>
+					<dd>optional</dd>
+					<dt><var>$pattern</var></dt>
+					<dd>optional</dd>
+					<dt><var>$reverse</var></dt>
+					<dd>optional</dd>
+					<dt><var>$params</var></dt>
+					<dd>optional</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetName" id="_SetName">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetName">#</a>
+		<code><a href="source-class-MvcCore.Route.html#111-120" title="Go to source code">SetName</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Set route name, your custom keyword/term
+or pascal case combination of 'Controller:Action'</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set route name, your custom keyword/term
+or pascal case combination of 'Controller:Action'</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetController" id="_SetController">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetController">#</a>
+		<code><a href="source-class-MvcCore.Route.html#121-129" title="Go to source code">SetController</a>( <span>string <var>$controller</var></span> )</code>
+
+		<div class="description short">
+			<p>Set controller name in pascal case.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set controller name in pascal case.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$controller</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetAction" id="_SetAction">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetAction">#</a>
+		<code><a href="source-class-MvcCore.Route.html#130-138" title="Go to source code">SetAction</a>( <span>string <var>$action</var></span> )</code>
+
+		<div class="description short">
+			<p>Set action name in pascal case.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set action name in pascal case.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetPattern" id="_SetPattern">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetPattern">#</a>
+		<code><a href="source-class-MvcCore.Route.html#139-148" title="Go to source code">SetPattern</a>( <span>string <var>$pattern</var></span> )</code>
+
+		<div class="description short">
+			<p>Set route preg_match pattern in classic PHP form:
+"#^/url&#45;begin/([^/]<em>)/([^/]</em>)/(.*)#".</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set route preg_match pattern in classic PHP form:
+"#^/url&#45;begin/([^/]<em>)/([^/]</em>)/(.*)#".</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pattern</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetReverse" id="_SetReverse">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetReverse">#</a>
+		<code><a href="source-class-MvcCore.Route.html#149-158" title="Go to source code">SetReverse</a>( <span>string <var>$reverse</var></span> )</code>
+
+		<div class="description short">
+			<p>Set route reverse address form from preg_replace pattern
+in form: "/url-begin/{%first}/{%second}/{%third}".</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set route reverse address form from preg_replace pattern
+in form: "/url-begin/{%first}/{%second}/{%third}".</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$reverse</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetParams" id="_SetParams">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetParams">#</a>
+		<code><a href="source-class-MvcCore.Route.html#159-168" title="Go to source code">SetParams</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Set route params with default values in form:
+array('first' => 1, 'second' => 2, 'third' => 3).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set route params with default values in form:
+array('first' => 1, 'second' => 2, 'third' => 3).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$params</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Route.html">MvcCore\Route</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="Name" id="$Name">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Route.html#28-33" title="Go to source code"><var>$Name</var></a>
+
+			<div class="description short">
+				<p>Route name, your custom keyword/term
+or pascal case combination of 'Controller:Action'.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Route name, your custom keyword/term
+or pascal case combination of 'Controller:Action'.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Name" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Controller" id="$Controller">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Route.html#34-38" title="Go to source code"><var>$Controller</var></a>
+
+			<div class="description short">
+				<p>Controller name in pascal case.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Controller name in pascal case.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Controller" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Action" id="$Action">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Route.html#39-43" title="Go to source code"><var>$Action</var></a>
+
+			<div class="description short">
+				<p>Action name in pascal case.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Action name in pascal case.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Action" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Pattern" id="$Pattern">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Route.html#44-49" title="Go to source code"><var>$Pattern</var></a>
+
+			<div class="description short">
+				<p>Route preg_match pattern in classic PHP form:
+"#^/url&#45;begin/([^/]<em>)/([^/]</em>)/(.*)#".</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Route preg_match pattern in classic PHP form:
+"#^/url&#45;begin/([^/]<em>)/([^/]</em>)/(.*)#".</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Pattern" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Reverse" id="$Reverse">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Route.html#50-55" title="Go to source code"><var>$Reverse</var></a>
+
+			<div class="description short">
+				<p>Route reverse address form from preg_replace pattern
+in form: "/url-begin/{%first}/{%second}/{%third}".</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Route reverse address form from preg_replace pattern
+in form: "/url-begin/{%first}/{%second}/{%third}".</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Reverse" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Params" id="$Params">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Route.html#56-61" title="Go to source code"><var>$Params</var></a>
+
+			<div class="description short">
+				<p>Route params with default values in form:
+array('first' => 1, 'second' => 2, 'third' => 3).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Route params with default values in form:
+array('first' => 1, 'second' => 2, 'third' => 3).</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Params" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		MvcCore API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

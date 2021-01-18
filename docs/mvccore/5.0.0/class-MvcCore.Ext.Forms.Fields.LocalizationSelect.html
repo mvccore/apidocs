@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class MvcCore\Ext\Forms\Fields\LocalizationSelect | MvcCore API Documentation</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-187607113-1"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-MvcCore.Application.html">MvcCore\Application</a></li>
+				<li><a href="class-MvcCore.Config.html">MvcCore\Config</a></li>
+				<li><a href="class-MvcCore.Controller.html">MvcCore\Controller</a></li>
+				<li><a href="class-MvcCore.Controller.AutoInit.html">MvcCore\Controller\AutoInit</a></li>
+				<li><a href="class-MvcCore.Debug.html">MvcCore\Debug</a></li>
+				<li><a href="class-MvcCore.Environment.html">MvcCore\Environment</a></li>
+				<li><a href="class-MvcCore.Ext.Auth.html">MvcCore\Ext\Auth</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basic.html">MvcCore\Ext\Auths\Basic</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Controller.html">MvcCore\Ext\Auths\Basics\Controller</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Role.html">MvcCore\Ext\Auths\Basics\Role</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.SignInForm.html">MvcCore\Ext\Auths\Basics\SignInForm</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.SignOutForm.html">MvcCore\Ext\Auths\Basics\SignOutForm</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.html">MvcCore\Ext\Auths\Basics\User</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Users.Database.html">MvcCore\Ext\Auths\Basics\Users\Database</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Users.SystemConfig.html">MvcCore\Ext\Auths\Basics\Users\SystemConfig</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.User.html" class="invalid">MvcCore\Ext\Auths\User</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Users.Database.html" class="invalid">MvcCore\Ext\Auths\Users\Database</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Users.SystemConfig.html" class="invalid">MvcCore\Ext\Auths\Users\SystemConfig</a></li>
+				<li><a href="class-MvcCore.Ext.Cache.html">MvcCore\Ext\Cache</a></li>
+				<li><a href="class-MvcCore.Ext.Caches.Redis.html">MvcCore\Ext\Caches\Redis</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Cached.html">MvcCore\Ext\Configs\Cached</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yaml.html">MvcCore\Ext\Configs\Yaml</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracy.html">MvcCore\Ext\Debugs\Tracy</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.AuthPanel.html">MvcCore\Ext\Debugs\Tracys\AuthPanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.IncludePanel.html">MvcCore\Ext\Debugs\Tracys\IncludePanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.MvcCorePanel.html">MvcCore\Ext\Debugs\Tracys\MvcCorePanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.RoutingPanel.html">MvcCore\Ext\Debugs\Tracys\RoutingPanel</a></li>
+				<li><a href="class-MvcCore.Ext.Debugs.Tracys.SessionPanel.html">MvcCore\Ext\Debugs\Tracys\SessionPanel</a></li>
+				<li><a href="class-MvcCore.Ext.Form.html">MvcCore\Ext\Form</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.html">MvcCore\Ext\Forms\Field</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Button.html">MvcCore\Ext\Forms\Fields\Button</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ButtonInput.html">MvcCore\Ext\Forms\Fields\ButtonInput</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Checkbox.html">MvcCore\Ext\Forms\Fields\Checkbox</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.CheckboxGroup.html">MvcCore\Ext\Forms\Fields\CheckboxGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Color.html">MvcCore\Ext\Forms\Fields\Color</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.CountrySelect.html">MvcCore\Ext\Forms\Fields\CountrySelect</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.DataList.html">MvcCore\Ext\Forms\Fields\DataList</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Date.html">MvcCore\Ext\Forms\Fields\Date</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.DateTime.html">MvcCore\Ext\Forms\Fields\DateTime</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Email.html">MvcCore\Ext\Forms\Fields\Email</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.File.html">MvcCore\Ext\Forms\Fields\File</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Hidden.html">MvcCore\Ext\Forms\Fields\Hidden</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Image.html">MvcCore\Ext\Forms\Fields\Image</a></li>
+				<li class="active"><a href="class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html">MvcCore\Ext\Forms\Fields\LocalizationSelect</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Month.html">MvcCore\Ext\Forms\Fields\Month</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Number.html">MvcCore\Ext\Forms\Fields\Number</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Password.html">MvcCore\Ext\Forms\Fields\Password</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.RadioGroup.html">MvcCore\Ext\Forms\Fields\RadioGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Range.html">MvcCore\Ext\Forms\Fields\Range</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ResetButton.html">MvcCore\Ext\Forms\Fields\ResetButton</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ResetInput.html">MvcCore\Ext\Forms\Fields\ResetInput</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Search.html">MvcCore\Ext\Forms\Fields\Search</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Select.html">MvcCore\Ext\Forms\Fields\Select</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.SubmitButton.html">MvcCore\Ext\Forms\Fields\SubmitButton</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.SubmitInput.html">MvcCore\Ext\Forms\Fields\SubmitInput</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Tel.html">MvcCore\Ext\Forms\Fields\Tel</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Text.html">MvcCore\Ext\Forms\Fields\Text</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Textarea.html">MvcCore\Ext\Forms\Fields\Textarea</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Time.html">MvcCore\Ext\Forms\Fields\Time</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Url.html">MvcCore\Ext\Forms\Fields\Url</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.Week.html">MvcCore\Ext\Forms\Fields\Week</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.FieldsGroup.html">MvcCore\Ext\Forms\FieldsGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validator.html">MvcCore\Ext\Forms\Validator</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Color.html">MvcCore\Ext\Forms\Validators\Color</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.CompanyIdEu.html">MvcCore\Ext\Forms\Validators\CompanyIdEu</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.CompanyVatIdEu.html">MvcCore\Ext\Forms\Validators\CompanyVatIdEu</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.CreditCard.html">MvcCore\Ext\Forms\Validators\CreditCard</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Date.html">MvcCore\Ext\Forms\Validators\Date</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.DateTime.html">MvcCore\Ext\Forms\Validators\DateTime</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Email.html">MvcCore\Ext\Forms\Validators\Email</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.html">MvcCore\Ext\Forms\Validators\Files</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.GzArchive.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\GzArchive</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.PngImage.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\PngImage</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.RarArchive.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\RarArchive</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.BombScanners.ZipArchive.html">MvcCore\Ext\Forms\Validators\Files\Validations\BombScanners\ZipArchive</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.FloatNumber.html">MvcCore\Ext\Forms\Validators\FloatNumber</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Hex.html">MvcCore\Ext\Forms\Validators\Hex</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Iban.html">MvcCore\Ext\Forms\Validators\Iban</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.IntNumber.html">MvcCore\Ext\Forms\Validators\IntNumber</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Ip.html">MvcCore\Ext\Forms\Validators\Ip</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.MinMaxLength.html">MvcCore\Ext\Forms\Validators\MinMaxLength</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.MinMaxOptions.html">MvcCore\Ext\Forms\Validators\MinMaxOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Month.html">MvcCore\Ext\Forms\Validators\Month</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Number.html">MvcCore\Ext\Forms\Validators\Number</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Password.html">MvcCore\Ext\Forms\Validators\Password</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Pattern.html">MvcCore\Ext\Forms\Validators\Pattern</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Range.html">MvcCore\Ext\Forms\Validators\Range</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.SafeString.html">MvcCore\Ext\Forms\Validators\SafeString</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Tel.html">MvcCore\Ext\Forms\Validators\Tel</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Time.html">MvcCore\Ext\Forms\Validators\Time</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Url.html">MvcCore\Ext\Forms\Validators\Url</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.ValueInOptions.html">MvcCore\Ext\Forms\Validators\ValueInOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Week.html">MvcCore\Ext\Forms\Validators\Week</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.ZipCode.html">MvcCore\Ext\Forms\Validators\ZipCode</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.View.html">MvcCore\Ext\Forms\View</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Column.html">MvcCore\Ext\Models\Db\Attrs\Column</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Connection.html">MvcCore\Ext\Models\Db\Attrs\Connection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Format.html">MvcCore\Ext\Models\Db\Attrs\Format</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.KeyPrimary.html">MvcCore\Ext\Models\Db\Attrs\KeyPrimary</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.KeyUnique.html">MvcCore\Ext\Models\Db\Attrs\KeyUnique</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Attrs.Table.html">MvcCore\Ext\Models\Db\Attrs\Table</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Connection.html">MvcCore\Ext\Models\Db\Connection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySql.html">MvcCore\Ext\Models\Db\Models\MySql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSql.html">MvcCore\Ext\Models\Db\Models\PgSql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.Resource.html">MvcCore\Ext\Models\Db\Models\Resource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SQLite.html">MvcCore\Ext\Models\Db\Models\SQLite</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrv.html">MvcCore\Ext\Models\Db\Models\SqlSrv</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.MySql.html">MvcCore\Ext\Models\Db\Providers\Connections\MySql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.PgSql.html">MvcCore\Ext\Models\Db\Providers\Connections\PgSql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.SQLite.html">MvcCore\Ext\Models\Db\Providers\Connections\SQLite</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Connections.SqlSrv.html">MvcCore\Ext\Models\Db\Providers\Connections\SqlSrv</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resource.html">MvcCore\Ext\Models\Db\Providers\Resource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.MySql.html">MvcCore\Ext\Models\Db\Providers\Resources\MySql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.PgSql.html">MvcCore\Ext\Models\Db\Providers\Resources\PgSql</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.SQLite.html">MvcCore\Ext\Models\Db\Providers\Resources\SQLite</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.SqlSrv.html">MvcCore\Ext\Models\Db\Providers\Resources\SqlSrv</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Reader.html">MvcCore\Ext\Models\Db\Reader</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Execution.html">MvcCore\Ext\Models\Db\Readers\Execution</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Multiple.html">MvcCore\Ext\Models\Db\Readers\Multiple</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Single.html">MvcCore\Ext\Models\Db\Readers\Single</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Stream.html">MvcCore\Ext\Models\Db\Readers\Stream</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Streams.Iterator.html">MvcCore\Ext\Models\Db\Readers\Streams\Iterator</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Statement.html">MvcCore\Ext\Models\Db\Statement</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Model.html">MvcCore\Ext\Models\Model</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.html">MvcCore\Ext\Routers\Localization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.html">MvcCore\Ext\Routers\Localizations\Route</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.html">MvcCore\Ext\Routers\Media</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.html">MvcCore\Ext\Routers\MediaAndLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.html">MvcCore\Ext\Routers\Module</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.html">MvcCore\Ext\Routers\ModuleLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMedia.html">MvcCore\Ext\Routers\ModuleMedia</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMediaAndLocalization.html">MvcCore\Ext\Routers\ModuleMediaAndLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.html">MvcCore\Ext\Routers\Modules\Route</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Image.html">MvcCore\Ext\Tools\Image</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gd.html">MvcCore\Ext\Tools\Images\Gd</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gds.ApplyMask.html">MvcCore\Ext\Tools\Images\Gds\ApplyMask</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gds.RoundCorners.html">MvcCore\Ext\Tools\Images\Gds\RoundCorners</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Gds.UnsharpMask.html">MvcCore\Ext\Tools\Images\Gds\UnsharpMask</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Imagick.html">MvcCore\Ext\Tools\Images\Imagick</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Locale.html">MvcCore\Ext\Tools\Locale</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Locales.FloatParser.html">MvcCore\Ext\Tools\Locales\FloatParser</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.MimeTypesExtensions.html">MvcCore\Ext\Tools\MimeTypesExtensions</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.AbstractHelper.html">MvcCore\Ext\Views\Helpers\AbstractHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.Assets.html">MvcCore\Ext\Views\Helpers\Assets</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.CssHelper.html">MvcCore\Ext\Views\Helpers\CssHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.DataUrlHelper.html">MvcCore\Ext\Views\Helpers\DataUrlHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.FormatDateHelper.html">MvcCore\Ext\Views\Helpers\FormatDateHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.FormatMoneyHelper.html">MvcCore\Ext\Views\Helpers\FormatMoneyHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.FormatNumberHelper.html">MvcCore\Ext\Views\Helpers\FormatNumberHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.InternationalizedHelper.html">MvcCore\Ext\Views\Helpers\InternationalizedHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.JsHelper.html">MvcCore\Ext\Views\Helpers\JsHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.LineBreaksHelper.html">MvcCore\Ext\Views\Helpers\LineBreaksHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.TruncateHelper.html">MvcCore\Ext\Views\Helpers\TruncateHelper</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.WriteByJsHelper.html">MvcCore\Ext\Views\Helpers\WriteByJsHelper</a></li>
+				<li><a href="class-MvcCore.Model.html">MvcCore\Model</a></li>
+				<li><a href="class-MvcCore.Request.html">MvcCore\Request</a></li>
+				<li><a href="class-MvcCore.Response.html">MvcCore\Response</a></li>
+				<li><a href="class-MvcCore.Route.html">MvcCore\Route</a></li>
+				<li><a href="class-MvcCore.Router.html">MvcCore\Router</a></li>
+				<li><a href="class-MvcCore.Session.html">MvcCore\Session</a></li>
+				<li><a href="class-MvcCore.Tool.html">MvcCore\Tool</a></li>
+				<li><a href="class-MvcCore.View.html">MvcCore\View</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-MvcCore.Application.IConstants.html">MvcCore\Application\IConstants</a></li>
+				<li><a href="class-MvcCore.Controller.IConstants.html">MvcCore\Controller\IConstants</a></li>
+				<li><a href="class-MvcCore.Debug.IConstants.html">MvcCore\Debug\IConstants</a></li>
+				<li><a href="class-MvcCore.Environment.IConstants.html">MvcCore\Environment\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IController.html">MvcCore\Ext\Auths\Basics\IController</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IDatabaseUser.html">MvcCore\Ext\Auths\Basics\IDatabaseUser</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IForm.html">MvcCore\Ext\Auths\Basics\IForm</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IRole.html">MvcCore\Ext\Auths\Basics\IRole</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.IUser.html">MvcCore\Ext\Auths\Basics\IUser</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.IBasic.html">MvcCore\Ext\Auths\IBasic</a></li>
+				<li><a href="class-MvcCore.Ext.Form.IConstants.html">MvcCore\Ext\Form\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IAlwaysValidate.html">MvcCore\Ext\Forms\Fields\IAlwaysValidate</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IChecked.html">MvcCore\Ext\Forms\Fields\IChecked</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IDataList.html">MvcCore\Ext\Forms\Fields\IDataList</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IFile.html">MvcCore\Ext\Forms\Fields\IFile</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IFormat.html">MvcCore\Ext\Forms\Fields\IFormat</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ILabel.html">MvcCore\Ext\Forms\Fields\ILabel</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxLength.html">MvcCore\Ext\Forms\Fields\IMinMaxLength</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html">MvcCore\Ext\Forms\Fields\IMinMaxOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxStepDates.html">MvcCore\Ext\Forms\Fields\IMinMaxStepDates</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMinMaxStepNumbers.html">MvcCore\Ext\Forms\Fields\IMinMaxStepNumbers</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IMultiple.html">MvcCore\Ext\Forms\Fields\IMultiple</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IOptions.html">MvcCore\Ext\Forms\Fields\IOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IPattern.html">MvcCore\Ext\Forms\Fields\IPattern</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.ISubmit.html">MvcCore\Ext\Forms\Fields\ISubmit</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html">MvcCore\Ext\Forms\Fields\IVisibleField</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IError.html">MvcCore\Ext\Forms\IError</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IField.html">MvcCore\Ext\Forms\IField</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IFieldsGroup.html">MvcCore\Ext\Forms\IFieldsGroup</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IValidator.html">MvcCore\Ext\Forms\IValidator</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.IView.html">MvcCore\Ext\Forms\IView</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.IBombScanner.html">MvcCore\Ext\Forms\Validators\Files\Validations\IBombScanner</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.IFiles.html">MvcCore\Ext\Forms\Validators\IFiles</a></li>
+				<li><a href="class-MvcCore.Ext.ICache.html">MvcCore\Ext\ICache</a></li>
+				<li><a href="class-MvcCore.Ext.IForm.html">MvcCore\Ext\IForm</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IConnection.html">MvcCore\Ext\Models\Db\IConnection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IModel.html">MvcCore\Ext\Models\Db\IModel</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IReader.html">MvcCore\Ext\Models\Db\IReader</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.IStatement.html">MvcCore\Ext\Models\Db\IStatement</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.IConstants.html">MvcCore\Ext\Models\Db\Model\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySqls.IConstants.html">MvcCore\Ext\Models\Db\Models\MySqls\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSqls.IConstants.html">MvcCore\Ext\Models\Db\Models\PgSqls\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrvs.IConstants.html">MvcCore\Ext\Models\Db\Models\SqlSrvs\IConstants</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.IExecution.html">MvcCore\Ext\Models\Db\Readers\IExecution</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.IMultiple.html">MvcCore\Ext\Models\Db\Readers\IMultiple</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.ISingle.html">MvcCore\Ext\Models\Db\Readers\ISingle</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.IStream.html">MvcCore\Ext\Models\Db\Readers\IStream</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Readers.Streams.IIterator.html">MvcCore\Ext\Models\Db\Readers\Streams\IIterator</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.IExtended.html">MvcCore\Ext\Routers\IExtended</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ILocalization.html">MvcCore\Ext\Routers\ILocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.IMedia.html">MvcCore\Ext\Routers\IMedia</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.IModule.html">MvcCore\Ext\Routers\IModule</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.IRoute.html">MvcCore\Ext\Routers\Modules\IRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IAdapter.html">MvcCore\Ext\Tools\Images\IAdapter</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IComposite.html">MvcCore\Ext\Tools\Images\IComposite</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IFormat.html">MvcCore\Ext\Tools\Images\IFormat</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IImage.html">MvcCore\Ext\Tools\Images\IImage</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.Imagicks.IComposite.html">MvcCore\Ext\Tools\Images\Imagicks\IComposite</a></li>
+				<li><a href="class-MvcCore.Ext.Tools.Images.IOrientation.html">MvcCore\Ext\Tools\Images\IOrientation</a></li>
+				<li><a href="class-MvcCore.Ext.Views.Helpers.IHelper.html">MvcCore\Ext\Views\Helpers\IHelper</a></li>
+				<li><a href="class-MvcCore.IApplication.html">MvcCore\IApplication</a></li>
+				<li><a href="class-MvcCore.IConfig.html">MvcCore\IConfig</a></li>
+				<li><a href="class-MvcCore.IController.html">MvcCore\IController</a></li>
+				<li><a href="class-MvcCore.IDebug.html">MvcCore\IDebug</a></li>
+				<li><a href="class-MvcCore.IEnvironment.html">MvcCore\IEnvironment</a></li>
+				<li><a href="class-MvcCore.IModel.html">MvcCore\IModel</a></li>
+				<li><a href="class-MvcCore.IRequest.html">MvcCore\IRequest</a></li>
+				<li><a href="class-MvcCore.IResponse.html">MvcCore\IResponse</a></li>
+				<li><a href="class-MvcCore.IRoute.html">MvcCore\IRoute</a></li>
+				<li><a href="class-MvcCore.IRouter.html">MvcCore\IRouter</a></li>
+				<li><a href="class-MvcCore.ISession.html">MvcCore\ISession</a></li>
+				<li><a href="class-MvcCore.ITool.html">MvcCore\ITool</a></li>
+				<li><a href="class-MvcCore.IView.html">MvcCore\IView</a></li>
+				<li><a href="class-MvcCore.Model.IConstants.html">MvcCore\Model\IConstants</a></li>
+				<li><a href="class-MvcCore.Request.IConstants.html">MvcCore\Request\IConstants</a></li>
+				<li><a href="class-MvcCore.Response.IConstants.html">MvcCore\Response\IConstants</a></li>
+				<li><a href="class-MvcCore.Route.IConstants.html">MvcCore\Route\IConstants</a></li>
+				<li><a href="class-MvcCore.Router.IConstants.html">MvcCore\Router\IConstants</a></li>
+				<li><a href="class-MvcCore.Session.IConstants.html">MvcCore\Session\IConstants</a></li>
+				<li><a href="class-MvcCore.View.IConstants.html">MvcCore\View\IConstants</a></li>
+			</ul>
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-MvcCore.Application.Dispatching.html">MvcCore\Application\Dispatching</a></li>
+				<li><a href="class-MvcCore.Application.GettersSetters.html">MvcCore\Application\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Application.Helpers.html">MvcCore\Application\Helpers</a></li>
+				<li><a href="class-MvcCore.Application.Props.html">MvcCore\Application\Props</a></li>
+				<li><a href="class-MvcCore.Config.Environment.html">MvcCore\Config\Environment</a></li>
+				<li><a href="class-MvcCore.Config.IniDump.html">MvcCore\Config\IniDump</a></li>
+				<li><a href="class-MvcCore.Config.IniProps.html">MvcCore\Config\IniProps</a></li>
+				<li><a href="class-MvcCore.Config.IniRead.html">MvcCore\Config\IniRead</a></li>
+				<li><a href="class-MvcCore.Config.MagicMethods.html">MvcCore\Config\MagicMethods</a></li>
+				<li><a href="class-MvcCore.Config.PropsGettersSetters.html">MvcCore\Config\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Config.ReadWrite.html">MvcCore\Config\ReadWrite</a></li>
+				<li><a href="class-MvcCore.Controller.Dispatching.html">MvcCore\Controller\Dispatching</a></li>
+				<li><a href="class-MvcCore.Controller.GettersSetters.html">MvcCore\Controller\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Controller.Props.html">MvcCore\Controller\Props</a></li>
+				<li><a href="class-MvcCore.Controller.Rendering.html">MvcCore\Controller\Rendering</a></li>
+				<li><a href="class-MvcCore.Debug.Handlers.html">MvcCore\Debug\Handlers</a></li>
+				<li><a href="class-MvcCore.Debug.Initializations.html">MvcCore\Debug\Initializations</a></li>
+				<li><a href="class-MvcCore.Debug.Props.html">MvcCore\Debug\Props</a></li>
+				<li><a href="class-MvcCore.Environment.Detection.html">MvcCore\Environment\Detection</a></li>
+				<li><a href="class-MvcCore.Environment.Instancing.html">MvcCore\Environment\Instancing</a></li>
+				<li><a href="class-MvcCore.Environment.PropsGettersSetters.html">MvcCore\Environment\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basic.Handling.html">MvcCore\Ext\Auths\Basic\Handling</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basic.PropsGettersSetters.html">MvcCore\Ext\Auths\Basic\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Controller.Base.html">MvcCore\Ext\Auths\Basics\Controller\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Form.Base.html">MvcCore\Ext\Auths\Basics\Form\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Form.SignIn.html">MvcCore\Ext\Auths\Basics\Form\SignIn</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Form.SignOut.html">MvcCore\Ext\Auths\Basics\Form\SignOut</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Role.Base.html">MvcCore\Ext\Auths\Basics\Role\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.Role.Features.html">MvcCore\Ext\Auths\Basics\Role\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Auth.html">MvcCore\Ext\Auths\Basics\User\Auth</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Base.html">MvcCore\Ext\Auths\Basics\User\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Features.html">MvcCore\Ext\Auths\Basics\User\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.User.Roles.html">MvcCore\Ext\Auths\Basics\User\Roles</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.UserAndRole.Base.html">MvcCore\Ext\Auths\Basics\UserAndRole\Base</a></li>
+				<li><a href="class-MvcCore.Ext.Auths.Basics.UserAndRole.Permissions.html">MvcCore\Ext\Auths\Basics\UserAndRole\Permissions</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yamls.YamlDump.html">MvcCore\Ext\Configs\Yamls\YamlDump</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yamls.YamlProps.html">MvcCore\Ext\Configs\Yamls\YamlProps</a></li>
+				<li><a href="class-MvcCore.Ext.Configs.Yamls.YamlRead.html">MvcCore\Ext\Configs\Yamls\YamlRead</a></li>
+				<li><a href="class-MvcCore.Ext.Form.AddMethods.html">MvcCore\Ext\Form\AddMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Assets.html">MvcCore\Ext\Form\Assets</a></li>
+				<li><a href="class-MvcCore.Ext.Form.ConfigProps.html">MvcCore\Ext\Form\ConfigProps</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Csrf.html">MvcCore\Ext\Form\Csrf</a></li>
+				<li><a href="class-MvcCore.Ext.Form.FieldMethods.html">MvcCore\Ext\Form\FieldMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.GetMethods.html">MvcCore\Ext\Form\GetMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.InternalProps.html">MvcCore\Ext\Form\InternalProps</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Rendering.html">MvcCore\Ext\Form\Rendering</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Session.html">MvcCore\Ext\Form\Session</a></li>
+				<li><a href="class-MvcCore.Ext.Form.SetMethods.html">MvcCore\Ext\Form\SetMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Form.Submitting.html">MvcCore\Ext\Form\Submitting</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Getters.html">MvcCore\Ext\Forms\Field\Getters</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.html">MvcCore\Ext\Forms\Field\Props</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.AccessKey.html">MvcCore\Ext\Forms\Field\Props\AccessKey</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.AutoComplete.html">MvcCore\Ext\Forms\Field\Props\AutoComplete</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.AutoFocus.html">MvcCore\Ext\Forms\Field\Props\AutoFocus</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Checked.html">MvcCore\Ext\Forms\Field\Props\Checked</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.DataList.html">MvcCore\Ext\Forms\Field\Props\DataList</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Disabled.html">MvcCore\Ext\Forms\Field\Props\Disabled</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Files.html">MvcCore\Ext\Forms\Field\Props\Files</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Format.html">MvcCore\Ext\Forms\Field\Props\Format</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.FormAttrs.html">MvcCore\Ext\Forms\Field\Props\FormAttrs</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.GroupLabelAttrs.html">MvcCore\Ext\Forms\Field\Props\GroupLabelAttrs</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.GroupLabelCssClasses.html">MvcCore\Ext\Forms\Field\Props\GroupLabelCssClasses</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.InputMode.html">MvcCore\Ext\Forms\Field\Props\InputMode</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Label.html">MvcCore\Ext\Forms\Field\Props\Label</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxLength.html">MvcCore\Ext\Forms\Field\Props\MinMaxLength</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html">MvcCore\Ext\Forms\Field\Props\MinMaxOptions</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxStepDates.html">MvcCore\Ext\Forms\Field\Props\MinMaxStepDates</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxStepNumbers.html">MvcCore\Ext\Forms\Field\Props\MinMaxStepNumbers</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Multiple.html">MvcCore\Ext\Forms\Field\Props\Multiple</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html">MvcCore\Ext\Forms\Field\Props\NullOptionText</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Options.html">MvcCore\Ext\Forms\Field\Props\Options</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Pattern.html">MvcCore\Ext\Forms\Field\Props\Pattern</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.PlaceHolder.html">MvcCore\Ext\Forms\Field\Props\PlaceHolder</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.ReadOnly.html">MvcCore\Ext\Forms\Field\Props\ReadOnly</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Required.html">MvcCore\Ext\Forms\Field\Props\Required</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.RowsColsWrap.html">MvcCore\Ext\Forms\Field\Props\RowsColsWrap</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Size.html">MvcCore\Ext\Forms\Field\Props\Size</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.SpellCheck.html">MvcCore\Ext\Forms\Field\Props\SpellCheck</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Submit.html">MvcCore\Ext\Forms\Field\Props\Submit</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.TabIndex.html">MvcCore\Ext\Forms\Field\Props\TabIndex</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.VisibleField.html">MvcCore\Ext\Forms\Field\Props\VisibleField</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.WidthHeight.html">MvcCore\Ext\Forms\Field\Props\WidthHeight</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Props.Wrapper.html">MvcCore\Ext\Forms\Field\Props\Wrapper</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Rendering.html">MvcCore\Ext\Forms\Field\Rendering</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Field.Setters.html">MvcCore\Ext\Forms\Field\Setters</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.CheckRequirements.html">MvcCore\Ext\Forms\Validators\Files\CheckRequirements</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.CompleteFiles.html">MvcCore\Ext\Forms\Validators\Files\CompleteFiles</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.ReadAccept.html">MvcCore\Ext\Forms\Validators\Files\ReadAccept</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.Bomb.html">MvcCore\Ext\Forms\Validators\Files\Validations\Bomb</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.FileAndSize.html">MvcCore\Ext\Forms\Validators\Files\Validations\FileAndSize</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.MimeTypeAndExtension.html">MvcCore\Ext\Forms\Validators\Files\Validations\MimeTypeAndExtension</a></li>
+				<li><a href="class-MvcCore.Ext.Forms.Validators.Files.Validations.NameAndExtension.html">MvcCore\Ext\Forms\Validators\Files\Validations\NameAndExtension</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Connection.html">MvcCore\Ext\Models\Db\Model\Connection</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.DataMethods.html">MvcCore\Ext\Models\Db\Model\DataMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Features.html">MvcCore\Ext\Models\Db\Model\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Manipulation.html">MvcCore\Ext\Models\Db\Model\Manipulation</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.MetaData.html">MvcCore\Ext\Models\Db\Model\MetaData</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Parsers.html">MvcCore\Ext\Models\Db\Model\Parsers</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.Props.html">MvcCore\Ext\Models\Db\Model\Props</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Model.ProviderResource.html">MvcCore\Ext\Models\Db\Model\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySqls.Features.html">MvcCore\Ext\Models\Db\Models\MySqls\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.MySqls.ProviderResource.html">MvcCore\Ext\Models\Db\Models\MySqls\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSqls.Features.html">MvcCore\Ext\Models\Db\Models\PgSqls\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.PgSqls.ProviderResource.html">MvcCore\Ext\Models\Db\Models\PgSqls\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.Resources.Features.html">MvcCore\Ext\Models\Db\Models\Resources\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SQLites.Features.html">MvcCore\Ext\Models\Db\Models\SQLites\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SQLites.ProviderResource.html">MvcCore\Ext\Models\Db\Models\SQLites\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrvs.Features.html">MvcCore\Ext\Models\Db\Models\SqlSrvs\Features</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Models.SqlSrvs.ProviderResource.html">MvcCore\Ext\Models\Db\Models\SqlSrvs\ProviderResource</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.Manipulation.html">MvcCore\Ext\Models\Db\Providers\Resources\Manipulation</a></li>
+				<li><a href="class-MvcCore.Ext.Models.Db.Providers.Resources.PgSqls.Manipulation.html">MvcCore\Ext\Models\Db\Providers\Resources\PgSqls\Manipulation</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extended.html">MvcCore\Ext\Routers\Extended</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.Preparing.html">MvcCore\Ext\Routers\Extendeds\Preparing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.PropsGettersSetters.html">MvcCore\Ext\Routers\Extendeds\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.Redirect.html">MvcCore\Ext\Routers\Extendeds\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.RedirectHelpers.html">MvcCore\Ext\Routers\Extendeds\RedirectHelpers</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Extendeds.Url.html">MvcCore\Ext\Routers\Extendeds\Url</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.Preparing.html">MvcCore\Ext\Routers\Localization\Preparing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.PreRouting.html">MvcCore\Ext\Routers\Localization\PreRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.PropsGettersSetters.html">MvcCore\Ext\Routers\Localization\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.RedirectSections.html">MvcCore\Ext\Routers\Localization\RedirectSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.RewriteRouting.html">MvcCore\Ext\Routers\Localization\RewriteRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.RewriteRoutingChecks.html">MvcCore\Ext\Routers\Localization\RewriteRoutingChecks</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.Routing.html">MvcCore\Ext\Routers\Localization\Routing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.UrlByRoute.html">MvcCore\Ext\Routers\Localization\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.UrlByRouteSections.html">MvcCore\Ext\Routers\Localization\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localization.UrlByRouteSectionsLocalization.html">MvcCore\Ext\Routers\Localization\UrlByRouteSectionsLocalization</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.Instancing.html">MvcCore\Ext\Routers\Localizations\Route\Instancing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.InternalInits.html">MvcCore\Ext\Routers\Localizations\Route\InternalInits</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.Matching.html">MvcCore\Ext\Routers\Localizations\Route\Matching</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.PropsGettersSetters.html">MvcCore\Ext\Routers\Localizations\Route\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Localizations.Route.UrlBuilding.html">MvcCore\Ext\Routers\Localizations\Route\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.Preparing.html">MvcCore\Ext\Routers\Media\Preparing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.PreRouting.html">MvcCore\Ext\Routers\Media\PreRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.PropsGettersSetters.html">MvcCore\Ext\Routers\Media\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.RedirectSections.html">MvcCore\Ext\Routers\Media\RedirectSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.Routing.html">MvcCore\Ext\Routers\Media\Routing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.UrlByRoute.html">MvcCore\Ext\Routers\Media\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.UrlByRouteSections.html">MvcCore\Ext\Routers\Media\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Media.UrlByRouteSectionsMedia.html">MvcCore\Ext\Routers\Media\UrlByRouteSectionsMedia</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.RedirectSections.html">MvcCore\Ext\Routers\MediaAndLocalization\RedirectSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.Routing.html">MvcCore\Ext\Routers\MediaAndLocalization\Routing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.UrlByRoute.html">MvcCore\Ext\Routers\MediaAndLocalization\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.MediaAndLocalization.UrlByRouteSections.html">MvcCore\Ext\Routers\MediaAndLocalization\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.Canonical.html">MvcCore\Ext\Routers\Module\Canonical</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.DomainRouteSetUp.html">MvcCore\Ext\Routers\Module\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.DomainRouting.html">MvcCore\Ext\Routers\Module\DomainRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.PreAndPostRouting.html">MvcCore\Ext\Routers\Module\PreAndPostRouting</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.Props.html">MvcCore\Ext\Routers\Module\Props</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.Redirect.html">MvcCore\Ext\Routers\Module\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.RewriteRoutingChecks.html">MvcCore\Ext\Routers\Module\RewriteRoutingChecks</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.RouteMethods.html">MvcCore\Ext\Routers\Module\RouteMethods</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlByQuery.html">MvcCore\Ext\Routers\Module\UrlByQuery</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlByRoute.html">MvcCore\Ext\Routers\Module\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlByRouteSections.html">MvcCore\Ext\Routers\Module\UrlByRouteSections</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Module.UrlDomain.html">MvcCore\Ext\Routers\Module\UrlDomain</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.DomainRouteSetUp.html">MvcCore\Ext\Routers\ModuleLocalization\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.Redirect.html">MvcCore\Ext\Routers\ModuleLocalization\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.RewriteRoutingChecks.html">MvcCore\Ext\Routers\ModuleLocalization\RewriteRoutingChecks</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleLocalization.UrlByRoute.html">MvcCore\Ext\Routers\ModuleLocalization\UrlByRoute</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMedia.DomainRouteSetUp.html">MvcCore\Ext\Routers\ModuleMedia\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMedia.Redirect.html">MvcCore\Ext\Routers\ModuleMedia\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMediaAndLocalization.DomainRouteSetUp.html">MvcCore\Ext\Routers\ModuleMediaAndLocalization\DomainRouteSetUp</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.ModuleMediaAndLocalization.Redirect.html">MvcCore\Ext\Routers\ModuleMediaAndLocalization\Redirect</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.Instancing.html">MvcCore\Ext\Routers\Modules\Route\Instancing</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.Matching.html">MvcCore\Ext\Routers\Modules\Route\Matching</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.PropsGettersSetters.html">MvcCore\Ext\Routers\Modules\Route\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Ext.Routers.Modules.Route.UrlBuilding.html">MvcCore\Ext\Routers\Modules\Route\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Model.Comparers.html">MvcCore\Model\Comparers</a></li>
+				<li><a href="class-MvcCore.Model.Config.html">MvcCore\Model\Config</a></li>
+				<li><a href="class-MvcCore.Model.Connection.html">MvcCore\Model\Connection</a></li>
+				<li><a href="class-MvcCore.Model.Converters.html">MvcCore\Model\Converters</a></li>
+				<li><a href="class-MvcCore.Model.DataMethods.html">MvcCore\Model\DataMethods</a></li>
+				<li><a href="class-MvcCore.Model.MagicMethods.html">MvcCore\Model\MagicMethods</a></li>
+				<li><a href="class-MvcCore.Model.MetaData.html">MvcCore\Model\MetaData</a></li>
+				<li><a href="class-MvcCore.Model.Parsers.html">MvcCore\Model\Parsers</a></li>
+				<li><a href="class-MvcCore.Model.Props.html">MvcCore\Model\Props</a></li>
+				<li><a href="class-MvcCore.Model.Resource.html">MvcCore\Model\Resource</a></li>
+				<li><a href="class-MvcCore.Request.CollectionsMethods.html">MvcCore\Request\CollectionsMethods</a></li>
+				<li><a href="class-MvcCore.Request.GettersSetters.html">MvcCore\Request\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Request.Instancing.html">MvcCore\Request\Instancing</a></li>
+				<li><a href="class-MvcCore.Request.InternalInits.html">MvcCore\Request\InternalInits</a></li>
+				<li><a href="class-MvcCore.Request.Props.html">MvcCore\Request\Props</a></li>
+				<li><a href="class-MvcCore.Response.Content.html">MvcCore\Response\Content</a></li>
+				<li><a href="class-MvcCore.Response.Cookies.html">MvcCore\Response\Cookies</a></li>
+				<li><a href="class-MvcCore.Response.Headers.html">MvcCore\Response\Headers</a></li>
+				<li><a href="class-MvcCore.Response.Instancing.html">MvcCore\Response\Instancing</a></li>
+				<li><a href="class-MvcCore.Response.PropsGettersSetters.html">MvcCore\Response\PropsGettersSetters</a></li>
+				<li><a href="class-MvcCore.Route.GettersSetters.html">MvcCore\Route\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Route.Instancing.html">MvcCore\Route\Instancing</a></li>
+				<li><a href="class-MvcCore.Route.InternalInits.html">MvcCore\Route\InternalInits</a></li>
+				<li><a href="class-MvcCore.Route.Matching.html">MvcCore\Route\Matching</a></li>
+				<li><a href="class-MvcCore.Route.Props.html">MvcCore\Route\Props</a></li>
+				<li><a href="class-MvcCore.Route.UrlBuilding.html">MvcCore\Route\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Router.Canonical.html">MvcCore\Router\Canonical</a></li>
+				<li><a href="class-MvcCore.Router.GettersSetters.html">MvcCore\Router\GettersSetters</a></li>
+				<li><a href="class-MvcCore.Router.Instancing.html">MvcCore\Router\Instancing</a></li>
+				<li><a href="class-MvcCore.Router.Props.html">MvcCore\Router\Props</a></li>
+				<li><a href="class-MvcCore.Router.Redirecting.html">MvcCore\Router\Redirecting</a></li>
+				<li><a href="class-MvcCore.Router.RewriteRouting.html">MvcCore\Router\RewriteRouting</a></li>
+				<li><a href="class-MvcCore.Router.RouteMethods.html">MvcCore\Router\RouteMethods</a></li>
+				<li><a href="class-MvcCore.Router.Routing.html">MvcCore\Router\Routing</a></li>
+				<li><a href="class-MvcCore.Router.UrlBuilding.html">MvcCore\Router\UrlBuilding</a></li>
+				<li><a href="class-MvcCore.Router.UrlByQuery.html">MvcCore\Router\UrlByQuery</a></li>
+				<li><a href="class-MvcCore.Router.UrlByRoutes.html">MvcCore\Router\UrlByRoutes</a></li>
+				<li><a href="class-MvcCore.Session.Closing.html">MvcCore\Session\Closing</a></li>
+				<li><a href="class-MvcCore.Session.MagicMethods.html">MvcCore\Session\MagicMethods</a></li>
+				<li><a href="class-MvcCore.Session.MetaData.html">MvcCore\Session\MetaData</a></li>
+				<li><a href="class-MvcCore.Session.NamespaceMethods.html">MvcCore\Session\NamespaceMethods</a></li>
+				<li><a href="class-MvcCore.Session.Props.html">MvcCore\Session\Props</a></li>
+				<li><a href="class-MvcCore.Session.Starting.html">MvcCore\Session\Starting</a></li>
+				<li><a href="class-MvcCore.Tool.Helpers.html">MvcCore\Tool\Helpers</a></li>
+				<li><a href="class-MvcCore.Tool.Json.html">MvcCore\Tool\Json</a></li>
+				<li><a href="class-MvcCore.Tool.Reflection.html">MvcCore\Tool\Reflection</a></li>
+				<li><a href="class-MvcCore.Tool.StringConversions.html">MvcCore\Tool\StringConversions</a></li>
+				<li><a href="class-MvcCore.View.DirectoryMethods.html">MvcCore\View\DirectoryMethods</a></li>
+				<li><a href="class-MvcCore.View.Escaping.html">MvcCore\View\Escaping</a></li>
+				<li><a href="class-MvcCore.View.GettersSetters.html">MvcCore\View\GettersSetters</a></li>
+				<li><a href="class-MvcCore.View.LocalMethods.html">MvcCore\View\LocalMethods</a></li>
+				<li><a href="class-MvcCore.View.MagicMethods.html">MvcCore\View\MagicMethods</a></li>
+				<li><a href="class-MvcCore.View.Props.html">MvcCore\View\Props</a></li>
+				<li><a href="class-MvcCore.View.Rendering.html">MvcCore\View\Rendering</a></li>
+				<li><a href="class-MvcCore.View.UrlHelpers.html">MvcCore\View\UrlHelpers</a></li>
+				<li><a href="class-MvcCore.View.ViewHelpers.html">MvcCore\View\ViewHelpers</a></li>
+			</ul>
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-MvcCore.Ext.Models.Db.Exception.html">MvcCore\Ext\Models\Db\Exception</a></li>
+				<li><a href="class-Throwable.html">Throwable</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-MvcCore.Ext.Models.Db.FuncHelpers.Columns.html">MvcCore\Ext\Models\Db\FuncHelpers\Columns</a></li>
+				<li><a href="function-MvcCore.Ext.Models.Db.FuncHelpers.Table.html">MvcCore\Ext\Models\Db\FuncHelpers\Table</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="-API-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class LocalizationSelect</h1>
+
+
+	<div class="description">
+	<p>Responsibility: init, pre-dispatch and render <code>&lt;select&gt;</code> HTML element as roll-out menu for single option select or as options list for multiple selection with options as all existing world localizations or only filtered world localizations. <code>LocalizationSelect</code> field has it's own validator to check if submitted value is presented in configured options by default.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-MvcCore.Ext.Forms.Field.html"><span>MvcCore\Ext\Forms\Field</span></a>
+			
+			 implements 
+				<a href="class-MvcCore.Ext.Forms.IField.html"><span>MvcCore\Ext\Forms\IField</span></a>
+			
+			 uses 
+					<a href="class-MvcCore.Ext.Forms.Field.Props.html"><span>MvcCore\Ext\Forms\Field\Props</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Getters.html"><span>MvcCore\Ext\Forms\Field\Getters</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Setters.html"><span>MvcCore\Ext\Forms\Field\Setters</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Rendering.html"><span>MvcCore\Ext\Forms\Field\Rendering</span></a>
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html"><span>MvcCore\Ext\Forms\Fields\Select</span></a>
+			
+			 implements 
+				<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html"><span>MvcCore\Ext\Forms\Fields\IVisibleField</span></a>, 
+			
+				<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html"><span>MvcCore\Ext\Forms\Fields\ILabel</span></a>, 
+			
+				<a href="class-MvcCore.Ext.Forms.Fields.IMultiple.html"><span>MvcCore\Ext\Forms\Fields\IMultiple</span></a>, 
+			
+				<a href="class-MvcCore.Ext.Forms.Fields.IOptions.html"><span>MvcCore\Ext\Forms\Fields\IOptions</span></a>, 
+			
+				<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html"><span>MvcCore\Ext\Forms\Fields\IMinMaxOptions</span></a>
+			
+			 uses 
+					<a href="class-MvcCore.Ext.Forms.Field.Props.VisibleField.html"><span>MvcCore\Ext\Forms\Field\Props\VisibleField</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html"><span>MvcCore\Ext\Forms\Field\Props\Label</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Props.AutoComplete.html"><span>MvcCore\Ext\Forms\Field\Props\AutoComplete</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Props.Multiple.html"><span>MvcCore\Ext\Forms\Field\Props\Multiple</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html"><span>MvcCore\Ext\Forms\Field\Props\Options</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html"><span>MvcCore\Ext\Forms\Field\Props\MinMaxOptions</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html"><span>MvcCore\Ext\Forms\Field\Props\NullOptionText</span></a>, 
+			
+					<a href="class-MvcCore.Ext.Forms.Field.Props.Size.html"><span>MvcCore\Ext\Forms\Field\Props\Size</span></a>
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>MvcCore\Ext\Forms\Fields\LocalizationSelect</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> MvcCore\Ext\Forms\Fields<br>
+		
+
+			<b>Located at</b> <a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#16-423" title="Go to source code">ext-form-field-selection/src/MvcCore/Ext/Forms/Fields/LocalizationSelect.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="GetValue" id="_GetValue">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetValue">#</a>
+		<code><a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#272-278" title="Go to source code">GetValue</a>( )</code>
+
+		<div class="description short">
+			<p>Return localization code, language and locale code separated by underscore.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return localization code, language and locale code separated by underscore.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-MvcCore.Ext.Forms.Fields.Select.html#_GetValue">MvcCore\Ext\Forms\Fields\Select::GetValue()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetValue" id="_SetValue">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html">MvcCore\Ext\Forms\Fields\LocalizationSelect</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetValue">#</a>
+		<code><a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#280-291" title="Go to source code">SetValue</a>( <span>string <var>$localizationCode</var></span> )</code>
+
+		<div class="description short">
+			<p>Set localization value (language and country code separated by underscore).
+If there is given localization code separated by dash, it's automatically
+replaced by underscore.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set localization value (language and country code separated by underscore).
+If there is given localization code separated by dash, it's automatically
+replaced by underscore.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$localizationCode</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html">MvcCore\Ext\Forms\Fields\LocalizationSelect</a></code>
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-MvcCore.Ext.Forms.Fields.Select.html#_SetValue">MvcCore\Ext\Forms\Fields\Select::SetValue()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetAllOptions" id="_GetAllOptions">
+
+		<td class="attributes"><code>
+			 public static
+
+			array
+			&amp;
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetAllOptions">#</a>
+		<code><a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#293-300" title="Go to source code">GetAllOptions</a>( )</code>
+
+		<div class="description short">
+			<p>Get all existing localization codes as array with keys as localization
+codes and values as not translated English localization names.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get all existing localization codes as array with keys as localization
+codes and values as not translated English localization names.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetAllOptions" id="_SetAllOptions">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetAllOptions">#</a>
+		<code><a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#302-311" title="Go to source code">SetAllOptions</a>( <span>array <var>$allOptions</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Set all existing localization codes as array with keys as localization
+codes and values as not translated English localization names.
+Given value will be automatically used as select options, if there
+will not be configured any filtering to filter displayed localizations.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set all existing localization codes as array with keys as localization
+codes and values as not translated English localization names.
+Given value will be automatically used as select options, if there
+will not be configured any filtering to filter displayed localizations.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$allOptions</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="FilterOptions" id="_FilterOptions">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html">MvcCore\Ext\Forms\Fields\LocalizationSelect</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_FilterOptions">#</a>
+		<code><a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#313-333" title="Go to source code">FilterOptions</a>( <span>string[] <var>$localizationsCodes</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Filter displayed localizations to not show every time all existing
+localizations in the world. Given localizations codes will be automatically
+converted to upper case.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Filter displayed localizations to not show every time all existing
+localizations in the world. Given localizations codes will be automatically
+converted to upper case.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$localizationsCodes</var></dt>
+					<dd>Array of localization codes strings to rendered only, not to render all existing localizations.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html">MvcCore\Ext\Forms\Fields\LocalizationSelect</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#335-349" title="Go to source code">__construct</a>( <span>array <var>$cfg</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Create new form localization <code>&lt;select&gt;</code> control instance.
+If there is record under <code>filter</code> key in <code>$cfg</code> array argument,
+it's used for method $field->FilterOptions([...]);` method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create new form localization <code>&lt;select&gt;</code> control instance.
+If there is record under <code>filter</code> key in <code>$cfg</code> array argument,
+it's used for method $field->FilterOptions([...]);` method.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cfg</var></dt>
+					<dd><p>Config array with protected properties and it's
+                 values which you want to configure, presented
+                 in camel case properties names syntax.</p></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-MvcCore.Ext.Forms.Fields.Select.html#___construct">MvcCore\Ext\Forms\Fields\Select::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetForm" id="_SetForm">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html">MvcCore\Ext\Forms\Fields\LocalizationSelect</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetForm">#</a>
+		<code><a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#351-370" title="Go to source code">SetForm</a>( <span><code><a href="class-MvcCore.Ext.IForm.html">MvcCore\Ext\IForm</a></code> <var>$form</var></span> )</code>
+
+		<div class="description short">
+			<p>This INTERNAL method is called from <code>\MvcCore\Ext\Form</code> after field
+is added into form instance by <code>$form-&gt;AddField();</code> method. Do not
+use this method even if you don't develop any form field.
+- Check if field has any name, which is required.
+- Set up form and field id attribute by form id and field name.
+- Set up required.
+- Set up translate boolean property.
+- Check if there are any select options in <code>$this-&gt;options</code>.
+- Set up select minimum/maximum options to select if necessary.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This INTERNAL method is called from <code>\MvcCore\Ext\Form</code> after field
+is added into form instance by <code>$form-&gt;AddField();</code> method. Do not
+use this method even if you don't develop any form field.
+- Check if field has any name, which is required.
+- Set up form and field id attribute by form id and field name.
+- Set up required.
+- Set up translate boolean property.
+- Check if there are any select options in <code>$this-&gt;options</code>.
+- Set up select minimum/maximum options to select if necessary.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$form</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html">MvcCore\Ext\Forms\Fields\LocalizationSelect</a></code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-MvcCore.Ext.Forms.Fields.Select.html#_SetForm">MvcCore\Ext\Forms\Fields\Select::SetForm()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="RenderControlOptions" id="_RenderControlOptions">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_RenderControlOptions">#</a>
+		<code><a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#372-403" title="Go to source code">RenderControlOptions</a>( )</code>
+
+		<div class="description short">
+			<p>This INTERNAL method is called from <code>\MvcCore\Ext\Forms\Field\Rendering</code>
+in rendering process. Do not use this method even if you don't develop any form field.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This INTERNAL method is called from <code>\MvcCore\Ext\Forms\Field\Rendering</code>
+in rendering process. Do not use this method even if you don't develop any form field.</p>
+
+<p>Render inner select control <code>&lt;option&gt;</code> tags or <code>&lt;optgroup&gt;</code>
+tags if there are options configured for.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-MvcCore.Ext.Forms.Fields.Select.html#_RenderControlOptions">MvcCore\Ext\Forms\Fields\Select::RenderControlOptions()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="normalizeLocalizationCode" id="_normalizeLocalizationCode">
+
+		<td class="attributes"><code>
+			 protected static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_normalizeLocalizationCode">#</a>
+		<code><a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#405-422" title="Go to source code">normalizeLocalizationCode</a>( <span>string <var>$rawLocalizationCode</var></span> )</code>
+
+		<div class="description short">
+			<p>Normalize localization code into the right form with underscore separator:
+- lower language code
+- (optional alphabetical code in pascal case)
+- upper case country code</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Normalize localization code into the right form with underscore separator:
+- lower language code
+- (optional alphabetical code in pascal case)
+- upper case country code</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rawLocalizationCode</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-MvcCore.Ext.Forms.Fields.Select.html#methods">MvcCore\Ext\Forms\Fields\Select</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#_GetValidatorData">GetValidatorData()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#_PreDispatch">PreDispatch()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#_RenderControl">RenderControl()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#_preDispatchTranslateOptionOptGroup">preDispatchTranslateOptionOptGroup()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#_renderControlOptionKeyValue">renderControlOptionKeyValue()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#_renderControlOptionsAdvanced">renderControlOptionsAdvanced()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#_renderControlOptionsGroup">renderControlOptionsGroup()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-MvcCore.Ext.Forms.Field.html#methods">MvcCore\Ext\Forms\Field</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.html#_AddValidationError">AddValidationError()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.html#_CreateInstance">CreateInstance()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.html#_Submit">Submit()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.html#___call">__call()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.html#___get">__get()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.html#___set">__set()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.html#_throwNewInvalidArgumentException">throwNewInvalidArgumentException()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.html#_translateAndFormatValidationError">translateAndFormatValidationError()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#methods">MvcCore\Ext\Forms\Fields\IMinMaxOptions</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_GetMaxOptions">GetMaxOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_GetMaxOptionsBubbleMessage">GetMaxOptionsBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_GetMinOptions">GetMinOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_GetMinOptionsBubbleMessage">GetMinOptionsBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_GetRequiredBubbleMessage">GetRequiredBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_SetMaxOptions">SetMaxOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_SetMaxOptionsBubbleMessage">SetMaxOptionsBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_SetMinOptions">SetMinOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_SetMinOptionsBubbleMessage">SetMinOptionsBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMinMaxOptions.html#_SetRequiredBubbleMessage">SetRequiredBubbleMessage()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-MvcCore.Ext.Forms.Fields.IOptions.html#methods">MvcCore\Ext\Forms\Fields\IOptions</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Fields.IOptions.html#_AddOptions">AddOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IOptions.html#_GetFlattenOptions">GetFlattenOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IOptions.html#_GetOptions">GetOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IOptions.html#_GetTranslateOptions">GetTranslateOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IOptions.html#_SetOptions">SetOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IOptions.html#_SetTranslateOptions">SetTranslateOptions()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-MvcCore.Ext.Forms.Fields.IMultiple.html#methods">MvcCore\Ext\Forms\Fields\IMultiple</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Fields.IMultiple.html#_GetMultiple">GetMultiple()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IMultiple.html#_SetMultiple">SetMultiple()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#methods">MvcCore\Ext\Forms\Fields\ILabel</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_AddLabelAttrs">AddLabelAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_GetLabel">GetLabel()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_GetLabelAttr">GetLabelAttr()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_GetLabelAttrs">GetLabelAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_GetLabelSide">GetLabelSide()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_GetRenderMode">GetRenderMode()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_SetLabel">SetLabel()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_SetLabelAttr">SetLabelAttr()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_SetLabelAttrs">SetLabelAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_SetLabelSide">SetLabelSide()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.ILabel.html#_SetRenderMode">SetRenderMode()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#methods">MvcCore\Ext\Forms\Fields\IVisibleField</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_GetAccessKey">GetAccessKey()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_GetAutoFocus">GetAutoFocus()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_GetDisabled">GetDisabled()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_GetReadOnly">GetReadOnly()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_GetRequired">GetRequired()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_GetTabIndex">GetTabIndex()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_SetAccessKey">SetAccessKey()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_SetAutoFocus">SetAutoFocus()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_SetDisabled">SetDisabled()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_SetReadOnly">SetReadOnly()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_SetRequired">SetRequired()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.IVisibleField.html#_SetTabIndex">SetTabIndex()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-MvcCore.Ext.Forms.IField.html#methods">MvcCore\Ext\Forms\IField</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.IField.html#_AddControlAttrs">AddControlAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_AddCssClasses">AddCssClasses()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_AddError">AddError()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_AddValidators">AddValidators()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetControlAttr">GetControlAttr()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetControlAttrs">GetControlAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetCssClasses">GetCssClasses()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetCssSupportingFile">GetCssSupportingFile()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetId">GetId()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetJsClassName">GetJsClassName()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetJsSupportingFile">GetJsSupportingFile()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetName">GetName()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetTemplates">GetTemplates()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetTitle">GetTitle()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetType">GetType()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetValidators">GetValidators()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_GetViewScript">GetViewScript()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_HasValidator">HasValidator()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_RemoveValidator">RemoveValidator()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_Render">Render()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_RenderControlInsideLabel">RenderControlInsideLabel()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_RenderErrors">RenderErrors()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_RenderLabel">RenderLabel()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_RenderLabelAndControl">RenderLabelAndControl()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_RenderNaturally">RenderNaturally()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_RenderTemplate">RenderTemplate()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetControlAttr">SetControlAttr()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetControlAttrs">SetControlAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetCssClasses">SetCssClasses()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetCssSupportingFile">SetCssSupportingFile()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetId">SetId()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetJsClassName">SetJsClassName()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetJsSupportingFile">SetJsSupportingFile()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetName">SetName()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetTemplate">SetTemplate()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetTemplates">SetTemplates()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetTitle">SetTitle()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetTranslate">SetTranslate()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetType">SetType()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetValidators">SetValidators()</a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#_SetViewScript">SetViewScript()</a>
+		</code></td>
+	</tr>
+	</table>
+
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#methods">MvcCore\Ext\Forms\Field\Props\Label</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_AddLabelAttrs">AddLabelAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_GetLabel">GetLabel()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_GetLabelAttr">GetLabelAttr()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_GetLabelAttrs">GetLabelAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_GetLabelSide">GetLabelSide()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_GetRenderMode">GetRenderMode()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_SetLabel">SetLabel()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_SetLabelAttr">SetLabelAttr()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_SetLabelAttrs">SetLabelAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_SetLabelSide">SetLabelSide()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#_SetRenderMode">SetRenderMode()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Props.AutoComplete.html#methods">MvcCore\Ext\Forms\Field\Props\AutoComplete</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.AutoComplete.html#_GetAutoComplete">GetAutoComplete()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.AutoComplete.html#_SetAutoComplete">SetAutoComplete()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Props.Multiple.html#methods">MvcCore\Ext\Forms\Field\Props\Multiple</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Multiple.html#_GetMultiple">GetMultiple()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Multiple.html#_SetMultiple">SetMultiple()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#methods">MvcCore\Ext\Forms\Field\Props\Options</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#_AddOptions">AddOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#_GetFlattenOptions">GetFlattenOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#_GetOptions">GetOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#_GetTranslateOptions">GetTranslateOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#_SetOptions">SetOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#_SetTranslateOptions">SetTranslateOptions()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#methods">MvcCore\Ext\Forms\Field\Props\MinMaxOptions</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_GetMaxOptions">GetMaxOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_GetMaxOptionsBubbleMessage">GetMaxOptionsBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_GetMinOptions">GetMinOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_GetMinOptionsBubbleMessage">GetMinOptionsBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_GetRequiredBubbleMessage">GetRequiredBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_SetMaxOptions">SetMaxOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_SetMaxOptionsBubbleMessage">SetMaxOptionsBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_SetMinOptions">SetMinOptions()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_SetMinOptionsBubbleMessage">SetMinOptionsBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_SetRequiredBubbleMessage">SetRequiredBubbleMessage()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#_setFormMinMaxOptions">setFormMinMaxOptions()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html#methods">MvcCore\Ext\Forms\Field\Props\NullOptionText</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html#_GetNullOptionText">GetNullOptionText()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html#_SetNullOptionText">SetNullOptionText()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html#_preDispatchNullOptionText">preDispatchNullOptionText()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Props.Size.html#methods">MvcCore\Ext\Forms\Field\Props\Size</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Size.html#_GetSize">GetSize()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Size.html#_SetSize">SetSize()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Getters.html#methods">MvcCore\Ext\Forms\Field\Getters</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetControlAttr">GetControlAttr()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetControlAttrs">GetControlAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetCssClasses">GetCssClasses()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetCssSupportingFile">GetCssSupportingFile()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetId">GetId()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetJsClassName">GetJsClassName()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetJsSupportingFile">GetJsSupportingFile()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetName">GetName()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetTemplates">GetTemplates()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetTitle">GetTitle()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetTranslate">GetTranslate()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetType">GetType()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetValidators">GetValidators()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_GetViewScript">GetViewScript()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Getters.html#_HasValidator">HasValidator()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Setters.html#methods">MvcCore\Ext\Forms\Field\Setters</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_AddControlAttrs">AddControlAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_AddCssClasses">AddCssClasses()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_AddError">AddError()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_AddValidators">AddValidators()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_RemoveValidator">RemoveValidator()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetControlAttr">SetControlAttr()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetControlAttrs">SetControlAttrs()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetCssClasses">SetCssClasses()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetCssSupportingFile">SetCssSupportingFile()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetId">SetId()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetJsClassName">SetJsClassName()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetJsSupportingFile">SetJsSupportingFile()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetName">SetName()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetTemplate">SetTemplate()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetTemplates">SetTemplates()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetTitle">SetTitle()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetTranslate">SetTranslate()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetType">SetType()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetValidators">SetValidators()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Setters.html#_SetViewScript">SetViewScript()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-MvcCore.Ext.Forms.Field.Rendering.html#methods">MvcCore\Ext\Forms\Field\Rendering</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_Render">Render()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_RenderControlInsideLabel">RenderControlInsideLabel()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_RenderErrors">RenderErrors()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_RenderLabel">RenderLabel()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_RenderLabelAndControl">RenderLabelAndControl()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_RenderNaturally">RenderNaturally()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_RenderTemplate">RenderTemplate()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_renderAttrsWithFieldVars">renderAttrsWithFieldVars()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_renderControlAttrsWithFieldVars">renderControlAttrsWithFieldVars()</a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Rendering.html#_renderLabelAttrsWithFieldVars">renderLabelAttrsWithFieldVars()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-MvcCore.Ext.Forms.Fields.Select.html#constants">MvcCore\Ext\Forms\Fields\Select</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#VERSION"><b>VERSION</b></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-MvcCore.Ext.Forms.IField.html#constants">MvcCore\Ext\Forms\IField</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.IField.html#AUTOFOCUS_DUPLICITY_EXCEPTION"><b>AUTOFOCUS_DUPLICITY_EXCEPTION</b></a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#AUTOFOCUS_DUPLICITY_QUIETLY_SET_NEW"><b>AUTOFOCUS_DUPLICITY_QUIETLY_SET_NEW</b></a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#AUTOFOCUS_DUPLICITY_UNSET_OLD_SET_NEW"><b>AUTOFOCUS_DUPLICITY_UNSET_OLD_SET_NEW</b></a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#LABEL_SIDE_LEFT"><b>LABEL_SIDE_LEFT</b></a>, 
+			<a href="class-MvcCore.Ext.Forms.IField.html#LABEL_SIDE_RIGHT"><b>LABEL_SIDE_RIGHT</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="type" id="$type">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#27-31" title="Go to source code"><var>$type</var></a>
+
+			<div class="description short">
+				<p>Possible value: <code>localization-select</code>, not used in HTML code for this field.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Possible value: <code>localization-select</code>, not used in HTML code for this field.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$type" class="anchor">#</a>
+				<code><span class="php-quote">'localization-select'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="translate" id="$translate">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#33-37" title="Go to source code"><var>$translate</var></a>
+
+			<div class="description short">
+				<p>Translate English localizations names. Default value is <code>FALSE</code>.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Translate English localizations names. Default value is <code>FALSE</code>.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$translate" class="anchor">#</a>
+				<code><span class="php-keyword1">FALSE</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="allOptions" id="$allOptions">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.Forms.Fields.LocalizationSelect.html#39-270" title="Go to source code"><var>$allOptions</var></a>
+
+			<div class="description short">
+				<p>All existing localization codes and English localizations names.
+Keys are language codes in lower case with optional alphabet after
+underscore, than there is another underscore and country code in upper
+case, values are English localizations names. This array is automatically
+used to render all select options. If there is configured any filtering
+to filter displayed localizations, only selected localizations are
+rendered. Use method <code>$field-&gt;FilterOptions([...]);</code> or constructor <code>$cfg</code>
+array with record <code>filter</code> as array with localization codes array to
+render only.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>All existing localization codes and English localizations names.
+Keys are language codes in lower case with optional alphabet after
+underscore, than there is another underscore and country code in upper
+case, values are English localizations names. This array is automatically
+used to render all select options. If there is configured any filtering
+to filter displayed localizations, only selected localizations are
+rendered. Use method <code>$field-&gt;FilterOptions([...]);</code> or constructor <code>$cfg</code>
+array with record <code>filter</code> as array with localization codes array to
+render only.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$allOptions" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">&quot;af_NA&quot;</span>     =&gt; <span class="php-quote">&quot;Afrikaans (Namibia)&quot;</span>,                   <span class="php-quote">&quot;af_ZA&quot;</span>     =&gt; <span class="php-quote">&quot;Afrikaans (South Africa)&quot;</span>,
+    <span class="php-quote">&quot;af&quot;</span>        =&gt; <span class="php-quote">&quot;Afrikaans&quot;</span>,                             <span class="php-quote">&quot;ak_GH&quot;</span>     =&gt; <span class="php-quote">&quot;Akan (Ghana)&quot;</span>,
+    <span class="php-quote">&quot;ak&quot;</span>        =&gt; <span class="php-quote">&quot;Akan&quot;</span>,                                  <span class="php-quote">&quot;sq_AL&quot;</span>     =&gt; <span class="php-quote">&quot;Albanian (Albania)&quot;</span>,
+    <span class="php-quote">&quot;sq&quot;</span>        =&gt; <span class="php-quote">&quot;Albanian&quot;</span>,                              <span class="php-quote">&quot;am_ET&quot;</span>     =&gt; <span class="php-quote">&quot;Amharic (Ethiopia)&quot;</span>,
+    <span class="php-quote">&quot;am&quot;</span>        =&gt; <span class="php-quote">&quot;Amharic&quot;</span>,                               <span class="php-quote">&quot;ar_DZ&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Algeria)&quot;</span>,
+    <span class="php-quote">&quot;ar_BH&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Bahrain)&quot;</span>,                      <span class="php-quote">&quot;ar_EG&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Egypt)&quot;</span>,
+    <span class="php-quote">&quot;ar_IQ&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Iraq)&quot;</span>,                         <span class="php-quote">&quot;ar_JO&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Jordan)&quot;</span>,
+    <span class="php-quote">&quot;ar_KW&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Kuwait)&quot;</span>,                       <span class="php-quote">&quot;ar_LB&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Lebanon)&quot;</span>,
+    <span class="php-quote">&quot;ar_LY&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Libya)&quot;</span>,                        <span class="php-quote">&quot;ar_MA&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Morocco)&quot;</span>,
+    <span class="php-quote">&quot;ar_OM&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Oman)&quot;</span>,                         <span class="php-quote">&quot;ar_QA&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Qatar)&quot;</span>,
+    <span class="php-quote">&quot;ar_SA&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Saudi Arabia)&quot;</span>,                 <span class="php-quote">&quot;ar_SD&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Sudan)&quot;</span>,
+    <span class="php-quote">&quot;ar_SY&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Syria)&quot;</span>,                        <span class="php-quote">&quot;ar_TN&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Tunisia)&quot;</span>,
+    <span class="php-quote">&quot;ar_AE&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (United Arab Emirates)&quot;</span>,         <span class="php-quote">&quot;ar_YE&quot;</span>     =&gt; <span class="php-quote">&quot;Arabic (Yemen)&quot;</span>,
+    <span class="php-quote">&quot;ar&quot;</span>        =&gt; <span class="php-quote">&quot;Arabic&quot;</span>,                                <span class="php-quote">&quot;hy_AM&quot;</span>     =&gt; <span class="php-quote">&quot;Armenian (Armenia)&quot;</span>,
+    <span class="php-quote">&quot;hy&quot;</span>        =&gt; <span class="php-quote">&quot;Armenian&quot;</span>,                              <span class="php-quote">&quot;as_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Assamese (India)&quot;</span>,
+    <span class="php-quote">&quot;as&quot;</span>        =&gt; <span class="php-quote">&quot;Assamese&quot;</span>,                              <span class="php-quote">&quot;asa_TZ&quot;</span>    =&gt; <span class="php-quote">&quot;Asu (Tanzania)&quot;</span>,
+    <span class="php-quote">&quot;asa&quot;</span>       =&gt; <span class="php-quote">&quot;Asu&quot;</span>,                                   <span class="php-quote">&quot;az_Cyrl&quot;</span>   =&gt; <span class="php-quote">&quot;Azerbaijani (Cyrillic)&quot;</span>,
+    <span class="php-quote">&quot;az_Cyrl_AZ&quot;</span>=&gt; <span class="php-quote">&quot;Azerbaijani (Cyrillic, Azerbaijan)&quot;</span>,    <span class="php-quote">&quot;az_Latn&quot;</span>   =&gt; <span class="php-quote">&quot;Azerbaijani (Latin)&quot;</span>,
+    <span class="php-quote">&quot;az_Latn_AZ&quot;</span>=&gt; <span class="php-quote">&quot;Azerbaijani (Latin, Azerbaijan)&quot;</span>,       <span class="php-quote">&quot;az&quot;</span>        =&gt; <span class="php-quote">&quot;Azerbaijani&quot;</span>,
+    <span class="php-quote">&quot;bm_ML&quot;</span>     =&gt; <span class="php-quote">&quot;Bambara (Mali)&quot;</span>,                        <span class="php-quote">&quot;bm&quot;</span>        =&gt; <span class="php-quote">&quot;Bambara&quot;</span>,
+    <span class="php-quote">&quot;eu_ES&quot;</span>     =&gt; <span class="php-quote">&quot;Basque (Spain)&quot;</span>,                        <span class="php-quote">&quot;eu&quot;</span>        =&gt; <span class="php-quote">&quot;Basque&quot;</span>,
+    <span class="php-quote">&quot;be_BY&quot;</span>     =&gt; <span class="php-quote">&quot;Belarusian (Belarus)&quot;</span>,                  <span class="php-quote">&quot;be&quot;</span>        =&gt; <span class="php-quote">&quot;Belarusian&quot;</span>,
+    <span class="php-quote">&quot;bem_ZM&quot;</span>    =&gt; <span class="php-quote">&quot;Bemba (Zambia)&quot;</span>,                        <span class="php-quote">&quot;bem&quot;</span>       =&gt; <span class="php-quote">&quot;Bemba&quot;</span>,
+    <span class="php-quote">&quot;bez_TZ&quot;</span>    =&gt; <span class="php-quote">&quot;Bena (Tanzania)&quot;</span>,                       <span class="php-quote">&quot;bez&quot;</span>       =&gt; <span class="php-quote">&quot;Bena&quot;</span>,
+    <span class="php-quote">&quot;bn_BD&quot;</span>     =&gt; <span class="php-quote">&quot;Bengali (Bangladesh)&quot;</span>,                  <span class="php-quote">&quot;bn_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Bengali (India)&quot;</span>,
+    <span class="php-quote">&quot;bn&quot;</span>        =&gt; <span class="php-quote">&quot;Bengali&quot;</span>,                               <span class="php-quote">&quot;bs_BA&quot;</span>     =&gt; <span class="php-quote">&quot;Bosnian (Bosnia and Herzegovina)&quot;</span>,
+    <span class="php-quote">&quot;bs&quot;</span>        =&gt; <span class="php-quote">&quot;Bosnian&quot;</span>,                               <span class="php-quote">&quot;bg_BG&quot;</span>     =&gt; <span class="php-quote">&quot;Bulgarian (Bulgaria)&quot;</span>,
+    <span class="php-quote">&quot;bg&quot;</span>        =&gt; <span class="php-quote">&quot;Bulgarian&quot;</span>,                             <span class="php-quote">&quot;my_MM&quot;</span>     =&gt; <span class="php-quote">&quot;Burmese (Myanmar [Burma])&quot;</span>,
+    <span class="php-quote">&quot;my&quot;</span>        =&gt; <span class="php-quote">&quot;Burmese&quot;</span>,                               <span class="php-quote">&quot;yue_Hant_HK&quot;</span>=&gt; <span class="php-quote">&quot;Cantonese (Traditional, Hong Kong SAR China)&quot;</span>,
+    <span class="php-quote">&quot;ca_ES&quot;</span>     =&gt; <span class="php-quote">&quot;Catalan (Spain)&quot;</span>,                       <span class="php-quote">&quot;ca&quot;</span>        =&gt; <span class="php-quote">&quot;Catalan&quot;</span>,
+    <span class="php-quote">&quot;tzm_Latn&quot;</span>  =&gt; <span class="php-quote">&quot;Central Morocco Tamazight (Latin)&quot;</span>,     <span class="php-quote">&quot;tzm_Latn_MA&quot;</span>=&gt; <span class="php-quote">&quot;Central Morocco Tamazight (Latin, Morocco)&quot;</span>,
+    <span class="php-quote">&quot;tzm&quot;</span>       =&gt; <span class="php-quote">&quot;Central Morocco Tamazight&quot;</span>,             <span class="php-quote">&quot;chr_US&quot;</span>    =&gt; <span class="php-quote">&quot;Cherokee (United States)&quot;</span>,
+    <span class="php-quote">&quot;chr&quot;</span>       =&gt; <span class="php-quote">&quot;Cherokee&quot;</span>,                              <span class="php-quote">&quot;cgg_UG&quot;</span>    =&gt; <span class="php-quote">&quot;Chiga (Uganda)&quot;</span>,
+    <span class="php-quote">&quot;cgg&quot;</span>       =&gt; <span class="php-quote">&quot;Chiga&quot;</span>,                                 <span class="php-quote">&quot;zh_Hans&quot;</span>   =&gt; <span class="php-quote">&quot;Chinese (Simplified Han)&quot;</span>,
+    <span class="php-quote">&quot;zh_Hans_CN&quot;</span>=&gt; <span class="php-quote">&quot;Chinese (Simplified Han, China)&quot;</span>,       <span class="php-quote">&quot;zh_Hans_HK&quot;</span>=&gt; <span class="php-quote">&quot;Chinese (Simplified Han, Hong Kong SAR China)&quot;</span>,
+    <span class="php-quote">&quot;zh_Hans_MO&quot;</span>=&gt; <span class="php-quote">&quot;Chinese (Simplified Han, Macau SAR China)&quot;</span>,<span class="php-quote">&quot;zh_Hans_SG&quot;</span>=&gt; <span class="php-quote">&quot;Chinese (Simplified Han, Singapore)&quot;</span>,
+    <span class="php-quote">&quot;zh_Hant&quot;</span>   =&gt; <span class="php-quote">&quot;Chinese (Traditional Han)&quot;</span>,             <span class="php-quote">&quot;zh_Hant_HK&quot;</span>=&gt; <span class="php-quote">&quot;Chinese (Traditional Han, Hong Kong SAR China)&quot;</span>,
+    <span class="php-quote">&quot;zh_Hant_MO&quot;</span>=&gt; <span class="php-quote">&quot;Chinese (Traditional Han, Macau SAR China)&quot;</span>,<span class="php-quote">&quot;zh_Hant_TW&quot;</span>=&gt; <span class="php-quote">&quot;Chinese (Traditional Han, Taiwan)&quot;</span>,
+    <span class="php-quote">&quot;zh&quot;</span>        =&gt; <span class="php-quote">&quot;Chinese&quot;</span>,                               <span class="php-quote">&quot;kw_GB&quot;</span>     =&gt; <span class="php-quote">&quot;Cornish (United Kingdom)&quot;</span>,
+    <span class="php-quote">&quot;kw&quot;</span>        =&gt; <span class="php-quote">&quot;Cornish&quot;</span>,                               <span class="php-quote">&quot;hr_HR&quot;</span>     =&gt; <span class="php-quote">&quot;Croatian (Croatia)&quot;</span>,
+    <span class="php-quote">&quot;hr&quot;</span>        =&gt; <span class="php-quote">&quot;Croatian&quot;</span>,                              <span class="php-quote">&quot;cs_CZ&quot;</span>     =&gt; <span class="php-quote">&quot;Czech (Czech Republic)&quot;</span>,
+    <span class="php-quote">&quot;cs&quot;</span>        =&gt; <span class="php-quote">&quot;Czech&quot;</span>,                                 <span class="php-quote">&quot;da_DK&quot;</span>     =&gt; <span class="php-quote">&quot;Danish (Denmark)&quot;</span>,
+    <span class="php-quote">&quot;da&quot;</span>        =&gt; <span class="php-quote">&quot;Danish&quot;</span>,                                <span class="php-quote">&quot;nl_BE&quot;</span>     =&gt; <span class="php-quote">&quot;Dutch (Belgium)&quot;</span>,
+    <span class="php-quote">&quot;nl_NL&quot;</span>     =&gt; <span class="php-quote">&quot;Dutch (Netherlands)&quot;</span>,                   <span class="php-quote">&quot;nl&quot;</span>        =&gt; <span class="php-quote">&quot;Dutch&quot;</span>,
+    <span class="php-quote">&quot;ebu_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Embu (Kenya)&quot;</span>,                          <span class="php-quote">&quot;ebu&quot;</span>       =&gt; <span class="php-quote">&quot;Embu&quot;</span>,
+    <span class="php-quote">&quot;en_AS&quot;</span>     =&gt; <span class="php-quote">&quot;English (American Samoa)&quot;</span>,              <span class="php-quote">&quot;en_AU&quot;</span>     =&gt; <span class="php-quote">&quot;English (Australia)&quot;</span>,
+    <span class="php-quote">&quot;en_BE&quot;</span>     =&gt; <span class="php-quote">&quot;English (Belgium)&quot;</span>,                     <span class="php-quote">&quot;en_BZ&quot;</span>     =&gt; <span class="php-quote">&quot;English (Belize)&quot;</span>,
+    <span class="php-quote">&quot;en_BW&quot;</span>     =&gt; <span class="php-quote">&quot;English (Botswana)&quot;</span>,                    <span class="php-quote">&quot;en_CA&quot;</span>     =&gt; <span class="php-quote">&quot;English (Canada)&quot;</span>,
+    <span class="php-quote">&quot;en_GU&quot;</span>     =&gt; <span class="php-quote">&quot;English (Guam)&quot;</span>,                        <span class="php-quote">&quot;en_HK&quot;</span>     =&gt; <span class="php-quote">&quot;English (Hong Kong SAR China)&quot;</span>,
+    <span class="php-quote">&quot;en_IN&quot;</span>     =&gt; <span class="php-quote">&quot;English (India)&quot;</span>,                       <span class="php-quote">&quot;en_IE&quot;</span>     =&gt; <span class="php-quote">&quot;English (Ireland)&quot;</span>,
+    <span class="php-quote">&quot;en_IL&quot;</span>     =&gt; <span class="php-quote">&quot;English (Israel)&quot;</span>,                      <span class="php-quote">&quot;en_JM&quot;</span>     =&gt; <span class="php-quote">&quot;English (Jamaica)&quot;</span>,
+    <span class="php-quote">&quot;en_MT&quot;</span>     =&gt; <span class="php-quote">&quot;English (Malta)&quot;</span>,                       <span class="php-quote">&quot;en_MH&quot;</span>     =&gt; <span class="php-quote">&quot;English (Marshall Islands)&quot;</span>,
+    <span class="php-quote">&quot;en_MU&quot;</span>     =&gt; <span class="php-quote">&quot;English (Mauritius)&quot;</span>,                   <span class="php-quote">&quot;en_NA&quot;</span>     =&gt; <span class="php-quote">&quot;English (Namibia)&quot;</span>,
+    <span class="php-quote">&quot;en_NZ&quot;</span>     =&gt; <span class="php-quote">&quot;English (New Zealand)&quot;</span>,                 <span class="php-quote">&quot;en_MP&quot;</span>     =&gt; <span class="php-quote">&quot;English (Northern Mariana Islands)&quot;</span>,
+    <span class="php-quote">&quot;en_PK&quot;</span>     =&gt; <span class="php-quote">&quot;English (Pakistan)&quot;</span>,                    <span class="php-quote">&quot;en_PH&quot;</span>     =&gt; <span class="php-quote">&quot;English (Philippines)&quot;</span>,
+    <span class="php-quote">&quot;en_SG&quot;</span>     =&gt; <span class="php-quote">&quot;English (Singapore)&quot;</span>,                   <span class="php-quote">&quot;en_ZA&quot;</span>     =&gt; <span class="php-quote">&quot;English (South Africa)&quot;</span>,
+    <span class="php-quote">&quot;en_TT&quot;</span>     =&gt; <span class="php-quote">&quot;English (Trinidad and Tobago)&quot;</span>,         <span class="php-quote">&quot;en_UM&quot;</span>     =&gt; <span class="php-quote">&quot;English (U.S. Minor Outlying Islands)&quot;</span>,
+    <span class="php-quote">&quot;en_VI&quot;</span>     =&gt; <span class="php-quote">&quot;English (U.S. Virgin Islands)&quot;</span>,         <span class="php-quote">&quot;en_GB&quot;</span>     =&gt; <span class="php-quote">&quot;English (United Kingdom)&quot;</span>,
+    <span class="php-quote">&quot;en_US&quot;</span>     =&gt; <span class="php-quote">&quot;English (United States)&quot;</span>,               <span class="php-quote">&quot;en_ZW&quot;</span>     =&gt; <span class="php-quote">&quot;English (Zimbabwe)&quot;</span>,
+    <span class="php-quote">&quot;en&quot;</span>        =&gt; <span class="php-quote">&quot;English&quot;</span>,                               <span class="php-quote">&quot;eo&quot;</span>        =&gt; <span class="php-quote">&quot;Esperanto&quot;</span>,
+    <span class="php-quote">&quot;et_EE&quot;</span>     =&gt; <span class="php-quote">&quot;Estonian (Estonia)&quot;</span>,                    <span class="php-quote">&quot;et&quot;</span>        =&gt; <span class="php-quote">&quot;Estonian&quot;</span>,
+    <span class="php-quote">&quot;ee_GH&quot;</span>     =&gt; <span class="php-quote">&quot;Ewe (Ghana)&quot;</span>,                           <span class="php-quote">&quot;ee_TG&quot;</span>     =&gt; <span class="php-quote">&quot;Ewe (Togo)&quot;</span>,
+    <span class="php-quote">&quot;ee&quot;</span>        =&gt; <span class="php-quote">&quot;Ewe&quot;</span>,                                   <span class="php-quote">&quot;fo_FO&quot;</span>     =&gt; <span class="php-quote">&quot;Faroese (Faroe Islands)&quot;</span>,
+    <span class="php-quote">&quot;fo&quot;</span>        =&gt; <span class="php-quote">&quot;Faroese&quot;</span>,                               <span class="php-quote">&quot;fil_PH&quot;</span>    =&gt; <span class="php-quote">&quot;Filipino (Philippines)&quot;</span>,
+    <span class="php-quote">&quot;fil&quot;</span>       =&gt; <span class="php-quote">&quot;Filipino&quot;</span>,                              <span class="php-quote">&quot;fi_FI&quot;</span>     =&gt; <span class="php-quote">&quot;Finnish (Finland)&quot;</span>,
+    <span class="php-quote">&quot;fi&quot;</span>        =&gt; <span class="php-quote">&quot;Finnish&quot;</span>,                               <span class="php-quote">&quot;fr_BE&quot;</span>     =&gt; <span class="php-quote">&quot;French (Belgium)&quot;</span>,
+    <span class="php-quote">&quot;fr_BJ&quot;</span>     =&gt; <span class="php-quote">&quot;French (Benin)&quot;</span>,                        <span class="php-quote">&quot;fr_BF&quot;</span>     =&gt; <span class="php-quote">&quot;French (Burkina Faso)&quot;</span>,
+    <span class="php-quote">&quot;fr_BI&quot;</span>     =&gt; <span class="php-quote">&quot;French (Burundi)&quot;</span>,                      <span class="php-quote">&quot;fr_CM&quot;</span>     =&gt; <span class="php-quote">&quot;French (Cameroon)&quot;</span>,
+    <span class="php-quote">&quot;fr_CA&quot;</span>     =&gt; <span class="php-quote">&quot;French (Canada)&quot;</span>,                       <span class="php-quote">&quot;fr_CF&quot;</span>     =&gt; <span class="php-quote">&quot;French (Central African Republic)&quot;</span>,
+    <span class="php-quote">&quot;fr_TD&quot;</span>     =&gt; <span class="php-quote">&quot;French (Chad)&quot;</span>,                         <span class="php-quote">&quot;fr_KM&quot;</span>     =&gt; <span class="php-quote">&quot;French (Comoros)&quot;</span>,
+    <span class="php-quote">&quot;fr_CG&quot;</span>     =&gt; <span class="php-quote">&quot;French (Congo - Brazzaville)&quot;</span>,          <span class="php-quote">&quot;fr_CD&quot;</span>     =&gt; <span class="php-quote">&quot;French (Congo - Kinshasa)&quot;</span>,
+    <span class="php-quote">&quot;fr_CI&quot;</span>     =&gt; <span class="php-quote">&quot;French (Côte d’Ivoire)&quot;</span>,             <span class="php-quote">&quot;fr_DJ&quot;</span>     =&gt; <span class="php-quote">&quot;French (Djibouti)&quot;</span>,
+    <span class="php-quote">&quot;fr_GQ&quot;</span>     =&gt; <span class="php-quote">&quot;French (Equatorial Guinea)&quot;</span>,            <span class="php-quote">&quot;fr_FR&quot;</span>     =&gt; <span class="php-quote">&quot;French (France)&quot;</span>,
+    <span class="php-quote">&quot;fr_GA&quot;</span>     =&gt; <span class="php-quote">&quot;French (Gabon)&quot;</span>,                        <span class="php-quote">&quot;fr_GP&quot;</span>     =&gt; <span class="php-quote">&quot;French (Guadeloupe)&quot;</span>,
+    <span class="php-quote">&quot;fr_GN&quot;</span>     =&gt; <span class="php-quote">&quot;French (Guinea)&quot;</span>,                       <span class="php-quote">&quot;fr_LU&quot;</span>     =&gt; <span class="php-quote">&quot;French (Luxembourg)&quot;</span>,
+    <span class="php-quote">&quot;fr_MG&quot;</span>     =&gt; <span class="php-quote">&quot;French (Madagascar)&quot;</span>,                   <span class="php-quote">&quot;fr_ML&quot;</span>     =&gt; <span class="php-quote">&quot;French (Mali)&quot;</span>,
+    <span class="php-quote">&quot;fr_MQ&quot;</span>     =&gt; <span class="php-quote">&quot;French (Martinique)&quot;</span>,                   <span class="php-quote">&quot;fr_MC&quot;</span>     =&gt; <span class="php-quote">&quot;French (Monaco)&quot;</span>,
+    <span class="php-quote">&quot;fr_NE&quot;</span>     =&gt; <span class="php-quote">&quot;French (Niger)&quot;</span>,                        <span class="php-quote">&quot;fr_RW&quot;</span>     =&gt; <span class="php-quote">&quot;French (Rwanda)&quot;</span>,
+    <span class="php-quote">&quot;fr_RE&quot;</span>     =&gt; <span class="php-quote">&quot;French (Réunion)&quot;</span>,                     <span class="php-quote">&quot;fr_BL&quot;</span>     =&gt; <span class="php-quote">&quot;French (Saint Barthélemy)&quot;</span>,
+    <span class="php-quote">&quot;fr_MF&quot;</span>     =&gt; <span class="php-quote">&quot;French (Saint Martin)&quot;</span>,                 <span class="php-quote">&quot;fr_SN&quot;</span>     =&gt; <span class="php-quote">&quot;French (Senegal)&quot;</span>,
+    <span class="php-quote">&quot;fr_CH&quot;</span>     =&gt; <span class="php-quote">&quot;French (Switzerland)&quot;</span>,                  <span class="php-quote">&quot;fr_TG&quot;</span>     =&gt; <span class="php-quote">&quot;French (Togo)&quot;</span>,
+    <span class="php-quote">&quot;fr&quot;</span>        =&gt; <span class="php-quote">&quot;French&quot;</span>,                                <span class="php-quote">&quot;ff_SN&quot;</span>     =&gt; <span class="php-quote">&quot;Fulah (Senegal)&quot;</span>,
+    <span class="php-quote">&quot;ff&quot;</span>        =&gt; <span class="php-quote">&quot;Fulah&quot;</span>,                                 <span class="php-quote">&quot;gl_ES&quot;</span>     =&gt; <span class="php-quote">&quot;Galician (Spain)&quot;</span>,
+    <span class="php-quote">&quot;gl&quot;</span>        =&gt; <span class="php-quote">&quot;Galician&quot;</span>,                              <span class="php-quote">&quot;lg_UG&quot;</span>     =&gt; <span class="php-quote">&quot;Ganda (Uganda)&quot;</span>,
+    <span class="php-quote">&quot;lg&quot;</span>        =&gt; <span class="php-quote">&quot;Ganda&quot;</span>,                                 <span class="php-quote">&quot;ka_GE&quot;</span>     =&gt; <span class="php-quote">&quot;Georgian (Georgia)&quot;</span>,
+    <span class="php-quote">&quot;ka&quot;</span>        =&gt; <span class="php-quote">&quot;Georgian&quot;</span>,                              <span class="php-quote">&quot;de_AT&quot;</span>     =&gt; <span class="php-quote">&quot;German (Austria)&quot;</span>,
+    <span class="php-quote">&quot;de_BE&quot;</span>     =&gt; <span class="php-quote">&quot;German (Belgium)&quot;</span>,                      <span class="php-quote">&quot;de_DE&quot;</span>     =&gt; <span class="php-quote">&quot;German (Germany)&quot;</span>,
+    <span class="php-quote">&quot;de_LI&quot;</span>     =&gt; <span class="php-quote">&quot;German (Liechtenstein)&quot;</span>,                <span class="php-quote">&quot;de_LU&quot;</span>     =&gt; <span class="php-quote">&quot;German (Luxembourg)&quot;</span>,
+    <span class="php-quote">&quot;de_CH&quot;</span>     =&gt; <span class="php-quote">&quot;German (Switzerland)&quot;</span>,                  <span class="php-quote">&quot;de&quot;</span>        =&gt; <span class="php-quote">&quot;German&quot;</span>,
+    <span class="php-quote">&quot;el_CY&quot;</span>     =&gt; <span class="php-quote">&quot;Greek (Cyprus)&quot;</span>,                        <span class="php-quote">&quot;el_GR&quot;</span>     =&gt; <span class="php-quote">&quot;Greek (Greece)&quot;</span>,
+    <span class="php-quote">&quot;el&quot;</span>        =&gt; <span class="php-quote">&quot;Greek&quot;</span>,                                 <span class="php-quote">&quot;gu_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Gujarati (India)&quot;</span>,
+    <span class="php-quote">&quot;gu&quot;</span>        =&gt; <span class="php-quote">&quot;Gujarati&quot;</span>,                              <span class="php-quote">&quot;guz_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Gusii (Kenya)&quot;</span>,
+    <span class="php-quote">&quot;guz&quot;</span>       =&gt; <span class="php-quote">&quot;Gusii&quot;</span>,                                 <span class="php-quote">&quot;ha_Latn&quot;</span>   =&gt; <span class="php-quote">&quot;Hausa (Latin)&quot;</span>,
+    <span class="php-quote">&quot;ha_Latn_GH&quot;</span>=&gt; <span class="php-quote">&quot;Hausa (Latin, Ghana)&quot;</span>,                  <span class="php-quote">&quot;ha_Latn_NE&quot;</span>=&gt; <span class="php-quote">&quot;Hausa (Latin, Niger)&quot;</span>,
+    <span class="php-quote">&quot;ha_Latn_NG&quot;</span>=&gt; <span class="php-quote">&quot;Hausa (Latin, Nigeria)&quot;</span>,                <span class="php-quote">&quot;ha&quot;</span>        =&gt; <span class="php-quote">&quot;Hausa&quot;</span>,
+    <span class="php-quote">&quot;haw_US&quot;</span>    =&gt; <span class="php-quote">&quot;Hawaiian (United States)&quot;</span>,              <span class="php-quote">&quot;haw&quot;</span>       =&gt; <span class="php-quote">&quot;Hawaiian&quot;</span>,
+    <span class="php-quote">&quot;he_IL&quot;</span>     =&gt; <span class="php-quote">&quot;Hebrew (Israel)&quot;</span>,                       <span class="php-quote">&quot;he&quot;</span>        =&gt; <span class="php-quote">&quot;Hebrew&quot;</span>,
+    <span class="php-quote">&quot;hi_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Hindi (India)&quot;</span>,                         <span class="php-quote">&quot;hi&quot;</span>        =&gt; <span class="php-quote">&quot;Hindi&quot;</span>,
+    <span class="php-quote">&quot;hu_HU&quot;</span>     =&gt; <span class="php-quote">&quot;Hungarian (Hungary)&quot;</span>,                   <span class="php-quote">&quot;hu&quot;</span>        =&gt; <span class="php-quote">&quot;Hungarian&quot;</span>,
+    <span class="php-quote">&quot;is_IS&quot;</span>     =&gt; <span class="php-quote">&quot;Icelandic (Iceland)&quot;</span>,                   <span class="php-quote">&quot;is&quot;</span>        =&gt; <span class="php-quote">&quot;Icelandic&quot;</span>,
+    <span class="php-quote">&quot;ig_NG&quot;</span>     =&gt; <span class="php-quote">&quot;Igbo (Nigeria)&quot;</span>,                        <span class="php-quote">&quot;ig&quot;</span>        =&gt; <span class="php-quote">&quot;Igbo&quot;</span>,
+    <span class="php-quote">&quot;id_ID&quot;</span>     =&gt; <span class="php-quote">&quot;Indonesian (Indonesia)&quot;</span>,                <span class="php-quote">&quot;id&quot;</span>        =&gt; <span class="php-quote">&quot;Indonesian&quot;</span>,
+    <span class="php-quote">&quot;ga_IE&quot;</span>     =&gt; <span class="php-quote">&quot;Irish (Ireland)&quot;</span>,                       <span class="php-quote">&quot;ga&quot;</span>        =&gt; <span class="php-quote">&quot;Irish&quot;</span>,
+    <span class="php-quote">&quot;it_IT&quot;</span>     =&gt; <span class="php-quote">&quot;Italian (Italy)&quot;</span>,                       <span class="php-quote">&quot;it_CH&quot;</span>     =&gt; <span class="php-quote">&quot;Italian (Switzerland)&quot;</span>,
+    <span class="php-quote">&quot;it&quot;</span>        =&gt; <span class="php-quote">&quot;Italian&quot;</span>,                               <span class="php-quote">&quot;ja_JP&quot;</span>     =&gt; <span class="php-quote">&quot;Japanese (Japan)&quot;</span>,
+    <span class="php-quote">&quot;ja&quot;</span>        =&gt; <span class="php-quote">&quot;Japanese&quot;</span>,                              <span class="php-quote">&quot;kea_CV&quot;</span>    =&gt; <span class="php-quote">&quot;Kabuverdianu (Cape Verde)&quot;</span>,
+    <span class="php-quote">&quot;kea&quot;</span>       =&gt; <span class="php-quote">&quot;Kabuverdianu&quot;</span>,                          <span class="php-quote">&quot;kab_DZ&quot;</span>    =&gt; <span class="php-quote">&quot;Kabyle (Algeria)&quot;</span>,
+    <span class="php-quote">&quot;kab&quot;</span>       =&gt; <span class="php-quote">&quot;Kabyle&quot;</span>,                                <span class="php-quote">&quot;kl_GL&quot;</span>     =&gt; <span class="php-quote">&quot;Kalaallisut (Greenland)&quot;</span>,
+    <span class="php-quote">&quot;kl&quot;</span>        =&gt; <span class="php-quote">&quot;Kalaallisut&quot;</span>,                           <span class="php-quote">&quot;kln_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Kalenjin (Kenya)&quot;</span>,
+    <span class="php-quote">&quot;kln&quot;</span>       =&gt; <span class="php-quote">&quot;Kalenjin&quot;</span>,                              <span class="php-quote">&quot;kam_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Kamba (Kenya)&quot;</span>,
+    <span class="php-quote">&quot;kam&quot;</span>       =&gt; <span class="php-quote">&quot;Kamba&quot;</span>,                                 <span class="php-quote">&quot;kn_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Kannada (India)&quot;</span>,
+    <span class="php-quote">&quot;kn&quot;</span>        =&gt; <span class="php-quote">&quot;Kannada&quot;</span>,                               <span class="php-quote">&quot;kk_Cyrl&quot;</span>   =&gt; <span class="php-quote">&quot;Kazakh (Cyrillic)&quot;</span>,
+    <span class="php-quote">&quot;kk_Cyrl_KZ&quot;</span>=&gt; <span class="php-quote">&quot;Kazakh (Cyrillic, Kazakhstan)&quot;</span>,         <span class="php-quote">&quot;kk&quot;</span>        =&gt; <span class="php-quote">&quot;Kazakh&quot;</span>,
+    <span class="php-quote">&quot;km_KH&quot;</span>     =&gt; <span class="php-quote">&quot;Khmer (Cambodia)&quot;</span>,                      <span class="php-quote">&quot;km&quot;</span>        =&gt; <span class="php-quote">&quot;Khmer&quot;</span>,
+    <span class="php-quote">&quot;ki_KE&quot;</span>     =&gt; <span class="php-quote">&quot;Kikuyu (Kenya)&quot;</span>,                        <span class="php-quote">&quot;ki&quot;</span>        =&gt; <span class="php-quote">&quot;Kikuyu&quot;</span>,
+    <span class="php-quote">&quot;rw_RW&quot;</span>     =&gt; <span class="php-quote">&quot;Kinyarwanda (Rwanda)&quot;</span>,                  <span class="php-quote">&quot;rw&quot;</span>        =&gt; <span class="php-quote">&quot;Kinyarwanda&quot;</span>,
+    <span class="php-quote">&quot;kok_IN&quot;</span>    =&gt; <span class="php-quote">&quot;Konkani (India)&quot;</span>,                       <span class="php-quote">&quot;kok&quot;</span>       =&gt; <span class="php-quote">&quot;Konkani&quot;</span>,
+    <span class="php-quote">&quot;ko_KR&quot;</span>     =&gt; <span class="php-quote">&quot;Korean (South Korea)&quot;</span>,                  <span class="php-quote">&quot;ko&quot;</span>        =&gt; <span class="php-quote">&quot;Korean&quot;</span>,
+    <span class="php-quote">&quot;khq_ML&quot;</span>    =&gt; <span class="php-quote">&quot;Koyra Chiini (Mali)&quot;</span>,                   <span class="php-quote">&quot;khq&quot;</span>       =&gt; <span class="php-quote">&quot;Koyra Chiini&quot;</span>,
+    <span class="php-quote">&quot;ses_ML&quot;</span>    =&gt; <span class="php-quote">&quot;Koyraboro Senni (Mali)&quot;</span>,                <span class="php-quote">&quot;ses&quot;</span>       =&gt; <span class="php-quote">&quot;Koyraboro Senni&quot;</span>,
+    <span class="php-quote">&quot;lag_TZ&quot;</span>    =&gt; <span class="php-quote">&quot;Langi (Tanzania)&quot;</span>,                      <span class="php-quote">&quot;lag&quot;</span>       =&gt; <span class="php-quote">&quot;Langi&quot;</span>,
+    <span class="php-quote">&quot;lv_LV&quot;</span>     =&gt; <span class="php-quote">&quot;Latvian (Latvia)&quot;</span>,                      <span class="php-quote">&quot;lv&quot;</span>        =&gt; <span class="php-quote">&quot;Latvian&quot;</span>,
+    <span class="php-quote">&quot;lt_LT&quot;</span>     =&gt; <span class="php-quote">&quot;Lithuanian (Lithuania)&quot;</span>,                <span class="php-quote">&quot;lt&quot;</span>        =&gt; <span class="php-quote">&quot;Lithuanian&quot;</span>,
+    <span class="php-quote">&quot;luo_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Luo (Kenya)&quot;</span>,                           <span class="php-quote">&quot;luo&quot;</span>       =&gt; <span class="php-quote">&quot;Luo&quot;</span>,
+    <span class="php-quote">&quot;luy_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Luyia (Kenya)&quot;</span>,                         <span class="php-quote">&quot;luy&quot;</span>       =&gt; <span class="php-quote">&quot;Luyia&quot;</span>,
+    <span class="php-quote">&quot;mk_MK&quot;</span>     =&gt; <span class="php-quote">&quot;Macedonian (Macedonia)&quot;</span>,                <span class="php-quote">&quot;mk&quot;</span>        =&gt; <span class="php-quote">&quot;Macedonian&quot;</span>,
+    <span class="php-quote">&quot;jmc_TZ&quot;</span>    =&gt; <span class="php-quote">&quot;Machame (Tanzania)&quot;</span>,                    <span class="php-quote">&quot;jmc&quot;</span>       =&gt; <span class="php-quote">&quot;Machame&quot;</span>,
+    <span class="php-quote">&quot;kde_TZ&quot;</span>    =&gt; <span class="php-quote">&quot;Makonde (Tanzania)&quot;</span>,                    <span class="php-quote">&quot;kde&quot;</span>       =&gt; <span class="php-quote">&quot;Makonde&quot;</span>,
+    <span class="php-quote">&quot;mg_MG&quot;</span>     =&gt; <span class="php-quote">&quot;Malagasy (Madagascar)&quot;</span>,                 <span class="php-quote">&quot;mg&quot;</span>        =&gt; <span class="php-quote">&quot;Malagasy&quot;</span>,
+    <span class="php-quote">&quot;ms_BN&quot;</span>     =&gt; <span class="php-quote">&quot;Malay (Brunei)&quot;</span>,                        <span class="php-quote">&quot;ms_MY&quot;</span>     =&gt; <span class="php-quote">&quot;Malay (Malaysia)&quot;</span>,
+    <span class="php-quote">&quot;ms&quot;</span>        =&gt; <span class="php-quote">&quot;Malay&quot;</span>,                                 <span class="php-quote">&quot;ml_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Malayalam (India)&quot;</span>,
+    <span class="php-quote">&quot;ml&quot;</span>        =&gt; <span class="php-quote">&quot;Malayalam&quot;</span>,                             <span class="php-quote">&quot;mt_MT&quot;</span>     =&gt; <span class="php-quote">&quot;Maltese (Malta)&quot;</span>,
+    <span class="php-quote">&quot;mt&quot;</span>        =&gt; <span class="php-quote">&quot;Maltese&quot;</span>,                               <span class="php-quote">&quot;gv_GB&quot;</span>     =&gt; <span class="php-quote">&quot;Manx (United Kingdom)&quot;</span>,
+    <span class="php-quote">&quot;gv&quot;</span>        =&gt; <span class="php-quote">&quot;Manx&quot;</span>,                                  <span class="php-quote">&quot;mr_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Marathi (India)&quot;</span>,
+    <span class="php-quote">&quot;mr&quot;</span>        =&gt; <span class="php-quote">&quot;Marathi&quot;</span>,                               <span class="php-quote">&quot;mas_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Masai (Kenya)&quot;</span>,
+    <span class="php-quote">&quot;mas_TZ&quot;</span>    =&gt; <span class="php-quote">&quot;Masai (Tanzania)&quot;</span>,                      <span class="php-quote">&quot;mas&quot;</span>       =&gt; <span class="php-quote">&quot;Masai&quot;</span>,
+    <span class="php-quote">&quot;mer_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Meru (Kenya)&quot;</span>,                          <span class="php-quote">&quot;mer&quot;</span>       =&gt; <span class="php-quote">&quot;Meru&quot;</span>,
+    <span class="php-quote">&quot;mfe_MU&quot;</span>    =&gt; <span class="php-quote">&quot;Morisyen (Mauritius)&quot;</span>,                  <span class="php-quote">&quot;mfe&quot;</span>       =&gt; <span class="php-quote">&quot;Morisyen&quot;</span>,
+    <span class="php-quote">&quot;naq_NA&quot;</span>    =&gt; <span class="php-quote">&quot;Nama (Namibia)&quot;</span>,                        <span class="php-quote">&quot;naq&quot;</span>       =&gt; <span class="php-quote">&quot;Nama&quot;</span>,
+    <span class="php-quote">&quot;ne_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Nepali (India)&quot;</span>,                        <span class="php-quote">&quot;ne_NP&quot;</span>     =&gt; <span class="php-quote">&quot;Nepali (Nepal)&quot;</span>,
+    <span class="php-quote">&quot;ne&quot;</span>        =&gt; <span class="php-quote">&quot;Nepali&quot;</span>,                                <span class="php-quote">&quot;nd_ZW&quot;</span>     =&gt; <span class="php-quote">&quot;North Ndebele (Zimbabwe)&quot;</span>,
+    <span class="php-quote">&quot;nd&quot;</span>        =&gt; <span class="php-quote">&quot;North Ndebele&quot;</span>,                         <span class="php-quote">&quot;nb_NO&quot;</span>     =&gt; <span class="php-quote">&quot;Norwegian Bokmål (Norway)&quot;</span>,
+    <span class="php-quote">&quot;nb&quot;</span>        =&gt; <span class="php-quote">&quot;Norwegian Bokmål&quot;</span>,                     <span class="php-quote">&quot;nn_NO&quot;</span>     =&gt; <span class="php-quote">&quot;Norwegian Nynorsk (Norway)&quot;</span>,
+    <span class="php-quote">&quot;nn&quot;</span>        =&gt; <span class="php-quote">&quot;Norwegian Nynorsk&quot;</span>,                     <span class="php-quote">&quot;nyn_UG&quot;</span>    =&gt; <span class="php-quote">&quot;Nyankole (Uganda)&quot;</span>,
+    <span class="php-quote">&quot;nyn&quot;</span>       =&gt; <span class="php-quote">&quot;Nyankole&quot;</span>,                              <span class="php-quote">&quot;or_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Oriya (India)&quot;</span>,
+    <span class="php-quote">&quot;or&quot;</span>        =&gt; <span class="php-quote">&quot;Oriya&quot;</span>,                                 <span class="php-quote">&quot;om_ET&quot;</span>     =&gt; <span class="php-quote">&quot;Oromo (Ethiopia)&quot;</span>,
+    <span class="php-quote">&quot;om_KE&quot;</span>     =&gt; <span class="php-quote">&quot;Oromo (Kenya)&quot;</span>,                         <span class="php-quote">&quot;om&quot;</span>        =&gt; <span class="php-quote">&quot;Oromo&quot;</span>,
+    <span class="php-quote">&quot;ps_AF&quot;</span>     =&gt; <span class="php-quote">&quot;Pashto (Afghanistan)&quot;</span>,                  <span class="php-quote">&quot;ps&quot;</span>        =&gt; <span class="php-quote">&quot;Pashto&quot;</span>,
+    <span class="php-quote">&quot;fa_AF&quot;</span>     =&gt; <span class="php-quote">&quot;Persian (Afghanistan)&quot;</span>,                 <span class="php-quote">&quot;fa_IR&quot;</span>     =&gt; <span class="php-quote">&quot;Persian (Iran)&quot;</span>,
+    <span class="php-quote">&quot;fa&quot;</span>        =&gt; <span class="php-quote">&quot;Persian&quot;</span>,                               <span class="php-quote">&quot;pl_PL&quot;</span>     =&gt; <span class="php-quote">&quot;Polish (Poland)&quot;</span>,
+    <span class="php-quote">&quot;pl&quot;</span>        =&gt; <span class="php-quote">&quot;Polish&quot;</span>,                                <span class="php-quote">&quot;pt_BR&quot;</span>     =&gt; <span class="php-quote">&quot;Portuguese (Brazil)&quot;</span>,
+    <span class="php-quote">&quot;pt_GW&quot;</span>     =&gt; <span class="php-quote">&quot;Portuguese (Guinea-Bissau)&quot;</span>,            <span class="php-quote">&quot;pt_MZ&quot;</span>     =&gt; <span class="php-quote">&quot;Portuguese (Mozambique)&quot;</span>,
+    <span class="php-quote">&quot;pt_PT&quot;</span>     =&gt; <span class="php-quote">&quot;Portuguese (Portugal)&quot;</span>,                 <span class="php-quote">&quot;pt&quot;</span>        =&gt; <span class="php-quote">&quot;Portuguese&quot;</span>,
+    <span class="php-quote">&quot;pa_Arab&quot;</span>   =&gt; <span class="php-quote">&quot;Punjabi (Arabic)&quot;</span>,                      <span class="php-quote">&quot;pa_Arab_PK&quot;</span>=&gt; <span class="php-quote">&quot;Punjabi (Arabic, Pakistan)&quot;</span>,
+    <span class="php-quote">&quot;pa_Guru&quot;</span>   =&gt; <span class="php-quote">&quot;Punjabi (Gurmukhi)&quot;</span>,                    <span class="php-quote">&quot;pa_Guru_IN&quot;</span>=&gt; <span class="php-quote">&quot;Punjabi (Gurmukhi, India)&quot;</span>,
+    <span class="php-quote">&quot;pa&quot;</span>        =&gt; <span class="php-quote">&quot;Punjabi&quot;</span>,                               <span class="php-quote">&quot;ro_MD&quot;</span>     =&gt; <span class="php-quote">&quot;Romanian (Moldova)&quot;</span>,
+    <span class="php-quote">&quot;ro_RO&quot;</span>     =&gt; <span class="php-quote">&quot;Romanian (Romania)&quot;</span>,                    <span class="php-quote">&quot;ro&quot;</span>        =&gt; <span class="php-quote">&quot;Romanian&quot;</span>,
+    <span class="php-quote">&quot;rm_CH&quot;</span>     =&gt; <span class="php-quote">&quot;Romansh (Switzerland)&quot;</span>,                 <span class="php-quote">&quot;rm&quot;</span>        =&gt; <span class="php-quote">&quot;Romansh&quot;</span>,
+    <span class="php-quote">&quot;rof_TZ&quot;</span>    =&gt; <span class="php-quote">&quot;Rombo (Tanzania)&quot;</span>,                      <span class="php-quote">&quot;rof&quot;</span>       =&gt; <span class="php-quote">&quot;Rombo&quot;</span>,
+    <span class="php-quote">&quot;ru_MD&quot;</span>     =&gt; <span class="php-quote">&quot;Russian (Moldova)&quot;</span>,                     <span class="php-quote">&quot;ru_RU&quot;</span>     =&gt; <span class="php-quote">&quot;Russian (Russia)&quot;</span>,
+    <span class="php-quote">&quot;ru_UA&quot;</span>     =&gt; <span class="php-quote">&quot;Russian (Ukraine)&quot;</span>,                     <span class="php-quote">&quot;ru&quot;</span>        =&gt; <span class="php-quote">&quot;Russian&quot;</span>,
+    <span class="php-quote">&quot;rwk_TZ&quot;</span>    =&gt; <span class="php-quote">&quot;Rwa (Tanzania)&quot;</span>,                        <span class="php-quote">&quot;rwk&quot;</span>       =&gt; <span class="php-quote">&quot;Rwa&quot;</span>,
+    <span class="php-quote">&quot;saq_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Samburu (Kenya)&quot;</span>,                       <span class="php-quote">&quot;saq&quot;</span>       =&gt; <span class="php-quote">&quot;Samburu&quot;</span>,
+    <span class="php-quote">&quot;sg_CF&quot;</span>     =&gt; <span class="php-quote">&quot;Sango (Central African Republic)&quot;</span>,      <span class="php-quote">&quot;sg&quot;</span>        =&gt; <span class="php-quote">&quot;Sango&quot;</span>,
+    <span class="php-quote">&quot;seh_MZ&quot;</span>    =&gt; <span class="php-quote">&quot;Sena (Mozambique)&quot;</span>,                     <span class="php-quote">&quot;seh&quot;</span>       =&gt; <span class="php-quote">&quot;Sena&quot;</span>,
+    <span class="php-quote">&quot;sr_Cyrl&quot;</span>   =&gt; <span class="php-quote">&quot;Serbian (Cyrillic)&quot;</span>,                    <span class="php-quote">&quot;sr_Cyrl_BA&quot;</span>=&gt; <span class="php-quote">&quot;Serbian (Cyrillic, Bosnia and Herzegovina)&quot;</span>,
+    <span class="php-quote">&quot;sr_Cyrl_ME&quot;</span>=&gt; <span class="php-quote">&quot;Serbian (Cyrillic, Montenegro)&quot;</span>,        <span class="php-quote">&quot;sr_Cyrl_RS&quot;</span>=&gt; <span class="php-quote">&quot;Serbian (Cyrillic, Serbia)&quot;</span>,
+    <span class="php-quote">&quot;sr_Latn&quot;</span>   =&gt; <span class="php-quote">&quot;Serbian (Latin)&quot;</span>,                       <span class="php-quote">&quot;sr_Latn_BA&quot;</span>=&gt; <span class="php-quote">&quot;Serbian (Latin, Bosnia and Herzegovina)&quot;</span>,
+    <span class="php-quote">&quot;sr_Latn_ME&quot;</span>=&gt; <span class="php-quote">&quot;Serbian (Latin, Montenegro)&quot;</span>,           <span class="php-quote">&quot;sr_Latn_RS&quot;</span>=&gt; <span class="php-quote">&quot;Serbian (Latin, Serbia)&quot;</span>,
+    <span class="php-quote">&quot;sr&quot;</span>        =&gt; <span class="php-quote">&quot;Serbian&quot;</span>,                               <span class="php-quote">&quot;sn_ZW&quot;</span>     =&gt; <span class="php-quote">&quot;Shona (Zimbabwe)&quot;</span>,
+    <span class="php-quote">&quot;sn&quot;</span>        =&gt; <span class="php-quote">&quot;Shona&quot;</span>,                                 <span class="php-quote">&quot;ii_CN&quot;</span>     =&gt; <span class="php-quote">&quot;Sichuan Yi (China)&quot;</span>,
+    <span class="php-quote">&quot;ii&quot;</span>        =&gt; <span class="php-quote">&quot;Sichuan Yi&quot;</span>,                            <span class="php-quote">&quot;si_LK&quot;</span>     =&gt; <span class="php-quote">&quot;Sinhala (Sri Lanka)&quot;</span>,
+    <span class="php-quote">&quot;si&quot;</span>        =&gt; <span class="php-quote">&quot;Sinhala&quot;</span>,                               <span class="php-quote">&quot;sk_SK&quot;</span>     =&gt; <span class="php-quote">&quot;Slovak (Slovakia)&quot;</span>,
+    <span class="php-quote">&quot;sk&quot;</span>        =&gt; <span class="php-quote">&quot;Slovak&quot;</span>,                                <span class="php-quote">&quot;sl_SI&quot;</span>     =&gt; <span class="php-quote">&quot;Slovenian (Slovenia)&quot;</span>,
+    <span class="php-quote">&quot;sl&quot;</span>        =&gt; <span class="php-quote">&quot;Slovenian&quot;</span>,                             <span class="php-quote">&quot;xog_UG&quot;</span>    =&gt; <span class="php-quote">&quot;Soga (Uganda)&quot;</span>,
+    <span class="php-quote">&quot;xog&quot;</span>       =&gt; <span class="php-quote">&quot;Soga&quot;</span>,                                  <span class="php-quote">&quot;so_DJ&quot;</span>     =&gt; <span class="php-quote">&quot;Somali (Djibouti)&quot;</span>,
+    <span class="php-quote">&quot;so_ET&quot;</span>     =&gt; <span class="php-quote">&quot;Somali (Ethiopia)&quot;</span>,                     <span class="php-quote">&quot;so_KE&quot;</span>     =&gt; <span class="php-quote">&quot;Somali (Kenya)&quot;</span>,
+    <span class="php-quote">&quot;so_SO&quot;</span>     =&gt; <span class="php-quote">&quot;Somali (Somalia)&quot;</span>,                      <span class="php-quote">&quot;so&quot;</span>        =&gt; <span class="php-quote">&quot;Somali&quot;</span>,
+    <span class="php-quote">&quot;es_AR&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Argentina)&quot;</span>,                   <span class="php-quote">&quot;es_BO&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Bolivia)&quot;</span>,
+    <span class="php-quote">&quot;es_CL&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Chile)&quot;</span>,                       <span class="php-quote">&quot;es_CO&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Colombia)&quot;</span>,
+    <span class="php-quote">&quot;es_CR&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Costa Rica)&quot;</span>,                  <span class="php-quote">&quot;es_DO&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Dominican Republic)&quot;</span>,
+    <span class="php-quote">&quot;es_EC&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Ecuador)&quot;</span>,                     <span class="php-quote">&quot;es_SV&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (El Salvador)&quot;</span>,
+    <span class="php-quote">&quot;es_GQ&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Equatorial Guinea)&quot;</span>,           <span class="php-quote">&quot;es_GT&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Guatemala)&quot;</span>,
+    <span class="php-quote">&quot;es_HN&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Honduras)&quot;</span>,                    <span class="php-quote">&quot;es_419&quot;</span>    =&gt; <span class="php-quote">&quot;Spanish (Latin America)&quot;</span>,
+    <span class="php-quote">&quot;es_MX&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Mexico)&quot;</span>,                      <span class="php-quote">&quot;es_NI&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Nicaragua)&quot;</span>,
+    <span class="php-quote">&quot;es_PA&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Panama)&quot;</span>,                      <span class="php-quote">&quot;es_PY&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Paraguay)&quot;</span>,
+    <span class="php-quote">&quot;es_PE&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Peru)&quot;</span>,                        <span class="php-quote">&quot;es_PR&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Puerto Rico)&quot;</span>,
+    <span class="php-quote">&quot;es_ES&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Spain)&quot;</span>,                       <span class="php-quote">&quot;es_US&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (United States)&quot;</span>,
+    <span class="php-quote">&quot;es_UY&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Uruguay)&quot;</span>,                     <span class="php-quote">&quot;es_VE&quot;</span>     =&gt; <span class="php-quote">&quot;Spanish (Venezuela)&quot;</span>,
+    <span class="php-quote">&quot;es&quot;</span>        =&gt; <span class="php-quote">&quot;Spanish&quot;</span>,                               <span class="php-quote">&quot;sw_KE&quot;</span>     =&gt; <span class="php-quote">&quot;Swahili (Kenya)&quot;</span>,
+    <span class="php-quote">&quot;sw_TZ&quot;</span>     =&gt; <span class="php-quote">&quot;Swahili (Tanzania)&quot;</span>,                    <span class="php-quote">&quot;sw&quot;</span>        =&gt; <span class="php-quote">&quot;Swahili&quot;</span>,
+    <span class="php-quote">&quot;sv_FI&quot;</span>     =&gt; <span class="php-quote">&quot;Swedish (Finland)&quot;</span>,                     <span class="php-quote">&quot;sv_SE&quot;</span>     =&gt; <span class="php-quote">&quot;Swedish (Sweden)&quot;</span>,
+    <span class="php-quote">&quot;sv&quot;</span>        =&gt; <span class="php-quote">&quot;Swedish&quot;</span>,                               <span class="php-quote">&quot;gsw_CH&quot;</span>    =&gt; <span class="php-quote">&quot;Swiss German (Switzerland)&quot;</span>,
+    <span class="php-quote">&quot;gsw&quot;</span>       =&gt; <span class="php-quote">&quot;Swiss German&quot;</span>,                          <span class="php-quote">&quot;shi_Latn&quot;</span>  =&gt; <span class="php-quote">&quot;Tachelhit (Latin)&quot;</span>,
+    <span class="php-quote">&quot;shi_Latn_MA&quot;</span>=&gt; <span class="php-quote">&quot;Tachelhit (Latin, Morocco)&quot;</span>,           <span class="php-quote">&quot;shi_Tfng&quot;</span>  =&gt; <span class="php-quote">&quot;Tachelhit (Tifinagh)&quot;</span>,
+    <span class="php-quote">&quot;shi_Tfng_MA&quot;</span>=&gt; <span class="php-quote">&quot;Tachelhit (Tifinagh, Morocco)&quot;</span>,        <span class="php-quote">&quot;shi&quot;</span>       =&gt; <span class="php-quote">&quot;Tachelhit&quot;</span>,
+    <span class="php-quote">&quot;dav_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Taita (Kenya)&quot;</span>,                         <span class="php-quote">&quot;dav&quot;</span>       =&gt; <span class="php-quote">&quot;Taita&quot;</span>,
+    <span class="php-quote">&quot;ta_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Tamil (India)&quot;</span>,                         <span class="php-quote">&quot;ta_LK&quot;</span>     =&gt; <span class="php-quote">&quot;Tamil (Sri Lanka)&quot;</span>,
+    <span class="php-quote">&quot;ta&quot;</span>        =&gt; <span class="php-quote">&quot;Tamil&quot;</span>,                                 <span class="php-quote">&quot;te_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Telugu (India)&quot;</span>,
+    <span class="php-quote">&quot;te&quot;</span>        =&gt; <span class="php-quote">&quot;Telugu&quot;</span>,                                <span class="php-quote">&quot;teo_KE&quot;</span>    =&gt; <span class="php-quote">&quot;Teso (Kenya)&quot;</span>,
+    <span class="php-quote">&quot;teo_UG&quot;</span>    =&gt; <span class="php-quote">&quot;Teso (Uganda)&quot;</span>,                         <span class="php-quote">&quot;teo&quot;</span>       =&gt; <span class="php-quote">&quot;Teso&quot;</span>,
+    <span class="php-quote">&quot;th_TH&quot;</span>     =&gt; <span class="php-quote">&quot;Thai (Thailand)&quot;</span>,                       <span class="php-quote">&quot;th&quot;</span>        =&gt; <span class="php-quote">&quot;Thai&quot;</span>,
+    <span class="php-quote">&quot;bo_CN&quot;</span>     =&gt; <span class="php-quote">&quot;Tibetan (China)&quot;</span>,                       <span class="php-quote">&quot;bo_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Tibetan (India)&quot;</span>,
+    <span class="php-quote">&quot;bo&quot;</span>        =&gt; <span class="php-quote">&quot;Tibetan&quot;</span>,                               <span class="php-quote">&quot;ti_ER&quot;</span>     =&gt; <span class="php-quote">&quot;Tigrinya (Eritrea)&quot;</span>,
+    <span class="php-quote">&quot;ti_ET&quot;</span>     =&gt; <span class="php-quote">&quot;Tigrinya (Ethiopia)&quot;</span>,                   <span class="php-quote">&quot;ti&quot;</span>        =&gt; <span class="php-quote">&quot;Tigrinya&quot;</span>,
+    <span class="php-quote">&quot;to_TO&quot;</span>     =&gt; <span class="php-quote">&quot;Tonga (Tonga)&quot;</span>,                         <span class="php-quote">&quot;to&quot;</span>        =&gt; <span class="php-quote">&quot;Tonga&quot;</span>,
+    <span class="php-quote">&quot;tr_TR&quot;</span>     =&gt; <span class="php-quote">&quot;Turkish (Turkey)&quot;</span>,                      <span class="php-quote">&quot;tr&quot;</span>        =&gt; <span class="php-quote">&quot;Turkish&quot;</span>,
+    <span class="php-quote">&quot;uk_UA&quot;</span>     =&gt; <span class="php-quote">&quot;Ukrainian (Ukraine)&quot;</span>,                   <span class="php-quote">&quot;uk&quot;</span>        =&gt; <span class="php-quote">&quot;Ukrainian&quot;</span>,
+    <span class="php-quote">&quot;ur_IN&quot;</span>     =&gt; <span class="php-quote">&quot;Urdu (India)&quot;</span>,                          <span class="php-quote">&quot;ur_PK&quot;</span>     =&gt; <span class="php-quote">&quot;Urdu (Pakistan)&quot;</span>,
+    <span class="php-quote">&quot;ur&quot;</span>        =&gt; <span class="php-quote">&quot;Urdu&quot;</span>,                                  <span class="php-quote">&quot;uz_Arab&quot;</span>   =&gt; <span class="php-quote">&quot;Uzbek (Arabic)&quot;</span>,
+    <span class="php-quote">&quot;uz_Arab_AF&quot;</span>=&gt; <span class="php-quote">&quot;Uzbek (Arabic, Afghanistan)&quot;</span>,           <span class="php-quote">&quot;uz_Cyrl&quot;</span>   =&gt; <span class="php-quote">&quot;Uzbek (Cyrillic)&quot;</span>,
+    <span class="php-quote">&quot;uz_Cyrl_UZ&quot;</span>=&gt; <span class="php-quote">&quot;Uzbek (Cyrillic, Uzbekistan)&quot;</span>,          <span class="php-quote">&quot;uz_Latn&quot;</span>   =&gt; <span class="php-quote">&quot;Uzbek (Latin)&quot;</span>,
+    <span class="php-quote">&quot;uz_Latn_UZ&quot;</span>=&gt; <span class="php-quote">&quot;Uzbek (Latin, Uzbekistan)&quot;</span>,             <span class="php-quote">&quot;uz&quot;</span>        =&gt; <span class="php-quote">&quot;Uzbek&quot;</span>,
+    <span class="php-quote">&quot;vi_VN&quot;</span>     =&gt; <span class="php-quote">&quot;Vietnamese (Vietnam)&quot;</span>,                  <span class="php-quote">&quot;vi&quot;</span>        =&gt; <span class="php-quote">&quot;Vietnamese&quot;</span>,
+    <span class="php-quote">&quot;vun_TZ&quot;</span>    =&gt; <span class="php-quote">&quot;Vunjo (Tanzania)&quot;</span>,                      <span class="php-quote">&quot;vun&quot;</span>       =&gt; <span class="php-quote">&quot;Vunjo&quot;</span>,
+    <span class="php-quote">&quot;cy_GB&quot;</span>     =&gt; <span class="php-quote">&quot;Welsh (United Kingdom)&quot;</span>,                <span class="php-quote">&quot;cy&quot;</span>        =&gt; <span class="php-quote">&quot;Welsh&quot;</span>,
+    <span class="php-quote">&quot;yo_NG&quot;</span>     =&gt; <span class="php-quote">&quot;Yoruba (Nigeria)&quot;</span>,                      <span class="php-quote">&quot;yo&quot;</span>        =&gt; <span class="php-quote">&quot;Yoruba&quot;</span>,
+    <span class="php-quote">&quot;zu_ZA&quot;</span>     =&gt; <span class="php-quote">&quot;Zulu (South Africa)&quot;</span>,                   <span class="php-quote">&quot;zu&quot;</span>        =&gt; <span class="php-quote">&quot;Zulu&quot;</span>
+]</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-MvcCore.Ext.Forms.Fields.Select.html#properties">MvcCore\Ext\Forms\Fields\Select</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#$templates"><var>$templates</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#$validators"><var>$validators</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Fields.Select.html#$value"><var>$value</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+	<table class="summary used">
+	<caption>Properties used from <a href="class-MvcCore.Ext.Forms.Field.Props.html#properties">MvcCore\Ext\Forms\Field\Props</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$controlAttrs"><var>$controlAttrs</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$cssClasses"><var>$cssClasses</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$cssSupportingFile"><var>$cssSupportingFile</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$declaredProtectedProperties"><var>$declaredProtectedProperties</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$errors"><var>$errors</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$form"><var>$form</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$id"><var>$id</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$jsClassName"><var>$jsClassName</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$jsSupportingFile"><var>$jsSupportingFile</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$name"><var>$name</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$templates"><var>$templates</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$title"><var>$title</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$translateTitle"><var>$translateTitle</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$validators"><var>$validators</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$value"><var>$value</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$view"><var>$view</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.html#$viewScript"><var>$viewScript</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Properties used from <a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#properties">MvcCore\Ext\Forms\Field\Props\Label</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#$label"><var>$label</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#$labelAttrs"><var>$labelAttrs</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#$labelSide"><var>$labelSide</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#$renderMode"><var>$renderMode</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Label.html#$translateLabel"><var>$translateLabel</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Properties used from <a href="class-MvcCore.Ext.Forms.Field.Props.AutoComplete.html#properties">MvcCore\Ext\Forms\Field\Props\AutoComplete</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.AutoComplete.html#$autoComplete"><var>$autoComplete</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Properties used from <a href="class-MvcCore.Ext.Forms.Field.Props.Multiple.html#properties">MvcCore\Ext\Forms\Field\Props\Multiple</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Multiple.html#$multiple"><var>$multiple</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Properties used from <a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#properties">MvcCore\Ext\Forms\Field\Props\Options</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#$flattenOptions"><var>$flattenOptions</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#$options"><var>$options</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Options.html#$translateOptions"><var>$translateOptions</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Properties used from <a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#properties">MvcCore\Ext\Forms\Field\Props\MinMaxOptions</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#$maxOptions"><var>$maxOptions</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#$maxOptionsBubbleMessage"><var>$maxOptionsBubbleMessage</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#$minOptions"><var>$minOptions</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#$minOptionsBubbleMessage"><var>$minOptionsBubbleMessage</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.MinMaxOptions.html#$requiredBubbleMessage"><var>$requiredBubbleMessage</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Properties used from <a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html#properties">MvcCore\Ext\Forms\Field\Props\NullOptionText</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html#$nullOptionText"><var>$nullOptionText</var></a>, 
+			<a href="class-MvcCore.Ext.Forms.Field.Props.NullOptionText.html#$translateNullOptionText"><var>$translateNullOptionText</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Properties used from <a href="class-MvcCore.Ext.Forms.Field.Props.Size.html#properties">MvcCore\Ext\Forms\Field\Props\Size</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-MvcCore.Ext.Forms.Field.Props.Size.html#$size"><var>$size</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+</div>
+
+	<div id="footer">
+		MvcCore API Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?2ab812383cb4b212c43712f7c21ac059c51885eb"></script>
+<script src="elementlist.js?50c78828258582bde9515f2669013c1b567efe79"></script>
+</body>
+</html>

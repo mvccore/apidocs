@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class MvcCore\Ext\View\Helpers\LineBreaks | MvcCore</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-MvcCore.html">
+						MvcCore<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-MvcCore.Ext.html">
+						Ext<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.html">
+						Auth<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Auth.Virtual.html">
+						Virtual					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.html">
+						Debug<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Debug.Tracy.html">
+						Tracy					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.html">
+						Form<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Form.Validators.html">
+						Validators					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Request.html">
+						Request					</a>
+
+						</li>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.html">
+						Router<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-MvcCore.Ext.Router.Lang.html">
+						Lang					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-MvcCore.Ext.View.html">
+						View<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-MvcCore.Ext.View.Helpers.html">
+						Helpers					</a>
+
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-MvcCore.Ext.View.Helpers.Assets.html">Assets</a></li>
+				<li><a href="class-MvcCore.Ext.View.Helpers.Css.html">Css</a></li>
+				<li><a href="class-MvcCore.Ext.View.Helpers.Js.html">Js</a></li>
+				<li class="active"><a href="class-MvcCore.Ext.View.Helpers.LineBreaks.html">LineBreaks</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-MvcCore.Ext.View.Helpers.html" title="Summary of MvcCore\Ext\View\Helpers"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class LineBreaks</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-MvcCore.html">MvcCore</a>\<a href="namespace-MvcCore.Ext.html">Ext</a>\<a href="namespace-MvcCore.Ext.View.html">View</a>\<a href="namespace-MvcCore.Ext.View.Helpers.html">Helpers</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#16-280" title="Go to source code">ext-view-helper-linebreaks/src/MvcCore/Ext/View/Helpers/LineBreaks.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="GetInstance" id="_GetInstance">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetInstance">#</a>
+		<code><a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#91-103" title="Go to source code">GetInstance</a>( <span><code><a href="class-MvcCore.View.html">MvcCore\View</a></code> <var>&amp; $view</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Create view helper instance.
+To configure view helper instance, create it by this method
+in your $baseController->preDispatch(); method, after view
+instance inside controller is created, then you can configure
+anything you want. If Controller contains static property 'Lang',
+language for this view helper will be loaded from this property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create view helper instance.
+To configure view helper instance, create it by this method
+in your $baseController->preDispatch(); method, after view
+instance inside controller is created, then you can configure
+anything you want. If Controller contains static property 'Lang',
+language for this view helper will be loaded from this property.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#105-122" title="Go to source code">__construct</a>( <span><code><a href="class-MvcCore.View.html">MvcCore\View</a></code> <var>&amp; $view</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Create view helper instance.
+To configure view helper instance, create it by this method
+in your $baseController->preDispatch(); method, after view
+instance inside controller is created, then you can configure
+anything you want. If Controller contains static property 'Lang',
+language for this view helper will be loaded from this property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create view helper instance.
+To configure view helper instance, create it by this method
+in your $baseController->preDispatch(); method, after view
+instance inside controller is created, then you can configure
+anything you want. If Controller contains static property 'Lang',
+language for this view helper will be loaded from this property.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetWeekWords" id="_SetWeekWords">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.View.Helpers.LineBreaks.html">MvcCore\Ext\View\Helpers\LineBreaks</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetWeekWords">#</a>
+		<code><a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#124-137" title="Go to source code">SetWeekWords</a>( <span>string <var>$weekWords</var></span>, <span>string <var>$lang</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set weak words, where you need to place a HTML space entity,
+to not break line after each configured weak word in processing text.
+All words has to be configured as single string with all weak words
+separated by comma character without any space.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set weak words, where you need to place a HTML space entity,
+to not break line after each configured weak word in processing text.
+All words has to be configured as single string with all weak words
+separated by comma character without any space.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$weekWords</var></dt>
+					<dd>all weak words as string separated by comma character</dd>
+					<dt><var>$lang</var></dt>
+					<dd>optional, international language code</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.View.Helpers.LineBreaks.html">MvcCore\Ext\View\Helpers\LineBreaks</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetShortcuts" id="_SetShortcuts">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.View.Helpers.LineBreaks.html">MvcCore\Ext\View\Helpers\LineBreaks</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetShortcuts">#</a>
+		<code><a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#139-150" title="Go to source code">SetShortcuts</a>( <span>string[] <var>$shortcuts</var></span>, <span>string <var>$lang</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set special shortcuts for specific language to not have any line break inside.
+If language is not specified, there is used default language from controller instance.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set special shortcuts for specific language to not have any line break inside.
+If language is not specified, there is used default language from controller instance.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$shortcuts</var></dt>
+					<dd>shortcuts as array of strings</dd>
+					<dt><var>$lang</var></dt>
+					<dd>optional, international language code</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.View.Helpers.LineBreaks.html">MvcCore\Ext\View\Helpers\LineBreaks</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SetUnits" id="_SetUnits">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-MvcCore.Ext.View.Helpers.LineBreaks.html">MvcCore\Ext\View\Helpers\LineBreaks</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SetUnits">#</a>
+		<code><a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#152-164" title="Go to source code">SetUnits</a>( <span>string <var>$units</var></span> )</code>
+
+		<div class="description short">
+			<p>Set units, where you need to place a HTML space entity,
+to not break line before each configured unit where is founded digit
+character before unit and whitespace before in source text.
+All units has to be configured as single string with all units
+separated by comma character without any space.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set units, where you need to place a HTML space entity,
+to not break line before each configured unit where is founded digit
+character before unit and whitespace before in source text.
+All units has to be configured as single string with all units
+separated by comma character without any space.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$units</var></dt>
+					<dd>all units as string separated by comma character</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-MvcCore.Ext.View.Helpers.LineBreaks.html">MvcCore\Ext\View\Helpers\LineBreaks</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWeekWordsUnitsAndShortcuts" id="_getWeekWordsUnitsAndShortcuts">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWeekWordsUnitsAndShortcuts">#</a>
+		<code><a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#166-189" title="Go to source code">getWeekWordsUnitsAndShortcuts</a>( <span>string <var>$lang</var></span> )</code>
+
+		<div class="description short">
+			<p>Get weak words as array of strings, units and shortcuts.
+as array of string for currently processed language.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get weak words as array of strings, units and shortcuts.
+as array of string for currently processed language.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$lang</var></dt>
+					<dd>international language code</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="LineBreaks" id="_LineBreaks">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_LineBreaks">#</a>
+		<code><a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#191-247" title="Go to source code">LineBreaks</a>( <span>string <var>$text</var></span>, <span>string <var>$lang</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			<p>Process configured weak words and units and place HTML space entity
+where is necessary to not line break source text where it's not wanted.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Process configured weak words and units and place HTML space entity
+where is necessary to not line break source text where it's not wanted.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd>source text</dd>
+					<dt><var>$lang</var></dt>
+					<dd>optional, international language code</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="processWeakWord" id="_processWeakWord">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_processWeakWord">#</a>
+		<code><a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#249-278" title="Go to source code">processWeakWord</a>( <span>string <var>$word</var></span> )</code>
+
+		<div class="description short">
+			<p>Process single weak word - place HTML space entity
+where is necessary to not line break source text where it's not wanted.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Process single weak word - place HTML space entity
+where is necessary to not line break source text where it's not wanted.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$word</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="VERSION" id="VERSION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#18-23" title="Go to source code"><b>VERSION</b></a>
+			</code>
+
+			<div class="description short">
+				<p>MvcCore Extension - View Helper - Line Breaks - version:
+Comparation by PHP function version_compare();</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>MvcCore Extension - View Helper - Line Breaks - version:
+Comparation by PHP function version_compare();</p>
+
+					<h4>See</h4>
+					<div class="list">
+							http://php.net/manual/en/function.version-compare.php<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#VERSION" class="anchor">#</a>
+				<code><span class="php-quote">'4.2.0'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="WeekWords" id="$WeekWords">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#24-35" title="Go to source code"><var>$WeekWords</var></a>
+
+			<div class="description short">
+				<p>Weak words by international language code as array key.
+Weak words are words, where you dont't want to have a line break after.
+Weak words have to be configured as string with all weak words separated
+by comma character without any spaces.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Weak words by international language code as array key.
+Weak words are words, where you dont't want to have a line break after.
+Weak words have to be configured as string with all weak words separated
+by comma character without any spaces.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$WeekWords" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(
+    <span class="php-quote">'en'</span>    =&gt; <span class="php-quote">'a,an,the,and,but,or,when,of,in,to,with'</span>,
+    <span class="php-comment">// single syllable conjunctions for Czech/Slovak</span>
+    <span class="php-quote">&quot;cs&quot;</span>    =&gt; <span class="php-quote">&quot;a,ač,aj,ak,ať,ba,co,či,do,i,k,ke,ku,o,pro,při,s,sa,se,si,sú,v,ve,z,za,ze,že&quot;</span>,
+)</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Shortcuts" id="$Shortcuts">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#37-43" title="Go to source code"><var>$Shortcuts</var></a>
+
+			<div class="description short">
+				<p>Special shortcuts to not have any line break inside, keyed by language.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Special shortcuts to not have any line break inside, keyed by language.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Shortcuts" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(
+    <span class="php-quote">&quot;cs&quot;</span>    =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'př. kr.'</span>, <span class="php-quote">'př. n. l.'</span>, <span class="php-quote">'s. r. o.'</span>, <span class="php-quote">'a. s.'</span>, <span class="php-quote">'v. o. s.'</span>, <span class="php-quote">'o. s. ř.'</span>,),
+)</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Units" id="$Units">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#45-52" title="Go to source code"><var>$Units</var></a>
+
+			<div class="description short">
+				<p>Units are very short words, where you dont't want to have a line break before,
+where is any digit before catched unit word and space before catched unit word.
+Units have to be configured as string with all units separated
+by comma character without any spaces.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Units are very short words, where you dont't want to have a line break before,
+where is any digit before catched unit word and space before catched unit word.
+Units have to be configured as string with all units separated
+by comma character without any spaces.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Units" class="anchor">#</a>
+				<code><span class="php-quote">&quot;%,‰,mm,cm,dm,m,km,g,dkg,kg,t,ar,ha,ml,dcl,l,cm²,m²,km²,cm³,m³,°C,°F,K&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="instance" id="$instance">
+		<td class="attributes"><code>
+			protected static 
+			<code><a href="class-MvcCore.Ext.View.Helpers.LineBreaks.html">MvcCore\Ext\View\Helpers\LineBreaks</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#54-58" title="Go to source code"><var>$instance</var></a>
+
+			<div class="description short">
+				<p>Singleton instance.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Singleton instance.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$instance" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="lang" id="$lang">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#60-65" title="Go to source code"><var>$lang</var></a>
+
+			<div class="description short">
+				<p>Language used for text processing as default.
+All text processing shoud be called with custom language value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Language used for text processing as default.
+All text processing shoud be called with custom language value.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$lang" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="text" id="$text">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#67-71" title="Go to source code"><var>$text</var></a>
+
+			<div class="description short">
+				<p>Source text currently processed.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Source text currently processed.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$text" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="weekWords" id="$weekWords">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#73-77" title="Go to source code"><var>$weekWords</var></a>
+
+			<div class="description short">
+				<p>Store with weak words exploded into single strings, keyed by language.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Store with weak words exploded into single strings, keyed by language.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$weekWords" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="units" id="$units">
+		<td class="attributes"><code>
+			protected  
+			string[]
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#79-83" title="Go to source code"><var>$units</var></a>
+
+			<div class="description short">
+				<p>Exploded units as array of string to be processed in source text.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Exploded units as array of string to be processed in source text.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$units" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="shortcuts" id="$shortcuts">
+		<td class="attributes"><code>
+			protected  
+			string[]
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MvcCore.Ext.View.Helpers.LineBreaks.html#85-89" title="Go to source code"><var>$shortcuts</var></a>
+
+			<div class="description short">
+				<p>Prepared shortcuts with no-line breaking spaces, keyed by language.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Prepared shortcuts with no-line breaking spaces, keyed by language.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$shortcuts" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		MvcCore API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
