@@ -1,5 +1,16 @@
 # MvcCore Documentation
 
+<style type="text/css">
+	table.repos {
+		border-collapse:collapse;
+	}
+	table.repos th,
+	table.repos td{
+		border:1px solid #888;
+		padding:3px;
+	}
+</style>
+
 ## Base Repositories
 <table class="repos">
 	<thead>
@@ -27,7 +38,7 @@
 	</tbody>
 </table>
 
-## Extension Repositories
+## Extension Repositories - Auth
 <table class="repos">
 	<thead>
 		<tr>
@@ -45,7 +56,19 @@
 			<td><a href="https://github.com/mvccore/ext-auth-basic"><nobr>ext-auth-basic</nobr></a></td>
 			<td><nobr>Auth - Basic</nobr></td>
 			<td>simple authentication extension, only to signin/signout user. Extension can use credentials defined in system `config.ini` or in database. Possibility to extend user, signin/signout forms, submit controller and extension class itself.</td>
-		</tr>					
+		</tr>	
+	</tbody>
+</table>
+
+## Extension Repositories - Cache
+<table class="repos">
+	<thead>
+		<tr>
+			<th align="left" colspan="2">Name</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-cache"><nobr>ext-cache</nobr></a></td>
 			<td><nobr>Cache</nobr></td>
@@ -55,7 +78,19 @@
 			<td><a href="https://github.com/mvccore/ext-cache-redis"><nobr>ext-cache-redis</nobr></a></td>
 			<td><nobr>Cache - Redis</nobr></td>
 			<td>cache implementation extension for Redis.</td>
-		</tr>					
+		</tr>	
+	</tbody>
+</table>
+
+## Extension Repositories - Configuration
+<table class="repos">
+	<thead>
+		<tr>
+			<th align="left" colspan="2">Name</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-config-cached"><nobr>ext-config-cached</nobr></a></td>
 			<td><nobr>Config - Cached</nobr></td>
@@ -65,7 +100,19 @@
 			<td><a href="https://github.com/mvccore/ext-config-yaml"><nobr>ext-config-yaml</nobr></a></td>
 			<td><nobr>Config - YAML</nobr></td>
 			<td>extension to have YAML configuration files syntax.</td>
-		</tr>					
+		</tr>		
+	</tbody>
+</table>
+
+## Extension Repositories - Model
+<table class="repos">
+	<thead>
+		<tr>
+			<th align="left" colspan="2">Name</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>				
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-model-db"><nobr>ext-model-db</nobr></a></td>
 			<td><nobr>Model - Database</nobr></td>
@@ -90,7 +137,19 @@
 			<td><a href="https://github.com/mvccore/ext-model-db-pgsql"><nobr>ext-model-db-pgsql</nobr></a></td>
 			<td><nobr>Model - Database - Postgre SQL</nobr></td>
 			<td>extension to work with Postgres SQL queries in more comfortable API.</td>
-		</tr>					
+		</tr>	
+	</tbody>
+</table>
+
+## Extension Repositories - Debug
+<table class="repos">
+	<thead>
+		<tr>
+			<th align="left" colspan="2">Name</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-debug-js"><nobr>ext-debug-js</nobr></a></td>
 			<td><nobr>Debug - Javascripts</nobr></td>
@@ -126,6 +185,18 @@
 			<td><nobr>Debug - Tracy - Panel Session</nobr></td>
 			<td>render and add into tracy debug panel $_SESSION content and \MvcCore\Session namespaces content.</td>
 		</tr>					
+	</tbody>
+</table>
+
+## Extension Repositories - Form
+<table class="repos">
+	<thead>
+		<tr>
+			<th align="left" colspan="2">Name</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>	
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-form"><nobr>ext-form</nobr></a></td>
 			<td><nobr>Form</nobr></td>
@@ -175,7 +246,19 @@
 			<td><a href="https://github.com/mvccore/ext-form-validator-special"><nobr>ext-form-validator-special</nobr></a></td>
 			<td><nobr>Form - Validator - Special</nobr></td>
 			<td>form special text and numeric validators - company ID (EU), company VAT ID (EU), credit card, hexadecimal number, IBAN bank account number, IP address and ZIP code.</td>
-		</tr>					
+		</tr>			
+	</tbody>
+</table>
+
+## Extension Repositories - Router
+<table class="repos">
+	<thead>
+		<tr>
+			<th align="left" colspan="2">Name</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>			
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-extended"><nobr>ext-router-extended</nobr></a></td>
 			<td><nobr>Router - Extended</nobr></td>
@@ -216,6 +299,18 @@
 			<td><nobr>Router - Modules With Media & Localization</nobr></td>
 			<td>extension to manage multiple websites in a single project, to manage website media versions (full/tablet/mobile) for different templates/CSS/JS files rendering and to manage website localizations (language or language and locale), optionally contained in URL address in the beginning.</td>
 		</tr>					
+	</tbody>
+</table>
+
+## Extension Repositories - Tool
+<table class="repos">
+	<thead>
+		<tr>
+			<th align="left" colspan="2">Name</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>	
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-tool-image"><nobr>ext-tool-image</nobr></a></td>
 			<td><nobr>Tool - Image</nobr></td>
@@ -235,7 +330,19 @@
 			<td><a href="https://github.com/mvccore/ext-tool-mimetype-extension"><nobr>ext-tool-mimetype-extension</nobr></a></td>
 			<td><nobr>Tool - MimeType & Extensions</nobr></td>
 			<td>extension to get file mimetype(s) strings array from file extension string or to get file extension(s) strings array from file mimetype string.</td>
-		</tr>					
+		</tr>
+	</tbody>
+</table>
+
+## Extension Repositories - View
+<table class="repos">
+	<thead>
+		<tr>
+			<th align="left" colspan="2">Name</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>	
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-view-helper"><nobr>ext-view-helper</nobr></a></td>
 			<td><nobr>View - Helper</nobr></td>
