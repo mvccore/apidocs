@@ -246,35 +246,63 @@
 	<tbody>			
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-extended">mvccore/ext-router-extended</a></td>
-			<td>Trait with additional properties, setters and getters required by extended router implementations - localized router and media site version router.</td>
+			<td>
+				Trait with additional properties, setters and getters required by extended router <br />
+				implementations - localized router and media site version router.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-localization">mvccore/ext-router-localization</a></td>
-			<td>Extension to manage website localizations (language or language and locale). For any HTTP method, multi or single language (or lang. with locale) patterns and reverses, URL addresses like `/en/path` or `/en-US/path`, very configurable.</td>
+			<td>
+				Extension to manage website localizations (language or language and locale). <br />
+				For any HTTP method, multi or single language (or lang. with locale) patterns and reverses, <br />
+				URL addresses like `/en/path` or `/en-US/path`, very configurable.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-media">mvccore/ext-router-media</a></td>
-			<td>Extension to manage website media versions (full/tablet/mobile) for different templates/CSS/JS files rendering, optionally contained in URL address in the beginning.</td>
+			<td>
+				Extension to manage website media versions (full/tablet/mobile) for different templates/CSS/JS <br />
+				files rendering, optionally contained in URL address in the beginning.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-media-localization">mvccore/ext-router-media-localization</a></td>
-			<td>Extension to manage website media versions (full/tablet/mobile) for different templates/CSS/JS files rendering and to manage website localizations (language or language and locale), optionaly contained in url address in the beinning.</td>
+			<td>
+				Extension to manage website media versions (full/tablet/mobile) for different templates/CSS/JS <br />
+				files rendering and to manage website localizations (language or language and locale), <br />
+				optionaly contained in url address in the beinning.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-module">mvccore/ext-router-module</a></td>
-			<td>Extension to manage multiple websites in a single project, defined by domain routes, targeted by module property in URL completing.</td>
+			<td>
+				Extension to manage multiple websites in a single project, defined by domain routes, targeted <br />
+				by module property in URL completing.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-module-localization">mvccore/ext-router-module-localization</a></td>
-			<td>Extension to manage multiple websites in a single project and to manage website localizations (language or language and locale), optionaly contained in a domain or in URL address in the beginning.</td>
+			<td>
+				Extension to manage multiple websites in a single project and to manage website localizations <br />
+				(language or language and locale), optionaly contained in a domain or in URL address in the beginning.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-module-media">mvccore/ext-router-module-media</a></td>
-			<td>Extension to manage multiple websites in a single project and to manage website media versions (full/tablet/mobile) for different templates/CSS/JS files rendering, optionally contained in a domain or in URL address in the beginning.</td>
+			<td>
+				Extension to manage multiple websites in a single project and to manage website media versions <br />
+				(full/tablet/mobile) for different templates/CSS/JS files rendering, optionally contained in <br />
+				a domain or in URL address in the beginning.
+			</td>
 		</tr>					
 		<tr>
 			<td><a href="https://github.com/mvccore/ext-router-module-media-localization">mvccore/ext-router-module-media-localization</a></td>
-			<td>Extension to manage multiple websites in a single project, to manage website media versions (full/tablet/mobile) for different templates/CSS/JS files rendering and to manage website localizations (language or language and locale), optionally contained in URL address in the beginning.</td>
+			<td>
+				Extension to manage multiple websites in a single project, to manage website media versions <br />
+				(full/tablet/mobile) for different templates/CSS/JS files rendering and to manage website localizations <br />
+				(language or language and locale), optionally contained in URL address in the beginning.
+			</td>
 		</tr>					
 	</tbody>
 </table>
